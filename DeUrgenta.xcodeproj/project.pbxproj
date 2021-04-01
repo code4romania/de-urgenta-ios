@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7E62615FF2C00314935 /* AppDelegate.swift */; };
+		286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */; };
+		286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */; };
+		286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286DF7F22615FF2E00314935 /* Assets.xcassets */; };
+		286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286DF7F42615FF2E00314935 /* LaunchScreen.storyboard */; };
+		286DF81B26160F7E00314935 /* DUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF81A26160F7E00314935 /* DUViewController.swift */; };
+		286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286DF81E26160FAB00314935 /* WelcomeViewController.xib */; };
+		286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 286DF82826161C0F00314935 /* IBMPlexSans-Medium.ttf */; };
+		286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 286DF82926161C0F00314935 /* IBMPlexSans-Regular.ttf */; };
+		286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 286DF82A26161C0F00314935 /* IBMPlexSans-Bold.ttf */; };
+		A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeUrgenta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		286DF7E32615FF2C00314935 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		286DF7E62615FF2C00314935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		286DF7F02615FF2C00314935 /* DeUrgenta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeUrgenta.xcdatamodel; sourceTree = "<group>"; };
+		286DF7F22615FF2E00314935 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		286DF7F52615FF2E00314935 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		286DF7F72615FF2E00314935 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		286DF8092616097700314935 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		286DF81A26160F7E00314935 /* DUViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUViewController.swift; sourceTree = "<group>"; };
+		286DF81E26160FAB00314935 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
+		286DF82826161C0F00314935 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
+		286DF82926161C0F00314935 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
+		286DF82A26161C0F00314935 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
+		7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		286DF7E02615FF2C00314935 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19A4B74BC2B43DCBDDF911E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		286DF7DA2615FF2C00314935 = {
+			isa = PBXGroup;
+			children = (
+				286DF7E52615FF2C00314935 /* DeUrgenta */,
+				286DF7E42615FF2C00314935 /* Products */,
+				7EADC65210FC401A3E02DC49 /* Pods */,
+				19A4B74BC2B43DCBDDF911E0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		286DF7E42615FF2C00314935 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				286DF7E32615FF2C00314935 /* DeUrgenta.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		286DF7E52615FF2C00314935 /* DeUrgenta */ = {
+			isa = PBXGroup;
+			children = (
+				286DF81726160F4D00314935 /* Code */,
+				286DF8032616035200314935 /* Config */,
+				286DF8022616034C00314935 /* Resources */,
+				286DF7E62615FF2C00314935 /* AppDelegate.swift */,
+				286DF7F42615FF2E00314935 /* LaunchScreen.storyboard */,
+				286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */,
+			);
+			path = DeUrgenta;
+			sourceTree = "<group>";
+		};
+		286DF8022616034C00314935 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				286DF82726161C0F00314935 /* Fonts */,
+				286DF8072616040000314935 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		286DF8032616035200314935 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				286DF8062616037C00314935 /* Firebase */,
+				286DF8052616036900314935 /* Custom */,
+				286DF8042616036200314935 /* Info */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		286DF8042616036200314935 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				286DF7F72615FF2E00314935 /* Info.plist */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		286DF8052616036900314935 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				286DF8092616097700314935 /* Config.xcconfig */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		286DF8062616037C00314935 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		286DF8072616040000314935 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				286DF7F22615FF2E00314935 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		286DF81726160F4D00314935 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				286DF81826160F5400314935 /* ViewControllers */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		286DF81826160F5400314935 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				286DF81926160F6D00314935 /* Core */,
+				286DF82126160FB400314935 /* Start */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		286DF81926160F6D00314935 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				286DF81A26160F7E00314935 /* DUViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		286DF82126160FB400314935 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */,
+				286DF81E26160FAB00314935 /* WelcomeViewController.xib */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		286DF82726161C0F00314935 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				286DF82826161C0F00314935 /* IBMPlexSans-Medium.ttf */,
+				286DF82926161C0F00314935 /* IBMPlexSans-Regular.ttf */,
+				286DF82A26161C0F00314935 /* IBMPlexSans-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7EADC65210FC401A3E02DC49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */,
+				5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		286DF7E22615FF2C00314935 /* DeUrgenta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 286DF7FA2615FF2E00314935 /* Build configuration list for PBXNativeTarget "DeUrgenta" */;
+			buildPhases = (
+				349061FC792409FB3B319492 /* [CP] Check Pods Manifest.lock */,
+				286DF7DF2615FF2C00314935 /* Sources */,
+				286DF7E02615FF2C00314935 /* Frameworks */,
+				286DF7E12615FF2C00314935 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeUrgenta;
+			productName = DeUrgenta;
+			productReference = 286DF7E32615FF2C00314935 /* DeUrgenta.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		286DF7DB2615FF2C00314935 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					286DF7E22615FF2C00314935 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 286DF7DE2615FF2C00314935 /* Build configuration list for PBXProject "DeUrgenta" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 286DF7DA2615FF2C00314935;
+			productRefGroup = 286DF7E42615FF2C00314935 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				286DF7E22615FF2C00314935 /* DeUrgenta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		286DF7E12615FF2C00314935 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */,
+				286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */,
+				286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */,
+				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
+				286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */,
+				286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		349061FC792409FB3B319492 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DeUrgenta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		286DF7DF2615FF2C00314935 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
+				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
+				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
+				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		286DF7F42615FF2E00314935 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286DF7F52615FF2E00314935 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		286DF7F82615FF2E00314935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286DF8092616097700314935 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		286DF7F92615FF2E00314935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286DF8092616097700314935 /* Config.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		286DF7FB2615FF2E00314935 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeUrgenta/Config/Info/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		286DF7FC2615FF2E00314935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeUrgenta/Config/Info/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		286DF7DE2615FF2C00314935 /* Build configuration list for PBXProject "DeUrgenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286DF7F82615FF2E00314935 /* Debug */,
+				286DF7F92615FF2E00314935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		286DF7FA2615FF2E00314935 /* Build configuration list for PBXNativeTarget "DeUrgenta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286DF7FB2615FF2E00314935 /* Debug */,
+				286DF7FC2615FF2E00314935 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				286DF7F02615FF2C00314935 /* DeUrgenta.xcdatamodel */,
+			);
+			currentVersion = 286DF7F02615FF2C00314935 /* DeUrgenta.xcdatamodel */;
+			path = DeUrgenta.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 286DF7DB2615FF2C00314935 /* Project object */;
+}
