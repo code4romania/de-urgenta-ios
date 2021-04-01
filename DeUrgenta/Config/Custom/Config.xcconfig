@@ -1,0 +1,23 @@
+//
+//  Config.xcconfig
+//  DeUrgenta
+//
+//  Created by Cristi Habliuc on 01.04.2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER = com.company.Product
+
+// see CustomConfig.swift
+CURRENT_PROJECT_VERSION = 1
+MARKETING_VERSION = 0.1.0
+FORCE_DEBUG_LOGS = false
+// If adding a URL, use http:/$()/ to get around the comment issue in compiling
+API_URL =
+PRODUCT_NAME = DeUrgenta
+PRODUCT_DISPLAY_NAME = De Urgență
+DEVELOPMENT_TEAM = 
+
+#include? "LocalConfig.xcconfig"
