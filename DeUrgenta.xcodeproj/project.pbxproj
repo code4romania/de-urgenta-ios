@@ -26,6 +26,14 @@
 		286DF86F2617107700314935 /* AppUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286DF86E2617107700314935 /* AppUI.xcassets */; };
 		286DF872261710C200314935 /* UIImage+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF871261710C200314935 /* UIImage+Presets.swift */; };
 		286DF8752617113D00314935 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8742617113D00314935 /* LogManager.swift */; };
+		286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF87A26171D8D00314935 /* DUActionButton.swift */; };
+		286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF87E26171E1000314935 /* UIImage+Helpers.swift */; };
+		286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF88126171EC100314935 /* CGFloat+Presets.swift */; };
+		286DF89626171F8600314935 /* DULabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF89526171F8600314935 /* DULabel.swift */; };
+		286DF89A2617200200314935 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8992617200200314935 /* AppFonts.swift */; };
+		286DF89E261720D100314935 /* DUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF89D261720D100314935 /* DUButton.swift */; };
+		286DF8A12617211B00314935 /* DUTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A02617211B00314935 /* DUTextField.swift */; };
+		286DF8A42617213F00314935 /* DUTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A32617213F00314935 /* DUTextView.swift */; };
 		A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +61,14 @@
 		286DF86E2617107700314935 /* AppUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppUI.xcassets; sourceTree = "<group>"; };
 		286DF871261710C200314935 /* UIImage+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Presets.swift"; sourceTree = "<group>"; };
 		286DF8742617113D00314935 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
+		286DF87A26171D8D00314935 /* DUActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUActionButton.swift; sourceTree = "<group>"; };
+		286DF87E26171E1000314935 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
+		286DF88126171EC100314935 /* CGFloat+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Presets.swift"; sourceTree = "<group>"; };
+		286DF89526171F8600314935 /* DULabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DULabel.swift; sourceTree = "<group>"; };
+		286DF8992617200200314935 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		286DF89D261720D100314935 /* DUButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUButton.swift; sourceTree = "<group>"; };
+		286DF8A02617211B00314935 /* DUTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextField.swift; sourceTree = "<group>"; };
+		286DF8A32617213F00314935 /* DUTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextView.swift; sourceTree = "<group>"; };
 		5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
 		7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,6 +179,8 @@
 		286DF81726160F4D00314935 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				286DF89826171FF000314935 /* Helpers */,
+				286DF87926171D7500314935 /* CustomViews */,
 				286DF86926170F9A00314935 /* Extensions */,
 				286DF86426170F2D00314935 /* Presets */,
 				286DF82F2616228100314935 /* Managers */,
@@ -223,6 +241,7 @@
 			children = (
 				286DF86526170F3C00314935 /* UIColor+Presets.swift */,
 				286DF871261710C200314935 /* UIImage+Presets.swift */,
+				286DF88126171EC100314935 /* CGFloat+Presets.swift */,
 			);
 			path = Presets;
 			sourceTree = "<group>";
@@ -231,8 +250,29 @@
 			isa = PBXGroup;
 			children = (
 				286DF86A26170FA600314935 /* UIColor+Helpers.swift */,
+				286DF87E26171E1000314935 /* UIImage+Helpers.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		286DF87926171D7500314935 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				286DF87A26171D8D00314935 /* DUActionButton.swift */,
+				286DF89526171F8600314935 /* DULabel.swift */,
+				286DF89D261720D100314935 /* DUButton.swift */,
+				286DF8A02617211B00314935 /* DUTextField.swift */,
+				286DF8A32617213F00314935 /* DUTextView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		286DF89826171FF000314935 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				286DF8992617200200314935 /* AppFonts.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		7EADC65210FC401A3E02DC49 /* Pods */ = {
@@ -385,7 +425,15 @@
 			files = (
 				286DF8492616FF1000314935 /* AnalyticsManager.swift in Sources */,
 				286DF8752617113D00314935 /* LogManager.swift in Sources */,
+				286DF89E261720D100314935 /* DUButton.swift in Sources */,
+				286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */,
+				286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */,
+				286DF89A2617200200314935 /* AppFonts.swift in Sources */,
+				286DF89626171F8600314935 /* DULabel.swift in Sources */,
 				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
+				286DF8A12617211B00314935 /* DUTextField.swift in Sources */,
+				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
+				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
 				286DF8312616229600314935 /* AppManager.swift in Sources */,
 				286DF84C261700E800314935 /* Config.swift in Sources */,
 				286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */,

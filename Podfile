@@ -6,4 +6,5 @@ target 'DeUrgenta' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Crashlytics'
   pod 'PromisesSwift'
+  pod 'SnapKit', '5.0.1'
 end

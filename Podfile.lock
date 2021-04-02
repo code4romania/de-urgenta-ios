@@ -84,12 +84,14 @@ PODS:
   - PromisesObjC (1.2.12)
   - PromisesSwift (1.2.12):
     - PromisesObjC (= 1.2.12)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Crashlytics
   - Firebase/RemoteConfig
   - PromisesSwift
+  - SnapKit (= 5.0.1)
 
 SPEC REPOS:
   trunk:
@@ -107,6 +109,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - PromisesSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   Firebase: 1e0d6610f21bdd131231525d7ee78f7f9e64e606
@@ -123,7 +126,8 @@ SPEC CHECKSUMS:
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   PromisesSwift: 64085cf6e5fc1b5001f90cf31e87a1f1621fefee
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: c2ecb6f63c3957c3897a67649e6b55efc38b0199
+PODFILE CHECKSUM: 5f518a24d134dda792c21f7e8f48cdf1f3cf4d32
 
 COCOAPODS: 1.10.1
