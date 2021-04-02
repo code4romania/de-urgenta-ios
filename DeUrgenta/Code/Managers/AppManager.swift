@@ -26,8 +26,8 @@ class AppManager: NSObject {
         
         // Load the remote config
         Config.shared.loadRemoteConfig()
-            .then { print("loaded remote config") }
-            .catch { print("error while loading remote config: \($0)") }
+            .then { LogDebug("loaded remote config") }
+            .catch { LogError("error while loading remote config: \($0)") }
         
         isSetupComplete = true
     }

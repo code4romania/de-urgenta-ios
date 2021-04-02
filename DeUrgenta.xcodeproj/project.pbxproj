@@ -21,6 +21,11 @@
 		286DF8432616240C00314935 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 286DF8422616240C00314935 /* GoogleService-Info.plist */; };
 		286DF8492616FF1000314935 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8482616FF1000314935 /* AnalyticsManager.swift */; };
 		286DF84C261700E800314935 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF84B261700E800314935 /* Config.swift */; };
+		286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF86526170F3C00314935 /* UIColor+Presets.swift */; };
+		286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF86A26170FA600314935 /* UIColor+Helpers.swift */; };
+		286DF86F2617107700314935 /* AppUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286DF86E2617107700314935 /* AppUI.xcassets */; };
+		286DF872261710C200314935 /* UIImage+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF871261710C200314935 /* UIImage+Presets.swift */; };
+		286DF8752617113D00314935 /* LogManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8742617113D00314935 /* LogManager.swift */; };
 		A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +48,11 @@
 		286DF8422616240C00314935 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		286DF8482616FF1000314935 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		286DF84B261700E800314935 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		286DF86526170F3C00314935 /* UIColor+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Presets.swift"; sourceTree = "<group>"; };
+		286DF86A26170FA600314935 /* UIColor+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Helpers.swift"; sourceTree = "<group>"; };
+		286DF86E2617107700314935 /* AppUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppUI.xcassets; sourceTree = "<group>"; };
+		286DF871261710C200314935 /* UIImage+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Presets.swift"; sourceTree = "<group>"; };
+		286DF8742617113D00314935 /* LogManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogManager.swift; sourceTree = "<group>"; };
 		5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
 		7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				286DF7F22615FF2E00314935 /* Assets.xcassets */,
+				286DF86E2617107700314935 /* AppUI.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -152,6 +163,8 @@
 		286DF81726160F4D00314935 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				286DF86926170F9A00314935 /* Extensions */,
+				286DF86426170F2D00314935 /* Presets */,
 				286DF82F2616228100314935 /* Managers */,
 				286DF81826160F5400314935 /* ViewControllers */,
 			);
@@ -200,8 +213,26 @@
 				286DF8302616229600314935 /* AppManager.swift */,
 				286DF8482616FF1000314935 /* AnalyticsManager.swift */,
 				286DF84B261700E800314935 /* Config.swift */,
+				286DF8742617113D00314935 /* LogManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		286DF86426170F2D00314935 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				286DF86526170F3C00314935 /* UIColor+Presets.swift */,
+				286DF871261710C200314935 /* UIImage+Presets.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		286DF86926170F9A00314935 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				286DF86A26170FA600314935 /* UIColor+Helpers.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		7EADC65210FC401A3E02DC49 /* Pods */ = {
@@ -274,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */,
+				286DF86F2617107700314935 /* AppUI.xcassets in Resources */,
 				286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */,
 				286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */,
 				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
@@ -352,11 +384,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				286DF8492616FF1000314935 /* AnalyticsManager.swift in Sources */,
+				286DF8752617113D00314935 /* LogManager.swift in Sources */,
 				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
 				286DF8312616229600314935 /* AppManager.swift in Sources */,
 				286DF84C261700E800314935 /* Config.swift in Sources */,
+				286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */,
 				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
 				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
+				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
+				286DF872261710C200314935 /* UIImage+Presets.swift in Sources */,
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
