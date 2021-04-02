@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         AppManager.shared.setup()
-        
+
         let root = WelcomeViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = root
