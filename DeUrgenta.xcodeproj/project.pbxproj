@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,10 @@
 		286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 286DF82826161C0F00314935 /* IBMPlexSans-Medium.ttf */; };
 		286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 286DF82926161C0F00314935 /* IBMPlexSans-Regular.ttf */; };
 		286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 286DF82A26161C0F00314935 /* IBMPlexSans-Bold.ttf */; };
+		286DF8312616229600314935 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8302616229600314935 /* AppManager.swift */; };
+		286DF8432616240C00314935 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 286DF8422616240C00314935 /* GoogleService-Info.plist */; };
+		286DF8492616FF1000314935 /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8482616FF1000314935 /* AnalyticsManager.swift */; };
+		286DF84C261700E800314935 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF84B261700E800314935 /* Config.swift */; };
 		A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,10 @@
 		286DF82826161C0F00314935 /* IBMPlexSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Medium.ttf"; sourceTree = "<group>"; };
 		286DF82926161C0F00314935 /* IBMPlexSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Regular.ttf"; sourceTree = "<group>"; };
 		286DF82A26161C0F00314935 /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
+		286DF8302616229600314935 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		286DF8422616240C00314935 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		286DF8482616FF1000314935 /* AnalyticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
+		286DF84B261700E800314935 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
 		7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +94,7 @@
 				286DF7E62615FF2C00314935 /* AppDelegate.swift */,
 				286DF7F42615FF2E00314935 /* LaunchScreen.storyboard */,
 				286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */,
+				286DF8422616240C00314935 /* GoogleService-Info.plist */,
 			);
 			path = DeUrgenta;
 			sourceTree = "<group>";
@@ -143,6 +152,7 @@
 		286DF81726160F4D00314935 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				286DF82F2616228100314935 /* Managers */,
 				286DF81826160F5400314935 /* ViewControllers */,
 			);
 			path = Code;
@@ -184,6 +194,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		286DF82F2616228100314935 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				286DF8302616229600314935 /* AppManager.swift */,
+				286DF8482616FF1000314935 /* AnalyticsManager.swift */,
+				286DF84B261700E800314935 /* Config.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		7EADC65210FC401A3E02DC49 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +224,8 @@
 				286DF7DF2615FF2C00314935 /* Sources */,
 				286DF7E02615FF2C00314935 /* Frameworks */,
 				286DF7E12615FF2C00314935 /* Resources */,
+				B966983EDED24355795E5AC6 /* [CP] Embed Pods Frameworks */,
+				286DF8452616252400314935 /* Crashlytics set up */,
 			);
 			buildRules = (
 			);
@@ -257,12 +279,32 @@
 				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
 				286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */,
 				286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */,
+				286DF8432616240C00314935 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		286DF8452616252400314935 /* Crashlytics set up */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Crashlytics set up";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 		349061FC792409FB3B319492 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -285,6 +327,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B966983EDED24355795E5AC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,7 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286DF8492616FF1000314935 /* AnalyticsManager.swift in Sources */,
 				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
+				286DF8312616229600314935 /* AppManager.swift in Sources */,
+				286DF84C261700E800314935 /* Config.swift in Sources */,
 				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
 				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
@@ -438,6 +500,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = DeUrgenta/Config/Info/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
