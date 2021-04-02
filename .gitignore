@@ -93,3 +93,5 @@ iOSInjectionProject/
 
 # create your own project and copy the plist in the root of the project
 GoogleService-Info.plist
+LocalConfig.xcconfig
+
