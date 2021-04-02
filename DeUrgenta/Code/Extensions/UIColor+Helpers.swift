@@ -27,4 +27,11 @@ extension UIColor {
         }
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha:CGFloat(alpha) / 255.0)
     }
+    
+    var asImage: UIImage {
+        UIImage.imageWithSize(size: CGSize(width: 1, height: 1),
+                              filledWithColor: self,
+                              scale: 1,
+                              opaque: false)
+    }
 }
