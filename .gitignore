@@ -90,3 +90,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# create your own project and copy the plist in the root of the project
+GoogleService-Info.plist
