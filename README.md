@@ -26,11 +26,15 @@ Swift
 
 ### Platforms
 
-iOS
+iOS 10.0+
 
 ### Package managers
 
+Cocoapods
+
 ### Database technology & provider
+
+Core Data with sqlite
 
 ## Repos and projects
 
@@ -39,15 +43,53 @@ iOS
 [Web app - frontend](https://github.com/code4romania/de-urgenta-client)   
 [Web app - backend](https://github.com/code4romania/de-urgenta-backend)
 
-## Deployment
+## Before Starting
 
-Guide users through getting your code up and running on their own system. In this section you can talk about:
-1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
+This project uses swift and has dependencies on Firebase and HERE Maps. This means before starting work on the actual code, you will have to create apps on these two platforms and use their API credentials locally. 
 
-Describe and show how to build your code and run the tests.
+### Firebase
+
+Go to the [Firebase Console](https://console.firebase.google.com) for your Google account and create an app named "De Urgenta". Go through the steps and download the `GoogleService-Info.plist` file and copy it in the root of the local clone of this repo.
+
+### HERE Maps
+
+Go to the [HERE developer portal](https://developer.here.com), create an account if you don't have one, and create an app named "De Urgenta". Find the iOS SDK (premium) section and note those api credentials.
+
+Into the cloned repo, navigate to `DeUrgenta/Config/Custom`. You fill find a `Config.xcconfig` file with some default properties. Duplicate it and rename the new file to `LocalConfig.xcconfig` (and remove the `#include` line at the end). Use this xcconfig to set the api credentials for the here maps.
+
+### Other Local Config Options
+
+Into the same `LocalConfig.xcconfig` file, set the app id and team id to values appropriate to your Apple Developer account, you will need these, to deploy on devices.
+
+### Pods
+
+Run `pod install` in the repo folder and you should be good to go.
+
+### Questions?
+
+If you ran into trouble on any of these issues, you can get in touch with us on the Code4Romania Slack.
+
+## Code Conventions
+
+We use the following code conventions, and if anything is unclear, please take a look at the existing code for examples of how they're implemented.
+
+1. MvvM - Each ViewController has its ViewModel (unless the VC is very trivial and has not much logic inside it)
+2. Parent VCs inherit from `DUViewController` (so that in the future we can add extra functionality to all parent VCs)
+3. Use Nibs for UI compositionm only do it in code when it makes sense or the component is highly customizable
+4. Use children VCs as much as possible to prevent MVC (massive view controllers)
+5. Use custom UIViews for reusable components instead of duplicating views 
+6. DULabel, DUButton etc. - IBDesignables that make it easy to add font-abstraction to Nibs, use them instead of configuring the font independently
+7. Use color presets and image presets (and add to those as necessary).
+8. Use asset catalogs for resources.
+9. Use PDFs for vector images exported from figma, PNGs for bitmaps and JPEGs for complex photos (like avatars)
+10. Use `Promises` whenever possible for async code (it's OK to use blocks when the situation calls for it, but ideally convert 3rd party callbacks to promises to keep our code clean).
+11. Use Managers for highly specific and possibly reusable code (see the `Managers` group for examples). Make them singletons if there's no need for multiple instances.
+12. Use the xcconfig files to add locally configurable variables instead of hardcoding them (add the variable in `Config.xcconfig`, then add it with the same name in the `Info.plist` and value `$(VAR_NAME)`, then add the case into `Config.swift`.
+13. No `print` statements. If you want to print debug without a breakpoint, use the `LogDebug`, `LogInfo` and `LogError` functions.
+14. Use `AppRouter` for navigation.
+15. To minimize PR conflicts, please merge `develop` into your branch before pushing the PR.
+
+We will add to these rules as the project develops. If you have anything against these, we can have a discussion over Slack, but ideally they will have to do, to keep us all working on this project happy.
 
 ## Feedback
 
