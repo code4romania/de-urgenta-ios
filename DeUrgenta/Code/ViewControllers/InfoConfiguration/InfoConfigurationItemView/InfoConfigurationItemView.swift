@@ -7,13 +7,10 @@
 
 import UIKit
 
-@objc
-protocol InfoConfigurationItemViewDelegate {
-    func infoConfigurationItemViewTapped(_ infoConfigurationItemView: InfoConfigurationItemView)
-}
-
 @IBDesignable
 class InfoConfigurationItemView: DUNibView {
+    
+    typealias TapActionHandler = () -> ()
     
     @IBInspectable
     var iconImage: UIImage? {
@@ -43,8 +40,7 @@ class InfoConfigurationItemView: DUNibView {
     @IBOutlet
     weak var titleLabel: UILabel!
     
-    @IBOutlet
-    weak var delegate: InfoConfigurationItemViewDelegate? = nil
+    var _onTap: TapActionHandler? = nil
     
     private let disabledStateAlpha: CGFloat = 0.5
     
@@ -54,6 +50,10 @@ class InfoConfigurationItemView: DUNibView {
         self.registerTap()
     }
     
+    func onTap(_ handler: @escaping TapActionHandler) {
+        self._onTap = handler
+    }
+    
     private func registerTap() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewWasTapped(_:)))
         self.addGestureRecognizer(tapGesture)
@@ -61,7 +61,7 @@ class InfoConfigurationItemView: DUNibView {
     
     @objc
     private func viewWasTapped(_ gestureRecognizer: UITapGestureRecognizer) {
-        self.delegate?.infoConfigurationItemViewTapped(self)
+        self._onTap?()
     }
     
     private func setEnabled(_ enabled: Bool) {

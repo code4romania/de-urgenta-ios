@@ -10,7 +10,7 @@ import SnapKit
 
 class InfoConfigurationViewController: DUViewController {
     
-    let viewModel = InfoConfigurationViewModel()
+    let model = InfoConfigurationViewModel()
     
     @IBOutlet weak var headerContainerView: UIView!
     @IBOutlet weak var contentStackView: UIStackView!
@@ -19,30 +19,6 @@ class InfoConfigurationViewController: DUViewController {
     @IBOutlet weak var createGroupItemView: InfoConfigurationItemView!
     @IBOutlet weak var emergencyBagItemView: InfoConfigurationItemView!
     @IBOutlet weak var firstAidTutorialItemView: InfoConfigurationItemView!
-    
-    var hasConfiguredAddresses = false {
-        didSet {
-            self.configureItems()
-        }
-    }
-    
-    enum HeaderType {
-        case welcome(name: String)
-        case `default`
-    }
-    
-    private enum ConfigurationItem: String {
-        case addresses = "ro.code4.DeUrgenta.InfoConfigurationViewController.addresses"
-        case group = "ro.code4.DeUrgenta.InfoConfigurationViewController.group"
-        case emergencyBag = "ro.code4.DeUrgenta.InfoConfigurationViewController.emergencyBag"
-        case firstAidTutorial = "ro.code4.DeUrgenta.InfoConfigurationViewController.firstAidTutorial"
-    }
-    
-    var headerType: HeaderType = .default {
-        didSet {
-            self.updateHeader()
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +32,7 @@ class InfoConfigurationViewController: DUViewController {
     }
     
     private func updateHeader() {
-        switch self.headerType {
+        switch self.model.headerType {
         case .default:
             self.loadDefaultHeader()
         case .welcome(name: let name):
@@ -66,9 +42,14 @@ class InfoConfigurationViewController: DUViewController {
     
     private func configureItems() {
         self.configureAddressesItemView.enabled = true
-        self.createGroupItemView.enabled = self.hasConfiguredAddresses
-        self.emergencyBagItemView.enabled = self.hasConfiguredAddresses
-        self.firstAidTutorialItemView.enabled = self.hasConfiguredAddresses
+        self.createGroupItemView.enabled = self.model.hasConfiguredAddresses
+        self.emergencyBagItemView.enabled = self.model.hasConfiguredAddresses
+        self.firstAidTutorialItemView.enabled = self.model.hasConfiguredAddresses
+        
+        self.setupConfigureAddressesItem()
+        self.setupCreateGroupItem()
+        self.setupEmergencyBagItem()
+        self.setupFirstAidTutorialItem()
     }
     
     private func loadWelcomeHeader(withTitle title: String) {
@@ -96,25 +77,29 @@ class InfoConfigurationViewController: DUViewController {
             make.edges.equalTo(self.headerContainerView)
         }
     }
-
-}
-
-extension InfoConfigurationViewController: InfoConfigurationItemViewDelegate {
     
-    func infoConfigurationItemViewTapped(_ infoConfigurationItemView: InfoConfigurationItemView) {
-        guard let identifier = infoConfigurationItemView.identifier,
-              let configurationItem = ConfigurationItem(rawValue: identifier)
-        else { return }
-        
-        switch configurationItem {
-        case .addresses:
+    private func setupConfigureAddressesItem() {
+        self.configureAddressesItemView.onTap { [weak self] in
             LogInfo("Configure addresses")
-        case .group:
-            LogInfo("Configure group")
-        case .emergencyBag:
+        }
+    }
+    
+    private func setupCreateGroupItem() {
+        self.createGroupItemView.onTap { [weak self] in
+            LogInfo("Create group")
+        }
+    }
+    
+    private func setupEmergencyBagItem() {
+        self.emergencyBagItemView.onTap { [weak self] in
             LogInfo("Configure emergency bag")
-        case .firstAidTutorial:
+        }
+    }
+    
+    private func setupFirstAidTutorialItem() {
+        self.firstAidTutorialItemView.onTap { [weak self] in
             LogInfo("First aid tutorial")
         }
     }
+
 }

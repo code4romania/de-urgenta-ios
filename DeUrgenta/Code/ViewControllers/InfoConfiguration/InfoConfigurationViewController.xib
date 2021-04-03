@@ -49,9 +49,6 @@
                                                 <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="config.map-icon"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.addresses"/>
                                             </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <outlet property="delegate" destination="-1" id="ZLj-JH-mE7"/>
-                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-GW-M01">
                                             <rect key="frame" x="0.0" y="40" width="374" height="16"/>
@@ -80,9 +77,6 @@
                                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Creează-ți grupul"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.group"/>
                                             </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <outlet property="delegate" destination="-1" id="CQU-k8-z9D"/>
-                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAq-Km-01Z">
                                             <rect key="frame" x="0.0" y="96" width="374" height="16"/>
@@ -111,9 +105,6 @@
                                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Fă-ți rucsacul de urgență"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.emergencyBag"/>
                                             </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <outlet property="delegate" destination="-1" id="0xE-Vk-cJY"/>
-                                            </connections>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiG-Uh-uEp">
                                             <rect key="frame" x="0.0" y="152" width="374" height="16"/>
@@ -142,9 +133,6 @@
                                                 <userDefinedRuntimeAttribute type="string" keyPath="title" value="Învață să dai primul ajutor"/>
                                                 <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.firstAidTutorial"/>
                                             </userDefinedRuntimeAttributes>
-                                            <connections>
-                                                <outlet property="delegate" destination="-1" id="78E-z4-fxz"/>
-                                            </connections>
                                         </view>
                                     </subviews>
                                 </stackView>
