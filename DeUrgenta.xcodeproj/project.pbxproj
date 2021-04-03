@@ -13,6 +13,9 @@
 		2844493B261771B200B7F3A2 /* DUTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844493A261771B200B7F3A2 /* DUTableViewCell.swift */; };
 		2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844493D261772EB00B7F3A2 /* SearchAddressViewModel.swift */; };
 		28444944261869B000B7F3A2 /* AddressModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28444943261869B000B7F3A2 /* AddressModels.swift */; };
+		2844494B2618990700B7F3A2 /* DUFormTextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844494A2618990700B7F3A2 /* DUFormTextFieldContainer.swift */; };
+		2844495126189BDD00B7F3A2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844494F26189BDD00B7F3A2 /* SignupViewController.swift */; };
+		2844495226189BDD00B7F3A2 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2844495026189BDD00B7F3A2 /* SignupViewController.xib */; };
 		286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7E62615FF2C00314935 /* AppDelegate.swift */; };
 		286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */; };
 		286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */; };
@@ -54,6 +57,9 @@
 		2844493A261771B200B7F3A2 /* DUTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTableViewCell.swift; sourceTree = "<group>"; };
 		2844493D261772EB00B7F3A2 /* SearchAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewModel.swift; sourceTree = "<group>"; };
 		28444943261869B000B7F3A2 /* AddressModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModels.swift; sourceTree = "<group>"; };
+		2844494A2618990700B7F3A2 /* DUFormTextFieldContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUFormTextFieldContainer.swift; sourceTree = "<group>"; };
+		2844494F26189BDD00B7F3A2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		2844495026189BDD00B7F3A2 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		286DF7E32615FF2C00314935 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286DF7E62615FF2C00314935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,23 @@
 				28444943261869B000B7F3A2 /* AddressModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		28444949261898AC00B7F3A2 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				2844494A2618990700B7F3A2 /* DUFormTextFieldContainer.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
+		2844494E26189BC300B7F3A2 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2844494F26189BDD00B7F3A2 /* SignupViewController.swift */,
+				2844495026189BDD00B7F3A2 /* SignupViewController.xib */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		286DF7DA2615FF2C00314935 = {
@@ -228,6 +251,7 @@
 		286DF81826160F5400314935 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2844494E26189BC300B7F3A2 /* Auth */,
 				28D9FF0E2617502500C616D8 /* Address */,
 				286DF81926160F6D00314935 /* Core */,
 				286DF82126160FB400314935 /* Start */,
@@ -297,6 +321,7 @@
 		286DF87926171D7500314935 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				28444949261898AC00B7F3A2 /* Forms */,
 				284449332617693D00B7F3A2 /* TableCells */,
 				286DF87A26171D8D00314935 /* DUActionButton.swift */,
 				286DF89526171F8600314935 /* DULabel.swift */,
@@ -395,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2844495226189BDD00B7F3A2 /* SignupViewController.xib in Resources */,
 				284449372617696400B7F3A2 /* SearchTableCell.xib in Resources */,
 				286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */,
 				286DF86F2617107700314935 /* AppUI.xcassets in Resources */,
@@ -488,6 +514,7 @@
 				286DF8A12617211B00314935 /* DUTextField.swift in Sources */,
 				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
 				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
+				2844494B2618990700B7F3A2 /* DUFormTextFieldContainer.swift in Sources */,
 				2844493B261771B200B7F3A2 /* DUTableViewCell.swift in Sources */,
 				286DF8312616229600314935 /* AppManager.swift in Sources */,
 				286DF84C261700E800314935 /* Config.swift in Sources */,
@@ -497,6 +524,7 @@
 				28444944261869B000B7F3A2 /* AddressModels.swift in Sources */,
 				28D9FF07261742C000C616D8 /* MapManager.swift in Sources */,
 				284449312617539600B7F3A2 /* AppRouter.swift in Sources */,
+				2844495126189BDD00B7F3A2 /* SignupViewController.swift in Sources */,
 				2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */,
 				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
 				286DF872261710C200314935 /* UIImage+Presets.swift in Sources */,

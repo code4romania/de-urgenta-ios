@@ -78,16 +78,19 @@ enum AppFontSize: String {
         case .medium:
             return 28
         case .normal:
-            return 20
-        case .small:
             return 18
-        case .xsmall:
+        case .small:
             return 16
+        case .xsmall:
+            return 14
         }
     }
 }
 
 enum AppFontPreset: String {
+    case formSmallLabel
+    case formTextField
+    
     case largeTitle
     case title
     case smallTitle
@@ -98,6 +101,11 @@ enum AppFontPreset: String {
     
     func font() -> UIFont? {
         switch self {
+        case .formSmallLabel:
+            return UIFont(name: AppFontFamily.main.fullName(withStyle: .medium), size: AppFontSize.xsmall.size())
+        case .formTextField:
+            return UIFont(name: AppFontFamily.main.fullName(withStyle: .regular), size: AppFontSize.small.size())
+
         case .largeTitle:
             return UIFont(name: AppFontFamily.main.fullName(withStyle: .medium), size: AppFontSize.large.size())
         case .title:
