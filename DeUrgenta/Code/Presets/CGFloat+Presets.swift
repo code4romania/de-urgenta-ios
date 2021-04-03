@@ -11,4 +11,5 @@ extension CGFloat {
     static let buttonCornerRadius: CGFloat = 6
     static let buttonHeight: CGFloat = 50
     static let buttonFontSize: CGFloat = 16
+    static let searchCellHeight: CGFloat = 64
 }

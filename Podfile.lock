@@ -76,6 +76,7 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.2.2):
     - GoogleUtilities/Logger
+  - HEREMaps (3.13.3)
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
@@ -90,6 +91,7 @@ DEPENDENCIES:
   - Firebase/Analytics
   - Firebase/Crashlytics
   - Firebase/RemoteConfig
+  - HEREMaps
   - PromisesSwift
   - SnapKit (= 5.0.1)
 
@@ -106,6 +108,7 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
+    - HEREMaps
     - nanopb
     - PromisesObjC
     - PromisesSwift
@@ -123,11 +126,12 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: dccff6095ea1cd8972a8b96d0ee38b9e6d67acbb
   GoogleDataTransport: 1024b1a4dfbd7a0e92cb20d7e0a6f1fb66b449a4
   GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
+  HEREMaps: e487311662d4031466570eb6706f62baa8f66b7c
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   PromisesSwift: 64085cf6e5fc1b5001f90cf31e87a1f1621fefee
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 5f518a24d134dda792c21f7e8f48cdf1f3cf4d32
+PODFILE CHECKSUM: ef32efd044d02f4f6e6d6fe28e681aa8893541d2
 
 COCOAPODS: 1.10.1

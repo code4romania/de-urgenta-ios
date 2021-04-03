@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		284449312617539600B7F3A2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449302617539600B7F3A2 /* AppRouter.swift */; };
+		284449362617696400B7F3A2 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449342617696400B7F3A2 /* SearchTableCell.swift */; };
+		284449372617696400B7F3A2 /* SearchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284449352617696400B7F3A2 /* SearchTableCell.xib */; };
+		2844493B261771B200B7F3A2 /* DUTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844493A261771B200B7F3A2 /* DUTableViewCell.swift */; };
+		2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844493D261772EB00B7F3A2 /* SearchAddressViewModel.swift */; };
+		28444944261869B000B7F3A2 /* AddressModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28444943261869B000B7F3A2 /* AddressModels.swift */; };
 		286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7E62615FF2C00314935 /* AppDelegate.swift */; };
 		286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */; };
 		286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */; };
@@ -34,6 +40,9 @@
 		286DF89E261720D100314935 /* DUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF89D261720D100314935 /* DUButton.swift */; };
 		286DF8A12617211B00314935 /* DUTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A02617211B00314935 /* DUTextField.swift */; };
 		286DF8A42617213F00314935 /* DUTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A32617213F00314935 /* DUTextView.swift */; };
+		28D9FF07261742C000C616D8 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF06261742C000C616D8 /* MapManager.swift */; };
+		28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */; };
+		28D9FF0C2617501E00C616D8 /* SearchAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */; };
 		3407C084261777CE00C4ABAD /* InfoConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407C082261777CE00C4ABAD /* InfoConfigurationViewController.swift */; };
 		3407C085261777CE00C4ABAD /* InfoConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3407C083261777CE00C4ABAD /* InfoConfigurationViewController.xib */; };
 		3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407C08F26177AA000C4ABAD /* InfoConfigurationItemView.swift */; };
@@ -51,6 +60,12 @@
 
 /* Begin PBXFileReference section */
 		0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeUrgenta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		284449302617539600B7F3A2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		284449342617696400B7F3A2 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
+		284449352617696400B7F3A2 /* SearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableCell.xib; sourceTree = "<group>"; };
+		2844493A261771B200B7F3A2 /* DUTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTableViewCell.swift; sourceTree = "<group>"; };
+		2844493D261772EB00B7F3A2 /* SearchAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewModel.swift; sourceTree = "<group>"; };
+		28444943261869B000B7F3A2 /* AddressModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressModels.swift; sourceTree = "<group>"; };
 		286DF7E32615FF2C00314935 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286DF7E62615FF2C00314935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +96,9 @@
 		286DF89D261720D100314935 /* DUButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUButton.swift; sourceTree = "<group>"; };
 		286DF8A02617211B00314935 /* DUTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextField.swift; sourceTree = "<group>"; };
 		286DF8A32617213F00314935 /* DUTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextView.swift; sourceTree = "<group>"; };
+		28D9FF06261742C000C616D8 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
+		28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAddressViewController.xib; sourceTree = "<group>"; };
 		3407C082261777CE00C4ABAD /* InfoConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationViewController.swift; sourceTree = "<group>"; };
 		3407C083261777CE00C4ABAD /* InfoConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoConfigurationViewController.xib; sourceTree = "<group>"; };
 		3407C08F26177AA000C4ABAD /* InfoConfigurationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationItemView.swift; sourceTree = "<group>"; };
@@ -115,6 +133,23 @@
 				0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		284449332617693D00B7F3A2 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				284449342617696400B7F3A2 /* SearchTableCell.swift */,
+				284449352617696400B7F3A2 /* SearchTableCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		284449422618699E00B7F3A2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28444943261869B000B7F3A2 /* AddressModels.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		286DF7DA2615FF2C00314935 = {
@@ -203,6 +238,7 @@
 		286DF81726160F4D00314935 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				284449422618699E00B7F3A2 /* Models */,
 				286DF89826171FF000314935 /* Helpers */,
 				286DF87926171D7500314935 /* CustomViews */,
 				286DF86926170F9A00314935 /* Extensions */,
@@ -216,6 +252,7 @@
 		286DF81826160F5400314935 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				28D9FF0E2617502500C616D8 /* Address */,
 				3407C081261777AB00C4ABAD /* InfoConfiguration */,
 				286DF81926160F6D00314935 /* Core */,
 				286DF82126160FB400314935 /* Start */,
@@ -257,6 +294,8 @@
 				286DF8482616FF1000314935 /* AnalyticsManager.swift */,
 				286DF84B261700E800314935 /* Config.swift */,
 				286DF8742617113D00314935 /* LogManager.swift */,
+				28D9FF06261742C000C616D8 /* MapManager.swift */,
+				284449302617539600B7F3A2 /* AppRouter.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -285,12 +324,14 @@
 		286DF87926171D7500314935 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				284449332617693D00B7F3A2 /* TableCells */,
 				286DF87A26171D8D00314935 /* DUActionButton.swift */,
 				286DF89D261720D100314935 /* DUButton.swift */,
 				286DF89526171F8600314935 /* DULabel.swift */,
 				34F9A8B226188CD7007883ED /* DUNibView.swift */,
 				286DF8A02617211B00314935 /* DUTextField.swift */,
 				286DF8A32617213F00314935 /* DUTextView.swift */,
+				2844493A261771B200B7F3A2 /* DUTableViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -301,6 +342,16 @@
 				286DF8992617200200314935 /* AppFonts.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		28D9FF0E2617502500C616D8 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				2844493D261772EB00B7F3A2 /* SearchAddressViewModel.swift */,
+				28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */,
+				28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */,
+			);
+			path = Address;
 			sourceTree = "<group>";
 		};
 		3407C081261777AB00C4ABAD /* InfoConfiguration */ = {
@@ -412,6 +463,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				284449372617696400B7F3A2 /* SearchTableCell.xib in Resources */,
 				286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */,
 				286DF86F2617107700314935 /* AppUI.xcassets in Resources */,
 				286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */,
@@ -420,6 +472,7 @@
 				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
 				286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */,
 				286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */,
+				28D9FF0C2617501E00C616D8 /* SearchAddressViewController.xib in Resources */,
 				286DF8432616240C00314935 /* GoogleService-Info.plist in Resources */,
 				3407C09426177AB100C4ABAD /* InfoConfigurationItemView.xib in Resources */,
 				3407C09F261862F700C4ABAD /* InfoConfigurationWelcomHeaderView.xib in Resources */,
@@ -500,6 +553,7 @@
 				286DF89E261720D100314935 /* DUButton.swift in Sources */,
 				286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */,
 				286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */,
+				28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */,
 				286DF89A2617200200314935 /* AppFonts.swift in Sources */,
 				3407C09726177AFB00C4ABAD /* UIView+Designables.swift in Sources */,
 				286DF89626171F8600314935 /* DULabel.swift in Sources */,
@@ -511,14 +565,20 @@
 				3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */,
 				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
 				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
+				2844493B261771B200B7F3A2 /* DUTableViewCell.swift in Sources */,
 				286DF8312616229600314935 /* AppManager.swift in Sources */,
 				286DF84C261700E800314935 /* Config.swift in Sources */,
 				286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */,
 				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
 				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
+				28444944261869B000B7F3A2 /* AddressModels.swift in Sources */,
+				28D9FF07261742C000C616D8 /* MapManager.swift in Sources */,
+				284449312617539600B7F3A2 /* AppRouter.swift in Sources */,
+				2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */,
 				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
 				34F9B1942618669F0017EDD4 /* InfoConfigurationHeaderView.swift in Sources */,
 				286DF872261710C200314935 /* UIImage+Presets.swift in Sources */,
+				284449362617696400B7F3A2 /* SearchTableCell.swift in Sources */,
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
 				34F9A8AD26188186007883ED /* UIView+Nib.swift in Sources */,
 				3407C084261777CE00C4ABAD /* InfoConfigurationViewController.swift in Sources */,

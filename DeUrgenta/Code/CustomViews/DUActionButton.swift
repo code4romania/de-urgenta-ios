@@ -35,6 +35,11 @@ class DUActionButton: DUButton {
         }
     }
     
+    enum AccessoryPosition: String {
+        case left
+        case right
+    }
+    
     @IBInspectable
     var style: String = "" {
         didSet {
@@ -43,8 +48,17 @@ class DUActionButton: DUButton {
         }
     }
     
-    var innerStyle: Style = .main
+    @IBInspectable
+    var accessoryPosition: String = "" {
+        didSet {
+            innerAccessoryPosition = AccessoryPosition(rawValue: accessoryPosition) ?? .left
+            configureAccessoryPosition()
+        }
+    }
     
+    var innerStyle: Style = .main
+    var innerAccessoryPosition: AccessoryPosition = .left
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -60,6 +74,8 @@ class DUActionButton: DUButton {
     }
     
     private func configure() {
+        configureAccessoryPosition()
+
         let font = UIFont(
             name: AppFontFamily.main.fullName(withStyle: .bold),
             size: .buttonFontSize
@@ -69,6 +85,11 @@ class DUActionButton: DUButton {
         configureColors()
         layer.cornerRadius = .buttonCornerRadius
         layer.masksToBounds = true
+    }
+    
+    private func configureAccessoryPosition() {
+        // in case the accessory is added, force it to the right
+        semanticContentAttribute = innerAccessoryPosition == .left ? .forceLeftToRight : .forceRightToLeft
     }
     
     private func configureColors() {
