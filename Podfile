@@ -7,4 +7,5 @@ target 'DeUrgenta' do
   pod 'Firebase/Crashlytics'
   pod 'PromisesSwift'
   pod 'SnapKit', '5.0.1'
+  pod 'HEREMaps'
 end

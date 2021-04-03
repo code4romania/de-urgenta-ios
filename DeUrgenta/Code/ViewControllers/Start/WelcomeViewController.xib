@@ -25,7 +25,7 @@
                             <rect key="frame" x="125" y="333" width="100" height="100"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Tu ți-ai făcut planul în caz de urgență?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adZ-ye-zC1" customClass="DULabel" customModule="DeUrgenta" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="476" width="350" height="86"/>
+                            <rect key="frame" x="0.0" y="476.00000000000006" width="350" height="93.666666666666686"/>
                             <fontDescription key="fontDescription" type="system" pointSize="36"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -45,6 +45,9 @@
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="style" value="inversed"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="handleSignupAction:" destination="-1" eventType="touchUpInside" id="V9H-I4-i2i"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-fw-w1H" customClass="DUActionButton" customModule="DeUrgenta" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="74" width="350" height="50"/>
@@ -55,6 +58,9 @@
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="string" keyPath="style" value="transparentLightContent"/>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="handleLoginAction:" destination="-1" eventType="touchUpInside" id="GUF-G4-Mka"/>
+                                    </connections>
                                 </button>
                             </subviews>
                         </stackView>
@@ -86,13 +92,13 @@
     </objects>
     <designables>
         <designable name="BWe-fw-w1H">
-            <size key="intrinsicContentSize" width="94" height="18"/>
+            <size key="intrinsicContentSize" width="105" height="21"/>
         </designable>
         <designable name="Njb-NQ-SJc">
-            <size key="intrinsicContentSize" width="107" height="18"/>
+            <size key="intrinsicContentSize" width="120" height="21"/>
         </designable>
         <designable name="adZ-ye-zC1">
-            <size key="intrinsicContentSize" width="578.33333333333337" height="43"/>
+            <size key="intrinsicContentSize" width="645" height="47"/>
         </designable>
     </designables>
     <resources>

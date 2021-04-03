@@ -24,6 +24,12 @@ class Config: NSObject {
         remoteConfig.value(of: key)
     }
     
+    func configValue(of key: CustomConfigKey) -> String {
+        guard let info = Bundle.main.infoDictionary,
+              let value = info[key.rawValue] as? String else { return "" }
+        return value
+    }
+    
     func loadRemoteConfig() -> Promise<()> {
         guard !isRemoteConfigLoaded else {
             return .init(())
@@ -79,4 +85,12 @@ extension RemoteConfig {
     func value(of key: RemoteConfigKey) -> RemoteConfigValue {
         return self[key.rawValue]
     }
+}
+
+enum CustomConfigKey: String, CaseIterable {
+    case hereMapAppId = "HERE_MAP_APP_ID"
+    case hereMapAppCode = "HERE_MAP_APP_CODE"
+    case hereMapLicenseKey = "HERE_MAP_LICENSE_KEY"
+    case mapCenterLatitude = "MAP_CENTER_LATITUDE"
+    case mapCenterLongitude = "MAP_CENTER_LONGITUDE"
 }

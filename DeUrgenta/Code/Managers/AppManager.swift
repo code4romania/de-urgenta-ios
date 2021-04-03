@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseCore
 
+/// Handles everything related to the overall App setup
 class AppManager: NSObject {
     static let shared = AppManager()
     
@@ -24,11 +25,34 @@ class AppManager: NSObject {
         // file into the project folder, or this will fail
         FirebaseApp.configure()
         
+        // Make sure you created a Here map account and added the details into your LocalConfig.xcconfig
+        MapManager.shared.configure()
+        
         // Load the remote config
         Config.shared.loadRemoteConfig()
-            .then { LogDebug("loaded remote config") }
-            .catch { LogError("error while loading remote config: \($0)") }
+            .then { LogDebug("Loaded remote config") }
+            .catch { LogError("Error while loading remote config: \($0)") }
+        
+        setupAppearance()
         
         isSetupComplete = true
+    }
+    
+    private func setupAppearance() {
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = .navBackButton
+        UINavigationBar.appearance().backIndicatorImage = .navBackButton
+        UINavigationBar.appearance().barStyle = .black
+        UINavigationBar.appearance().isTranslucent = false
+        UINavigationBar.appearance().barTintColor = .mainAccent
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().shadowImage = UIImage()
+        
+        let titleFont = UIFont(name: AppFontFamily.main.fullName(withStyle: .bold), size: 16)!
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: titleFont
+        ]
+        
+        
     }
 }
