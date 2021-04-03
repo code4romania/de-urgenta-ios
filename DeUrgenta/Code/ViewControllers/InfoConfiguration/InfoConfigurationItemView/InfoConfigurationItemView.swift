@@ -25,9 +25,6 @@ class InfoConfigurationItemView: DUNibView {
     }
     
     @IBInspectable
-    var identifier: String? = nil
-    
-    @IBInspectable
     var enabled: Bool = true {
         didSet {
             self.setEnabled(self.enabled)
