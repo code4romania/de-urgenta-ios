@@ -18,8 +18,24 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>HERE_MAP_APP_CODE</key>
+	<string>$(HERE_MAP_APP_CODE)</string>
+	<key>HERE_MAP_APP_ID</key>
+	<string>$(HERE_MAP_APP_ID)</string>
+	<key>HERE_MAP_LICENSE_KEY</key>
+	<string>$(HERE_MAP_LICENSE_KEY)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MAP_CENTER_LATITUDE</key>
+	<string>$(MAP_CENTER_LATITUDE)</string>
+	<key>MAP_CENTER_LONGITUDE</key>
+	<string>$(MAP_CENTER_LONGITUDE)</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IBMPlexSans-Bold.ttf</string>
+		<string>IBMPlexSans-Medium.ttf</string>
+		<string>IBMPlexSans-Regular.ttf</string>
+	</array>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
@@ -29,13 +45,7 @@
 		<string>armv7</string>
 	</array>
 	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleDarkContent</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>IBMPlexSans-Bold.ttf</string>
-		<string>IBMPlexSans-Medium.ttf</string>
-		<string>IBMPlexSans-Regular.ttf</string>
-	</array>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -47,5 +57,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Avem nevoie de acordul dvs. pentru a va putea localiza pe harta</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Vom folosi locatia dvs. doar pentru a va localiza pe harta</string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>

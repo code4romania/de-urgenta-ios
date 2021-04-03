@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppManager.shared.setup()
 
-        let root = WelcomeViewController()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = root
         window?.makeKeyAndVisible()
+        
+        AppRouter.shared.navigateToStart()
         
         return true
     }
