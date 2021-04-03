@@ -25,6 +25,8 @@ class WelcomeViewController: DUViewController {
     }
     
     @IBAction func handleLoginAction(_ sender: Any) {
+        let next = InfoConfigurationViewController()
+        AppRouter.shared.push(next)
     }
 }
 

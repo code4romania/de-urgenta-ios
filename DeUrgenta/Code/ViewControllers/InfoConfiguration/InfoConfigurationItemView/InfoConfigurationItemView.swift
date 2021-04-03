@@ -7,18 +7,35 @@
 
 import UIKit
 
-protocol InfoConfigurationViewDelegate: class {
-    func infoConfigurationViewTapped(_ infoConfigurationView: InfoConfigurationItemView)
+@objc
+protocol InfoConfigurationItemViewDelegate {
+    func infoConfigurationItemViewTapped(_ infoConfigurationItemView: InfoConfigurationItemView)
 }
 
 @IBDesignable
 class InfoConfigurationItemView: DUNibView {
     
     @IBInspectable
-    var iconImage: UIImage? = nil
+    var iconImage: UIImage? {
+        set { self.iconImageView.image = newValue }
+        get { return self.iconImageView.image }
+    }
     
     @IBInspectable
-    var title: String? = nil
+    var title: String? {
+        set { self.titleLabel.text = newValue }
+        get { return self.titleLabel.text }
+    }
+    
+    @IBInspectable
+    var identifier: String? = nil
+    
+    @IBInspectable
+    var enabled: Bool = true {
+        didSet {
+            self.setEnabled(self.enabled)
+        }
+    }
     
     @IBOutlet
     weak var iconImageView: UIImageView!
@@ -26,15 +43,8 @@ class InfoConfigurationItemView: DUNibView {
     @IBOutlet
     weak var titleLabel: UILabel!
     
-    var identifier: String? = nil
-    
-    var enabled: Bool = true {
-        didSet {
-            self.setEnabled(self.enabled)
-        }
-    }
-    
-    weak var delegate: InfoConfigurationViewDelegate? = nil
+    @IBOutlet
+    weak var delegate: InfoConfigurationItemViewDelegate? = nil
     
     private let disabledStateAlpha: CGFloat = 0.5
     
@@ -51,7 +61,7 @@ class InfoConfigurationItemView: DUNibView {
     
     @objc
     private func viewWasTapped(_ gestureRecognizer: UITapGestureRecognizer) {
-        self.delegate?.infoConfigurationViewTapped(self)
+        self.delegate?.infoConfigurationItemViewTapped(self)
     }
     
     private func setEnabled(_ enabled: Bool) {

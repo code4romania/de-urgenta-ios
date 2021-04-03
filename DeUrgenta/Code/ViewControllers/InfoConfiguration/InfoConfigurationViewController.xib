@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InfoConfigurationViewController" customModule="DeUrgenta" customModuleProvider="target">
             <connections>
+                <outlet property="configureAddressesItemView" destination="dyE-zG-OgV" id="3M4-fc-plc"/>
+                <outlet property="contentStackView" destination="R7o-Tq-cU1" id="Cer-dC-6Gm"/>
+                <outlet property="createGroupItemView" destination="sBG-VP-QS7" id="gWY-Qs-YqA"/>
+                <outlet property="emergencyBagItemView" destination="F2S-1H-kF0" id="tpb-Wn-aSl"/>
+                <outlet property="firstAidTutorialItemView" destination="reL-6B-kjw" id="xbM-Xf-Xm7"/>
+                <outlet property="headerContainerView" destination="oCS-0V-8FL" id="O22-yx-r0e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +29,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0I-95-eI3">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="458"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCS-0V-8FL">
                                     <rect key="frame" x="20" y="30" width="374" height="200"/>
@@ -33,11 +39,112 @@
                                     </constraints>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R7o-Tq-cU1">
-                                    <rect key="frame" x="20" y="250" width="374" height="646"/>
+                                    <rect key="frame" x="20" y="250" width="374" height="208"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyE-zG-OgV" customClass="InfoConfigurationItemView" customModule="DeUrgenta" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="646"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Configurează adresele"/>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="config.map-icon"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.addresses"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="ZLj-JH-mE7"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-GW-M01">
+                                            <rect key="frame" x="0.0" y="40" width="374" height="16"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rkq-Pc-k38">
+                                                    <rect key="frame" x="19" y="0.0" width="2" height="16"/>
+                                                    <color key="backgroundColor" red="0.89803921568627454" green="0.90588235294117647" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="2" id="fs7-dt-Df4"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="rkq-Pc-k38" secondAttribute="bottom" id="Uks-Ld-hUw"/>
+                                                <constraint firstAttribute="height" constant="16" id="YKA-rK-JaE"/>
+                                                <constraint firstItem="rkq-Pc-k38" firstAttribute="leading" secondItem="N5f-GW-M01" secondAttribute="leading" constant="19" id="cTA-Um-hQZ"/>
+                                                <constraint firstItem="rkq-Pc-k38" firstAttribute="top" secondItem="N5f-GW-M01" secondAttribute="top" id="onb-Di-xon"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBG-VP-QS7" customClass="InfoConfigurationItemView" customModule="DeUrgenta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="56" width="374" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="config.group-icon"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Creează-ți grupul"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.group"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="CQU-k8-z9D"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AAq-Km-01Z">
+                                            <rect key="frame" x="0.0" y="96" width="374" height="16"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="clD-Ru-Hvk">
+                                                    <rect key="frame" x="19" y="0.0" width="2" height="16"/>
+                                                    <color key="backgroundColor" red="0.8980392157" green="0.90588235289999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="2" id="60J-cR-FLc"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="clD-Ru-Hvk" firstAttribute="top" secondItem="AAq-Km-01Z" secondAttribute="top" id="LMM-m6-PV7"/>
+                                                <constraint firstAttribute="bottom" secondItem="clD-Ru-Hvk" secondAttribute="bottom" id="cD6-0C-qWE"/>
+                                                <constraint firstAttribute="height" constant="16" id="uMV-98-TjC"/>
+                                                <constraint firstItem="clD-Ru-Hvk" firstAttribute="leading" secondItem="AAq-Km-01Z" secondAttribute="leading" constant="19" id="xkI-Ym-3wO"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-1H-kF0" customClass="InfoConfigurationItemView" customModule="DeUrgenta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="112" width="374" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="config.bag-icon"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Fă-ți rucsacul de urgență"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.emergencyBag"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="0xE-Vk-cJY"/>
+                                            </connections>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiG-Uh-uEp">
+                                            <rect key="frame" x="0.0" y="152" width="374" height="16"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWI-Fu-jR4">
+                                                    <rect key="frame" x="19" y="0.0" width="2" height="16"/>
+                                                    <color key="backgroundColor" red="0.8980392157" green="0.90588235289999997" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="2" id="GAS-zd-g6N"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="XWI-Fu-jR4" firstAttribute="top" secondItem="PiG-Uh-uEp" secondAttribute="top" id="LQe-Vn-hR3"/>
+                                                <constraint firstAttribute="bottom" secondItem="XWI-Fu-jR4" secondAttribute="bottom" id="SUT-m3-xls"/>
+                                                <constraint firstAttribute="height" constant="16" id="gDL-PT-uaO"/>
+                                                <constraint firstItem="XWI-Fu-jR4" firstAttribute="leading" secondItem="PiG-Uh-uEp" secondAttribute="leading" constant="19" id="thQ-QW-I8z"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reL-6B-kjw" customClass="InfoConfigurationItemView" customModule="DeUrgenta" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="168" width="374" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="iconImage" value="config.red-cross-icon"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="title" value="Învață să dai primul ajutor"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="identifier" value="ro.code4.DeUrgenta.InfoConfigurationViewController.firstAidTutorial"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <outlet property="delegate" destination="-1" id="78E-z4-fxz"/>
+                                            </connections>
                                         </view>
                                     </subviews>
                                 </stackView>
@@ -50,7 +157,6 @@
                                 <constraint firstItem="oCS-0V-8FL" firstAttribute="leading" secondItem="W0I-95-eI3" secondAttribute="leading" constant="20" id="DOc-km-waj"/>
                                 <constraint firstAttribute="bottom" secondItem="R7o-Tq-cU1" secondAttribute="bottom" id="EIM-yR-tpO"/>
                                 <constraint firstItem="oCS-0V-8FL" firstAttribute="top" secondItem="W0I-95-eI3" secondAttribute="top" constant="30" id="LXl-0O-UfH"/>
-                                <constraint firstAttribute="height" constant="896" id="RJL-xA-CUK"/>
                                 <constraint firstAttribute="trailing" secondItem="oCS-0V-8FL" secondAttribute="trailing" constant="20" id="vNC-Qm-z8T"/>
                             </constraints>
                         </view>
@@ -72,10 +178,14 @@
                 <constraint firstItem="428-Hr-MaM" firstAttribute="top" secondItem="MEO-7Y-mP9" secondAttribute="top" id="c48-eB-IJP"/>
                 <constraint firstItem="MEO-7Y-mP9" firstAttribute="bottom" secondItem="428-Hr-MaM" secondAttribute="bottom" id="ncd-mI-uZp"/>
             </constraints>
-            <point key="canvasLocation" x="-196" y="139"/>
+            <point key="canvasLocation" x="-197.10144927536234" y="138.61607142857142"/>
         </view>
     </objects>
     <resources>
+        <image name="config.bag-icon" width="14" height="16"/>
+        <image name="config.group-icon" width="18" height="15"/>
+        <image name="config.map-icon" width="16" height="17"/>
+        <image name="config.red-cross-icon" width="10" height="10"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

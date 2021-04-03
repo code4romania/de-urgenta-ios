@@ -9,5 +9,6 @@ import Foundation
 import Promises
 
 class InfoConfigurationViewModel: NSObject {
-    //
+    
+    
 }

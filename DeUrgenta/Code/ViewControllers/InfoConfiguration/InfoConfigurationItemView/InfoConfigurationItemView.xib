@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -43,13 +42,13 @@
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                            <real key="value" value="4"/>
+                            <real key="value" value="6"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                             <color key="value" red="0.92549019607843142" green="0.10196078431372549" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="18"/>
+                            <real key="value" value="20"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
@@ -68,14 +67,14 @@
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="gSn-sA-Xrs" firstAttribute="leading" secondItem="Zhx-od-zcu" secondAttribute="trailing" constant="16" id="3SP-wY-N4q"/>
                 <constraint firstAttribute="trailing" secondItem="gSn-sA-Xrs" secondAttribute="trailing" constant="2" id="67H-LQ-ilC"/>
                 <constraint firstItem="Zhx-od-zcu" firstAttribute="leading" secondItem="2hG-D9-xOA" secondAttribute="trailing" constant="16" id="GYD-v3-UQo"/>
                 <constraint firstItem="Zhx-od-zcu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IRz-hl-hdv"/>
                 <constraint firstItem="2hG-D9-xOA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RpQ-8h-Onj"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2hG-D9-xOA" secondAttribute="bottom" id="bUv-jf-vvq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2hG-D9-xOA" secondAttribute="bottom" priority="750" id="bUv-jf-vvq"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Zhx-od-zcu" secondAttribute="bottom" id="gvA-nI-imk"/>
                 <constraint firstItem="2hG-D9-xOA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="l2Y-0o-a1J"/>
                 <constraint firstItem="gSn-sA-Xrs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="v2a-C3-q1b"/>
@@ -87,8 +86,5 @@
     <resources>
         <image name="chevron-right" width="8" height="14"/>
         <image name="config.map-icon" width="16" height="17"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
