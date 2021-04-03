@@ -12,4 +12,5 @@ extension UIColor {
     static let mainAccent = UIColor(hexCode: 0xEC1A3A)
     static let mainActionButtonBackground = mainAccent
     static let mainActionButtonForeground = white
+    static let appGreen = UIColor(hexCode: 59669)
 }
