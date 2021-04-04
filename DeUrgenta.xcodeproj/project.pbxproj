@@ -46,6 +46,18 @@
 		28D9FF07261742C000C616D8 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF06261742C000C616D8 /* MapManager.swift */; };
 		28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */; };
 		28D9FF0C2617501E00C616D8 /* SearchAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */; };
+		3407C084261777CE00C4ABAD /* InfoConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407C082261777CE00C4ABAD /* InfoConfigurationViewController.swift */; };
+		3407C085261777CE00C4ABAD /* InfoConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3407C083261777CE00C4ABAD /* InfoConfigurationViewController.xib */; };
+		3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407C08F26177AA000C4ABAD /* InfoConfigurationItemView.swift */; };
+		3407C09426177AB100C4ABAD /* InfoConfigurationItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3407C09326177AB100C4ABAD /* InfoConfigurationItemView.xib */; };
+		3407C09726177AFB00C4ABAD /* UIView+Designables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407C09626177AFB00C4ABAD /* UIView+Designables.swift */; };
+		3407C09B261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3407C09A261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift */; };
+		3407C09F261862F700C4ABAD /* InfoConfigurationWelcomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3407C09E261862F700C4ABAD /* InfoConfigurationWelcomHeaderView.xib */; };
+		34F9A8AD26188186007883ED /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9A8AC26188186007883ED /* UIView+Nib.swift */; };
+		34F9A8B026188931007883ED /* InfoConfigurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9A8AF26188931007883ED /* InfoConfigurationViewModel.swift */; };
+		34F9A8B326188CD7007883ED /* DUNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9A8B226188CD7007883ED /* DUNibView.swift */; };
+		34F9B1942618669F0017EDD4 /* InfoConfigurationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9B1932618669F0017EDD4 /* InfoConfigurationHeaderView.swift */; };
+		34F9B198261866A80017EDD4 /* InfoConfigurationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F9B197261866A80017EDD4 /* InfoConfigurationHeaderView.xib */; };
 		A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +105,18 @@
 		28D9FF06261742C000C616D8 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
 		28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAddressViewController.xib; sourceTree = "<group>"; };
+		3407C082261777CE00C4ABAD /* InfoConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationViewController.swift; sourceTree = "<group>"; };
+		3407C083261777CE00C4ABAD /* InfoConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoConfigurationViewController.xib; sourceTree = "<group>"; };
+		3407C08F26177AA000C4ABAD /* InfoConfigurationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationItemView.swift; sourceTree = "<group>"; };
+		3407C09326177AB100C4ABAD /* InfoConfigurationItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoConfigurationItemView.xib; sourceTree = "<group>"; };
+		3407C09626177AFB00C4ABAD /* UIView+Designables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Designables.swift"; sourceTree = "<group>"; };
+		3407C09A261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationWelcomHeaderView.swift; sourceTree = "<group>"; };
+		3407C09E261862F700C4ABAD /* InfoConfigurationWelcomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoConfigurationWelcomHeaderView.xib; sourceTree = "<group>"; };
+		34F9A8AC26188186007883ED /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		34F9A8AF26188931007883ED /* InfoConfigurationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationViewModel.swift; sourceTree = "<group>"; };
+		34F9A8B226188CD7007883ED /* DUNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUNibView.swift; sourceTree = "<group>"; };
+		34F9B1932618669F0017EDD4 /* InfoConfigurationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationHeaderView.swift; sourceTree = "<group>"; };
+		34F9B197261866A80017EDD4 /* InfoConfigurationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoConfigurationHeaderView.xib; sourceTree = "<group>"; };
 		5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
 		7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -253,6 +277,7 @@
 			children = (
 				2844494E26189BC300B7F3A2 /* Auth */,
 				28D9FF0E2617502500C616D8 /* Address */,
+				3407C081261777AB00C4ABAD /* InfoConfiguration */,
 				286DF81926160F6D00314935 /* Core */,
 				286DF82126160FB400314935 /* Start */,
 			);
@@ -314,6 +339,8 @@
 			children = (
 				286DF86A26170FA600314935 /* UIColor+Helpers.swift */,
 				286DF87E26171E1000314935 /* UIImage+Helpers.swift */,
+				3407C09626177AFB00C4ABAD /* UIView+Designables.swift */,
+				34F9A8AC26188186007883ED /* UIView+Nib.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -324,8 +351,9 @@
 				28444949261898AC00B7F3A2 /* Forms */,
 				284449332617693D00B7F3A2 /* TableCells */,
 				286DF87A26171D8D00314935 /* DUActionButton.swift */,
-				286DF89526171F8600314935 /* DULabel.swift */,
 				286DF89D261720D100314935 /* DUButton.swift */,
+				286DF89526171F8600314935 /* DULabel.swift */,
+				34F9A8B226188CD7007883ED /* DUNibView.swift */,
 				286DF8A02617211B00314935 /* DUTextField.swift */,
 				286DF8A32617213F00314935 /* DUTextView.swift */,
 				2844493A261771B200B7F3A2 /* DUTableViewCell.swift */,
@@ -349,6 +377,46 @@
 				28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */,
 			);
 			path = Address;
+			sourceTree = "<group>";
+		};
+		3407C081261777AB00C4ABAD /* InfoConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				34F9B1922618664C0017EDD4 /* InfoConfigurationHeaderView */,
+				3407C099261862B300C4ABAD /* InfoConfigurationWelcomeHeaderView */,
+				3407C08E26177A7C00C4ABAD /* InfoConfigurationItemView */,
+				3407C082261777CE00C4ABAD /* InfoConfigurationViewController.swift */,
+				3407C083261777CE00C4ABAD /* InfoConfigurationViewController.xib */,
+				34F9A8AF26188931007883ED /* InfoConfigurationViewModel.swift */,
+			);
+			path = InfoConfiguration;
+			sourceTree = "<group>";
+		};
+		3407C08E26177A7C00C4ABAD /* InfoConfigurationItemView */ = {
+			isa = PBXGroup;
+			children = (
+				3407C08F26177AA000C4ABAD /* InfoConfigurationItemView.swift */,
+				3407C09326177AB100C4ABAD /* InfoConfigurationItemView.xib */,
+			);
+			path = InfoConfigurationItemView;
+			sourceTree = "<group>";
+		};
+		3407C099261862B300C4ABAD /* InfoConfigurationWelcomeHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				3407C09A261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift */,
+				3407C09E261862F700C4ABAD /* InfoConfigurationWelcomHeaderView.xib */,
+			);
+			path = InfoConfigurationWelcomeHeaderView;
+			sourceTree = "<group>";
+		};
+		34F9B1922618664C0017EDD4 /* InfoConfigurationHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				34F9B1932618669F0017EDD4 /* InfoConfigurationHeaderView.swift */,
+				34F9B197261866A80017EDD4 /* InfoConfigurationHeaderView.xib */,
+			);
+			path = InfoConfigurationHeaderView;
 			sourceTree = "<group>";
 		};
 		7EADC65210FC401A3E02DC49 /* Pods */ = {
@@ -426,11 +494,15 @@
 				286DF86F2617107700314935 /* AppUI.xcassets in Resources */,
 				286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */,
 				286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */,
+				34F9B198261866A80017EDD4 /* InfoConfigurationHeaderView.xib in Resources */,
 				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
 				286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */,
 				286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */,
 				28D9FF0C2617501E00C616D8 /* SearchAddressViewController.xib in Resources */,
 				286DF8432616240C00314935 /* GoogleService-Info.plist in Resources */,
+				3407C09426177AB100C4ABAD /* InfoConfigurationItemView.xib in Resources */,
+				3407C09F261862F700C4ABAD /* InfoConfigurationWelcomHeaderView.xib in Resources */,
+				3407C085261777CE00C4ABAD /* InfoConfigurationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,9 +581,14 @@
 				286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */,
 				28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */,
 				286DF89A2617200200314935 /* AppFonts.swift in Sources */,
+				3407C09726177AFB00C4ABAD /* UIView+Designables.swift in Sources */,
 				286DF89626171F8600314935 /* DULabel.swift in Sources */,
 				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
 				286DF8A12617211B00314935 /* DUTextField.swift in Sources */,
+				34F9A8B326188CD7007883ED /* DUNibView.swift in Sources */,
+				34F9A8B026188931007883ED /* InfoConfigurationViewModel.swift in Sources */,
+				3407C09B261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift in Sources */,
+				3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */,
 				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
 				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
 				2844494B2618990700B7F3A2 /* DUFormTextFieldContainer.swift in Sources */,
@@ -527,9 +604,12 @@
 				2844495126189BDD00B7F3A2 /* SignupViewController.swift in Sources */,
 				2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */,
 				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
+				34F9B1942618669F0017EDD4 /* InfoConfigurationHeaderView.swift in Sources */,
 				286DF872261710C200314935 /* UIImage+Presets.swift in Sources */,
 				284449362617696400B7F3A2 /* SearchTableCell.swift in Sources */,
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
+				34F9A8AD26188186007883ED /* UIView+Nib.swift in Sources */,
+				3407C084261777CE00C4ABAD /* InfoConfigurationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
