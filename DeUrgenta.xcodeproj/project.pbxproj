@@ -16,6 +16,11 @@
 		2844494B2618990700B7F3A2 /* DUFormTextFieldContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844494A2618990700B7F3A2 /* DUFormTextFieldContainer.swift */; };
 		2844495126189BDD00B7F3A2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844494F26189BDD00B7F3A2 /* SignupViewController.swift */; };
 		2844495226189BDD00B7F3A2 /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2844495026189BDD00B7F3A2 /* SignupViewController.xib */; };
+		284449632619C85200B7F3A2 /* AddressConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449612619C85200B7F3A2 /* AddressConfirmationViewController.swift */; };
+		284449642619C85200B7F3A2 /* AddressConfirmationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284449622619C85200B7F3A2 /* AddressConfirmationViewController.xib */; };
+		284449672619C86400B7F3A2 /* AddressConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */; };
+		2844496A2619C8A500B7F3A2 /* DUFormMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449692619C8A500B7F3A2 /* DUFormMessageView.swift */; };
+		2844496E2619EE7A00B7F3A2 /* DULocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844496D2619EE7A00B7F3A2 /* DULocationView.swift */; };
 		286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7E62615FF2C00314935 /* AppDelegate.swift */; };
 		286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */; };
 		286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */; };
@@ -43,6 +48,18 @@
 		286DF89E261720D100314935 /* DUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF89D261720D100314935 /* DUButton.swift */; };
 		286DF8A12617211B00314935 /* DUTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A02617211B00314935 /* DUTextField.swift */; };
 		286DF8A42617213F00314935 /* DUTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A32617213F00314935 /* DUTextView.swift */; };
+		28C2FA2D2631C571000DF69B /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA2C2631C571000DF69B /* RequestModels.swift */; };
+		28C2FA322631C654000DF69B /* DUAPICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA312631C654000DF69B /* DUAPICore.swift */; };
+		28C2FA492631C958000DF69B /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA482631C958000DF69B /* AccountManager.swift */; };
+		28C2FA612631CC4A000DF69B /* DUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA602631CC4A000DF69B /* DUAPI.swift */; };
+		28C2FA642631D051000DF69B /* DUSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA632631D051000DF69B /* DUSpinner.swift */; };
+		28D65A2D2631ED6500846226 /* SignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A2C2631ED6500846226 /* SignupViewModel.swift */; };
+		28D65A312632BF7500846226 /* AppEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A2F2632BF7500846226 /* AppEntryViewController.swift */; };
+		28D65A362632C89200846226 /* UINavigation+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A352632C89200846226 /* UINavigation+Convenience.swift */; };
+		28D65A3B2632D8B400846226 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A392632D8B400846226 /* LoginViewController.swift */; };
+		28D65A3C2632D8B400846226 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D65A3A2632D8B400846226 /* LoginViewController.xib */; };
+		28D65A3F2632D8CF00846226 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A3E2632D8CF00846226 /* LoginViewModel.swift */; };
+		28D65A422632E20000846226 /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A412632E20000846226 /* String+Validations.swift */; };
 		28D9FF07261742C000C616D8 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF06261742C000C616D8 /* MapManager.swift */; };
 		28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */; };
 		28D9FF0C2617501E00C616D8 /* SearchAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */; };
@@ -58,11 +75,10 @@
 		34F9A8B326188CD7007883ED /* DUNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9A8B226188CD7007883ED /* DUNibView.swift */; };
 		34F9B1942618669F0017EDD4 /* InfoConfigurationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F9B1932618669F0017EDD4 /* InfoConfigurationHeaderView.swift */; };
 		34F9B198261866A80017EDD4 /* InfoConfigurationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34F9B197261866A80017EDD4 /* InfoConfigurationHeaderView.xib */; };
-		A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */; };
+		793045E9C18C6112DD9C2D3E /* Pods_DeUrgenta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668D32C0B3CD9EC7D855E481 /* Pods_DeUrgenta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeUrgenta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		284449302617539600B7F3A2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		284449342617696400B7F3A2 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
 		284449352617696400B7F3A2 /* SearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableCell.xib; sourceTree = "<group>"; };
@@ -72,6 +88,11 @@
 		2844494A2618990700B7F3A2 /* DUFormTextFieldContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUFormTextFieldContainer.swift; sourceTree = "<group>"; };
 		2844494F26189BDD00B7F3A2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		2844495026189BDD00B7F3A2 /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
+		284449612619C85200B7F3A2 /* AddressConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressConfirmationViewController.swift; sourceTree = "<group>"; };
+		284449622619C85200B7F3A2 /* AddressConfirmationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressConfirmationViewController.xib; sourceTree = "<group>"; };
+		284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressConfirmationViewModel.swift; sourceTree = "<group>"; };
+		284449692619C8A500B7F3A2 /* DUFormMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUFormMessageView.swift; sourceTree = "<group>"; };
+		2844496D2619EE7A00B7F3A2 /* DULocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DULocationView.swift; sourceTree = "<group>"; };
 		286DF7E32615FF2C00314935 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286DF7E62615FF2C00314935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +123,18 @@
 		286DF89D261720D100314935 /* DUButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUButton.swift; sourceTree = "<group>"; };
 		286DF8A02617211B00314935 /* DUTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextField.swift; sourceTree = "<group>"; };
 		286DF8A32617213F00314935 /* DUTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextView.swift; sourceTree = "<group>"; };
+		28C2FA2C2631C571000DF69B /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
+		28C2FA312631C654000DF69B /* DUAPICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUAPICore.swift; sourceTree = "<group>"; };
+		28C2FA482631C958000DF69B /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		28C2FA602631CC4A000DF69B /* DUAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUAPI.swift; sourceTree = "<group>"; };
+		28C2FA632631D051000DF69B /* DUSpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUSpinner.swift; sourceTree = "<group>"; };
+		28D65A2C2631ED6500846226 /* SignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewModel.swift; sourceTree = "<group>"; };
+		28D65A2F2632BF7500846226 /* AppEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryViewController.swift; sourceTree = "<group>"; };
+		28D65A352632C89200846226 /* UINavigation+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Convenience.swift"; sourceTree = "<group>"; };
+		28D65A392632D8B400846226 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		28D65A3A2632D8B400846226 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		28D65A3E2632D8CF00846226 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		28D65A412632E20000846226 /* String+Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
 		28D9FF06261742C000C616D8 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
 		28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAddressViewController.xib; sourceTree = "<group>"; };
@@ -117,8 +150,9 @@
 		34F9A8B226188CD7007883ED /* DUNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUNibView.swift; sourceTree = "<group>"; };
 		34F9B1932618669F0017EDD4 /* InfoConfigurationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoConfigurationHeaderView.swift; sourceTree = "<group>"; };
 		34F9B197261866A80017EDD4 /* InfoConfigurationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoConfigurationHeaderView.xib; sourceTree = "<group>"; };
-		5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
-		7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
+		668D32C0B3CD9EC7D855E481 /* Pods_DeUrgenta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeUrgenta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC88B7137D83E9311936D03A /* Pods-DeUrgenta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.debug.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.debug.xcconfig"; sourceTree = "<group>"; };
+		DD54DF3695A75FE034714CC5 /* Pods-DeUrgenta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeUrgenta.release.xcconfig"; path = "Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,17 +160,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15F1FA2761DEF6B8D67F228 /* Pods_DeUrgenta.framework in Frameworks */,
+				793045E9C18C6112DD9C2D3E /* Pods_DeUrgenta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		19A4B74BC2B43DCBDDF911E0 /* Frameworks */ = {
+		19CE5D353C745EB9D5F59DD9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0EC4FC94121DEEC9BFD61AE2 /* Pods_DeUrgenta.framework */,
+				668D32C0B3CD9EC7D855E481 /* Pods_DeUrgenta.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +187,7 @@
 		284449422618699E00B7F3A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				28C2FA2B2631C540000DF69B /* Network */,
 				28444943261869B000B7F3A2 /* AddressModels.swift */,
 			);
 			path = Models;
@@ -162,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				2844494A2618990700B7F3A2 /* DUFormTextFieldContainer.swift */,
+				284449692619C8A500B7F3A2 /* DUFormMessageView.swift */,
 			);
 			path = Forms;
 			sourceTree = "<group>";
@@ -171,8 +207,20 @@
 			children = (
 				2844494F26189BDD00B7F3A2 /* SignupViewController.swift */,
 				2844495026189BDD00B7F3A2 /* SignupViewController.xib */,
+				28D65A2C2631ED6500846226 /* SignupViewModel.swift */,
+				28D65A392632D8B400846226 /* LoginViewController.swift */,
+				28D65A3A2632D8B400846226 /* LoginViewController.xib */,
+				28D65A3E2632D8CF00846226 /* LoginViewModel.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		2844496C2619EE5F00B7F3A2 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				2844496D2619EE7A00B7F3A2 /* DULocationView.swift */,
+			);
+			path = Lists;
 			sourceTree = "<group>";
 		};
 		286DF7DA2615FF2C00314935 = {
@@ -181,7 +229,7 @@
 				286DF7E52615FF2C00314935 /* DeUrgenta */,
 				286DF7E42615FF2C00314935 /* Products */,
 				7EADC65210FC401A3E02DC49 /* Pods */,
-				19A4B74BC2B43DCBDDF911E0 /* Frameworks */,
+				19CE5D353C745EB9D5F59DD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -261,6 +309,7 @@
 		286DF81726160F4D00314935 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				28C2FA302631C610000DF69B /* API */,
 				284449422618699E00B7F3A2 /* Models */,
 				286DF89826171FF000314935 /* Helpers */,
 				286DF87926171D7500314935 /* CustomViews */,
@@ -297,6 +346,7 @@
 			children = (
 				286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */,
 				286DF81E26160FAB00314935 /* WelcomeViewController.xib */,
+				28D65A2F2632BF7500846226 /* AppEntryViewController.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -320,6 +370,7 @@
 				286DF8742617113D00314935 /* LogManager.swift */,
 				28D9FF06261742C000C616D8 /* MapManager.swift */,
 				284449302617539600B7F3A2 /* AppRouter.swift */,
+				28C2FA482631C958000DF69B /* AccountManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -341,6 +392,8 @@
 				286DF87E26171E1000314935 /* UIImage+Helpers.swift */,
 				3407C09626177AFB00C4ABAD /* UIView+Designables.swift */,
 				34F9A8AC26188186007883ED /* UIView+Nib.swift */,
+				28D65A352632C89200846226 /* UINavigation+Convenience.swift */,
+				28D65A412632E20000846226 /* String+Validations.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -348,6 +401,7 @@
 		286DF87926171D7500314935 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				2844496C2619EE5F00B7F3A2 /* Lists */,
 				28444949261898AC00B7F3A2 /* Forms */,
 				284449332617693D00B7F3A2 /* TableCells */,
 				286DF87A26171D8D00314935 /* DUActionButton.swift */,
@@ -357,6 +411,7 @@
 				286DF8A02617211B00314935 /* DUTextField.swift */,
 				286DF8A32617213F00314935 /* DUTextView.swift */,
 				2844493A261771B200B7F3A2 /* DUTableViewCell.swift */,
+				28C2FA632631D051000DF69B /* DUSpinner.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -369,12 +424,32 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		28C2FA2B2631C540000DF69B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				28C2FA2C2631C571000DF69B /* RequestModels.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		28C2FA302631C610000DF69B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				28C2FA312631C654000DF69B /* DUAPICore.swift */,
+				28C2FA602631CC4A000DF69B /* DUAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		28D9FF0E2617502500C616D8 /* Address */ = {
 			isa = PBXGroup;
 			children = (
 				2844493D261772EB00B7F3A2 /* SearchAddressViewModel.swift */,
 				28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */,
 				28D9FF0A2617501E00C616D8 /* SearchAddressViewController.xib */,
+				284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */,
+				284449612619C85200B7F3A2 /* AddressConfirmationViewController.swift */,
+				284449622619C85200B7F3A2 /* AddressConfirmationViewController.xib */,
 			);
 			path = Address;
 			sourceTree = "<group>";
@@ -422,8 +497,8 @@
 		7EADC65210FC401A3E02DC49 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */,
-				5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */,
+				DC88B7137D83E9311936D03A /* Pods-DeUrgenta.debug.xcconfig */,
+				DD54DF3695A75FE034714CC5 /* Pods-DeUrgenta.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -435,12 +510,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 286DF7FA2615FF2E00314935 /* Build configuration list for PBXNativeTarget "DeUrgenta" */;
 			buildPhases = (
-				349061FC792409FB3B319492 /* [CP] Check Pods Manifest.lock */,
+				125FC96E453C5C263491CF1E /* [CP] Check Pods Manifest.lock */,
 				286DF7DF2615FF2C00314935 /* Sources */,
 				286DF7E02615FF2C00314935 /* Frameworks */,
 				286DF7E12615FF2C00314935 /* Resources */,
-				B966983EDED24355795E5AC6 /* [CP] Embed Pods Frameworks */,
 				286DF8452616252400314935 /* Crashlytics set up */,
+				1656E72BC1223E8A7BB1E310 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,9 +567,11 @@
 				284449372617696400B7F3A2 /* SearchTableCell.xib in Resources */,
 				286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */,
 				286DF86F2617107700314935 /* AppUI.xcassets in Resources */,
+				284449642619C85200B7F3A2 /* AddressConfirmationViewController.xib in Resources */,
 				286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */,
 				286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */,
 				34F9B198261866A80017EDD4 /* InfoConfigurationHeaderView.xib in Resources */,
+				28D65A3C2632D8B400846226 /* LoginViewController.xib in Resources */,
 				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
 				286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */,
 				286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */,
@@ -509,26 +586,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		286DF8452616252400314935 /* Crashlytics set up */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
-			);
-			name = "Crashlytics set up";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
-		};
-		349061FC792409FB3B319492 /* [CP] Check Pods Manifest.lock */ = {
+		125FC96E453C5C263491CF1E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -550,7 +608,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B966983EDED24355795E5AC6 /* [CP] Embed Pods Frameworks */ = {
+		1656E72BC1223E8A7BB1E310 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,6 +625,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DeUrgenta/Pods-DeUrgenta-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		286DF8452616252400314935 /* Crashlytics set up */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+			);
+			name = "Crashlytics set up";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -578,29 +655,43 @@
 				286DF8752617113D00314935 /* LogManager.swift in Sources */,
 				286DF89E261720D100314935 /* DUButton.swift in Sources */,
 				286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */,
+				28C2FA2D2631C571000DF69B /* RequestModels.swift in Sources */,
+				28D65A312632BF7500846226 /* AppEntryViewController.swift in Sources */,
 				286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */,
 				28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */,
+				2844496A2619C8A500B7F3A2 /* DUFormMessageView.swift in Sources */,
 				286DF89A2617200200314935 /* AppFonts.swift in Sources */,
 				3407C09726177AFB00C4ABAD /* UIView+Designables.swift in Sources */,
 				286DF89626171F8600314935 /* DULabel.swift in Sources */,
 				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
 				286DF8A12617211B00314935 /* DUTextField.swift in Sources */,
+				28D65A3B2632D8B400846226 /* LoginViewController.swift in Sources */,
+				2844496E2619EE7A00B7F3A2 /* DULocationView.swift in Sources */,
 				34F9A8B326188CD7007883ED /* DUNibView.swift in Sources */,
+				28D65A422632E20000846226 /* String+Validations.swift in Sources */,
 				34F9A8B026188931007883ED /* InfoConfigurationViewModel.swift in Sources */,
 				3407C09B261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift in Sources */,
+				28C2FA612631CC4A000DF69B /* DUAPI.swift in Sources */,
 				3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */,
 				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
+				28C2FA322631C654000DF69B /* DUAPICore.swift in Sources */,
 				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
 				2844494B2618990700B7F3A2 /* DUFormTextFieldContainer.swift in Sources */,
 				2844493B261771B200B7F3A2 /* DUTableViewCell.swift in Sources */,
+				28D65A362632C89200846226 /* UINavigation+Convenience.swift in Sources */,
 				286DF8312616229600314935 /* AppManager.swift in Sources */,
 				286DF84C261700E800314935 /* Config.swift in Sources */,
 				286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */,
 				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
+				284449632619C85200B7F3A2 /* AddressConfirmationViewController.swift in Sources */,
 				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
 				28444944261869B000B7F3A2 /* AddressModels.swift in Sources */,
+				28C2FA492631C958000DF69B /* AccountManager.swift in Sources */,
+				28D65A2D2631ED6500846226 /* SignupViewModel.swift in Sources */,
 				28D9FF07261742C000C616D8 /* MapManager.swift in Sources */,
 				284449312617539600B7F3A2 /* AppRouter.swift in Sources */,
+				28D65A3F2632D8CF00846226 /* LoginViewModel.swift in Sources */,
+				284449672619C86400B7F3A2 /* AddressConfirmationViewModel.swift in Sources */,
 				2844495126189BDD00B7F3A2 /* SignupViewController.swift in Sources */,
 				2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */,
 				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
@@ -610,6 +701,7 @@
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
 				34F9A8AD26188186007883ED /* UIView+Nib.swift in Sources */,
 				3407C084261777CE00C4ABAD /* InfoConfigurationViewController.swift in Sources */,
+				28C2FA642631D051000DF69B /* DUSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,7 +839,7 @@
 		};
 		286DF7FB2615FF2E00314935 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7AC00BC73B8226063EB01486 /* Pods-DeUrgenta.debug.xcconfig */;
+			baseConfigurationReference = DC88B7137D83E9311936D03A /* Pods-DeUrgenta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -765,7 +857,7 @@
 		};
 		286DF7FC2615FF2E00314935 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D3AADEDB1CCA5BBF6BD60F5 /* Pods-DeUrgenta.release.xcconfig */;
+			baseConfigurationReference = DD54DF3695A75FE034714CC5 /* Pods-DeUrgenta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

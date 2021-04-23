@@ -46,11 +46,25 @@ class DUFormTextFieldContainer: UIView {
         }
     }
     
-    private var variant: Variant = .plain
+    private var variant: Variant = .plain {
+        didSet {
+            configureTextField()
+        }
+    }
     private let VerticalSpacing = CGFloat(4)
     
     private(set) var textField = DUTextField(frame: .zero)
     private(set) var label = DULabel(frame: .zero)
+    
+    var onTextChange: ((String) -> Void)?
+    
+    var onNext: (() -> Void)?
+    
+    var keyboardReturnType: UIReturnKeyType = .next {
+        didSet {
+            configureTextField()
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -95,11 +109,32 @@ class DUFormTextFieldContainer: UIView {
         case .email:
             textField.keyboardType = .emailAddress
             textField.autocapitalizationType = .none
+            textField.autocorrectionType = .no
         case .password:
             textField.isSecureTextEntry = true
             textField.autocapitalizationType = .none
         case .plain:
             textField.autocapitalizationType = .words
         }
+        textField.delegate = self
+        textField.returnKeyType = keyboardReturnType
+    }
+}
+
+extension DUFormTextFieldContainer: UITextFieldDelegate {
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        onTextChange?("")
+        return true
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let newText = ((textField.text ?? "") as NSString).replacingCharacters(in: range, with: string)
+        onTextChange?(newText)
+        return true
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        onNext?()
+        return true
     }
 }

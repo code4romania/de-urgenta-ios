@@ -64,11 +64,13 @@ enum ConfigError: Error {
 
 /// remote config keys as an enum to help with typos and add some defaults
 enum RemoteConfigKey: String, CaseIterable {
-    case isDisabled
+    case isDisabled = "is_disabled"
+    case apiURL = "api_url"
     
     var defaultValue: Any {
         switch self {
         case .isDisabled: return false
+        case .apiURL: return "https://api.deurgenta.hostmysite.ro"
         }
     }
 }
@@ -88,6 +90,8 @@ extension RemoteConfig {
 }
 
 enum CustomConfigKey: String, CaseIterable {
+    case verboseAPI = "VERBOSE_API"
+    case apiURL = "API_URL"
     case hereMapAppId = "HERE_MAP_APP_ID"
     case hereMapAppCode = "HERE_MAP_APP_CODE"
     case hereMapLicenseKey = "HERE_MAP_LICENSE_KEY"

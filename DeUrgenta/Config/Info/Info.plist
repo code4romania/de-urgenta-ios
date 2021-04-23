@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>API_URL</key>
+	<string>$(API_URL)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -30,6 +32,10 @@
 	<string>$(MAP_CENTER_LATITUDE)</string>
 	<key>MAP_CENTER_LONGITUDE</key>
 	<string>$(MAP_CENTER_LONGITUDE)</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Vom folosi locatia dvs. doar pentru a va localiza pe harta</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Avem nevoie de acordul dvs. pentru a va putea localiza pe harta</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>IBMPlexSans-Bold.ttf</string>
@@ -57,11 +63,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Avem nevoie de acordul dvs. pentru a va putea localiza pe harta</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Vom folosi locatia dvs. doar pentru a va localiza pe harta</string>
 	<key>UIUserInterfaceStyle</key>
 	<string>Light</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+	<key>VERBOSE_API</key>
+	<string>$(VERBOSE_API)</string>
 </dict>
 </plist>

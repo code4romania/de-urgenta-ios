@@ -14,7 +14,12 @@ struct LocationCoordinates: Codable {
     var longitude: Double
 }
 
-struct SafepointAddress: Codable {
+struct DULocation: Codable {
+    var address: String
+    var coordinates: LocationCoordinates
+}
+
+struct DUAddress: Codable {
     enum Kind: String, Codable {
         case home
         case work
@@ -23,7 +28,15 @@ struct SafepointAddress: Codable {
         case other
     }
     
-    var address: String
-    var coordinates: LocationCoordinates
     var kind: Kind
+    var location: DULocation
+}
+
+struct DUMeetingPoint: Codable {
+    var location: DULocation
+}
+
+enum LocationSearchType {
+    case address(kind: DUAddress.Kind)
+    case meetingPoint(isPrimary: Bool)
 }
