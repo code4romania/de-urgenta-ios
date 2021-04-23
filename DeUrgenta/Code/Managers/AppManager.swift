@@ -29,6 +29,7 @@ class AppManager: NSObject {
         MapManager.shared.configure()
         
         // Load the remote config
+        // TODO: load before UI
         Config.shared.loadRemoteConfig()
             .then { LogDebug("Loaded remote config") }
             .catch { LogError("Error while loading remote config: \($0)") }
@@ -52,7 +53,6 @@ class AppManager: NSObject {
             NSAttributedString.Key.foregroundColor: UIColor.white,
             NSAttributedString.Key.font: titleFont
         ]
-        
         
     }
 }

@@ -90,7 +90,8 @@ enum AppFontSize: String {
 enum AppFontPreset: String {
     case formSmallLabel
     case formTextField
-    
+    case formConfirmationMessage
+
     case largeTitle
     case title
     case smallTitle
@@ -105,6 +106,8 @@ enum AppFontPreset: String {
             return UIFont(name: AppFontFamily.main.fullName(withStyle: .medium), size: AppFontSize.xsmall.size())
         case .formTextField:
             return UIFont(name: AppFontFamily.main.fullName(withStyle: .regular), size: AppFontSize.small.size())
+        case .formConfirmationMessage:
+            return UIFont(name: AppFontFamily.main.fullName(withStyle: .bold), size: 20)
 
         case .largeTitle:
             return UIFont(name: AppFontFamily.main.fullName(withStyle: .medium), size: AppFontSize.large.size())

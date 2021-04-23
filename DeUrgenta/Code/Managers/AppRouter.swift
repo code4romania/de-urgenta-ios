@@ -17,6 +17,27 @@ class AppRouter: NSObject {
     }
     
     func navigateToStart() {
+        navigateToAppEntry()
+        AccountManager.shared.authenticate()
+            .then { _ in self.navigateToDashboard() }
+            .catch { _ in self.navigateToUnauthenticated() }
+    }
+    
+    func navigateToAppEntry() {
+        let root = AppEntryViewController()
+        mainNavigation.setViewControllers([root], animated: false)
+        let window = UIApplication.shared.keyWindow
+        window?.rootViewController = mainNavigation
+    }
+    
+    func navigateToDashboard() {
+        let root = InfoConfigurationViewController()
+        mainNavigation.setViewControllers([root], animated: false)
+        let window = UIApplication.shared.keyWindow
+        window?.rootViewController = mainNavigation
+    }
+    
+    func navigateToUnauthenticated() {
         let root = WelcomeViewController()
         mainNavigation.setViewControllers([root], animated: false)
         let window = UIApplication.shared.keyWindow

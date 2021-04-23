@@ -1,5 +1,5 @@
 platform :ios, '10.0'
-use_frameworks!
+use_frameworks! :linkage => :static
 
 target 'DeUrgenta' do
   pod 'Firebase/Analytics'
@@ -8,4 +8,6 @@ target 'DeUrgenta' do
   pod 'PromisesSwift'
   pod 'SnapKit', '5.0.1'
   pod 'HEREMaps'
+  pod 'Alamofire'
+  pod 'SwiftKeychainWrapper'
 end

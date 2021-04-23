@@ -9,7 +9,7 @@ import UIKit
 import Promises
 
 class SearchAddressViewModel: NSObject {
-    let addressKind: SafepointAddress.Kind
+    let searchType: LocationSearchType
     
     var searchResults: [MapManager.MapLocation] = []
     
@@ -21,8 +21,12 @@ class SearchAddressViewModel: NSObject {
     
     var canSave: Bool { selectedLocation != nil && !userAddress.isEmpty }
     
-    init(addressKind: SafepointAddress.Kind = .home) {
-        self.addressKind = addressKind
+    var screenTitle: String {
+        calculateScreenTitle()
+    }
+    
+    init(searchType: LocationSearchType = .address(kind: .home)) {
+        self.searchType = searchType
         super.init()
     }
     
@@ -40,5 +44,28 @@ class SearchAddressViewModel: NSObject {
             }
             .catch { promise.reject($0) }
         return promise
+    }
+    
+    private func calculateScreenTitle() -> String {
+        var title = ""
+        switch searchType {
+        case .meetingPoint:
+            title += "Setează un punct de întâlnire"
+        case .address(let kind):
+            title += "Adaugă-ți "
+            switch kind {
+            case .home:
+                title += "adresa de domiciliu"
+            case .work:
+                title += "adresa de serviciu"
+            case .school:
+                title += "adresa școlii"
+            case .gym:
+                title += "adresa sălii de sport"
+            case .other:
+                title = "Adaugă altă adresă"
+            }
+        }
+        return title
     }
 }

@@ -17,6 +17,7 @@
                 <outlet property="emergencyBagItemView" destination="F2S-1H-kF0" id="tpb-Wn-aSl"/>
                 <outlet property="firstAidTutorialItemView" destination="reL-6B-kjw" id="xbM-Xf-Xm7"/>
                 <outlet property="headerContainerView" destination="oCS-0V-8FL" id="O22-yx-r0e"/>
+                <outlet property="logoutButton" destination="Xsx-YT-erz" id="H6D-3b-X1i"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -136,6 +137,13 @@
                                         </view>
                                     </subviews>
                                 </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsx-YT-erz">
+                                    <rect key="frame" x="346" y="30" width="48" height="30"/>
+                                    <state key="normal" title="Logout"/>
+                                    <connections>
+                                        <action selector="handleLogoutButtonTap:" destination="-1" eventType="touchUpInside" id="Oxo-vU-8ZL"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
@@ -145,6 +153,8 @@
                                 <constraint firstItem="oCS-0V-8FL" firstAttribute="leading" secondItem="W0I-95-eI3" secondAttribute="leading" constant="20" id="DOc-km-waj"/>
                                 <constraint firstAttribute="bottom" secondItem="R7o-Tq-cU1" secondAttribute="bottom" id="EIM-yR-tpO"/>
                                 <constraint firstItem="oCS-0V-8FL" firstAttribute="top" secondItem="W0I-95-eI3" secondAttribute="top" constant="30" id="LXl-0O-UfH"/>
+                                <constraint firstItem="Xsx-YT-erz" firstAttribute="trailing" secondItem="oCS-0V-8FL" secondAttribute="trailing" id="PaG-W6-bDW"/>
+                                <constraint firstItem="Xsx-YT-erz" firstAttribute="top" secondItem="oCS-0V-8FL" secondAttribute="top" id="oSe-JE-TTG"/>
                                 <constraint firstAttribute="trailing" secondItem="oCS-0V-8FL" secondAttribute="trailing" constant="20" id="vNC-Qm-z8T"/>
                             </constraints>
                         </view>

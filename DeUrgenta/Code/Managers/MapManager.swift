@@ -30,6 +30,7 @@ class MapManager: NSObject {
     }
     
     private var currentGeocodeRequest: NMAGeocodeRequest?
+    private var currentReverseGeocodeRequest: NMAReverseGeocodeRequest?
     
     static let defaultGeoCenter = CLLocationCoordinate2D(
         latitude: Double(Config.shared.configValue(of: .mapCenterLatitude)) ?? 0,
@@ -116,6 +117,46 @@ class MapManager: NSObject {
                 self?.currentGeocodeRequest = nil
             }
         }
+        return promise
+    }
+    
+    func reverseGeocode(_ coordinate: CLLocationCoordinate2D) -> Promise<MapLocation> {
+        let promise = Promise<MapLocation>.pending()
+        
+        if let currentRequest = currentReverseGeocodeRequest {
+            // cancel any ongoing requests
+            currentRequest.cancel()
+        }
+        
+        let c = NMAGeoCoordinates()
+        c.latitude = coordinate.latitude
+        c.longitude = coordinate.longitude
+        currentReverseGeocodeRequest = NMAGeocoder.sharedInstance()
+            .createReverseGeocodeRequest(coordinates: c)
+        currentReverseGeocodeRequest?.start { [weak self] (req, data, error) in
+                if let error = error {
+                    promise.reject(error)
+                    self?.currentReverseGeocodeRequest = nil
+                } else {
+                    guard let list = data as? [NMAReverseGeocodeResult],
+                          let first = list.first,
+                          let location = first.location,
+                          let position = location.position else {
+                        promise.reject(ErrorType.locationNotFound)
+                        self?.currentReverseGeocodeRequest = nil
+                        return
+                    }
+
+                    let mapLocation = MapLocation(
+                        address: location.address?.formattedAddress ?? "",
+                        location: CLLocationCoordinate2D(
+                            latitude: position.latitude, longitude: position.longitude)
+                    )
+                    
+                    promise.fulfill(mapLocation)
+                    self?.currentReverseGeocodeRequest = nil
+                }
+            }
         return promise
     }
     

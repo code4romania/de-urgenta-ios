@@ -1,17 +1,17 @@
 //
-//  SignupViewController.swift
+//  LoginViewController.swift
 //  DeUrgenta
 //
-//  Created by Cristi Habliuc on 03.04.2021.
+//  Created by Cristi Habliuc on 23.04.2021.
 //
 
 import UIKit
 import Promises
 
-class SignupViewController: DUViewController {
-    let model = SignupViewModel()
+class LoginViewController: DUViewController {
+    let model = LoginViewModel()
     
-    @IBOutlet weak var registerButton: DUActionButton!
+    @IBOutlet weak var loginButton: DUActionButton!
     @IBOutlet weak var emailField: DUFormTextFieldContainer!
     @IBOutlet weak var passwordField: DUFormTextFieldContainer!
     
@@ -19,7 +19,6 @@ class SignupViewController: DUViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureFields()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,7 +27,7 @@ class SignupViewController: DUViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
-    @IBAction func handleRegisterButtonTap(_ sender: Any) {
+    @IBAction func handleLoginButtonTap(_ sender: Any) {
         updateModel()
         model.validate()
             .then { self.submit() }
@@ -37,24 +36,8 @@ class SignupViewController: DUViewController {
                 self.isFullscreenSpinnerVisible = false
                 self.showAlert(
                     withTitle: "Eroare",
-                    message: "Nu am putut trimite cererea: \(error.localizedDescription)")
+                    message: "Autentificarea a eșuat: \(error.localizedDescription)")
             }
-    }
-    
-    private func configureFields() {
-        let fields: [DUFormTextFieldContainer] = [ emailField, passwordField ]
-        fields.forEach { field in
-            let fieldIndex = fields.firstIndex(of: field)!
-            if fieldIndex == fields.endIndex - 1 {
-                field.onNext = { self.handleRegisterButtonTap(self.registerButton!) }
-                field.keyboardReturnType = .go
-            } else {
-                let nextFieldIndex = fields.index(after: fieldIndex)
-                let nextField = fields[nextFieldIndex]
-                field.onNext = { nextField.textField.becomeFirstResponder() }
-                field.keyboardReturnType = .next
-            }
-        }
     }
     
     private func updateModel() {
@@ -64,7 +47,7 @@ class SignupViewController: DUViewController {
     
     private func handleSuccess() {
         isFullscreenSpinnerVisible = false
-        LogInfo("Signed up.")
+        LogInfo("Logged in.")
         AppRouter.shared.navigateToDashboard()
     }
     

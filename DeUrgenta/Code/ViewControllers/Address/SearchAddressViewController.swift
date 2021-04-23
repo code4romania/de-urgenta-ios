@@ -14,22 +14,46 @@ class SearchAddressViewController: DUViewController {
     let model = SearchAddressViewModel()
     
     @IBOutlet weak var searchFieldContainer: UIView!
-    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var resultsTableView: UITableView!
     @IBOutlet weak var mapContainer: UIView!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var saveSpinner: UIActivityIndicatorView!
     @IBOutlet weak var locationButton: UIButton!
+    @IBOutlet weak var locationSpinner: UIActivityIndicatorView!
     
     private var map: NMAMapView!
     private var mapMarker: NMAMapMarker?
     private let zoomedOutLevel: Float = 8
     private let zoomedInLevel: Float = 20
+    
+    private let addressSearchController = UISearchController(searchResultsController: nil)
+    
+    private var isLocating: Bool = false {
+        didSet {
+            locationButton.isEnabled = !isLocating
+            isLocating ? locationSpinner.startAnimating() : locationSpinner.stopAnimating()
+        }
+    }
+    
+    private var isLoading: Bool = false {
+        didSet {
+            saveButton.isEnabled = !isLoading
+            isLoading
+                ? saveSpinner.startAnimating()
+                : saveSpinner.stopAnimating()
+        }
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDependencies()
         setupTableView()
-        title = "Adaugă-ți adresa de domiciliu"
+        title = model.screenTitle
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,6 +76,12 @@ class SearchAddressViewController: DUViewController {
         map.snp.makeConstraints { make in
             make.edges.equalTo(mapContainer)
         }
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(handleLocationUpdate),
+            name: .NMAPositioningManagerDidUpdatePosition,
+            object: NMAPositioningManager.sharedInstance())
     }
     
     private func setupTableView() {
@@ -87,7 +117,7 @@ class SearchAddressViewController: DUViewController {
     
     private func updateResults() {
         resultsTableView.reloadData()
-        resultsTableView.isHidden = model.searchResults.isEmpty || !searchTextField.isEditing
+        resultsTableView.isHidden = model.searchResults.isEmpty || !searchBar.isFirstResponder
     }
     
     private func updateSaveButton(animated: Bool = false) {
@@ -116,36 +146,39 @@ class SearchAddressViewController: DUViewController {
     }
     
     @IBAction func handleLocationAction(_ sender: Any) {
-        // TODO: implement proper localization
-//        MapManager.shared.getPermissions()
-//            .then {
-//                MapManager.shared.askForLocation()
-//                    .then { LogInfo("found location: \($0)") }
-//                    .catch {LogError("can't get location: \($0)") }
-//            }
-//            .catch { LogError("can't get permission: \($0)") }
-    }
-}
-
-extension SearchAddressViewController: UITextFieldDelegate {
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
-        searchDelayed(text)
-        return true
+        guard !MapManager.shared.isLocationAccessDenied else {
+            LogError("location access denied.")
+            return
+        }
+        
+        let didStart = NMAPositioningManager.sharedInstance().startPositioning()
+        LogDebug("did start positioning? \(didStart)")
+        
+        if didStart {
+            isLocating = true
+        }
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        updateResults()
-    }
-    
-    func textFieldShouldClear(_ textField: UITextField) -> Bool {
-        return true
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        updateResults()
-        return true
+    @objc
+    private func handleLocationUpdate() {
+        let position = NMAPositioningManager.sharedInstance().rawPosition
+        guard let coordinates = position?.coordinates else { return }
+        let c2d = CLLocationCoordinate2D(
+            latitude: coordinates.latitude,
+            longitude: coordinates.longitude
+        )
+        LogDebug("found coordinate: \(c2d)")
+        MapManager.shared.reverseGeocode(c2d)
+            .then { [weak self] location in
+                self?.model.selectedLocation = location
+                self?.isLocating = false
+                self?.updateMap()
+                self?.updateSaveButton()
+                self?.searchBar.text = self?.model.userAddress
+                LogDebug("Reversed geocode of location: \(location)")
+                NMAPositioningManager.sharedInstance().stopPositioning()
+            }
+            .catch { LogError("Could not reverse geocode: \($0)") }
     }
 }
 
@@ -181,7 +214,7 @@ extension SearchAddressViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        searchTextField.resignFirstResponder()
+        searchBar.resignFirstResponder()
         model.selectedLocation = model.searchResults[indexPath.row]
         updateResults()
         updateMap()
@@ -189,3 +222,4 @@ extension SearchAddressViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+

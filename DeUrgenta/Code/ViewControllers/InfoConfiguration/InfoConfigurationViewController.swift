@@ -14,6 +14,7 @@ class InfoConfigurationViewController: DUViewController {
     
     @IBOutlet weak var headerContainerView: UIView!
     @IBOutlet weak var contentStackView: UIStackView!
+    @IBOutlet weak var logoutButton: UIButton!
     
     @IBOutlet weak var configureAddressesItemView: InfoConfigurationItemView!
     @IBOutlet weak var createGroupItemView: InfoConfigurationItemView!
@@ -45,6 +46,7 @@ class InfoConfigurationViewController: DUViewController {
         self.createGroupItemView.enabled = self.model.hasConfiguredAddresses
         self.emergencyBagItemView.enabled = self.model.hasConfiguredAddresses
         self.firstAidTutorialItemView.enabled = self.model.hasConfiguredAddresses
+        logoutButton.tintColor = .mainAccent
         
         self.setupConfigureAddressesItem()
         self.setupCreateGroupItem()
@@ -102,4 +104,8 @@ class InfoConfigurationViewController: DUViewController {
         }
     }
 
+    @IBAction func handleLogoutButtonTap(_ sender: Any) {
+        AccountManager.shared.logout()
+        AppRouter.shared.navigateToStart()
+    }
 }
