@@ -36,6 +36,10 @@ Cocoapods
 
 Core Data with sqlite
 
+### API endpoints
+
+[Swagger](https://api.deurgenta.hostmysite.ro/swagger/index.html)
+
 ## Repos and projects
 
 [Android repo](https://github.com/code4romania/de-urgenta-android)   
