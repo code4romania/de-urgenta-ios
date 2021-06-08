@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="StoredAddress" representedClassName="StoredAddress" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredLocation"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredUser" inverseName="addresses" inverseEntity="StoredUser"/>
+    </entity>
+    <entity name="StoredBackpack" representedClassName="StoredBackpack" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StoredBackpackItem" inverseName="backpack" inverseEntity="StoredBackpackItem"/>
+        <relationship name="managers" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StoredFriend"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredUser" inverseName="backpacks" inverseEntity="StoredUser"/>
+    </entity>
+    <entity name="StoredBackpackItem" representedClassName="StoredBackpackItem" syncable="YES" codeGenerationType="class">
+        <attribute name="expirationDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="backpack" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredBackpack" inverseName="items" inverseEntity="StoredBackpack"/>
+    </entity>
+    <entity name="StoredFriend" representedClassName="StoredFriend" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phoneNumber" optional="YES" attributeType="String"/>
+        <attribute name="userId" optional="YES" attributeType="String"/>
+        <relationship name="friendGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredFriendGroup" inverseName="friends" inverseEntity="StoredFriendGroup"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredUser" inverseName="allFriends" inverseEntity="StoredUser"/>
+    </entity>
+    <entity name="StoredFriendGroup" representedClassName="StoredFriendGroup" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isAdmin" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="StoredFriend" inverseName="friendGroup" inverseEntity="StoredFriend"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredUser"/>
+    </entity>
+    <entity name="StoredLocation" representedClassName="StoredLocation" syncable="YES" codeGenerationType="class">
+        <attribute name="address" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="StoredMeetingPoint" representedClassName="StoredMeetingPoint" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isMain" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="location" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredLocation"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="StoredUser" inverseName="meetingPoints" inverseEntity="StoredUser"/>
+    </entity>
+    <entity name="StoredUser" representedClassName="StoredUser" syncable="YES" codeGenerationType="class">
+        <attribute name="email" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="addresses" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="StoredAddress" inverseName="user" inverseEntity="StoredAddress"/>
+        <relationship name="allFriends" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="StoredFriend" inverseName="user" inverseEntity="StoredFriend"/>
+        <relationship name="backpacks" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="StoredBackpack" inverseName="user" inverseEntity="StoredBackpack"/>
+        <relationship name="meetingPoints" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="StoredMeetingPoint" inverseName="user" inverseEntity="StoredMeetingPoint"/>
+    </entity>
+    <elements>
+        <element name="StoredUser" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="StoredAddress" positionX="-54" positionY="9" width="128" height="89"/>
+        <element name="StoredLocation" positionX="-36" positionY="36" width="128" height="74"/>
+        <element name="StoredMeetingPoint" positionX="-27" positionY="63" width="128" height="103"/>
+        <element name="StoredFriend" positionX="-18" positionY="81" width="128" height="133"/>
+        <element name="StoredFriendGroup" positionX="0" positionY="108" width="128" height="118"/>
+        <element name="StoredBackpack" positionX="18" positionY="126" width="128" height="118"/>
+        <element name="StoredBackpackItem" positionX="-27" positionY="72" width="128" height="133"/>
+    </elements>
+</model>
