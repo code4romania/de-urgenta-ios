@@ -28,6 +28,11 @@ class AppManager: NSObject {
         // Make sure you created a Here map account and added the details into your LocalConfig.xcconfig
         MapManager.shared.configure()
         
+        // Load the core data container
+        LocalStorage.shared.createLocalContainer { container in
+            LogInfo("Loaded container.")
+        }
+        
         // Load the remote config
         // TODO: load before UI
         Config.shared.loadRemoteConfig()

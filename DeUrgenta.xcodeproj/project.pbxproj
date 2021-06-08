@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2841F76A266F535D005A02E5 /* Local.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2841F768266F535D005A02E5 /* Local.xcdatamodeld */; };
+		2841F76C266F5497005A02E5 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2841F76B266F5496005A02E5 /* LocalStorage.swift */; };
+		2841F76F266F5FD0005A02E5 /* LocalStorage+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2841F76E266F5FD0005A02E5 /* LocalStorage+User.swift */; };
 		284449312617539600B7F3A2 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449302617539600B7F3A2 /* AppRouter.swift */; };
 		284449362617696400B7F3A2 /* SearchTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449342617696400B7F3A2 /* SearchTableCell.swift */; };
 		284449372617696400B7F3A2 /* SearchTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 284449352617696400B7F3A2 /* SearchTableCell.xib */; };
@@ -79,6 +82,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2841F769266F535D005A02E5 /* Local.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Local.xcdatamodel; sourceTree = "<group>"; };
+		2841F76B266F5496005A02E5 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
+		2841F76E266F5FD0005A02E5 /* LocalStorage+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalStorage+User.swift"; sourceTree = "<group>"; };
 		284449302617539600B7F3A2 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		284449342617696400B7F3A2 /* SearchTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableCell.swift; sourceTree = "<group>"; };
 		284449352617696400B7F3A2 /* SearchTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableCell.xib; sourceTree = "<group>"; };
@@ -175,6 +181,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2841F767266F5345005A02E5 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				2841F76D266F5F8D005A02E5 /* Entities */,
+				2841F768266F535D005A02E5 /* Local.xcdatamodeld */,
+				2841F76B266F5496005A02E5 /* LocalStorage.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		2841F76D266F5F8D005A02E5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2841F76E266F5FD0005A02E5 /* LocalStorage+User.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		284449332617693D00B7F3A2 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +211,7 @@
 		284449422618699E00B7F3A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2841F767266F5345005A02E5 /* Local */,
 				28C2FA2B2631C540000DF69B /* Network */,
 				28444943261869B000B7F3A2 /* AddressModels.swift */,
 			);
@@ -673,6 +698,7 @@
 				3407C09B261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift in Sources */,
 				28C2FA612631CC4A000DF69B /* DUAPI.swift in Sources */,
 				3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */,
+				2841F76F266F5FD0005A02E5 /* LocalStorage+User.swift in Sources */,
 				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
 				28C2FA322631C654000DF69B /* DUAPICore.swift in Sources */,
 				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
@@ -684,6 +710,7 @@
 				286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */,
 				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
 				284449632619C85200B7F3A2 /* AddressConfirmationViewController.swift in Sources */,
+				2841F76A266F535D005A02E5 /* Local.xcdatamodeld in Sources */,
 				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
 				28444944261869B000B7F3A2 /* AddressModels.swift in Sources */,
 				28C2FA492631C958000DF69B /* AccountManager.swift in Sources */,
@@ -696,6 +723,7 @@
 				2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */,
 				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
 				34F9B1942618669F0017EDD4 /* InfoConfigurationHeaderView.swift in Sources */,
+				2841F76C266F5497005A02E5 /* LocalStorage.swift in Sources */,
 				286DF872261710C200314935 /* UIImage+Presets.swift in Sources */,
 				284449362617696400B7F3A2 /* SearchTableCell.swift in Sources */,
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
@@ -896,6 +924,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		2841F768266F535D005A02E5 /* Local.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2841F769266F535D005A02E5 /* Local.xcdatamodel */,
+			);
+			currentVersion = 2841F769266F535D005A02E5 /* Local.xcdatamodel */;
+			path = Local.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

@@ -73,7 +73,9 @@ class LoginViewModel: NSObject {
     
     private func authenticateWithStoredCredentials() -> Promise<()> {
         storeCredentials()
-        return AccountManager.shared.authenticate()
+        return AccountManager.shared.authenticate().then {
+            AccountManager.shared.createStoredUserIfNecessary()
+        }
     }
 
 }
