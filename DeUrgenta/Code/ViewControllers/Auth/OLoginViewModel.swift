@@ -8,7 +8,7 @@
 import UIKit
 import Promises
 
-class LoginViewModel: NSObject {
+class OLoginViewModel: NSObject {
     enum FieldType {
         case email
         case password

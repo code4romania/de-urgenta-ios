@@ -1,4 +1,4 @@
-platform :ios, '10.0'
+platform :ios, '14.1'
 use_frameworks! :linkage => :static
 
 target 'DeUrgenta' do

@@ -12,6 +12,8 @@ import FirebaseCore
 class AppManager: NSObject {
     static let shared = AppManager()
     
+    static var disableDependencies = false
+    
     private var isSetupComplete = false
     
     private override init() {
@@ -19,29 +21,31 @@ class AppManager: NSObject {
     }
     
     func setup() {
-        guard !isSetupComplete else { return }
+        guard !Self.disableDependencies && !isSetupComplete else { return }
         
         // Make sure you created the Firebase project and downloaded the GoogleService-Info.plist
         // file into the project folder, or this will fail
-        FirebaseApp.configure()
-        
-        // Make sure you created a Here map account and added the details into your LocalConfig.xcconfig
-        MapManager.shared.configure()
-        
-        // Load the core data container
-        LocalStorage.shared.createLocalContainer { container in
-            LogInfo("Loaded container.")
+        DispatchQueue.main.async {
+            FirebaseApp.configure()
+            
+            // Make sure you created a Here map account and added the details into your LocalConfig.xcconfig
+            MapManager.shared.configure()
+            
+            // Load the core data container
+            LocalStorage.shared.createLocalContainer { container in
+                LogInfo("Loaded container.")
+            }
+            
+            // Load the remote config
+            // TODO: load before UI
+            Config.shared.loadRemoteConfig()
+                .then { LogDebug("Loaded remote config") }
+                .catch { LogError("Error while loading remote config: \($0)") }
+            
+    //        setupAppearance()
+            
+            self.isSetupComplete = true
         }
-        
-        // Load the remote config
-        // TODO: load before UI
-        Config.shared.loadRemoteConfig()
-            .then { LogDebug("Loaded remote config") }
-            .catch { LogError("Error while loading remote config: \($0)") }
-        
-        setupAppearance()
-        
-        isSetupComplete = true
     }
     
     private func setupAppearance() {

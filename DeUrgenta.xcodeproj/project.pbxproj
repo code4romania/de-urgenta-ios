@@ -24,6 +24,7 @@
 		284449672619C86400B7F3A2 /* AddressConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */; };
 		2844496A2619C8A500B7F3A2 /* DUFormMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449692619C8A500B7F3A2 /* DUFormMessageView.swift */; };
 		2844496E2619EE7A00B7F3A2 /* DULocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844496D2619EE7A00B7F3A2 /* DULocationView.swift */; };
+		2857CDBE26AAA42C00693DF5 /* EmailValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CDBD26AAA42C00693DF5 /* EmailValidationView.swift */; };
 		286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7E62615FF2C00314935 /* AppDelegate.swift */; };
 		286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */; };
 		286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */; };
@@ -47,10 +48,31 @@
 		286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF87E26171E1000314935 /* UIImage+Helpers.swift */; };
 		286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF88126171EC100314935 /* CGFloat+Presets.swift */; };
 		286DF89626171F8600314935 /* DULabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF89526171F8600314935 /* DULabel.swift */; };
-		286DF89A2617200200314935 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8992617200200314935 /* AppFonts.swift */; };
+		286DF89A2617200200314935 /* OAppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8992617200200314935 /* OAppFonts.swift */; };
 		286DF89E261720D100314935 /* DUButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF89D261720D100314935 /* DUButton.swift */; };
 		286DF8A12617211B00314935 /* DUTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A02617211B00314935 /* DUTextField.swift */; };
 		286DF8A42617213F00314935 /* DUTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF8A32617213F00314935 /* DUTextView.swift */; };
+		2878BDBF26AAAF4500696EF7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDBE26AAAF4500696EF7 /* DashboardView.swift */; };
+		2878BDC126AAAFA200696EF7 /* BigTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDC026AAAFA200696EF7 /* BigTitleLabel.swift */; };
+		2878BDC326AAB00000696EF7 /* BodyTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDC226AAB00000696EF7 /* BodyTextLabel.swift */; };
+		2878BDC526AABBB900696EF7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDC426AABBB900696EF7 /* DashboardViewModel.swift */; };
+		28C2A66A26A95FA500F957F9 /* DeUrgentaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A66926A95FA500F957F9 /* DeUrgentaApp.swift */; };
+		28C2A66C26A95FC600F957F9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C2A66B26A95FC600F957F9 /* Colors.xcassets */; };
+		28C2A67226A95FF100F957F9 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A66E26A95FF100F957F9 /* AppImages.swift */; };
+		28C2A67326A95FF100F957F9 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A66F26A95FF100F957F9 /* AppFonts.swift */; };
+		28C2A67426A95FF100F957F9 /* AppDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A67026A95FF100F957F9 /* AppDimensions.swift */; };
+		28C2A67526A95FF100F957F9 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A67126A95FF100F957F9 /* AppColors.swift */; };
+		28C2A67A26A9600700F957F9 /* RoundedEdge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A67826A9600700F957F9 /* RoundedEdge.swift */; };
+		28C2A67B26A9600700F957F9 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A67926A9600700F957F9 /* ButtonStyles.swift */; };
+		28C2A68626A9603800F957F9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A67E26A9603800F957F9 /* HomeView.swift */; };
+		28C2A68726A9603800F957F9 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A68026A9603800F957F9 /* FormTextField.swift */; };
+		28C2A68826A9603800F957F9 /* FormMessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A68126A9603800F957F9 /* FormMessageLabel.swift */; };
+		28C2A68926A9603800F957F9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A68326A9603800F957F9 /* LoginViewModel.swift */; };
+		28C2A68A26A9603800F957F9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A68426A9603800F957F9 /* LoginView.swift */; };
+		28C2A68B26A9603800F957F9 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A68526A9603800F957F9 /* PasswordResetView.swift */; };
+		28C2A68E26A9629700F957F9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C2A68D26A9629700F957F9 /* Preview Assets.xcassets */; };
+		28C2A69226A9723900F957F9 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A69126A9723900F957F9 /* RegisterView.swift */; };
+		28C2A69426A9725A00F957F9 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A69326A9725A00F957F9 /* RegisterViewModel.swift */; };
 		28C2FA2D2631C571000DF69B /* RequestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA2C2631C571000DF69B /* RequestModels.swift */; };
 		28C2FA322631C654000DF69B /* DUAPICore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA312631C654000DF69B /* DUAPICore.swift */; };
 		28C2FA492631C958000DF69B /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2FA482631C958000DF69B /* AccountManager.swift */; };
@@ -61,7 +83,7 @@
 		28D65A362632C89200846226 /* UINavigation+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A352632C89200846226 /* UINavigation+Convenience.swift */; };
 		28D65A3B2632D8B400846226 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A392632D8B400846226 /* LoginViewController.swift */; };
 		28D65A3C2632D8B400846226 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28D65A3A2632D8B400846226 /* LoginViewController.xib */; };
-		28D65A3F2632D8CF00846226 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A3E2632D8CF00846226 /* LoginViewModel.swift */; };
+		28D65A3F2632D8CF00846226 /* OLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A3E2632D8CF00846226 /* OLoginViewModel.swift */; };
 		28D65A422632E20000846226 /* String+Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D65A412632E20000846226 /* String+Validations.swift */; };
 		28D9FF07261742C000C616D8 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF06261742C000C616D8 /* MapManager.swift */; };
 		28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */; };
@@ -99,6 +121,7 @@
 		284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressConfirmationViewModel.swift; sourceTree = "<group>"; };
 		284449692619C8A500B7F3A2 /* DUFormMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUFormMessageView.swift; sourceTree = "<group>"; };
 		2844496D2619EE7A00B7F3A2 /* DULocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DULocationView.swift; sourceTree = "<group>"; };
+		2857CDBD26AAA42C00693DF5 /* EmailValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationView.swift; sourceTree = "<group>"; };
 		286DF7E32615FF2C00314935 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286DF7E62615FF2C00314935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -125,10 +148,31 @@
 		286DF87E26171E1000314935 /* UIImage+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Helpers.swift"; sourceTree = "<group>"; };
 		286DF88126171EC100314935 /* CGFloat+Presets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Presets.swift"; sourceTree = "<group>"; };
 		286DF89526171F8600314935 /* DULabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DULabel.swift; sourceTree = "<group>"; };
-		286DF8992617200200314935 /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		286DF8992617200200314935 /* OAppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAppFonts.swift; sourceTree = "<group>"; };
 		286DF89D261720D100314935 /* DUButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUButton.swift; sourceTree = "<group>"; };
 		286DF8A02617211B00314935 /* DUTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextField.swift; sourceTree = "<group>"; };
 		286DF8A32617213F00314935 /* DUTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUTextView.swift; sourceTree = "<group>"; };
+		2878BDBE26AAAF4500696EF7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		2878BDC026AAAFA200696EF7 /* BigTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTitleLabel.swift; sourceTree = "<group>"; };
+		2878BDC226AAB00000696EF7 /* BodyTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTextLabel.swift; sourceTree = "<group>"; };
+		2878BDC426AABBB900696EF7 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		28C2A66926A95FA500F957F9 /* DeUrgentaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeUrgentaApp.swift; sourceTree = "<group>"; };
+		28C2A66B26A95FC600F957F9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		28C2A66E26A95FF100F957F9 /* AppImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
+		28C2A66F26A95FF100F957F9 /* AppFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		28C2A67026A95FF100F957F9 /* AppDimensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDimensions.swift; sourceTree = "<group>"; };
+		28C2A67126A95FF100F957F9 /* AppColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		28C2A67826A9600700F957F9 /* RoundedEdge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedEdge.swift; sourceTree = "<group>"; };
+		28C2A67926A9600700F957F9 /* ButtonStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		28C2A67E26A9603800F957F9 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		28C2A68026A9603800F957F9 /* FormTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		28C2A68126A9603800F957F9 /* FormMessageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormMessageLabel.swift; sourceTree = "<group>"; };
+		28C2A68326A9603800F957F9 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		28C2A68426A9603800F957F9 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		28C2A68526A9603800F957F9 /* PasswordResetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
+		28C2A68D26A9629700F957F9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28C2A69126A9723900F957F9 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		28C2A69326A9725A00F957F9 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		28C2FA2C2631C571000DF69B /* RequestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModels.swift; sourceTree = "<group>"; };
 		28C2FA312631C654000DF69B /* DUAPICore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUAPICore.swift; sourceTree = "<group>"; };
 		28C2FA482631C958000DF69B /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
@@ -139,7 +183,7 @@
 		28D65A352632C89200846226 /* UINavigation+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigation+Convenience.swift"; sourceTree = "<group>"; };
 		28D65A392632D8B400846226 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		28D65A3A2632D8B400846226 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		28D65A3E2632D8CF00846226 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		28D65A3E2632D8CF00846226 /* OLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OLoginViewModel.swift; sourceTree = "<group>"; };
 		28D65A412632E20000846226 /* String+Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validations.swift"; sourceTree = "<group>"; };
 		28D9FF06261742C000C616D8 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		28D9FF092617501E00C616D8 /* SearchAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewController.swift; sourceTree = "<group>"; };
@@ -235,7 +279,7 @@
 				28D65A2C2631ED6500846226 /* SignupViewModel.swift */,
 				28D65A392632D8B400846226 /* LoginViewController.swift */,
 				28D65A3A2632D8B400846226 /* LoginViewController.xib */,
-				28D65A3E2632D8CF00846226 /* LoginViewModel.swift */,
+				28D65A3E2632D8CF00846226 /* OLoginViewModel.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -246,6 +290,14 @@
 				2844496D2619EE7A00B7F3A2 /* DULocationView.swift */,
 			);
 			path = Lists;
+			sourceTree = "<group>";
+		};
+		2857CDBC26AAA3C500693DF5 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				2857CDBD26AAA42C00693DF5 /* EmailValidationView.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		286DF7DA2615FF2C00314935 = {
@@ -272,7 +324,9 @@
 				286DF81726160F4D00314935 /* Code */,
 				286DF8032616035200314935 /* Config */,
 				286DF8022616034C00314935 /* Resources */,
+				28C2A68C26A9629700F957F9 /* Preview Content */,
 				286DF7E62615FF2C00314935 /* AppDelegate.swift */,
+				28C2A66926A95FA500F957F9 /* DeUrgentaApp.swift */,
 				286DF7F42615FF2E00314935 /* LaunchScreen.storyboard */,
 				286DF7EF2615FF2C00314935 /* DeUrgenta.xcdatamodeld */,
 				286DF8422616240C00314935 /* GoogleService-Info.plist */,
@@ -327,6 +381,7 @@
 			children = (
 				286DF7F22615FF2E00314935 /* Assets.xcassets */,
 				286DF86E2617107700314935 /* AppUI.xcassets */,
+				28C2A66B26A95FC600F957F9 /* Colors.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -334,6 +389,7 @@
 		286DF81726160F4D00314935 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				28C2A67626A95FFD00F957F9 /* UI */,
 				28C2FA302631C610000DF69B /* API */,
 				284449422618699E00B7F3A2 /* Models */,
 				286DF89826171FF000314935 /* Helpers */,
@@ -444,9 +500,115 @@
 		286DF89826171FF000314935 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				286DF8992617200200314935 /* AppFonts.swift */,
+				286DF8992617200200314935 /* OAppFonts.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2878BDBD26AAAF3400696EF7 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				2878BDBE26AAAF4500696EF7 /* DashboardView.swift */,
+				2878BDC426AABBB900696EF7 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		28C2A66D26A95FD800F957F9 /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A67126A95FF100F957F9 /* AppColors.swift */,
+				28C2A67026A95FF100F957F9 /* AppDimensions.swift */,
+				28C2A66F26A95FF100F957F9 /* AppFonts.swift */,
+				28C2A66E26A95FF100F957F9 /* AppImages.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		28C2A67626A95FFD00F957F9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A67C26A9601E00F957F9 /* Views */,
+				28C2A66D26A95FD800F957F9 /* Presets */,
+				28C2A67726A9600700F957F9 /* Styles */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		28C2A67726A9600700F957F9 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A67826A9600700F957F9 /* RoundedEdge.swift */,
+				28C2A67926A9600700F957F9 /* ButtonStyles.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		28C2A67C26A9601E00F957F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2878BDBD26AAAF3400696EF7 /* Dashboard */,
+				28C2A68F26A9721B00F957F9 /* Auth */,
+				28C2A67F26A9603800F957F9 /* Common */,
+				28C2A67D26A9603800F957F9 /* Home */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28C2A67D26A9603800F957F9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A67E26A9603800F957F9 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		28C2A67F26A9603800F957F9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A68026A9603800F957F9 /* FormTextField.swift */,
+				28C2A68126A9603800F957F9 /* FormMessageLabel.swift */,
+				2878BDC026AAAFA200696EF7 /* BigTitleLabel.swift */,
+				2878BDC226AAB00000696EF7 /* BodyTextLabel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		28C2A68226A9603800F957F9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A68326A9603800F957F9 /* LoginViewModel.swift */,
+				28C2A68426A9603800F957F9 /* LoginView.swift */,
+				28C2A68526A9603800F957F9 /* PasswordResetView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		28C2A68C26A9629700F957F9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A68D26A9629700F957F9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28C2A68F26A9721B00F957F9 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2857CDBC26AAA3C500693DF5 /* Validation */,
+				28C2A68226A9603800F957F9 /* Login */,
+				28C2A69026A9722100F957F9 /* Register */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		28C2A69026A9722100F957F9 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				28C2A69126A9723900F957F9 /* RegisterView.swift */,
+				28C2A69326A9725A00F957F9 /* RegisterViewModel.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		28C2FA2B2631C540000DF69B /* Network */ = {
@@ -591,12 +753,14 @@
 				2844495226189BDD00B7F3A2 /* SignupViewController.xib in Resources */,
 				284449372617696400B7F3A2 /* SearchTableCell.xib in Resources */,
 				286DF7F62615FF2E00314935 /* LaunchScreen.storyboard in Resources */,
+				28C2A68E26A9629700F957F9 /* Preview Assets.xcassets in Resources */,
 				286DF86F2617107700314935 /* AppUI.xcassets in Resources */,
 				284449642619C85200B7F3A2 /* AddressConfirmationViewController.xib in Resources */,
 				286DF7F32615FF2E00314935 /* Assets.xcassets in Resources */,
 				286DF82D26161C0F00314935 /* IBMPlexSans-Bold.ttf in Resources */,
 				34F9B198261866A80017EDD4 /* InfoConfigurationHeaderView.xib in Resources */,
 				28D65A3C2632D8B400846226 /* LoginViewController.xib in Resources */,
+				28C2A66C26A95FC600F957F9 /* Colors.xcassets in Resources */,
 				286DF82C26161C0F00314935 /* IBMPlexSans-Regular.ttf in Resources */,
 				286DF82B26161C0F00314935 /* IBMPlexSans-Medium.ttf in Resources */,
 				286DF81F26160FAB00314935 /* WelcomeViewController.xib in Resources */,
@@ -682,23 +846,37 @@
 				286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */,
 				28C2FA2D2631C571000DF69B /* RequestModels.swift in Sources */,
 				28D65A312632BF7500846226 /* AppEntryViewController.swift in Sources */,
+				28C2A67A26A9600700F957F9 /* RoundedEdge.swift in Sources */,
 				286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */,
+				28C2A68926A9603800F957F9 /* LoginViewModel.swift in Sources */,
 				28D9FF0B2617501E00C616D8 /* SearchAddressViewController.swift in Sources */,
 				2844496A2619C8A500B7F3A2 /* DUFormMessageView.swift in Sources */,
-				286DF89A2617200200314935 /* AppFonts.swift in Sources */,
+				28C2A68726A9603800F957F9 /* FormTextField.swift in Sources */,
+				28C2A67226A95FF100F957F9 /* AppImages.swift in Sources */,
+				286DF89A2617200200314935 /* OAppFonts.swift in Sources */,
 				3407C09726177AFB00C4ABAD /* UIView+Designables.swift in Sources */,
 				286DF89626171F8600314935 /* DULabel.swift in Sources */,
 				286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */,
+				28C2A68B26A9603800F957F9 /* PasswordResetView.swift in Sources */,
 				286DF8A12617211B00314935 /* DUTextField.swift in Sources */,
+				28C2A67326A95FF100F957F9 /* AppFonts.swift in Sources */,
+				2857CDBE26AAA42C00693DF5 /* EmailValidationView.swift in Sources */,
+				2878BDBF26AAAF4500696EF7 /* DashboardView.swift in Sources */,
 				28D65A3B2632D8B400846226 /* LoginViewController.swift in Sources */,
 				2844496E2619EE7A00B7F3A2 /* DULocationView.swift in Sources */,
+				28C2A69426A9725A00F957F9 /* RegisterViewModel.swift in Sources */,
 				34F9A8B326188CD7007883ED /* DUNibView.swift in Sources */,
+				2878BDC126AAAFA200696EF7 /* BigTitleLabel.swift in Sources */,
 				28D65A422632E20000846226 /* String+Validations.swift in Sources */,
+				28C2A67526A95FF100F957F9 /* AppColors.swift in Sources */,
+				28C2A69226A9723900F957F9 /* RegisterView.swift in Sources */,
 				34F9A8B026188931007883ED /* InfoConfigurationViewModel.swift in Sources */,
 				3407C09B261862EB00C4ABAD /* InfoConfigurationWelcomHeaderView.swift in Sources */,
 				28C2FA612631CC4A000DF69B /* DUAPI.swift in Sources */,
 				3407C09026177AA000C4ABAD /* InfoConfigurationItemView.swift in Sources */,
+				28C2A67B26A9600700F957F9 /* ButtonStyles.swift in Sources */,
 				2841F76F266F5FD0005A02E5 /* LocalStorage+User.swift in Sources */,
+				28C2A68A26A9603800F957F9 /* LoginView.swift in Sources */,
 				286DF88226171EC100314935 /* CGFloat+Presets.swift in Sources */,
 				28C2FA322631C654000DF69B /* DUAPICore.swift in Sources */,
 				286DF8A42617213F00314935 /* DUTextView.swift in Sources */,
@@ -712,17 +890,23 @@
 				284449632619C85200B7F3A2 /* AddressConfirmationViewController.swift in Sources */,
 				2841F76A266F535D005A02E5 /* Local.xcdatamodeld in Sources */,
 				286DF7F12615FF2C00314935 /* DeUrgenta.xcdatamodeld in Sources */,
+				28C2A68826A9603800F957F9 /* FormMessageLabel.swift in Sources */,
 				28444944261869B000B7F3A2 /* AddressModels.swift in Sources */,
 				28C2FA492631C958000DF69B /* AccountManager.swift in Sources */,
 				28D65A2D2631ED6500846226 /* SignupViewModel.swift in Sources */,
 				28D9FF07261742C000C616D8 /* MapManager.swift in Sources */,
 				284449312617539600B7F3A2 /* AppRouter.swift in Sources */,
-				28D65A3F2632D8CF00846226 /* LoginViewModel.swift in Sources */,
+				28D65A3F2632D8CF00846226 /* OLoginViewModel.swift in Sources */,
+				28C2A68626A9603800F957F9 /* HomeView.swift in Sources */,
 				284449672619C86400B7F3A2 /* AddressConfirmationViewModel.swift in Sources */,
+				2878BDC526AABBB900696EF7 /* DashboardViewModel.swift in Sources */,
 				2844495126189BDD00B7F3A2 /* SignupViewController.swift in Sources */,
 				2844493E261772EB00B7F3A2 /* SearchAddressViewModel.swift in Sources */,
+				2878BDC326AAB00000696EF7 /* BodyTextLabel.swift in Sources */,
 				286DF86626170F3C00314935 /* UIColor+Presets.swift in Sources */,
+				28C2A66A26A95FA500F957F9 /* DeUrgentaApp.swift in Sources */,
 				34F9B1942618669F0017EDD4 /* InfoConfigurationHeaderView.swift in Sources */,
+				28C2A67426A95FF100F957F9 /* AppDimensions.swift in Sources */,
 				2841F76C266F5497005A02E5 /* LocalStorage.swift in Sources */,
 				286DF872261710C200314935 /* UIImage+Presets.swift in Sources */,
 				284449362617696400B7F3A2 /* SearchTableCell.swift in Sources */,
@@ -870,10 +1054,12 @@
 			baseConfigurationReference = DC88B7137D83E9311936D03A /* Pods-DeUrgenta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Accent;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"DeUrgenta/Preview Content\"";
 				INFOPLIST_FILE = DeUrgenta/Config/Info/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -888,9 +1074,11 @@
 			baseConfigurationReference = DD54DF3695A75FE034714CC5 /* Pods-DeUrgenta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = Accent;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"DeUrgenta/Preview Content\"";
 				INFOPLIST_FILE = DeUrgenta/Config/Info/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

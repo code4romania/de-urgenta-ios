@@ -9,7 +9,7 @@ import UIKit
 import Promises
 
 class LoginViewController: DUViewController {
-    let model = LoginViewModel()
+    let model = OLoginViewModel()
     
     @IBOutlet weak var loginButton: DUActionButton!
     @IBOutlet weak var emailField: DUFormTextFieldContainer!
