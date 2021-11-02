@@ -20,6 +20,10 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>DEBUG_LOGIN_EMAIL</key>
+	<string>$(DEBUG_LOGIN_EMAIL)</string>
+	<key>DEBUG_LOGIN_PASS</key>
+	<string>$(DEBUG_LOGIN_PASS)</string>
 	<key>HERE_MAP_APP_CODE</key>
 	<string>$(HERE_MAP_APP_CODE)</string>
 	<key>HERE_MAP_APP_ID</key>
@@ -32,10 +36,33 @@
 	<string>$(MAP_CENTER_LATITUDE)</string>
 	<key>MAP_CENTER_LONGITUDE</key>
 	<string>$(MAP_CENTER_LONGITUDE)</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Vom folosi locatia dvs. doar pentru a va localiza pe harta</string>
 	<key>NSLocationUsageDescription</key>
 	<string>Vom folosi locatia dvs. doar pentru a va localiza pe harta</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Avem nevoie de acordul dvs. pentru a va putea localiza pe harta</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Avem nevoie de acordul dvs. pentru a va putea localiza pe harta</string>
+    <key>NSMotionUsageDescription</key>
+    <string>Avem nevoie de acordul dvs. pentru a va putea localiza pe harta</string>
+    <key>NSAppTransportSecurity</key>
+        <dict>
+            <key>NSExceptionDomains</key>
+            <dict>
+                <key>here.com</key>
+                <dict>
+                    <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                    <true/>
+                    <key>NSIncludesSubdomains</key>
+                    <true/>
+                </dict>
+            </dict>
+        </dict>
+        <key>NSBluetoothPeripheralUsageDescription</key>
+        <string>This is needed to determine your current location</string>
+        <key>NSBluetoothAlwaysUsageDescription</key>
+        <string>This is needed for the indoor positioning feature</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>IBMPlexSans-Bold.ttf</string>

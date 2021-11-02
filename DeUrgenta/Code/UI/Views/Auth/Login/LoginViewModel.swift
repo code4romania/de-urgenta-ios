@@ -57,6 +57,13 @@ extension LoginView {
             }
         }
         
+        init() {
+            #if DEBUG
+            email = Config.shared.configValue(of: .debugLoginEmail)
+            password = Config.shared.configValue(of: .debugLoginPass)
+            #endif
+        }
+        
         func submit() {
             guard !isLoading else { return }
             isError = false
@@ -80,6 +87,7 @@ extension LoginView {
                 currentError = ModelError.incorrect(what: .email)
                 return
             }
+            currentError = nil
             return
         }
         
@@ -89,12 +97,12 @@ extension LoginView {
         }
         
         private func authenticateWithStoredCredentials() {
-            storeCredentials()
             AccountManager.shared.authenticate()
                 .then { [weak self] in
                     AccountManager.shared.createStoredUserIfNecessary()
                     self?.isLoggedIn = true
                     self?.isLoading = false
+                    MainAppEnvironment.shared.navigationRoute = .authenticated
                 }
                 .catch { [weak self] error in
                     self?.currentError = ModelError.serverError(reason: error)

@@ -55,7 +55,8 @@ struct RegisterView: View {
         }
         .padding()
         .navigationTitle("Creează-ți contul")
-        
+        .standardNavigationAppearance()
+
         NavigationLink(
             destination: HomeView(),
             isActive: $viewModel.isSuccess,

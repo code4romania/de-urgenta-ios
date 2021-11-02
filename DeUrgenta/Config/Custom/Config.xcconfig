@@ -26,5 +26,7 @@ HERE_MAP_APP_CODE =
 HERE_MAP_LICENSE_KEY =
 // Turn this to true in your LocalConfig to see all API raw output
 VERBOSE_API = false
+DEBUG_LOGIN_EMAIL =
+DEBUG_LOGIN_PASS = 
 
 #include? "LocalConfig.xcconfig"

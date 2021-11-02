@@ -9,25 +9,27 @@ import SwiftUI
 
 @main
 struct DeUrgentaApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                HomeView()
-            }
+            MainNavigation()
             .onAppear(perform: {
-                AppManager.shared.setup()
-                setupAppearance()
+//                AppManager.shared.setup()
+                Self.setupAppearance()
             })
         }
     }
     
-    private func setupAppearance() {
+    static func setupAppearance() {
         UINavigationBar.appearance().titleTextAttributes = [
-            .font: UIFont.navigationTitle!
+            .font: UIFont.navigationTitle!,
+            .foregroundColor: UIColor.white
         ]
         UINavigationBar.appearance().largeTitleTextAttributes = [
-            .font: UIFont.largeNavigationTitle!
+            .font: UIFont.largeNavigationTitle!,
+            .foregroundColor: UIColor.white
         ]
-        
+        UINavigationBar.appearance().barTintColor = UIColor.mainAccent
     }
 }

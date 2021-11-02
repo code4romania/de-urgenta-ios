@@ -8,7 +8,7 @@
 import Foundation
 
 struct AuthResponse: Decodable {
-    var token: String
+    var token: String?
     var success: Bool?
     var errors: [String]?
 }
@@ -16,6 +16,8 @@ struct AuthResponse: Decodable {
 struct RegisterRequest: Encodable {
     var email: String
     var password: String
+    var firstName: String
+    var lastName: String
 }
 
 typealias RegisterResponse = String

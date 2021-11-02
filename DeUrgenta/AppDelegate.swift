@@ -17,10 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         AppManager.shared.setup()
 
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.makeKeyAndVisible()
-        
-        AppRouter.shared.navigateToStart()
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.makeKeyAndVisible()
+//        
+//        AppRouter.shared.navigateToStart()
         
         return true
     }

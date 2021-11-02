@@ -44,6 +44,10 @@ class AppManager: NSObject {
             
     //        setupAppearance()
             
+            if AccountManager.shared.isAuthenticated {
+                MainAppEnvironment.shared.navigationRoute = .authenticated
+            }
+            
             self.isSetupComplete = true
         }
     }

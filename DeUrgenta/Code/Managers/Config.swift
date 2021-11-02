@@ -97,4 +97,6 @@ enum CustomConfigKey: String, CaseIterable {
     case hereMapLicenseKey = "HERE_MAP_LICENSE_KEY"
     case mapCenterLatitude = "MAP_CENTER_LATITUDE"
     case mapCenterLongitude = "MAP_CENTER_LONGITUDE"
+    case debugLoginEmail = "DEBUG_LOGIN_EMAIL"
+    case debugLoginPass = "DEBUG_LOGIN_PASS"
 }

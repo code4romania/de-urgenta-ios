@@ -14,6 +14,14 @@ class AccountManager {
     
     enum AccountError: Error, LocalizedError {
         case noCredentials
+        case loginFailed
+        
+        var errorDescription: String? {
+            switch self {
+            case .noCredentials: return "Te rog să introduci emailul și parola"
+            case .loginFailed: return "Email sau parola greșite"
+            }
+        }
     }
     
     /// Token is only stored in memory and it will refresh on app open
@@ -64,8 +72,13 @@ class AccountManager {
         let request = LoginRequest(email: email, password: password)
         DUAPI.shared.login(request)
             .then { response in
-                self.token = response.token
-                promise.fulfill(())
+                if response.success == true,
+                   let token = response.token {
+                    self.token = token
+                    promise.fulfill(())
+                } else {
+                    promise.reject(AccountError.loginFailed)
+                }
             }
             .catch { promise.reject($0) }
         return promise

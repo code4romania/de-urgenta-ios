@@ -259,6 +259,7 @@ extension DUAPICore: DUAPIType {
         headers["Content-Type"] = "application/json"
         request.allHTTPHeaderFields = headers
         request.httpMethod = method
+        request.cachePolicy = .reloadRevalidatingCacheData
         if body != nil {
             do {
                 request.httpBody = try JSONEncoder().encode(body)
@@ -278,13 +279,14 @@ extension DUAPICore: DUAPIType {
         let promise = Promise<URLRequest>.pending()
 
         var request = URLRequest(url: url)
+        var headers = request.allHTTPHeaderFields ?? [:]
+        headers["Content-Type"] = "application/json"
+        request.allHTTPHeaderFields = headers
         request.httpMethod = method
+        request.cachePolicy = .reloadRevalidatingCacheData
         if body != nil {
             do {
                 request.httpBody = try JSONEncoder().encode(body)
-                var headers = request.allHTTPHeaderFields ?? [:]
-                headers["Content-Type"] = "application/json"
-                request.allHTTPHeaderFields = headers
             } catch {
                 promise.reject(error)
             }

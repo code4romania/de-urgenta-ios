@@ -41,13 +41,15 @@ struct LoginView: View {
         }
         .padding()
         .navigationTitle("Autentifică-te")
+        .navigationBarTitleDisplayMode(.large)
+        .standardNavigationAppearance()
         
-        NavigationLink(
-            destination: HomeView(),
-            isActive: $viewModel.isLoggedIn,
-            label: {
-                EmptyView()
-            })
+//        NavigationLink(
+//            destination: DashboardView(),
+//            isActive: $viewModel.isLoggedIn,
+//            label: {
+//                EmptyView()
+//            })
     }
     
     private func renderButton() -> some View {

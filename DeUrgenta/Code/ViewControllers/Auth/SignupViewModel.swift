@@ -45,7 +45,7 @@ class SignupViewModel: NSObject {
     
     func submit() -> Promise<()> {
         let promise = Promise<()>.pending()
-        let request = RegisterRequest(email: email, password: password)
+        let request = RegisterRequest(email: email, password: password, firstName: "", lastName: "")
         DUAPI.shared.register(request)
             .then { _ in
                 // attempt to auth

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28037A6126DB8B480004A1D3 /* StandardNavbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28037A6026DB8B480004A1D3 /* StandardNavbarModifier.swift */; };
+		28037A7826DCC18B0004A1D3 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28037A7726DCC18B0004A1D3 /* MainNavigation.swift */; };
+		28037A7A26DCC3620004A1D3 /* MainAppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28037A7926DCC3620004A1D3 /* MainAppEnvironment.swift */; };
 		2841F76A266F535D005A02E5 /* Local.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2841F768266F535D005A02E5 /* Local.xcdatamodeld */; };
 		2841F76C266F5497005A02E5 /* LocalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2841F76B266F5496005A02E5 /* LocalStorage.swift */; };
 		2841F76F266F5FD0005A02E5 /* LocalStorage+User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2841F76E266F5FD0005A02E5 /* LocalStorage+User.swift */; };
@@ -24,6 +27,10 @@
 		284449672619C86400B7F3A2 /* AddressConfirmationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */; };
 		2844496A2619C8A500B7F3A2 /* DUFormMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284449692619C8A500B7F3A2 /* DUFormMessageView.swift */; };
 		2844496E2619EE7A00B7F3A2 /* DULocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2844496D2619EE7A00B7F3A2 /* DULocationView.swift */; };
+		2846777E26DA8C79001138BE /* AddressEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846777D26DA8C79001138BE /* AddressEntryView.swift */; };
+		2846778026DA8C89001138BE /* AddressEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846777F26DA8C89001138BE /* AddressEntryViewModel.swift */; };
+		2846778326DA8D58001138BE /* HEREMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846778226DA8D58001138BE /* HEREMapsView.swift */; };
+		2846778626DA97C9001138BE /* FilledNavbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2846778526DA97C9001138BE /* FilledNavbarModifier.swift */; };
 		2857CDBE26AAA42C00693DF5 /* EmailValidationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2857CDBD26AAA42C00693DF5 /* EmailValidationView.swift */; };
 		286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7E62615FF2C00314935 /* AppDelegate.swift */; };
 		286DF7EB2615FF2C00314935 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286DF7EA2615FF2C00314935 /* WelcomeViewController.swift */; };
@@ -56,6 +63,7 @@
 		2878BDC126AAAFA200696EF7 /* BigTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDC026AAAFA200696EF7 /* BigTitleLabel.swift */; };
 		2878BDC326AAB00000696EF7 /* BodyTextLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDC226AAB00000696EF7 /* BodyTextLabel.swift */; };
 		2878BDC526AABBB900696EF7 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2878BDC426AABBB900696EF7 /* DashboardViewModel.swift */; };
+		2886DC5E2730322A0083C08E /* ResignResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2886DC5D2730322A0083C08E /* ResignResponder.swift */; };
 		28C2A66A26A95FA500F957F9 /* DeUrgentaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A66926A95FA500F957F9 /* DeUrgentaApp.swift */; };
 		28C2A66C26A95FC600F957F9 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C2A66B26A95FC600F957F9 /* Colors.xcassets */; };
 		28C2A67226A95FF100F957F9 /* AppImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C2A66E26A95FF100F957F9 /* AppImages.swift */; };
@@ -104,6 +112,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28037A6026DB8B480004A1D3 /* StandardNavbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardNavbarModifier.swift; sourceTree = "<group>"; };
+		28037A7726DCC18B0004A1D3 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		28037A7926DCC3620004A1D3 /* MainAppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppEnvironment.swift; sourceTree = "<group>"; };
 		2841F769266F535D005A02E5 /* Local.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Local.xcdatamodel; sourceTree = "<group>"; };
 		2841F76B266F5496005A02E5 /* LocalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalStorage.swift; sourceTree = "<group>"; };
 		2841F76E266F5FD0005A02E5 /* LocalStorage+User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocalStorage+User.swift"; sourceTree = "<group>"; };
@@ -121,6 +132,10 @@
 		284449662619C86400B7F3A2 /* AddressConfirmationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressConfirmationViewModel.swift; sourceTree = "<group>"; };
 		284449692619C8A500B7F3A2 /* DUFormMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DUFormMessageView.swift; sourceTree = "<group>"; };
 		2844496D2619EE7A00B7F3A2 /* DULocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DULocationView.swift; sourceTree = "<group>"; };
+		2846777D26DA8C79001138BE /* AddressEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEntryView.swift; sourceTree = "<group>"; };
+		2846777F26DA8C89001138BE /* AddressEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEntryViewModel.swift; sourceTree = "<group>"; };
+		2846778226DA8D58001138BE /* HEREMapsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HEREMapsView.swift; sourceTree = "<group>"; };
+		2846778526DA97C9001138BE /* FilledNavbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledNavbarModifier.swift; sourceTree = "<group>"; };
 		2857CDBD26AAA42C00693DF5 /* EmailValidationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidationView.swift; sourceTree = "<group>"; };
 		286DF7E32615FF2C00314935 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		286DF7E62615FF2C00314935 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +171,7 @@
 		2878BDC026AAAFA200696EF7 /* BigTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigTitleLabel.swift; sourceTree = "<group>"; };
 		2878BDC226AAB00000696EF7 /* BodyTextLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTextLabel.swift; sourceTree = "<group>"; };
 		2878BDC426AABBB900696EF7 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		2886DC5D2730322A0083C08E /* ResignResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResignResponder.swift; sourceTree = "<group>"; };
 		28C2A66926A95FA500F957F9 /* DeUrgentaApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeUrgentaApp.swift; sourceTree = "<group>"; };
 		28C2A66B26A95FC600F957F9 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		28C2A66E26A95FF100F957F9 /* AppImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppImages.swift; sourceTree = "<group>"; };
@@ -225,6 +241,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		28037A7626DCC1750004A1D3 /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				28037A7726DCC18B0004A1D3 /* MainNavigation.swift */,
+				28037A7926DCC3620004A1D3 /* MainAppEnvironment.swift */,
+			);
+			path = MainNavigation;
+			sourceTree = "<group>";
+		};
 		2841F767266F5345005A02E5 /* Local */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +315,32 @@
 				2844496D2619EE7A00B7F3A2 /* DULocationView.swift */,
 			);
 			path = Lists;
+			sourceTree = "<group>";
+		};
+		2846777C26DA8C4F001138BE /* Addresses */ = {
+			isa = PBXGroup;
+			children = (
+				2846777D26DA8C79001138BE /* AddressEntryView.swift */,
+				2846777F26DA8C89001138BE /* AddressEntryViewModel.swift */,
+			);
+			path = Addresses;
+			sourceTree = "<group>";
+		};
+		2846778126DA8D36001138BE /* UIViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				2846778226DA8D58001138BE /* HEREMapsView.swift */,
+			);
+			path = UIViewRepresentables;
+			sourceTree = "<group>";
+		};
+		2846778426DA97AF001138BE /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				2846778526DA97C9001138BE /* FilledNavbarModifier.swift */,
+				28037A6026DB8B480004A1D3 /* StandardNavbarModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		2857CDBC26AAA3C500693DF5 /* Validation */ = {
@@ -514,6 +565,14 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
+		2886DC5C273032130083C08E /* ViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				2886DC5D2730322A0083C08E /* ResignResponder.swift */,
+			);
+			path = ViewExtensions;
+			sourceTree = "<group>";
+		};
 		28C2A66D26A95FD800F957F9 /* Presets */ = {
 			isa = PBXGroup;
 			children = (
@@ -528,6 +587,7 @@
 		28C2A67626A95FFD00F957F9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				2846778426DA97AF001138BE /* Modifiers */,
 				28C2A67C26A9601E00F957F9 /* Views */,
 				28C2A66D26A95FD800F957F9 /* Presets */,
 				28C2A67726A9600700F957F9 /* Styles */,
@@ -547,6 +607,8 @@
 		28C2A67C26A9601E00F957F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				28037A7626DCC1750004A1D3 /* MainNavigation */,
+				2846777C26DA8C4F001138BE /* Addresses */,
 				2878BDBD26AAAF3400696EF7 /* Dashboard */,
 				28C2A68F26A9721B00F957F9 /* Auth */,
 				28C2A67F26A9603800F957F9 /* Common */,
@@ -566,6 +628,8 @@
 		28C2A67F26A9603800F957F9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2886DC5C273032130083C08E /* ViewExtensions */,
+				2846778126DA8D36001138BE /* UIViewRepresentables */,
 				28C2A68026A9603800F957F9 /* FormTextField.swift */,
 				28C2A68126A9603800F957F9 /* FormMessageLabel.swift */,
 				2878BDC026AAAFA200696EF7 /* BigTitleLabel.swift */,
@@ -842,9 +906,12 @@
 			files = (
 				286DF8492616FF1000314935 /* AnalyticsManager.swift in Sources */,
 				286DF8752617113D00314935 /* LogManager.swift in Sources */,
+				2846777E26DA8C79001138BE /* AddressEntryView.swift in Sources */,
 				286DF89E261720D100314935 /* DUButton.swift in Sources */,
+				28037A7826DCC18B0004A1D3 /* MainNavigation.swift in Sources */,
 				286DF87F26171E1000314935 /* UIImage+Helpers.swift in Sources */,
 				28C2FA2D2631C571000DF69B /* RequestModels.swift in Sources */,
+				28037A7A26DCC3620004A1D3 /* MainAppEnvironment.swift in Sources */,
 				28D65A312632BF7500846226 /* AppEntryViewController.swift in Sources */,
 				28C2A67A26A9600700F957F9 /* RoundedEdge.swift in Sources */,
 				286DF87B26171D8D00314935 /* DUActionButton.swift in Sources */,
@@ -853,6 +920,7 @@
 				2844496A2619C8A500B7F3A2 /* DUFormMessageView.swift in Sources */,
 				28C2A68726A9603800F957F9 /* FormTextField.swift in Sources */,
 				28C2A67226A95FF100F957F9 /* AppImages.swift in Sources */,
+				2846778626DA97C9001138BE /* FilledNavbarModifier.swift in Sources */,
 				286DF89A2617200200314935 /* OAppFonts.swift in Sources */,
 				3407C09726177AFB00C4ABAD /* UIView+Designables.swift in Sources */,
 				286DF89626171F8600314935 /* DULabel.swift in Sources */,
@@ -861,10 +929,12 @@
 				286DF8A12617211B00314935 /* DUTextField.swift in Sources */,
 				28C2A67326A95FF100F957F9 /* AppFonts.swift in Sources */,
 				2857CDBE26AAA42C00693DF5 /* EmailValidationView.swift in Sources */,
+				2846778026DA8C89001138BE /* AddressEntryViewModel.swift in Sources */,
 				2878BDBF26AAAF4500696EF7 /* DashboardView.swift in Sources */,
 				28D65A3B2632D8B400846226 /* LoginViewController.swift in Sources */,
 				2844496E2619EE7A00B7F3A2 /* DULocationView.swift in Sources */,
 				28C2A69426A9725A00F957F9 /* RegisterViewModel.swift in Sources */,
+				2886DC5E2730322A0083C08E /* ResignResponder.swift in Sources */,
 				34F9A8B326188CD7007883ED /* DUNibView.swift in Sources */,
 				2878BDC126AAAFA200696EF7 /* BigTitleLabel.swift in Sources */,
 				28D65A422632E20000846226 /* String+Validations.swift in Sources */,
@@ -884,6 +954,7 @@
 				2844493B261771B200B7F3A2 /* DUTableViewCell.swift in Sources */,
 				28D65A362632C89200846226 /* UINavigation+Convenience.swift in Sources */,
 				286DF8312616229600314935 /* AppManager.swift in Sources */,
+				2846778326DA8D58001138BE /* HEREMapsView.swift in Sources */,
 				286DF84C261700E800314935 /* Config.swift in Sources */,
 				286DF86B26170FA600314935 /* UIColor+Helpers.swift in Sources */,
 				286DF81B26160F7E00314935 /* DUViewController.swift in Sources */,
@@ -913,6 +984,7 @@
 				286DF7E72615FF2C00314935 /* AppDelegate.swift in Sources */,
 				34F9A8AD26188186007883ED /* UIView+Nib.swift in Sources */,
 				3407C084261777CE00C4ABAD /* InfoConfigurationViewController.swift in Sources */,
+				28037A6126DB8B480004A1D3 /* StandardNavbarModifier.swift in Sources */,
 				28C2FA642631D051000DF69B /* DUSpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

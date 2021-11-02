@@ -69,9 +69,15 @@ class MapManager: NSObject {
     }
     
     func configure() {
-        let appId = Config.shared.configValue(of: .hereMapAppId)
-        let appCode = Config.shared.configValue(of: .hereMapAppCode)
-        let licenseKey = Config.shared.configValue(of: .hereMapLicenseKey)
+        var appId = Config.shared.configValue(of: .hereMapAppId)
+        var appCode = Config.shared.configValue(of: .hereMapAppCode)
+        var licenseKey = Config.shared.configValue(of: .hereMapLicenseKey)
+        if appId.isEmpty {
+            LogDebug("no map config was found, setting debug defaults")
+            appId = "N8gEvvV00fnDzgel4qPp"
+            appCode = "fQ1QTufkN8s4-5G0hP6hoA"
+            licenseKey = "GtYRT6n9YilL6HWXbTzf8s87CAYYo9ip4xX80Lemy3pLq9rhbYK5xUJeIkCTs7P3TjdHsRt50lUsLaWACuKp+W3jwyWh/dd6n5wGKC73Py1UAiUIJjXpTWxm1pNPX8p6WGVPu/MyRj7R5v2WRYvlFdYSTQ62EUf2q9ojSlWnAjQFuINsXYLEYxc+c2QWEOar4dq+vXyN3CE4GJysjHq+WmVfqqZY3vssdpJlhSwrC6rZv+xswBCIO4VnQRdgR8u8imUbvYEsPCE1OCfT1I8Zpo2FZYeUlAwqZbyifgwwnfTejC/F/Tpiqi6hppUvE3/HOAWygL9dYaD8VkVj+sfTfZxDqqZ+sPQsfNxg6Sa6x14K9sQw1t7HMzuYiS9a+XuWxZL+NxbYr5JWOv2iwitduX77vwfiYPLcjkEgmeqIA+FhJ6qr/s89Ebp+BYSBTNfXLADYLlROdH1Xrdf8l97VDQsj6Xs7+QWYT/gPkvJ3TBVn9+4XUzz43FAXNxzfh9+wgcwvk7rZcKgSUzJydLr7/Rpb6XBl4thiKVi00+jG/9A+p7/9Kwpsms32/Y+iqMtAGawN4Rb4ywZZENoH0aah8nK8crAO9c40XpdRulhKoxXgsZ6Du/RTHi/Qt6lyGgqHGmlBnVMfsfvsb/k3qQr2SUtHzxz5nQu8hEP8QPflCWw="
+        }
         NMAApplicationContext.setAppId(appId, appCode: appCode, licenseKey: licenseKey)
         LogDebug("Configured Map SDK")
     }

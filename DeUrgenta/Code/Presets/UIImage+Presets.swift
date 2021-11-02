@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 /// Add all the images to use here, do not hard code them directly in the classes
 extension UIImage {

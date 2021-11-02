@@ -14,7 +14,9 @@ HERE_MAP_APP_ID = N8gEvvV00fnDzgel4qPp
 HERE_MAP_APP_CODE = fQ1QTufkN8s4-5G0hP6hoA
 HERE_MAP_LICENSE_KEY = GtYRT6n9YilL6HWXbTzf8s87CAYYo9ip4xX80Lemy3pLq9rhbYK5xUJeIkCTs7P3TjdHsRt50lUsLaWACuKp+W3jwyWh/dd6n5wGKC73Py1UAiUIJjXpTWxm1pNPX8p6WGVPu/MyRj7R5v2WRYvlFdYSTQ62EUf2q9ojSlWnAjQFuINsXYLEYxc+c2QWEOar4dq+vXyN3CE4GJysjHq+WmVfqqZY3vssdpJlhSwrC6rZv+xswBCIO4VnQRdgR8u8imUbvYEsPCE1OCfT1I8Zpo2FZYeUlAwqZbyifgwwnfTejC/F/Tpiqi6hppUvE3/HOAWygL9dYaD8VkVj+sfTfZxDqqZ+sPQsfNxg6Sa6x14K9sQw1t7HMzuYiS9a+XuWxZL+NxbYr5JWOv2iwitduX77vwfiYPLcjkEgmeqIA+FhJ6qr/s89Ebp+BYSBTNfXLADYLlROdH1Xrdf8l97VDQsj6Xs7+QWYT/gPkvJ3TBVn9+4XUzz43FAXNxzfh9+wgcwvk7rZcKgSUzJydLr7/Rpb6XBl4thiKVi00+jG/9A+p7/9Kwpsms32/Y+iqMtAGawN4Rb4ywZZENoH0aah8nK8crAO9c40XpdRulhKoxXgsZ6Du/RTHi/Qt6lyGgqHGmlBnVMfsfvsb/k3qQr2SUtHzxz5nQu8hEP8QPflCWw=
 VERBOSE_API = true
+DEBUG_LOGIN_EMAIL = cristi.habliuc@gmail.com
+DEBUG_LOGIN_PASS = test123
 
-// see CustomConfig.swift
+// see Config.swift
 // If adding a URL, use http:/$()/ to get around the comment issue in compiling
-//API_URL =
+API_URL = https:/$()/api.deurgenta.hostmysite.ro

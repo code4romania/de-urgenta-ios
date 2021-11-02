@@ -12,28 +12,53 @@ struct DashboardView: View {
     
     var body: some View {
         VStack {
-            HStack {
-                BigTitleLabel(title: "Felicitari, Cristi!")
-                Spacer()
+            if viewModel.isFirstTimeVisit {
+                HStack {
+                    BigTitleLabel(title: "Felicitări, Cristi!")
+                    Spacer()
+                }
+                
+                Spacer().frame(height: 40)
+                
+                FormMessageLabel(message: "Contul tău a fost validat.")
+                
+                Spacer().frame(height: 18)
+                
+                HStack {
+                    BodyTextLabel(text: "Mai departe te rugăm să finalizezi configurarea profilului tău.")
+                        .foregroundColor(.regularText)
+                    Spacer()
+                }
+                
+                Spacer().frame(height: 50)
+            } else {
+                HStack {
+                    Image.appIconLarge
+                    Spacer()
+                }
+                
+                Spacer().frame(height: 40)
+                
+                HStack {
+                    BigTitleLabel(title: "Configurează-ți contul")
+                    Spacer()
+                }
+                
             }
             
-            Spacer().frame(height: 40)
-            
-            FormMessageLabel(message: "Contul tau a fost validat.")
-            
-            Spacer().frame(height: 18)
-            
-            HStack {
-                BodyTextLabel(text: "Mai departe te rugăm să finalizezi configurarea profilului tău.")
-                    .foregroundColor(.regularText)
-                Spacer()
-            }
-            
-            Spacer().frame(height: 50)
-            
-            VStack {
+            VStack(spacing: 16) {
                 ForEach(ViewModel.allItems, id: \.id) { item in
-                    DashboardRow(item: item, enabled: viewModel.areAllOptionsAvailable || (item.id == .addresses))
+                    NavigationLink {
+                        switch item.id {
+                        case .addresses:
+                            AddressEntryView()
+                        default:
+                            Text("Not handled")
+                        }
+                    } label: {
+                        DashboardRow(item: item, enabled: viewModel.areAllOptionsAvailable || (item.id == .addresses))
+                    }
+                    
                 }
             }
             
@@ -43,11 +68,6 @@ struct DashboardView: View {
         .navigationBarHidden(true)
     }
     
-//    func destination(for item: ViewModel.Item) -> some View {
-//        switch item.id {
-//        case .addresses: return
-//        }
-//    }
 }
 
 struct DashboardRow: View {
@@ -69,6 +89,7 @@ struct DashboardRow: View {
 
                 Text("\(item.name)")
                     .font(.appTitle)
+                    .foregroundColor(.mainForeground)
                 
                 Spacer()
 

@@ -25,3 +25,9 @@ extension Color {
 
 
 }
+
+extension UIColor {
+    static let homeBackground = UIColor(named: "HomeBG")
+    static let homeForeground = UIColor(named: "HomeFG")
+    static let mainForeground = UIColor(named: "MainFG")
+}

@@ -13,6 +13,8 @@ extension DashboardView {
         
         var areAllOptionsAvailable: Bool { return false }
         
+        var isFirstTimeVisit: Bool = false
+        
         struct Item: Identifiable {
             var id: IdType
             var name: String

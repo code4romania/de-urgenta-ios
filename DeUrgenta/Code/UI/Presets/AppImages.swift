@@ -9,7 +9,10 @@ import Foundation
 import SwiftUI
 
 extension Image {
+    static let appIconLarge = Image("logo")
+
     static let map = Image("config.map-icon")
+    static let whiteMap = Image("accessory-location-marker")
     static let checkmark = Image("green-checkmark")
     static let checkboxChecked = Image("checkbox-checked")
     static let checkboxUnchecked = Image("checkbox-unchecked")
