@@ -14,11 +14,17 @@ struct LandingPageView: View {
             Color.accentColor
                 .ignoresSafeArea()
 
-            VStack {
+            VStack(spacing: 0) {
                 Image("white-logo")
                     .resizable()
                     .frame(width: 100, height: 100)
-            }
+
+                Text(AppStrings.LandingPage.tagLine.localized())
+                    .foregroundColor(.lightText)
+                    .font(.custom("IBMPlexSans-Bold", size: 36))
+                    .multilineTextAlignment(.center)
+                    .padding(.top, 43)
+            }.padding(.horizontal, 20)
         }
         .navigationBarHidden(true)
     }

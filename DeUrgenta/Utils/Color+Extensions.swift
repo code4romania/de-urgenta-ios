@@ -6,6 +6,10 @@ extension Color {
         Color("AccentColor")
     }
 
+    static var lightText: Color {
+        Color("HomeFG")
+    }
+
     var uiColor: UIColor {
         UIColor(self)
     }
