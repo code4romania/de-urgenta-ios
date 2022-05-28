@@ -2,13 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("De Urgenta")
+        Text("De Urgență")
             .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
