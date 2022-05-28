@@ -30,4 +30,8 @@ enum AppStrings: String, Localizable {
         case createAccount = "LandingPage.createAccount"
         case viewRoutes = "LandingPage.viewRoutes"
     }
+
+    enum AccountConfig: String, Localizable {
+        case headerTitle = "AccountConfig.headerTitle"
+    }
 }
