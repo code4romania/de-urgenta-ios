@@ -10,7 +10,6 @@
 		DE45A19928420AA900056448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19828420AA900056448 /* AppDelegate.swift */; };
 		DE45A19B28420AA900056448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19A28420AA900056448 /* ContentView.swift */; };
 		DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19C28420AAB00056448 /* Assets.xcassets */; };
-		DE45A1A028420AAB00056448 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19F28420AAB00056448 /* Preview Assets.xcassets */; };
 		DE45A1AD28420D5300056448 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A1AC28420D5300056448 /* Empty.swift */; };
 		DEEA05E9284212E800140ADB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05E8284212E800140ADB /* Colors.xcassets */; };
 		DEEA05EB284214FC00140ADB /* AppUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05EA284214FC00140ADB /* AppUI.xcassets */; };
@@ -27,7 +26,6 @@
 		DE45A19828420AA900056448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE45A19A28420AA900056448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE45A19C28420AAB00056448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE45A19F28420AAB00056448 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE45A1AA28420D1900056448 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		DE45A1AC28420D5300056448 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		DEEA05E8284212E800140ADB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -75,18 +73,9 @@
 				DE45A1A628420ACA00056448 /* AppDelegate */,
 				DEEA05F3284215B000140ADB /* Components */,
 				DE45A1A728420AD200056448 /* Features */,
-				DE45A19E28420AAB00056448 /* Preview Content */,
 				DE45A1A828420AFE00056448 /* Resources */,
 			);
 			path = DeUrgenta;
-			sourceTree = "<group>";
-		};
-		DE45A19E28420AAB00056448 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				DE45A19F28420AAB00056448 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		DE45A1A628420ACA00056448 /* AppDelegate */ = {
@@ -218,7 +207,6 @@
 				DEEA05F22842156300140ADB /* IBMPlexSans-Regular.ttf in Resources */,
 				DEEA05F02842156300140ADB /* IBMPlexSans-Bold.ttf in Resources */,
 				DEEA05EB284214FC00140ADB /* AppUI.xcassets in Resources */,
-				DE45A1A028420AAB00056448 /* Preview Assets.xcassets in Resources */,
 				DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,7 +371,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DeUrgenta/Preview Content\"";
 				DEVELOPMENT_TEAM = 2NYK4JQZ6U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -413,7 +400,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DeUrgenta/Preview Content\"";
 				DEVELOPMENT_TEAM = 2NYK4JQZ6U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
