@@ -27,5 +27,7 @@ enum AppStrings: String, Localizable {
     enum LandingPage: String, Localizable {
         case tagLine = "LandingPage.tagLine"
         case authenticate = "LandingPage.authenticate"
+        case createAccount = "LandingPage.createAccount"
+        case viewRoutes = "LandingPage.viewRoutes"
     }
 }

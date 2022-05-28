@@ -6,6 +6,10 @@ extension Color {
         Color("AccentColor")
     }
 
+    static var secondary: Color {
+        Color("HomeFG")
+    }
+
     static var lightText: Color {
         Color("HomeFG")
     }

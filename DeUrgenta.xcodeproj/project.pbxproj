@@ -13,6 +13,7 @@
 		BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EC128423E1100278975 /* Color+Extensions.swift */; };
 		BB8F3EC62842408500278975 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EC42842408500278975 /* AppStrings.swift */; };
 		BB8F3EC72842408500278975 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EC52842408500278975 /* Localizable.strings */; };
+		BB8F3EC9284247C400278975 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EC8284247C400278975 /* IBMPlexSans-SemiBold.ttf */; };
 		DE45A19928420AA900056448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19828420AA900056448 /* AppDelegate.swift */; };
 		DE45A19B28420AA900056448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19A28420AA900056448 /* ContentView.swift */; };
 		DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19C28420AAB00056448 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		BB8F3EC128423E1100278975 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		BB8F3EC42842408500278975 /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		BB8F3EC52842408500278975 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BB8F3EC8284247C400278975 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		DE45A19528420AA900056448 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45A19828420AA900056448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE45A19A28420AA900056448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		DEEA05EC2842154D00140ADB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				BB8F3EC8284247C400278975 /* IBMPlexSans-SemiBold.ttf */,
 				DEEA05ED2842156300140ADB /* IBMPlexSans-Bold.ttf */,
 				DEEA05EE2842156300140ADB /* IBMPlexSans-Medium.ttf */,
 				DEEA05EF2842156300140ADB /* IBMPlexSans-Regular.ttf */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEEA05F12842156300140ADB /* IBMPlexSans-Medium.ttf in Resources */,
+				BB8F3EC9284247C400278975 /* IBMPlexSans-SemiBold.ttf in Resources */,
 				DEEA05E9284212E800140ADB /* Colors.xcassets in Resources */,
 				DEEA05F22842156300140ADB /* IBMPlexSans-Regular.ttf in Resources */,
 				DEEA05F02842156300140ADB /* IBMPlexSans-Bold.ttf in Resources */,
