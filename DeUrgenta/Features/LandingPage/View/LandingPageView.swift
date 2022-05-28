@@ -15,6 +15,8 @@ struct LandingPageView: View {
                 .ignoresSafeArea()
 
             VStack(spacing: 0) {
+                Spacer()
+
                 Image("white-logo")
                     .resizable()
                     .frame(width: 100, height: 100)
@@ -24,6 +26,15 @@ struct LandingPageView: View {
                     .font(.custom("IBMPlexSans-Bold", size: 36))
                     .multilineTextAlignment(.center)
                     .padding(.top, 43)
+
+                Spacer()
+
+                Button(AppStrings.LandingPage.authenticate.localized()) {
+                    delegate.landingPageViewDidTapSignIn(self)
+                }.foregroundColor(.lightText)
+                    .font(.custom("IBMPlexSans-Bold", size: 16))
+                    .padding(.bottom, 20)
+
             }.padding(.horizontal, 20)
         }
         .navigationBarHidden(true)
