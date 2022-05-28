@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB8F3EB6284228FF00278975 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */; };
 		DE45A19928420AA900056448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19828420AA900056448 /* AppDelegate.swift */; };
 		DE45A19B28420AA900056448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19A28420AA900056448 /* ContentView.swift */; };
 		DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19C28420AAB00056448 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		DE45A19528420AA900056448 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45A19828420AA900056448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE45A19A28420AA900056448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB8F3EB82842292300278975 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		DE45A18C28420AA900056448 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 		DE45A1A728420AD200056448 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				BB8F3EB82842292300278975 /* Splash */,
 				DE45A19A28420AA900056448 /* ContentView.swift */,
 			);
 			path = Features;
@@ -208,6 +219,7 @@
 				DEEA05F02842156300140ADB /* IBMPlexSans-Bold.ttf in Resources */,
 				DEEA05EB284214FC00140ADB /* AppUI.xcassets in Resources */,
 				DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */,
+				BB8F3EB6284228FF00278975 /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +388,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeUrgenta/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -405,7 +417,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DeUrgenta/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
