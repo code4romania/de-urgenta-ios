@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct AccountConfigView: View {
+    @StateObject var viewModel = AccountConfigViewModel()
+
     var body: some View {
         VStack(spacing: 0) {
             HStack {
@@ -16,9 +18,15 @@ struct AccountConfigView: View {
                 .font(.custom("IBMPlexSans-Bold", size: 36))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .multilineTextAlignment(.leading)
-                .padding(.top, 30)
+                .padding(.vertical, 30)
+
+            ForEach(viewModel.steps) { item in
+                ConfigStepView(step: item)
+                    .padding(.bottom, 24)
+                    .disabled(!item.enabled)
+            }
 
             Spacer()
-        }.padding(.leading, 20)
+        }.padding(.horizontal, 20)
     }
 }
