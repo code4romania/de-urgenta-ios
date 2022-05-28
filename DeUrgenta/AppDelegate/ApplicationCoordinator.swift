@@ -24,9 +24,12 @@ final class ApplicationCoordinator: NSObject, Coordinator {
 }
 
 extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
-    func landingPageCoordinatorShouldPresentRoutes(_: LandingPageCoordinator) {
-        let viewController = UIHostingController(rootView: ContentView())
-        navigationController.pushViewController(viewController, animated: true)
+    func landingPageCoordinatorShouldPresentRoutes(_ sender: LandingPageCoordinator) {
+        let coordinator = AccountConfigCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
     }
 
     func landingPageCoordinatorShouldPresentSignIn(_: LandingPageCoordinator) {

@@ -14,8 +14,9 @@
 		BB8F3EC62842408500278975 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EC42842408500278975 /* AppStrings.swift */; };
 		BB8F3EC72842408500278975 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EC52842408500278975 /* Localizable.strings */; };
 		BB8F3EC9284247C400278975 /* IBMPlexSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EC8284247C400278975 /* IBMPlexSans-SemiBold.ttf */; };
+		BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3ECB2842529600278975 /* AccountConfigView.swift */; };
+		BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3ECF2842577A00278975 /* AccountConfigCoordinator.swift */; };
 		DE45A19928420AA900056448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19828420AA900056448 /* AppDelegate.swift */; };
-		DE45A19B28420AA900056448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19A28420AA900056448 /* ContentView.swift */; };
 		DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19C28420AAB00056448 /* Assets.xcassets */; };
 		DEEA05E9284212E800140ADB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05E8284212E800140ADB /* Colors.xcassets */; };
 		DEEA05EB284214FC00140ADB /* AppUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05EA284214FC00140ADB /* AppUI.xcassets */; };
@@ -35,9 +36,10 @@
 		BB8F3EC42842408500278975 /* AppStrings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		BB8F3EC52842408500278975 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		BB8F3EC8284247C400278975 /* IBMPlexSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		BB8F3ECB2842529600278975 /* AccountConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfigView.swift; sourceTree = "<group>"; };
+		BB8F3ECF2842577A00278975 /* AccountConfigCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountConfigCoordinator.swift; sourceTree = "<group>"; };
 		DE45A19528420AA900056448 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45A19828420AA900056448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DE45A19A28420AA900056448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE45A19C28420AAB00056448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEEA05E8284212E800140ADB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DEEA05EA284214FC00140ADB /* AppUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppUI.xcassets; sourceTree = "<group>"; };
@@ -111,6 +113,31 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		BB8F3ECA2842525E00278975 /* AccountConfig */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3ECE2842576800278975 /* Coordinator */,
+				BB8F3ECD2842576400278975 /* View */,
+			);
+			path = AccountConfig;
+			sourceTree = "<group>";
+		};
+		BB8F3ECD2842576400278975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3ECB2842529600278975 /* AccountConfigView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB8F3ECE2842576800278975 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3ECF2842577A00278975 /* AccountConfigCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		DE45A18C28420AA900056448 = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +180,7 @@
 		DE45A1A728420AD200056448 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				DE45A19A28420AA900056448 /* ContentView.swift */,
+				BB8F3ECA2842525E00278975 /* AccountConfig */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
 				BB8F3EB82842292300278975 /* Splash */,
 			);
@@ -299,10 +326,11 @@
 			files = (
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
+				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
-				DE45A19B28420AA900056448 /* ContentView.swift in Sources */,
 				BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
+				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,

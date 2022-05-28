@@ -14,6 +14,10 @@ extension Color {
         Color("HomeFG")
     }
 
+    static var darkText: Color {
+        Color("darkText")
+    }
+
     var uiColor: UIColor {
         UIColor(self)
     }
