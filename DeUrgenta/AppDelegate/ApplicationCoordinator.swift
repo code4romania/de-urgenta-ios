@@ -12,7 +12,28 @@ final class ApplicationCoordinator: NSObject, Coordinator {
     }
 
     func start() {
+        showLandingPage()
+    }
+
+    private func showLandingPage() {
+        let landingPageCoordinator = LandingPageCoordinator(navigationController: navigationController)
+        addChildCoordinator(landingPageCoordinator)
+        landingPageCoordinator.delegate = self
+        landingPageCoordinator.start()
+    }
+}
+
+extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
+    func landingPageCoordinatorShouldPresentRoutes(_: LandingPageCoordinator) {
         let viewController = UIHostingController(rootView: ContentView())
         navigationController.pushViewController(viewController, animated: true)
+    }
+
+    func landingPageCoordinatorShouldPresentSignIn(_: LandingPageCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func landingPageCoordinatorShouldPresentSignUp(_: LandingPageCoordinator) {
+        // TODO: Implement this method
     }
 }

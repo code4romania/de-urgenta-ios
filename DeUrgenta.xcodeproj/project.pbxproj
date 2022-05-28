@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		BB8F3EB6284228FF00278975 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */; };
+		BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */; };
+		BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBD28423C0F00278975 /* LandingPageView.swift */; };
+		BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EC128423E1100278975 /* Color+Extensions.swift */; };
 		DE45A19928420AA900056448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19828420AA900056448 /* AppDelegate.swift */; };
 		DE45A19B28420AA900056448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19A28420AA900056448 /* ContentView.swift */; };
 		DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19C28420AAB00056448 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 
 /* Begin PBXFileReference section */
 		BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageCoordinator.swift; sourceTree = "<group>"; };
+		BB8F3EBD28423C0F00278975 /* LandingPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
+		BB8F3EC128423E1100278975 /* Color+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		DE45A19528420AA900056448 /* DeUrgenta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeUrgenta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE45A19828420AA900056448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE45A19A28420AA900056448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,39 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		BB8F3EB928423C0F00278975 /* LandingPage */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3EBA28423C0F00278975 /* Coordinator */,
+				BB8F3EBC28423C0F00278975 /* View */,
+			);
+			path = LandingPage;
+			sourceTree = "<group>";
+		};
+		BB8F3EBA28423C0F00278975 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BB8F3EBC28423C0F00278975 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3EBD28423C0F00278975 /* LandingPageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB8F3EC028423DF100278975 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BB8F3EC128423E1100278975 /* Color+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		DE45A18C28420AA900056448 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +119,7 @@
 				DEEA05F3284215B000140ADB /* Components */,
 				DE45A1A728420AD200056448 /* Features */,
 				DE45A1A828420AFE00056448 /* Resources */,
+				BB8F3EC028423DF100278975 /* Utils */,
 			);
 			path = DeUrgenta;
 			sourceTree = "<group>";
@@ -97,8 +137,9 @@
 		DE45A1A728420AD200056448 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				BB8F3EB82842292300278975 /* Splash */,
 				DE45A19A28420AA900056448 /* ContentView.swift */,
+				BB8F3EB928423C0F00278975 /* LandingPage */,
+				BB8F3EB82842292300278975 /* Splash */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -240,8 +281,11 @@
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				DE45A19B28420AA900056448 /* ContentView.swift in Sources */,
+				BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
+				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
+				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
