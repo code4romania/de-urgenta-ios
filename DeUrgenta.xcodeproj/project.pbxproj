@@ -10,7 +10,6 @@
 		DE45A19928420AA900056448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19828420AA900056448 /* AppDelegate.swift */; };
 		DE45A19B28420AA900056448 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A19A28420AA900056448 /* ContentView.swift */; };
 		DE45A19D28420AAB00056448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE45A19C28420AAB00056448 /* Assets.xcassets */; };
-		DE45A1AD28420D5300056448 /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE45A1AC28420D5300056448 /* Empty.swift */; };
 		DEEA05E9284212E800140ADB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05E8284212E800140ADB /* Colors.xcassets */; };
 		DEEA05EB284214FC00140ADB /* AppUI.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05EA284214FC00140ADB /* AppUI.xcassets */; };
 		DEEA05F02842156300140ADB /* IBMPlexSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEEA05ED2842156300140ADB /* IBMPlexSans-Bold.ttf */; };
@@ -26,8 +25,6 @@
 		DE45A19828420AA900056448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE45A19A28420AA900056448 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DE45A19C28420AAB00056448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DE45A1AA28420D1900056448 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		DE45A1AC28420D5300056448 /* Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empty.swift; sourceTree = "<group>"; };
 		DEEA05E8284212E800140ADB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DEEA05EA284214FC00140ADB /* AppUI.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppUI.xcassets; sourceTree = "<group>"; };
 		DEEA05ED2842156300140ADB /* IBMPlexSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "IBMPlexSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -53,7 +50,6 @@
 		DE45A18C28420AA900056448 = {
 			isa = PBXGroup;
 			children = (
-				DE45A1A928420D0500056448 /* BuildTools */,
 				DE45A19728420AA900056448 /* DeUrgenta */,
 				DE45A19628420AA900056448 /* Products */,
 			);
@@ -106,15 +102,6 @@
 				DEEA05FB2842186A00140ADB /* Info.plist */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		DE45A1A928420D0500056448 /* BuildTools */ = {
-			isa = PBXGroup;
-			children = (
-				DE45A1AA28420D1900056448 /* Package.swift */,
-				DE45A1AC28420D5300056448 /* Empty.swift */,
-			);
-			path = BuildTools;
 			sourceTree = "<group>";
 		};
 		DEEA05EC2842154D00140ADB /* Fonts */ = {
@@ -240,7 +227,6 @@
 			files = (
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
-				DE45A1AD28420D5300056448 /* Empty.swift in Sources */,
 				DE45A19B28420AA900056448 /* ContentView.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
