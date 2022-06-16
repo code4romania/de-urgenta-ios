@@ -5,15 +5,23 @@ class AccountConfigViewModel: ObservableObject {
 
     init() {
         steps = [ConfigStep(name: "Configurează adresele",
-                            logo: "config.map-icon", enabled: true),
+                            type: .adress,
+                            logo: "config.map-icon",
+                            enabled: true),
 
                  ConfigStep(name: "Creează-ți grupul",
-                            logo: "config.group-icon", enabled: false),
+                            type: .group,
+                            logo: "config.group-icon",
+                            enabled: false),
 
                  ConfigStep(name: "Fă-ți rucsacul de urgență",
-                            logo: "config.bag-icon", enabled: false),
+                            type: .backpack,
+                            logo: "config.bag-icon",
+                            enabled: false),
 
                  ConfigStep(name: "Învață să dai primul ajutor",
-                            logo: "config.red-cross-icon", enabled: false)]
+                            type: .backpack,
+                            logo: "config.red-cross-icon",
+                            enabled: false)]
     }
 }
