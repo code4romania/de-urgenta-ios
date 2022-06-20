@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
+		62AC818E285B3E1F00ACAF3E /* CreataGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreataGroupCoordinator.swift */; };
 		BB8F3EB6284228FF00278975 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */; };
 		BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */; };
 		BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBD28423C0F00278975 /* LandingPageView.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
+		62AC818D285B3E1F00ACAF3E /* CreataGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreataGroupCoordinator.swift; sourceTree = "<group>"; };
 		BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageCoordinator.swift; sourceTree = "<group>"; };
 		BB8F3EBD28423C0F00278975 /* LandingPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
@@ -69,6 +73,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		62AC8188285B3DDF00ACAF3E /* CreateGroup */ = {
+			isa = PBXGroup;
+			children = (
+				62AC8189285B3DEA00ACAF3E /* Coordinator */,
+				62AC818A285B3DF100ACAF3E /* View */,
+			);
+			path = CreateGroup;
+			sourceTree = "<group>";
+		};
+		62AC8189285B3DEA00ACAF3E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				62AC818D285B3E1F00ACAF3E /* CreataGroupCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		62AC818A285B3DF100ACAF3E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BB8F3EB82842292300278975 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				BB8F3ECA2842525E00278975 /* AccountConfig */,
+				62AC8188285B3DDF00ACAF3E /* CreateGroup */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
 				BB8F3EB82842292300278975 /* Splash */,
 			);
@@ -353,7 +383,9 @@
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
+				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
 				BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */,
+				62AC818E285B3E1F00ACAF3E /* CreataGroupCoordinator.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
 				BB8F3ED62842599300278975 /* AccountConfigViewModel.swift in Sources */,
 				BB8F3ED4284258FA00278975 /* ConfigStep.swift in Sources */,
