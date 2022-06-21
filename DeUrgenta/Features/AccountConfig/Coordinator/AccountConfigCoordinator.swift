@@ -27,8 +27,8 @@ final class AccountConfigCoordinator: NSObject, Coordinator {
 }
 
 extension AccountConfigCoordinator: AccountConfigViewDelegate {
-    func accountConfigViewShouldRedirect(_: AccountConfigView, _ item: ConfigStep) {
-        switch item.type {
+    func accountConfigViewShouldRedirect(from _: AccountConfigView, withItem: ConfigStep) {
+        switch withItem.type {
         case .adress:
             delegate?.accountConfigCoordinatorShouldPresentAdress(self)
         case .group:

@@ -1,7 +1,7 @@
 import SwiftUI
 
 protocol AccountConfigViewDelegate {
-    func accountConfigViewShouldRedirect(_ view: AccountConfigView, _ item: ConfigStep)
+    func accountConfigViewShouldRedirect(from: AccountConfigView, withItem: ConfigStep)
 }
 
 struct AccountConfigView: View {
@@ -27,7 +27,7 @@ struct AccountConfigView: View {
 
             ForEach(viewModel.steps) { item in
                 Button(action: {
-                    delegate.accountConfigViewShouldRedirect(self, item)
+                    delegate.accountConfigViewShouldRedirect(from: self, withItem: item)
                 }, label: {
                     ConfigStepView(step: item)
                         .padding(.bottom, 24)
