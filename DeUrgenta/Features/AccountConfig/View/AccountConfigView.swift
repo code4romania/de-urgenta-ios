@@ -1,7 +1,7 @@
 import SwiftUI
 
 protocol AccountConfigViewDelegate {
-    func accountConfigViewShouldRedirect(from: AccountConfigView, withItem: ConfigStep)
+    func accountConfigViewShouldRedirect(from view: AccountConfigView, withItem item: ConfigStep)
 }
 
 struct AccountConfigView: View {

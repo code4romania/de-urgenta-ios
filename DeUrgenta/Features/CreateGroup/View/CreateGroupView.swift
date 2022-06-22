@@ -1,8 +1,8 @@
 import SwiftUI
 
 protocol CreateGroupViewDelegate {
-    func CreateGroupViewDidTapAddGroup(_ view: CreateGroupView)
-    func CreateGroupViewDidTapNoGroup(_ view: CreateGroupView)
+    func createGroupViewDidTapAddGroup(_ view: CreateGroupView)
+    func createGroupViewDidTapNoGroup(_ view: CreateGroupView)
 }
 
 struct CreateGroupView: View {
@@ -38,7 +38,7 @@ struct CreateGroupView: View {
 
             VStack {
                 Button(action: {
-                    delegate.CreateGroupViewDidTapNoGroup(self)
+                    delegate.createGroupViewDidTapNoGroup(self)
                 }, label: {
                     Text(AppStrings.CreateGroup.noGroup.localized())
                         .foregroundColor(.gray)
@@ -46,7 +46,7 @@ struct CreateGroupView: View {
                 })
 
                 Button(action: {
-                    delegate.CreateGroupViewDidTapAddGroup(self)
+                    delegate.createGroupViewDidTapAddGroup(self)
                 }, label: {
                     Text(AppStrings.CreateGroup.addGroup.localized())
                         .font(.custom("IBMPlexSans-Bold", size: 16))
