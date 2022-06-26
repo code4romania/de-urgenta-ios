@@ -27,6 +27,7 @@ extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
     func landingPageCoordinatorShouldPresentRoutes(_ sender: LandingPageCoordinator) {
         let coordinator = AccountConfigCoordinator(navigationController: navigationController)
         addChildCoordinator(coordinator)
+        coordinator.delegate = self
         coordinator.start()
 
         removeChildCoordinator(sender)
@@ -37,6 +38,28 @@ extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
     }
 
     func landingPageCoordinatorShouldPresentSignUp(_: LandingPageCoordinator) {
+        // TODO: Implement this method
+    }
+}
+
+extension ApplicationCoordinator: AccountConfigCoordinatorDelegate {
+    func accountConfigCoordinatorShouldPresentAdress(_: AccountConfigCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func accountConfigCoordinatorShouldPresentGroup(_ sender: AccountConfigCoordinator) {
+        let coordinator = CreateGroupCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
+    }
+
+    func accountConfigCoordinatorShouldPresentBackpack(_: AccountConfigCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func accountConfigCoordinatorShouldPresentFirstAid(_: AccountConfigCoordinator) {
         // TODO: Implement this method
     }
 }

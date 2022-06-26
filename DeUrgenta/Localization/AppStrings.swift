@@ -34,4 +34,12 @@ enum AppStrings: String, Localizable {
     enum AccountConfig: String, Localizable {
         case headerTitle = "AccountConfig.headerTitle"
     }
+
+    enum CreateGroup: String, Localizable {
+        case headerTitle = "CreateGroup.headerTitle"
+        case firstParagraph = "CreateGroup.firstParagraph"
+        case secondParagraph = "CreateGroup.secondParagraph"
+        case noGroup = "CreateGroup.noGroup"
+        case addGroup = "CreateGroup.addGroup"
+    }
 }

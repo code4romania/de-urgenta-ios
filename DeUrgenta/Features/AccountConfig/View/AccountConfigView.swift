@@ -1,7 +1,12 @@
 import SwiftUI
 
+protocol AccountConfigViewDelegate {
+    func accountConfigViewShouldRedirect(from view: AccountConfigView, withItem item: ConfigStep)
+}
+
 struct AccountConfigView: View {
     @StateObject var viewModel = AccountConfigViewModel()
+    var delegate: AccountConfigViewDelegate
 
     var body: some View {
         VStack(spacing: 0) {
@@ -21,9 +26,13 @@ struct AccountConfigView: View {
                 .padding(.vertical, 30)
 
             ForEach(viewModel.steps) { item in
-                ConfigStepView(step: item)
-                    .padding(.bottom, 24)
-                    .disabled(!item.enabled)
+                Button(action: {
+                    delegate.accountConfigViewShouldRedirect(from: self, withItem: item)
+                }, label: {
+                    ConfigStepView(step: item)
+                        .padding(.bottom, 24)
+                        .disabled(!item.enabled)
+                })
             }
 
             Spacer()
