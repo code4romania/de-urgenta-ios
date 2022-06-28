@@ -29,7 +29,7 @@ extension CreateGroupCoordinator: CreateGroupViewDelegate {
 
 extension CreateGroupCoordinator: AddGroupNameViewDelegate {
     func addGroupNameViewDidTapContinue(_: AddGroupNameView) {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: SetMeetPointsView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }

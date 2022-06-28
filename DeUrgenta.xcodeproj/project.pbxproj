@@ -10,6 +10,7 @@
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
+		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
 		BB8F3EB6284228FF00278975 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */; };
 		BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */; };
 		BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBD28423C0F00278975 /* LandingPageView.swift */; };
@@ -38,6 +39,7 @@
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
+		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
 		BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageCoordinator.swift; sourceTree = "<group>"; };
 		BB8F3EBD28423C0F00278975 /* LandingPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */,
 				62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */,
+				62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			files = (
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
+				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
 				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
 				62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
