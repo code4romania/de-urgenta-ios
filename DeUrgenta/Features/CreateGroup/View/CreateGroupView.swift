@@ -50,13 +50,18 @@ struct CreateGroupView: View {
                 Button(action: {
                     delegate.createGroupViewDidTapAddGroup(self)
                 }, label: {
-                    Text(AppStrings.CreateGroup.addGroup.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
-                        .foregroundColor(.secondary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.accent)
-                        .cornerRadius(6)
+                    HStack {
+                        Text(AppStrings.CreateGroup.addGroup.localized())
+                            .font(.custom("IBMPlexSans-Bold", size: 16))
+                            .foregroundColor(.secondary)
+
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.secondary)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .background(Color.accent)
+                    .cornerRadius(6)
+
                 })
             }
             .padding(.bottom, 30)

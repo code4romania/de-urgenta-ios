@@ -35,13 +35,17 @@ struct AddGroupNameView: View {
                 Button(action: {
                     delegate.addGroupNameViewDidTapContinue(self)
                 }, label: {
-                    Text(AppStrings.AddGroupName.continueButton.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
-                        .foregroundColor(.secondary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.accent)
-                        .cornerRadius(6)
+                    HStack {
+                        Text(AppStrings.AddGroupName.continueButton.localized())
+                            .font(.custom("IBMPlexSans-Bold", size: 16))
+                            .foregroundColor(.secondary)
+
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.secondary)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .background(Color.accent)
+                    .cornerRadius(6)
                 })
             }
             .padding(.bottom, 30)
