@@ -28,6 +28,12 @@
 
 "AddGroupName.continueButton" = "Continuă";
 
+"AddGroupName.alertTitle" = "Important";
+
+"AddGroupName.alertMessage" = "Denumirea grupului este obligatorie.";
+
+"AddGroupName.alertDismissButton" = "OK";
+
 "SetMeetPoints.headerTitle" = "Setează punctele de întâlnire";
 
 "SetMeetPoints.description" = "Ai deja puncte de întâlnire setate, vrei să le faci vizibile și să le asociezi cu noul grup sau preferi să setezi alte puncte special pentru grupul pe care îl creezi acum?";
@@ -43,3 +49,5 @@
 "GroupView.headerTitle" = "Creează-ți grupul de prieteni";
 
 "GroupView.addFriendsButton" = "Adaugă prieteni";
+
+

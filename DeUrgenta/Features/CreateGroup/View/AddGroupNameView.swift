@@ -55,7 +55,7 @@ struct AddGroupNameView: View {
                 })
             }
             .alert(isPresented: $showingAlert, content: {
-                Alert(title: Text("Important"), message: Text("Denumirea grupului este obligatorie."), dismissButton: .default(Text("OK")))
+                Alert(title: Text(AppStrings.AddGroupName.alertTitle.localized()), message: Text(AppStrings.AddGroupName.alertMessage.localized()), dismissButton: .default(Text(AppStrings.AddGroupName.alertDismissButton.localized())))
             })
             .padding(.bottom, 30)
             .padding(.leading, 20)

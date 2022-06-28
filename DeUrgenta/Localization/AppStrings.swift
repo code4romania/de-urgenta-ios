@@ -48,6 +48,9 @@ enum AppStrings: String, Localizable {
         case textFieldTitle = "AddGroupName.textFieldTitle"
         case textFieldPlaceholder = "AddGroupName.textFieldPlaceholder"
         case continueButton = "AddGroupName.continueButton"
+        case alertTitle = "AddGroupName.alertTitle"
+        case alertMessage = "AddGroupName.alertMessage"
+        case alertDismissButton = "AddGroupName.alertDismissButton"
     }
 
     enum SetMeetPoints: String, Localizable {
