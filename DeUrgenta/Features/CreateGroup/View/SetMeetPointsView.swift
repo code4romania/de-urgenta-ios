@@ -13,6 +13,7 @@ struct SetMeetPointsView: View {
             HStack {
                 Text(AppStrings.SetMeetPoints.headerTitle.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .padding(.top, 10)
 
                 Spacer()
             }

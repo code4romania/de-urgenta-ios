@@ -12,6 +12,8 @@ struct GroupView: View {
             HStack {
                 Text(AppStrings.GroupView.headerTitle.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .padding(.top, 10)
+
                 Spacer()
             }
 

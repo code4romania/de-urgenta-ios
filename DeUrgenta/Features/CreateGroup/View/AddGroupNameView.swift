@@ -12,7 +12,8 @@ struct AddGroupNameView: View {
         VStack {
             HStack {
                 Text(AppStrings.AddGroupName.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 24))
+                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .padding(.top, 10)
 
                 Spacer()
             }
