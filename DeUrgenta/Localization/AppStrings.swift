@@ -46,6 +46,7 @@ enum AppStrings: String, Localizable {
     enum AddGroupName: String, Localizable {
         case headerTitle = "AddGroupName.headerTitle"
         case textFieldTitle = "AddGroupName.textFieldTitle"
+        case textFieldPlaceholder = "AddGroupName.textFieldPlaceholder"
         case continueButton = "AddGroupName.continueButton"
     }
 }

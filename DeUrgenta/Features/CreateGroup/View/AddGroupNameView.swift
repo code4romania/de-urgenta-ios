@@ -24,7 +24,7 @@ struct AddGroupNameView: View {
                     .foregroundColor(Color.darkText)
                     .font(.custom("IBMPlexSans-Regular", size: 14))
 
-                TextField("Fii creativ...", text: $groupName)
+                TextField(AppStrings.AddGroupName.textFieldPlaceholder.localized(), text: $groupName)
                     .textFieldStyle(.roundedBorder)
             }
             .padding()
