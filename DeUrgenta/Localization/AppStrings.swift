@@ -58,4 +58,9 @@ enum AppStrings: String, Localizable {
         case newMeetPointLablel = "SetMeetPoints.newMeetPointLabel"
         case inviteFriendsButton = "SetMeetPoints.inviteFriendsButton"
     }
+
+    enum GroupView: String, Localizable {
+        case headerTitle = "GroupView.headerTitle"
+        case addFriendsButton = "GroupView.addFriendsButton"
+    }
 }

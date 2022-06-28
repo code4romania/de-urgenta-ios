@@ -1,7 +1,13 @@
 import SwiftUI
 
+protocol SetMeetPointsViewDelegate {
+    func SetMeetPointsViewDidTapInviteFriends(_ view: SetMeetPointsView)
+}
+
 struct SetMeetPointsView: View {
     @State var showMeetPoints = false
+
+    var delegate: SetMeetPointsViewDelegate
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -58,7 +64,7 @@ struct SetMeetPointsView: View {
             Spacer()
 
             Button(action: {
-                // TODO: Implement this action
+                delegate.SetMeetPointsViewDidTapInviteFriends(self)
             }, label: {
                 HStack {
                     Text(AppStrings.SetMeetPoints.inviteFriendsButton.localized())
