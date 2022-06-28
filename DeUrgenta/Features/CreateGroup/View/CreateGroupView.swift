@@ -20,14 +20,16 @@ struct CreateGroupView: View {
             }
 
             VStack {
-                Text(AppStrings.CreateGroup.firstParagraph.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 16))
-                    .foregroundColor(.darkText)
+                ScrollView(showsIndicators: false) {
+                    Text(AppStrings.CreateGroup.firstParagraph.localized())
+                        .font(.custom("IBMPlexSans-Regular", size: 16))
+                        .foregroundColor(.darkText)
 
-                Text(AppStrings.CreateGroup.secondParagraph.localized())
-                    .padding(.top, 15)
-                    .font(.custom("IBMPlexSans-Regular", size: 16))
-                    .foregroundColor(.darkText)
+                    Text(AppStrings.CreateGroup.secondParagraph.localized())
+                        .padding(.top, 15)
+                        .font(.custom("IBMPlexSans-Regular", size: 16))
+                        .foregroundColor(.darkText)
+                }
             }
             .padding(.leading, 20)
             .padding(.trailing, 20)
