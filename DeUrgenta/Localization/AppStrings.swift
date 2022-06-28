@@ -49,7 +49,7 @@ enum AppStrings: String, Localizable {
         case textFieldPlaceholder = "AddGroupName.textFieldPlaceholder"
         case continueButton = "AddGroupName.continueButton"
     }
-    
+
     enum SetMeetPoints: String, Localizable {
         case headerTitle = "SetMeetPoints.headerTitle"
         case description = "SetMeetPoints.description"

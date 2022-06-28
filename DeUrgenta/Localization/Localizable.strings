@@ -32,13 +32,13 @@
 
 "SetMeetPoints.description" = "Ai deja puncte de întâlnire setate, vrei să le faci vizibile și să le asociezi cu noul grup sau preferi să setezi alte puncte special pentru grupul pe care îl creezi acum?";
 
-"SetMeetPoints.toggleLabel" = "Fă punctele de întâlnire vizibile"
+"SetMeetPoints.toggleLabel" = "Fă punctele de întâlnire vizibile";
 
-"SetMeetPoints.meetPointsHeader" = "Setează puncte noi"
+"SetMeetPoints.meetPointsHeader" = "Setează puncte noi";
 
-"SetMeetPoints.newMeetPointLabel" = "Adaugă un punct de întâlnire"
+"SetMeetPoints.newMeetPointLabel" = "Adaugă un punct de întâlnire";
 
-"SetMeetPoints.inviteFriendsButton" = "Invită prieteni"
+"SetMeetPoints.inviteFriendsButton" = "Invită prieteni";
 
 
 
