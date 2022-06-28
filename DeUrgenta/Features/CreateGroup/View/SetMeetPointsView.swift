@@ -1,12 +1,11 @@
 import SwiftUI
 
 protocol SetMeetPointsViewDelegate {
-    func SetMeetPointsViewDidTapInviteFriends(_ view: SetMeetPointsView)
+    func setMeetPointsViewDidTapInviteFriends(_ view: SetMeetPointsView)
 }
 
 struct SetMeetPointsView: View {
     @State var showMeetPoints = false
-
     var delegate: SetMeetPointsViewDelegate
 
     var body: some View {
@@ -64,7 +63,7 @@ struct SetMeetPointsView: View {
             Spacer()
 
             Button(action: {
-                delegate.SetMeetPointsViewDidTapInviteFriends(self)
+                delegate.setMeetPointsViewDidTapInviteFriends(self)
             }, label: {
                 HStack {
                     Text(AppStrings.SetMeetPoints.inviteFriendsButton.localized())

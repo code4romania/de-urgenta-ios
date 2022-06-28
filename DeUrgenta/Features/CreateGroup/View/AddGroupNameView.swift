@@ -6,7 +6,6 @@ protocol AddGroupNameViewDelegate {
 
 struct AddGroupNameView: View {
     @State private var groupName: String = ""
-
     var delegate: AddGroupNameViewDelegate
 
     var body: some View {

@@ -35,8 +35,15 @@ extension CreateGroupCoordinator: AddGroupNameViewDelegate {
 }
 
 extension CreateGroupCoordinator: SetMeetPointsViewDelegate {
-    func SetMeetPointsViewDidTapInviteFriends(_: SetMeetPointsView) {
-        let viewController = UIHostingController(rootView: GroupView())
+    func setMeetPointsViewDidTapInviteFriends(_: SetMeetPointsView) {
+        let viewController = UIHostingController(rootView: GroupView(delegate: self))
+        navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension CreateGroupCoordinator: GroupViewDelegate {
+    func groupViewDidTapAddFriendsButton(_: GroupView) {
+        let viewController = UIHostingController(rootView: EmptyView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }

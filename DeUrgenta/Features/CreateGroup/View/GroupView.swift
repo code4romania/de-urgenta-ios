@@ -1,6 +1,12 @@
 import SwiftUI
 
+protocol GroupViewDelegate {
+    func groupViewDidTapAddFriendsButton(_ view: GroupView)
+}
+
 struct GroupView: View {
+    var delegate: GroupViewDelegate
+
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -35,7 +41,7 @@ struct GroupView: View {
             Spacer()
 
             Button(action: {
-                // TODO: Implement this action
+                delegate.groupViewDidTapAddFriendsButton(self)
             }, label: {
                 HStack {
                     Text(AppStrings.GroupView.addFriendsButton.localized())
