@@ -18,11 +18,18 @@ final class CreateGroupCoordinator: Coordinator {
 
 extension CreateGroupCoordinator: CreateGroupViewDelegate {
     func createGroupViewDidTapAddGroup(_: CreateGroupView) {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: AddGroupNameView(delegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 
     func createGroupViewDidTapNoGroup(_: CreateGroupView) {
         navigationController.popViewController(animated: true)
+    }
+}
+
+extension CreateGroupCoordinator: AddGroupNameViewDelegate {
+    func addGroupNameViewDidTapContinue(_: AddGroupNameView) {
+        let viewController = UIHostingController(rootView: EmptyView())
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

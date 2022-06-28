@@ -42,4 +42,10 @@ enum AppStrings: String, Localizable {
         case noGroup = "CreateGroup.noGroup"
         case addGroup = "CreateGroup.addGroup"
     }
+
+    enum AddGroupName: String, Localizable {
+        case headerTitle = "AddGroupName.headerTitle"
+        case textFieldTitle = "AddGroupName.textFieldTitle"
+        case continueButton = "AddGroupName.continueButton"
+    }
 }

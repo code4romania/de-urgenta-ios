@@ -19,3 +19,10 @@
 "CreateGroup.noGroup" = "Nu vreau să creez un grup acum";
 
 "CreateGroup.addGroup" = "Crează un grup nou";
+
+"AddGroupName.headerTitle" = "Creează-ți grupul de prieteni";
+
+"AddGroupName.textFieldTitle" = "Denumirea grupului";
+
+"AddGroupName.continueButton" = "Continuă";
+
