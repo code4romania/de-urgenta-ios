@@ -6,6 +6,7 @@ protocol AddGroupNameViewDelegate {
 
 struct AddGroupNameView: View {
     @State private var groupName: String = ""
+    @State private var showingAlert = false
     var delegate: AddGroupNameViewDelegate
 
     var body: some View {
@@ -33,7 +34,12 @@ struct AddGroupNameView: View {
 
             VStack {
                 Button(action: {
-                    delegate.addGroupNameViewDidTapContinue(self)
+                    if groupName.isEmpty {
+                        showingAlert = true
+                    } else {
+                        delegate.addGroupNameViewDidTapContinue(self)
+                    }
+
                 }, label: {
                     HStack {
                         Text(AppStrings.AddGroupName.continueButton.localized())
@@ -48,6 +54,9 @@ struct AddGroupNameView: View {
                     .cornerRadius(6)
                 })
             }
+            .alert(isPresented: $showingAlert, content: {
+                Alert(title: Text("Important"), message: Text("Denumirea grupului este obligatorie."), dismissButton: .default(Text("OK")))
+            })
             .padding(.bottom, 30)
             .padding(.leading, 20)
             .padding(.trailing, 20)
