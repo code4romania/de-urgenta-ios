@@ -2,12 +2,55 @@ import SwiftUI
 
 struct GroupView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        VStack(alignment: .leading) {
+            HStack {
+                Text(AppStrings.GroupView.headerTitle.localized())
+                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                Spacer()
+            }
 
-struct GroupView_Previews: PreviewProvider {
-    static var previews: some View {
-        GroupView()
+            HStack {
+                Image(systemName: "person.3.fill")
+                    .foregroundColor(.accent)
+
+                Text("Avengers32 (5/30)")
+                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
+
+                Spacer()
+            }
+            .padding(.vertical)
+
+            HStack {
+                Image("logo")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+
+                Text("(Admin) Corina Dobre")
+                    .font(.custom("IBMPlexSans-Regular", size: 16))
+                    .foregroundColor(.darkText)
+
+                Spacer()
+            }
+
+            Spacer()
+
+            Button(action: {
+                // TODO: Implement this action
+            }, label: {
+                HStack {
+                    Text(AppStrings.GroupView.addFriendsButton.localized())
+                        .font(.custom("IBMPlexSans-Bold", size: 16))
+                        .foregroundColor(.secondary)
+
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.secondary)
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .background(Color.accent)
+                .cornerRadius(6)
+            })
+            .padding(.bottom, 30)
+        }
+        .padding(.horizontal)
     }
 }

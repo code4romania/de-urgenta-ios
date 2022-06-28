@@ -12,7 +12,7 @@ struct CreateGroupView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(AppStrings.CreateGroup.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 24))
+                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
                     .padding(.leading, 20)
                     .padding(.top, 10)
 
