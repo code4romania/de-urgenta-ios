@@ -12,7 +12,7 @@ struct CreateGroupView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(AppStrings.CreateGroup.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 24))
+                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
                     .padding(.leading, 20)
                     .padding(.top, 10)
 
@@ -20,14 +20,16 @@ struct CreateGroupView: View {
             }
 
             VStack {
-                Text(AppStrings.CreateGroup.firstParagraph.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 16))
-                    .foregroundColor(.darkText)
+                ScrollView(showsIndicators: false) {
+                    Text(AppStrings.CreateGroup.firstParagraph.localized())
+                        .font(.custom("IBMPlexSans-Regular", size: 16))
+                        .foregroundColor(.darkText)
 
-                Text(AppStrings.CreateGroup.secondParagraph.localized())
-                    .padding(.top, 15)
-                    .font(.custom("IBMPlexSans-Regular", size: 16))
-                    .foregroundColor(.darkText)
+                    Text(AppStrings.CreateGroup.secondParagraph.localized())
+                        .padding(.top, 15)
+                        .font(.custom("IBMPlexSans-Regular", size: 16))
+                        .foregroundColor(.darkText)
+                }
             }
             .padding(.leading, 20)
             .padding(.trailing, 20)
@@ -48,13 +50,18 @@ struct CreateGroupView: View {
                 Button(action: {
                     delegate.createGroupViewDidTapAddGroup(self)
                 }, label: {
-                    Text(AppStrings.CreateGroup.addGroup.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
-                        .foregroundColor(.secondary)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.accent)
-                        .cornerRadius(6)
+                    HStack {
+                        Text(AppStrings.CreateGroup.addGroup.localized())
+                            .font(.custom("IBMPlexSans-Bold", size: 16))
+                            .foregroundColor(.secondary)
+
+                        Image(systemName: "arrow.right")
+                            .foregroundColor(.secondary)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .background(Color.accent)
+                    .cornerRadius(6)
+
                 })
             }
             .padding(.bottom, 30)

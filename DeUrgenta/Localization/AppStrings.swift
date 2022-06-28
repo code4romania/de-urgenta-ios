@@ -42,4 +42,28 @@ enum AppStrings: String, Localizable {
         case noGroup = "CreateGroup.noGroup"
         case addGroup = "CreateGroup.addGroup"
     }
+
+    enum AddGroupName: String, Localizable {
+        case headerTitle = "AddGroupName.headerTitle"
+        case textFieldTitle = "AddGroupName.textFieldTitle"
+        case textFieldPlaceholder = "AddGroupName.textFieldPlaceholder"
+        case continueButton = "AddGroupName.continueButton"
+        case alertTitle = "AddGroupName.alertTitle"
+        case alertMessage = "AddGroupName.alertMessage"
+        case alertDismissButton = "AddGroupName.alertDismissButton"
+    }
+
+    enum SetMeetPoints: String, Localizable {
+        case headerTitle = "SetMeetPoints.headerTitle"
+        case description = "SetMeetPoints.description"
+        case toggleLabel = "SetMeetPoints.toggleLabel"
+        case meetPointsHeader = "SetMeetPoints.meetPointsHeader"
+        case newMeetPointLablel = "SetMeetPoints.newMeetPointLabel"
+        case inviteFriendsButton = "SetMeetPoints.inviteFriendsButton"
+    }
+
+    enum GroupView: String, Localizable {
+        case headerTitle = "GroupView.headerTitle"
+        case addFriendsButton = "GroupView.addFriendsButton"
+    }
 }
