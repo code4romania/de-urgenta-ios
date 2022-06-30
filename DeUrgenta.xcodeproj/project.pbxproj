@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8870286D8E8E00A7801C /* ContactsView.swift */; };
 		62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8872286DAF4100A7801C /* ContactInfo.swift */; };
+		62AB8876286DB05400A7801C /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8875286DB05400A7801C /* ContactRow.swift */; };
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		62AB8870286D8E8E00A7801C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		62AB8872286DAF4100A7801C /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
+		62AB8875286DB05400A7801C /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */,
 				62F658FB286B291500539384 /* GroupView.swift */,
 				62AB8870286D8E8E00A7801C /* ContactsView.swift */,
+				62AB8875286DB05400A7801C /* ContactRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				62F658FC286B291500539384 /* GroupView.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
 				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
+				62AB8876286DB05400A7801C /* ContactRow.swift in Sources */,
 				62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
