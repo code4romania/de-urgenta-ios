@@ -1,5 +1,5 @@
-import Foundation
 import Contacts
+import Foundation
 
 struct ContactInfo: Identifiable {
     var id = UUID()
