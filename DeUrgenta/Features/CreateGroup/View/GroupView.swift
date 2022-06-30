@@ -1,5 +1,5 @@
-import SwiftUI
 import Contacts
+import SwiftUI
 
 protocol GroupViewDelegate {
     func groupViewDidTapAddFriendsButton(_ view: GroupView)
@@ -7,7 +7,6 @@ protocol GroupViewDelegate {
 
 struct GroupView: View {
     var delegate: GroupViewDelegate
-    @State var displayContacts = false
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -46,9 +45,6 @@ struct GroupView: View {
 
             Button(action: {
                 requestAccess()
-                if displayContacts {
-                    delegate.groupViewDidTapAddFriendsButton(self)
-                }
             }, label: {
                 HStack {
                     Text(AppStrings.GroupView.addFriendsButton.localized())
@@ -70,7 +66,9 @@ struct GroupView: View {
     func requestAccess() {
         CNContactStore().requestAccess(for: .contacts) { access, _ in
             if access {
-                displayContacts = true
+                DispatchQueue.main.async {
+                    delegate.groupViewDidTapAddFriendsButton(self)
+                }
             }
         }
     }

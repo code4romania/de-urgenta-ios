@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8870286D8E8E00A7801C /* ContactsView.swift */; };
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		62AB8870286D8E8E00A7801C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */,
 				62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */,
 				62F658FB286B291500539384 /* GroupView.swift */,
+				62AB8870286D8E8E00A7801C /* ContactsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				BB8F3ED4284258FA00278975 /* ConfigStep.swift in Sources */,
 				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
+				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,

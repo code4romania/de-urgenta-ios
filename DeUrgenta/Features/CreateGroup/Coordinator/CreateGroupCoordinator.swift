@@ -43,7 +43,7 @@ extension CreateGroupCoordinator: SetMeetPointsViewDelegate {
 
 extension CreateGroupCoordinator: GroupViewDelegate {
     func groupViewDidTapAddFriendsButton(_: GroupView) {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: ContactsView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }
