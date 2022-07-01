@@ -28,8 +28,8 @@ struct ContactRow: View {
                 }, label: {
                     Text("Adauga")
                         .foregroundColor(Color.accent)
-                        .padding(.bottom, 4)
-                        .padding(.top, 4)
+                        .padding(.bottom, 2)
+                        .padding(.top, 2)
                         .padding(.leading, 10)
                         .padding(.trailing, 10)
                         .overlay(

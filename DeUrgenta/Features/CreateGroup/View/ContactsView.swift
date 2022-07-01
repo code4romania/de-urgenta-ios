@@ -11,7 +11,7 @@ struct ContactsView: View {
                 .padding(.horizontal)
             Spacer()
 
-            ZStack {
+            ZStack(alignment: .bottom) {
                 ScrollView {
                     ForEach(viewModel.contacts, id: \.id) { contact in
                         ContactRow(contact: contact)
@@ -20,10 +20,8 @@ struct ContactsView: View {
                 }
 
                 VStack {
-                    Spacer()
-
                     Button(action: {
-                        // requestAccess()
+                        // TODO: Implement this action
                     }, label: {
                         HStack {
                             Text(AppStrings.GroupView.addFriendsButton.localized())
@@ -40,6 +38,7 @@ struct ContactsView: View {
                 }
                 .frame(maxHeight: 50)
                 .padding(.horizontal)
+                .padding(.bottom, 30)
             }.onAppear {
                 getContacts()
             }
