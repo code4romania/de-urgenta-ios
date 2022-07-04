@@ -22,6 +22,8 @@ struct ContactsView: View {
         VStack {
             SearchBar(text: $searchText)
                 .padding(.horizontal)
+                .background(Color.accent)
+
             Spacer()
 
             ZStack(alignment: .bottom) {

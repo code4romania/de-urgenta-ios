@@ -7,14 +7,10 @@ struct SearchBar: View {
         VStack {
             HStack {
                 TextField(AppStrings.SearchBar.textFieldPlaceholder.localized(), text: $text)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.darkText)
                     .padding(.top, 9)
                     .padding(.bottom, 9)
                     .padding(.leading, 13)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 6)
-                            .stroke(Color.gray, lineWidth: 1)
-                    )
             }.overlay(
                 HStack {
                     Image(systemName: "magnifyingglass")
@@ -25,6 +21,7 @@ struct SearchBar: View {
                 })
         }
         .background(Color.white)
+        .cornerRadius(6)
         .padding(.vertical)
     }
 }
