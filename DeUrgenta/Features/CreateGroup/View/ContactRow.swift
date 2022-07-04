@@ -39,6 +39,7 @@ struct ContactRow: View {
                 })
             }
             .padding(.vertical)
+            .padding(.trailing, 2)
             .frame(height: 50)
 
             Divider()

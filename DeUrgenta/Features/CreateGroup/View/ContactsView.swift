@@ -5,6 +5,19 @@ struct ContactsView: View {
 
     @State var searchText: String = ""
 
+    var filtredContacts: [ContactInfo] {
+        var tempArray: [ContactInfo] = viewModel.contacts
+        guard searchText.isEmpty else {
+            let filtredItems = viewModel.contacts.filter {
+                $0.firstName.uppercased().contains(searchText.uppercased()) ||
+                    $0.lastName.uppercased().contains(searchText.uppercased())
+            }
+            tempArray = filtredItems
+            return tempArray
+        }
+        return viewModel.contacts
+    }
+
     var body: some View {
         VStack {
             SearchBar(text: $searchText)
@@ -13,7 +26,7 @@ struct ContactsView: View {
 
             ZStack(alignment: .bottom) {
                 ScrollView {
-                    ForEach(viewModel.contacts, id: \.id) { contact in
+                    ForEach(filtredContacts, id: \.id) { contact in
                         ContactRow(contact: contact)
                     }
                     .padding(.horizontal)
