@@ -26,7 +26,7 @@ struct ContactRow: View {
                 Button(action: {
                     sendMessage(contact: contact)
                 }, label: {
-                    Text("Adauga")
+                    Text(AppStrings.ContactRow.buttonText.localized())
                         .foregroundColor(Color.accent)
                         .padding(.bottom, 2)
                         .padding(.top, 2)

@@ -50,4 +50,10 @@
 
 "GroupView.addFriendsButton" = "Adaugă prieteni";
 
+"ContactsView.inviteFriendsButton" = "Invită-ți prietenii";
+
+"ContactRow.buttonText" = "Adaugă";
+
+"SearchBar.textFieldPlaceholder" = "Caută un prieten";
+
 

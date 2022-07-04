@@ -6,7 +6,7 @@ struct SearchBar: View {
     var body: some View {
         VStack {
             HStack {
-                TextField("Cauta un prieten", text: $text)
+                TextField(AppStrings.SearchBar.textFieldPlaceholder.localized(), text: $text)
                     .foregroundColor(.gray)
                     .padding(.top, 9)
                     .padding(.bottom, 9)

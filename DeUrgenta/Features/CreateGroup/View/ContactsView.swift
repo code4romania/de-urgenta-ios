@@ -24,7 +24,7 @@ struct ContactsView: View {
                         // TODO: Implement this action
                     }, label: {
                         HStack {
-                            Text(AppStrings.GroupView.addFriendsButton.localized())
+                            Text(AppStrings.ContactsView.inviteFriendsButton.localized())
                                 .font(.custom("IBMPlexSans-Bold", size: 16))
                                 .foregroundColor(.secondary)
 
