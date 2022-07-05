@@ -9,6 +9,9 @@ struct ContactRow: View {
     var contact: ContactInfo
     var delegate: ContactRowDelegate
 
+    @ObservedObject var viewModel: CreateGroupViewModel
+    @State var showingAlert = false
+
     var body: some View {
         VStack {
             HStack {
@@ -30,7 +33,13 @@ struct ContactRow: View {
                 Spacer()
 
                 Button(action: {
-                    delegate.contactRowDidTapAddButton(from: self, withItem: contact)
+                    if viewModel.invitedContacts.contains(where: { $0.id == contact.id }) {
+                        showingAlert = true
+                        print("Trimis deja")
+                    } else {
+                        delegate.contactRowDidTapAddButton(from: self, withItem: contact)
+                    }
+
                 }, label: {
                     Text(AppStrings.ContactRow.buttonText.localized())
                         .foregroundColor(Color.accent)
@@ -47,6 +56,9 @@ struct ContactRow: View {
             .padding(.vertical)
             .padding(.trailing, 2)
             .frame(height: 50)
+            .alert(isPresented: $showingAlert, content: {
+                Alert(title: Text(AppStrings.AddGroupName.alertTitle.localized()), message: Text("Ati trimis deja o invitatie catre \(contact.firstName) \(contact.lastName)"), dismissButton: .default(Text(AppStrings.AddGroupName.alertDismissButton.localized())))
+            })
 
             Divider()
         }

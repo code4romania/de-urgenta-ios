@@ -2,6 +2,7 @@ import SwiftUI
 
 struct InvitedContactRow: View {
     var contact: ContactInfo
+    @ObservedObject var viewModel: CreateGroupViewModel
 
     var body: some View {
         VStack {
@@ -21,7 +22,7 @@ struct InvitedContactRow: View {
                     Spacer()
 
                     Button(action: {
-                        // TODO: Implement this action
+                        viewModel.removeContact(withItem: contact)
                     }, label: {
                         HStack {
                             Image(systemName: "xmark")

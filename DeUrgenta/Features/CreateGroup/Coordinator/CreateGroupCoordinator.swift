@@ -7,8 +7,7 @@ final class CreateGroupCoordinator: NSObject, Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
 
-    var currentContact: ContactInfo?
-    @Published var invitedContacts: [ContactInfo] = []
+    var viewModel: CreateGroupViewModel = .init()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -23,7 +22,7 @@ final class CreateGroupCoordinator: NSObject, Coordinator {
         guard MFMessageComposeViewController.canSendText() else {
             return
         }
-        currentContact = contact
+        viewModel.currentContact = contact
 
         let composeVC = MFMessageComposeViewController()
         composeVC.messageComposeDelegate = self
@@ -41,8 +40,8 @@ extension CreateGroupCoordinator: MFMessageComposeViewControllerDelegate {
     func messageComposeViewController(_: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         switch result {
         case .sent:
-            if let currentContact = currentContact {
-                invitedContacts.append(currentContact)
+            if let currentContact = viewModel.currentContact {
+                viewModel.invitedContacts.append(currentContact)
             }
         default:
             break
@@ -78,7 +77,7 @@ extension CreateGroupCoordinator: SetMeetPointsViewDelegate {
 
 extension CreateGroupCoordinator: GroupViewDelegate {
     func groupViewDidTapAddFriendsButton(_: GroupView) {
-        let viewController = UIHostingController(rootView: ContactsView(delegate: self, contactDelegate: self))
+        let viewController = UIHostingController(rootView: ContactsView(viewModel: viewModel, delegate: self, contactDelegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 }
@@ -91,7 +90,7 @@ extension CreateGroupCoordinator: ContactRowDelegate {
 
 extension CreateGroupCoordinator: ContactsViewDelegate {
     func contactsViewDidTapContinueButton(_: ContactsView) {
-        let veiwController = UIHostingController(rootView: InvitedContactsView(invitedContacts: invitedContacts, delegate: self))
+        let veiwController = UIHostingController(rootView: InvitedContactsView(delegate: self, viewModel: viewModel))
         navigationController.pushViewController(veiwController, animated: true)
     }
 }

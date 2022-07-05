@@ -4,6 +4,9 @@ import Foundation
 class CreateGroupViewModel: ObservableObject {
     @Published var contacts = [ContactInfo]()
 
+    var currentContact: ContactInfo?
+    @Published var invitedContacts: [ContactInfo] = []
+
     init() {}
 
     func fetchingContacts() {
@@ -16,5 +19,9 @@ class CreateGroupViewModel: ObservableObject {
         } catch {
             print("Failed", error)
         }
+    }
+
+    func removeContact(withItem contact: ContactInfo) {
+        invitedContacts = invitedContacts.filter { $0.id != contact.id }
     }
 }

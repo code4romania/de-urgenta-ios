@@ -6,8 +6,9 @@ protocol InvitedContactsViewDelegate {
 }
 
 struct InvitedContactsView: View {
-    var invitedContacts: [ContactInfo]
     var delegate: InvitedContactsViewDelegate
+
+    @ObservedObject var viewModel: CreateGroupViewModel
 
     var body: some View {
         VStack {
@@ -32,8 +33,8 @@ struct InvitedContactsView: View {
             .padding()
 
             ScrollView {
-                ForEach(invitedContacts, id: \.id) { contact in
-                    InvitedContactRow(contact: contact)
+                ForEach(viewModel.invitedContacts, id: \.id) { contact in
+                    InvitedContactRow(contact: contact, viewModel: viewModel)
                 }
                 .padding(.horizontal)
 
