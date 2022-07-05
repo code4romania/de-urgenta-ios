@@ -1,7 +1,12 @@
 import SwiftUI
 
+protocol InvitedContactsViewDelegate {
+    func invitedContactsViewDidTapAddMemberButton(_ view: InvitedContactsView)
+}
+
 struct InvitedContactsView: View {
     var invitedContacts: [ContactInfo]
+    var delegate: InvitedContactsViewDelegate
 
     var body: some View {
         VStack {
@@ -32,7 +37,7 @@ struct InvitedContactsView: View {
                 .padding(.horizontal)
 
                 Button(action: {
-                    // TODO: Implement this action
+                    delegate.invitedContactsViewDidTapAddMemberButton(self)
                 }, label: {
                     VStack {
                         HStack {

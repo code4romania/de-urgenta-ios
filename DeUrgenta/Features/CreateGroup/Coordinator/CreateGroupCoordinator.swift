@@ -91,7 +91,13 @@ extension CreateGroupCoordinator: ContactRowDelegate {
 
 extension CreateGroupCoordinator: ContactsViewDelegate {
     func contactsViewDidTapContinueButton(_: ContactsView) {
-        let veiwController = UIHostingController(rootView: InvitedContactsView(invitedContacts: invitedContacts))
+        let veiwController = UIHostingController(rootView: InvitedContactsView(invitedContacts: invitedContacts, delegate: self))
         navigationController.pushViewController(veiwController, animated: true)
+    }
+}
+
+extension CreateGroupCoordinator: InvitedContactsViewDelegate {
+    func invitedContactsViewDidTapAddMemberButton(_: InvitedContactsView) {
+        navigationController.popViewController(animated: true)
     }
 }
