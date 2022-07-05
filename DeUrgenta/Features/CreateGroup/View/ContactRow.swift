@@ -1,7 +1,13 @@
+import MessageUI
 import SwiftUI
+
+protocol ContactRowDelegate {
+    func contactRowDidTapAddButton(from view: ContactRow, withItem contact: ContactInfo)
+}
 
 struct ContactRow: View {
     var contact: ContactInfo
+    var delegate: ContactRowDelegate
 
     var body: some View {
         VStack {
@@ -24,7 +30,7 @@ struct ContactRow: View {
                 Spacer()
 
                 Button(action: {
-                    sendMessage(contact: contact)
+                    delegate.contactRowDidTapAddButton(from: self, withItem: contact)
                 }, label: {
                     Text(AppStrings.ContactRow.buttonText.localized())
                         .foregroundColor(Color.accent)
@@ -44,11 +50,5 @@ struct ContactRow: View {
 
             Divider()
         }
-    }
-
-    func sendMessage(contact: ContactInfo) {
-        let sms = "sms:\(contact.phoneNumber?.stringValue ?? ""))&body=Prietena ta Corina Dobre te invita sa te alaturi grupului ei de prieteni pregatiti! Descarcă DeUrgenta de la http://deurgenta.ro/invite/d9a84aed5c39bc"
-        let strURL: String = sms.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
-        UIApplication.shared.open(URL(string: strURL)!, options: [:], completionHandler: nil)
     }
 }

@@ -1,0 +1,87 @@
+import SwiftUI
+
+struct InvitedContactsView: View {
+    var invitedContacts: [ContactInfo]
+
+    var body: some View {
+        VStack {
+            HStack {
+                Text(AppStrings.GroupView.headerTitle.localized()) // Localize text
+                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .padding(.top, 10)
+
+                Spacer()
+            }
+            .padding(.horizontal)
+
+            HStack {
+                Image(systemName: "person.3.fill")
+                    .foregroundColor(.accent)
+
+                Text("Avengers32 (5/30)")
+                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
+
+                Spacer()
+            }
+            .padding()
+
+            ScrollView {
+                ForEach(invitedContacts, id: \.id) { contact in
+                    InvitedContactRow(contact: contact)
+                }
+                .padding(.horizontal)
+
+                Button(action: {
+                    // TODO: Implement this action
+                }, label: {
+                    VStack {
+                        HStack {
+                            ZStack {
+                                Image("logo")
+                                    .resizable()
+                                    .frame(width: 60, height: 60)
+
+                                Image(systemName: "person.fill.badge.plus")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundColor(.white)
+                            }
+                            .padding(.horizontal)
+
+                            Text("Adauga membru nou in grup") // Localize text
+                                .bold()
+                                .foregroundColor(.accent)
+
+                            Spacer()
+                        }
+                        .padding(.vertical)
+
+                        Divider()
+                            .padding(.horizontal)
+                    }
+
+                })
+            }
+
+            Spacer()
+
+            Button(action: {
+                // TODO: Implement this action
+            }, label: {
+                HStack {
+                    Text(AppStrings.GroupView.addFriendsButton.localized()) // Localize text
+                        .font(.custom("IBMPlexSans-Bold", size: 16))
+                        .foregroundColor(.secondary)
+
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.secondary)
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .background(Color.accent)
+                .cornerRadius(6)
+            })
+            .padding(.bottom, 30)
+            .padding(.horizontal)
+        }
+    }
+}

@@ -1,9 +1,16 @@
 import SwiftUI
 
+protocol ContactsViewDelegate {
+    func contactsViewDidTapContinueButton(_ view: ContactsView)
+}
+
 struct ContactsView: View {
     @StateObject var viewModel = CreateGroupViewModel()
 
     @State var searchText: String = ""
+
+    var delegate: ContactRowDelegate
+    var contactDelegate: ContactsViewDelegate
 
     var filtredContacts: [ContactInfo] {
         var tempArray: [ContactInfo] = viewModel.contacts
@@ -29,14 +36,14 @@ struct ContactsView: View {
             ZStack(alignment: .bottom) {
                 ScrollView {
                     ForEach(filtredContacts, id: \.id) { contact in
-                        ContactRow(contact: contact)
+                        ContactRow(contact: contact, delegate: delegate)
                     }
                     .padding(.horizontal)
                 }
 
                 VStack {
                     Button(action: {
-                        // TODO: Implement this action
+                        contactDelegate.contactsViewDidTapContinueButton(self)
                     }, label: {
                         HStack {
                             Text(AppStrings.ContactsView.inviteFriendsButton.localized())
@@ -64,11 +71,5 @@ struct ContactsView: View {
         DispatchQueue.main.async {
             viewModel.fetchingContacts()
         }
-    }
-}
-
-struct ContactsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContactsView()
     }
 }
