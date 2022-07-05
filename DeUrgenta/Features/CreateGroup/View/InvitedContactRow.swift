@@ -20,12 +20,17 @@ struct InvitedContactRow: View {
 
                     Spacer()
 
-                    HStack {
-                        Image(systemName: "xmark")
-                            .foregroundColor(.accent)
+                    Button(action: {
+                        // TODO: Implement this action
+                    }, label: {
+                        HStack {
+                            Image(systemName: "xmark")
+                                .foregroundColor(.accent)
 
-                        Text("Elimina din grup") // Localize text
-                    }
+                            Text("Elimina din grup") // Localize text
+                                .foregroundColor(.darkText)
+                        }
+                    })
                 }
                 .padding(.horizontal)
 

@@ -2,6 +2,7 @@ import SwiftUI
 
 protocol InvitedContactsViewDelegate {
     func invitedContactsViewDidTapAddMemberButton(_ view: InvitedContactsView)
+    func invitedContactsViewDidTapContinueButton(_ view: InvitedContactsView)
 }
 
 struct InvitedContactsView: View {
@@ -71,7 +72,7 @@ struct InvitedContactsView: View {
             Spacer()
 
             Button(action: {
-                // TODO: Implement this action
+                delegate.invitedContactsViewDidTapContinueButton(self)
             }, label: {
                 HStack {
                     Text(AppStrings.GroupView.addFriendsButton.localized()) // Localize text

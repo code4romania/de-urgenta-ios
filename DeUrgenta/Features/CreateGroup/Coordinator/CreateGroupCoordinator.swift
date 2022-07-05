@@ -100,4 +100,8 @@ extension CreateGroupCoordinator: InvitedContactsViewDelegate {
     func invitedContactsViewDidTapAddMemberButton(_: InvitedContactsView) {
         navigationController.popViewController(animated: true)
     }
+
+    func invitedContactsViewDidTapContinueButton(_: InvitedContactsView) {
+        navigationController.popToRootViewController(animated: true)
+    }
 }
