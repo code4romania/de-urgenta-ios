@@ -69,7 +69,9 @@ struct ContactsView: View {
 
     func getContacts() {
         DispatchQueue.main.async {
-            viewModel.fetchingContacts()
+            if viewModel.contacts.isEmpty {
+                viewModel.fetchingContacts()
+            }
         }
     }
 }
