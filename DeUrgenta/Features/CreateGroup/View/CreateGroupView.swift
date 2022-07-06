@@ -31,8 +31,7 @@ struct CreateGroupView: View {
                         .foregroundColor(.darkText)
                 }
             }
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
+            .padding(.horizontal)
             .padding(.top, 5)
             .lineSpacing(10)
 
@@ -65,8 +64,7 @@ struct CreateGroupView: View {
                 })
             }
             .padding(.bottom, 30)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
+            .padding(.horizontal)
         }
     }
 }

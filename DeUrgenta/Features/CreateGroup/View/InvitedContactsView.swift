@@ -1,0 +1,71 @@
+import SwiftUI
+
+protocol InvitedContactsViewDelegate {
+    func invitedContactsViewDidTapAddMemberButton(_ view: InvitedContactsView)
+    func invitedContactsViewDidTapContinueButton(_ view: InvitedContactsView)
+}
+
+struct InvitedContactsView: View {
+    var delegate: InvitedContactsViewDelegate
+
+    @ObservedObject var viewModel: CreateGroupViewModel
+
+    var body: some View {
+        VStack {
+            HStack {
+                Text(AppStrings.GroupView.headerTitle.localized())
+                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .foregroundColor(.darkText)
+                    .padding(.top, 10)
+
+                Spacer()
+            }
+            .padding(.horizontal)
+
+            HStack {
+                Image(systemName: "person.3.fill")
+                    .foregroundColor(.accent)
+
+                Text("Avengers32 (5/30)")
+                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
+                    .foregroundColor(.darkText)
+
+                Spacer()
+            }
+            .padding()
+
+            ScrollView {
+                ForEach(viewModel.invitedContacts, id: \.id) { contact in
+                    InvitedContactRow(contact: contact, viewModel: viewModel)
+                }
+                .padding(.horizontal)
+
+                Button(action: {
+                    delegate.invitedContactsViewDidTapAddMemberButton(self)
+                }, label: {
+                    AddMemberButtonView()
+                })
+            }
+
+            Spacer()
+
+            Button(action: {
+                delegate.invitedContactsViewDidTapContinueButton(self)
+            }, label: {
+                HStack {
+                    Text(AppStrings.InvitedContactsView.continueButton.localized())
+                        .font(.custom("IBMPlexSans-Bold", size: 16))
+                        .foregroundColor(.secondary)
+
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.secondary)
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+                .background(Color.accent)
+                .cornerRadius(6)
+            })
+            .padding(.bottom, 30)
+            .padding(.horizontal)
+        }
+    }
+}

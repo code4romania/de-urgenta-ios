@@ -65,5 +65,34 @@ enum AppStrings: String, Localizable {
     enum GroupView: String, Localizable {
         case headerTitle = "GroupView.headerTitle"
         case addFriendsButton = "GroupView.addFriendsButton"
+        case alertTitle = "GroupView.alertTitle"
+        case alertMessage = "GroupView.alertMessage"
+        case alertPrimaryButton = "GroupView.alertPrimaryButton"
+        case alertCloseButton = "GroupView.alertCloseButton"
+    }
+
+    enum ContactsView: String, Localizable {
+        case inviteFriendsButton = "ContactsView.inviteFriendsButton"
+    }
+
+    enum ContactRow: String, Localizable {
+        case buttonText = "ContactRow.buttonText"
+        case alertTitle = "ConteactRow.alertTitle"
+        case alertMessage = "ContactRow.alertMessage"
+        case alertDismissButton = "ContactRow.alertDismissButton"
+    }
+
+    enum SearchBar: String, Localizable {
+        case textFieldPlaceholder = "SearchBar.textFieldPlaceholder"
+    }
+
+    enum InvitedContactsView: String, Localizable {
+        case addGroupMemberButton = "InvitedContactsView.addGroupMemberButton"
+        case continueButton = "InvitedContactsView.continueButton"
+    }
+
+    enum InvitedContactsRow: String, Localizable {
+        case invitationSentText = "InvitedContactsRow.invitationSentText"
+        case removeContactText = "InvitedContactsRow.removeContactText"
     }
 }

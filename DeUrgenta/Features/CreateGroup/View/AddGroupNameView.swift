@@ -58,8 +58,7 @@ struct AddGroupNameView: View {
                 Alert(title: Text(AppStrings.AddGroupName.alertTitle.localized()), message: Text(AppStrings.AddGroupName.alertMessage.localized()), dismissButton: .default(Text(AppStrings.AddGroupName.alertDismissButton.localized())))
             })
             .padding(.bottom, 30)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
+            .padding(.horizontal)
         }
     }
 }

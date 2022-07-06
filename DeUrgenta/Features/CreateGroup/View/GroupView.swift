@@ -1,3 +1,4 @@
+import Contacts
 import SwiftUI
 
 protocol GroupViewDelegate {
@@ -6,6 +7,7 @@ protocol GroupViewDelegate {
 
 struct GroupView: View {
     var delegate: GroupViewDelegate
+    @State var showingAlert = false
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -43,7 +45,7 @@ struct GroupView: View {
             Spacer()
 
             Button(action: {
-                delegate.groupViewDidTapAddFriendsButton(self)
+                requestAccess()
             }, label: {
                 HStack {
                     Text(AppStrings.GroupView.addFriendsButton.localized())
@@ -60,5 +62,25 @@ struct GroupView: View {
             .padding(.bottom, 30)
         }
         .padding(.horizontal)
+        .alert(isPresented: $showingAlert) {
+            Alert(title: Text(AppStrings.GroupView.alertTitle.localized()),
+                  message: Text(AppStrings.GroupView.alertMessage.localized()),
+                  primaryButton: .default(Text(AppStrings.GroupView.alertPrimaryButton.localized()), action: {
+                      UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                  }),
+                  secondaryButton: .default(Text(AppStrings.GroupView.alertCloseButton.localized())))
+        }
+    }
+
+    func requestAccess() {
+        CNContactStore().requestAccess(for: .contacts) { access, _ in
+            if access {
+                DispatchQueue.main.async {
+                    delegate.groupViewDidTapAddFriendsButton(self)
+                }
+            } else {
+                showingAlert.toggle()
+            }
+        }
     }
 }
