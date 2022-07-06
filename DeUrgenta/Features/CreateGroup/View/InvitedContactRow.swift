@@ -12,10 +12,13 @@ struct InvitedContactRow: View {
                     .frame(width: 60, height: 60)
 
                 VStack(alignment: .leading) {
-                    HStack(spacing: 1) {
+                    HStack(spacing: 2) {
                         Text("\(contact.firstName) \(contact.lastName)")
+                            .font(.custom("IBMPlexSans-Regular", size: 16))
+                            .foregroundColor(.darkText)
 
-                        Text("(Invitatie trimisa)") // Localize text
+                        Text(AppStrings.InvitedContactsRow.invitationSentText.localized())
+                            .font(.custom("IBMPlexSans-Regular", size: 16))
                             .foregroundColor(.gray)
                     }
 
@@ -28,7 +31,8 @@ struct InvitedContactRow: View {
                             Image(systemName: "xmark")
                                 .foregroundColor(.accent)
 
-                            Text("Elimina din grup") // Localize text
+                            Text(AppStrings.InvitedContactsRow.removeContactText.localized())
+                                .font(.custom("IBMPlexSans-Regular", size: 16))
                                 .foregroundColor(.darkText)
                         }
                     })

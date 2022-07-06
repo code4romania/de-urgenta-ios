@@ -13,8 +13,9 @@ struct InvitedContactsView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(AppStrings.GroupView.headerTitle.localized()) // Localize text
+                Text(AppStrings.GroupView.headerTitle.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .foregroundColor(.darkText)
                     .padding(.top, 10)
 
                 Spacer()
@@ -27,6 +28,7 @@ struct InvitedContactsView: View {
 
                 Text("Avengers32 (5/30)")
                     .font(.custom("IBMPlexSans-SemiBold", size: 20))
+                    .foregroundColor(.darkText)
 
                 Spacer()
             }
@@ -41,32 +43,7 @@ struct InvitedContactsView: View {
                 Button(action: {
                     delegate.invitedContactsViewDidTapAddMemberButton(self)
                 }, label: {
-                    VStack {
-                        HStack {
-                            ZStack {
-                                Image("logo")
-                                    .resizable()
-                                    .frame(width: 60, height: 60)
-
-                                Image(systemName: "person.fill.badge.plus")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.horizontal)
-
-                            Text("Adauga membru nou in grup") // Localize text
-                                .bold()
-                                .foregroundColor(.accent)
-
-                            Spacer()
-                        }
-                        .padding(.vertical)
-
-                        Divider()
-                            .padding(.horizontal)
-                    }
-
+                    AddMemberButtonView()
                 })
             }
 
@@ -76,7 +53,7 @@ struct InvitedContactsView: View {
                 delegate.invitedContactsViewDidTapContinueButton(self)
             }, label: {
                 HStack {
-                    Text(AppStrings.GroupView.addFriendsButton.localized()) // Localize text
+                    Text(AppStrings.InvitedContactsView.continueButton.localized())
                         .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
 

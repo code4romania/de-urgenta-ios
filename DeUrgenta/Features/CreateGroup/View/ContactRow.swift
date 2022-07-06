@@ -6,11 +6,11 @@ protocol ContactRowDelegate {
 }
 
 struct ContactRow: View {
-    var contact: ContactInfo
-    var delegate: ContactRowDelegate
-
     @ObservedObject var viewModel: CreateGroupViewModel
     @State var showingAlert = false
+
+    var contact: ContactInfo
+    var delegate: ContactRowDelegate
 
     var body: some View {
         VStack {
@@ -35,7 +35,6 @@ struct ContactRow: View {
                 Button(action: {
                     if viewModel.invitedContacts.contains(where: { $0.id == contact.id }) {
                         showingAlert = true
-                        print("Trimis deja")
                     } else {
                         delegate.contactRowDidTapAddButton(from: self, withItem: contact)
                     }
@@ -57,7 +56,9 @@ struct ContactRow: View {
             .padding(.trailing, 2)
             .frame(height: 50)
             .alert(isPresented: $showingAlert, content: {
-                Alert(title: Text(AppStrings.AddGroupName.alertTitle.localized()), message: Text("Ati trimis deja o invitatie catre \(contact.firstName) \(contact.lastName)"), dismissButton: .default(Text(AppStrings.AddGroupName.alertDismissButton.localized())))
+                Alert(title: Text(AppStrings.ContactRow.alertTitle.localized()),
+                      message: Text(AppStrings.ContactRow.alertMessage.localized() + contact.firstName + contact.lastName),
+                      dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
             })
 
             Divider()

@@ -6,7 +6,6 @@ protocol ContactsViewDelegate {
 
 struct ContactsView: View {
     @ObservedObject var viewModel: CreateGroupViewModel
-
     @State var searchText: String = ""
 
     var delegate: ContactRowDelegate
@@ -36,7 +35,7 @@ struct ContactsView: View {
             ZStack(alignment: .bottom) {
                 ScrollView {
                     ForEach(filtredContacts, id: \.id) { contact in
-                        ContactRow(contact: contact, delegate: delegate, viewModel: viewModel)
+                        ContactRow(viewModel: viewModel, contact: contact, delegate: delegate)
                     }
                     .padding(.horizontal)
                 }

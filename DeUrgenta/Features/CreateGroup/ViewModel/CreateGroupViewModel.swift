@@ -19,6 +19,13 @@ class CreateGroupViewModel: ObservableObject {
         } catch {
             print("Failed", error)
         }
+        sortContacts()
+    }
+
+    func sortContacts() {
+        contacts.sort {
+            $0.firstName < $1.firstName
+        }
     }
 
     func removeContact(withItem contact: ContactInfo) {

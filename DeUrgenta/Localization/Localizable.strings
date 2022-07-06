@@ -54,6 +54,18 @@
 
 "ContactRow.buttonText" = "Adaugă";
 
+"ConteactRow.alertTitle" = "Atenție";
+
+"ContactRow.alertMessage" = "Ați trimis deja o invitație către ";
+
+"ContactRow.alertDismissButton" = "OK";
+
 "SearchBar.textFieldPlaceholder" = "Caută un prieten";
 
+"InvitedContactsView.addGroupMemberButton" = "Adaugă membru nou în grup";
 
+"InvitedContactsView.continueButton" = "Continuă";
+
+"InvitedContactsRow.invitationSentText" = "(Invitație trimisă)";
+
+"InvitedContactsRow.removeContactText" = "Elimină din grup";

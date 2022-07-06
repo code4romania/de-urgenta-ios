@@ -73,9 +73,22 @@ enum AppStrings: String, Localizable {
 
     enum ContactRow: String, Localizable {
         case buttonText = "ContactRow.buttonText"
+        case alertTitle = "ConteactRow.alertTitle"
+        case alertMessage = "ContactRow.alertMessage"
+        case alertDismissButton = "ContactRow.alertDismissButton"
     }
 
     enum SearchBar: String, Localizable {
         case textFieldPlaceholder = "SearchBar.textFieldPlaceholder"
+    }
+
+    enum InvitedContactsView: String, Localizable {
+        case addGroupMemberButton = "InvitedContactsView.addGroupMemberButton"
+        case continueButton = "InvitedContactsView.continueButton"
+    }
+
+    enum InvitedContactsRow: String, Localizable {
+        case invitationSentText = "InvitedContactsRow.invitationSentText"
+        case removeContactText = "InvitedContactsRow.removeContactText"
     }
 }
