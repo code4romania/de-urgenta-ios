@@ -14,7 +14,9 @@ class CreateGroupViewModel: ObservableObject {
         let request = CNContactFetchRequest(keysToFetch: keys as [CNKeyDescriptor])
         do {
             try CNContactStore().enumerateContacts(with: request, usingBlock: { contact, _ in
-                self.contacts.append(ContactInfo(firstName: contact.givenName, lastName: contact.familyName, phoneNumber: contact.phoneNumbers.first?.value))
+                if let contactPhoneNumber = contact.phoneNumbers.first?.value {
+                    self.contacts.append(ContactInfo(firstName: contact.givenName, lastName: contact.familyName, phoneNumber: contactPhoneNumber))
+                }
             })
         } catch {
             print("Failed", error)

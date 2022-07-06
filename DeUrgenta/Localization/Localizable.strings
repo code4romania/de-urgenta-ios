@@ -1,71 +1,51 @@
 "cancel" = "RENUNȚĂ";
 
 "LandingPage.tagLine" = "Tu ți-ai făcut planul în caz de urgență?";
-
 "LandingPage.authenticate" = "Autentifică-te";
-
 "LandingPage.createAccount" = "Înscrie-te acum";
-
 "LandingPage.viewRoutes" = "Vezi trasee";
 
 "AccountConfig.headerTitle" = "Configurează\U2011ți contul";
 
 "CreateGroup.headerTitle" = "Creează-ți un grup";
-
 "CreateGroup.firstParagraph" = "În eventualitatea unui cutremur este important să ai un protocol împreună cu cei apropiați prin care vă puteți regăsi cu ușurință. Creează un grup de prieteni, de familie sau de colegi de la birou sau școală pentru a vă seta puncte de întâlnire în caz de cutremur.";
-
 "CreateGroup.secondParagraph" = "Chiar dacă nu vei avea acces la internet în acele momente, poți folosi în continuare aplicație pentru a vedea care sunt punctele de întâlnire și pentru a identifica traseele pentru a ajunge acolo. De asemenea, poți vedea, cu permisiunea lor, traseele și adresele uzuale ale membrilor grupului tău și îi poți căuta dacă aceștia nu vin la punctul de întâlnire.";
-
 "CreateGroup.noGroup" = "Nu vreau să creez un grup acum";
-
 "CreateGroup.addGroup" = "Crează un grup nou";
 
 "AddGroupName.headerTitle" = "Creează-ți grupul de prieteni";
-
 "AddGroupName.textFieldTitle" = "Denumirea grupului";
-
 "AddGroupName.textFieldPlaceholder" = "Fii creativ...";
-
 "AddGroupName.continueButton" = "Continuă";
-
 "AddGroupName.alertTitle" = "Important";
-
 "AddGroupName.alertMessage" = "Denumirea grupului este obligatorie.";
-
 "AddGroupName.alertDismissButton" = "OK";
 
 "SetMeetPoints.headerTitle" = "Setează punctele de întâlnire";
-
 "SetMeetPoints.description" = "Ai deja puncte de întâlnire setate, vrei să le faci vizibile și să le asociezi cu noul grup sau preferi să setezi alte puncte special pentru grupul pe care îl creezi acum?";
-
 "SetMeetPoints.toggleLabel" = "Fă punctele de întâlnire vizibile";
-
 "SetMeetPoints.meetPointsHeader" = "Setează puncte noi";
-
 "SetMeetPoints.newMeetPointLabel" = "Adaugă un punct de întâlnire";
-
 "SetMeetPoints.inviteFriendsButton" = "Invită prieteni";
 
 "GroupView.headerTitle" = "Creează-ți grupul de prieteni";
-
 "GroupView.addFriendsButton" = "Adaugă prieteni";
+"GroupView.alertTitle" = "Această aplicație necesită acces la Contacte pentru a continua";
+"GroupView.alertMessage" = "Doriți să deschideți setările și să acordați permisiunea?";
+"GroupView.alertPrimaryButton" = "Setari";
+"GroupView.alertCloseButton" = "Inchide";
 
 "ContactsView.inviteFriendsButton" = "Invită-ți prietenii";
 
 "ContactRow.buttonText" = "Adaugă";
-
 "ConteactRow.alertTitle" = "Atenție";
-
 "ContactRow.alertMessage" = "Ați trimis deja o invitație către ";
-
 "ContactRow.alertDismissButton" = "OK";
 
 "SearchBar.textFieldPlaceholder" = "Caută un prieten";
 
 "InvitedContactsView.addGroupMemberButton" = "Adaugă membru nou în grup";
-
 "InvitedContactsView.continueButton" = "Continuă";
 
 "InvitedContactsRow.invitationSentText" = "(Invitație trimisă)";
-
 "InvitedContactsRow.removeContactText" = "Elimină din grup";

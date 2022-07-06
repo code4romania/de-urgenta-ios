@@ -24,7 +24,7 @@ struct ContactRow: View {
                         .font(.custom("IBMPlexSans-Regular", size: 15))
                         .foregroundColor(.darkText)
 
-                    Text("\(contact.phoneNumber?.stringValue ?? "")")
+                    Text("\(contact.phoneNumber.stringValue)")
                         .font(.custom("IBMPlexSans-Regular", size: 15))
                         .foregroundColor(.gray)
                 }

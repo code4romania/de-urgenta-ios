@@ -65,6 +65,10 @@ enum AppStrings: String, Localizable {
     enum GroupView: String, Localizable {
         case headerTitle = "GroupView.headerTitle"
         case addFriendsButton = "GroupView.addFriendsButton"
+        case alertTitle = "GroupView.alertTitle"
+        case alertMessage = "GroupView.alertMessage"
+        case alertPrimaryButton = "GroupView.alertPrimaryButton"
+        case alertCloseButton = "GroupView.alertCloseButton"
     }
 
     enum ContactsView: String, Localizable {

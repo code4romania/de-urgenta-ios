@@ -27,9 +27,7 @@ final class CreateGroupCoordinator: NSObject, Coordinator {
         let composeVC = MFMessageComposeViewController()
         composeVC.messageComposeDelegate = self
 
-        var tempArray: [String] = []
-        tempArray.append(contact.phoneNumber?.stringValue ?? "")
-        composeVC.recipients = tempArray
+        composeVC.recipients = [contact.phoneNumber.stringValue]
         composeVC.body = "Prietena ta Corina Dobre te invita sa te alaturi grupului ei de prieteni pregatiti! Descarcă DeUrgenta de la http://deurgenta.ro/invite/d9a84aed5c39bc"
 
         navigationController.present(composeVC, animated: true)

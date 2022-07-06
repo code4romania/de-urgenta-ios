@@ -12,14 +12,14 @@ struct ContactsView: View {
     var contactDelegate: ContactsViewDelegate
 
     var filtredContacts: [ContactInfo] {
-        var tempArray: [ContactInfo] = viewModel.contacts
+        var contactsArrayCopy: [ContactInfo] = viewModel.contacts
         guard searchText.isEmpty else {
             let filtredItems = viewModel.contacts.filter {
                 $0.firstName.uppercased().contains(searchText.uppercased()) ||
                     $0.lastName.uppercased().contains(searchText.uppercased())
             }
-            tempArray = filtredItems
-            return tempArray
+            contactsArrayCopy = filtredItems
+            return contactsArrayCopy
         }
         return viewModel.contacts
     }
