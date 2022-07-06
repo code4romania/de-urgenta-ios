@@ -57,7 +57,7 @@ struct ContactRow: View {
             .frame(height: 50)
             .alert(isPresented: $showingAlert, content: {
                 Alert(title: Text(AppStrings.ContactRow.alertTitle.localized()),
-                      message: Text(AppStrings.ContactRow.alertMessage.localized() + contact.firstName + contact.lastName),
+                      message: Text(AppStrings.ContactRow.alertMessage.localized() + contact.firstName + " " + contact.lastName),
                       dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
             })
 
