@@ -42,10 +42,8 @@ struct ContactRow: View {
                 }, label: {
                     Text(AppStrings.ContactRow.buttonText.localized())
                         .foregroundColor(Color.accent)
-                        .padding(.bottom, 2)
-                        .padding(.top, 2)
-                        .padding(.leading, 10)
-                        .padding(.trailing, 10)
+                        .padding(.vertical, 2)
+                        .padding(.horizontal, 10)
                         .overlay(
                             RoundedRectangle(cornerRadius: 50)
                                 .stroke(Color.accent, lineWidth: 1)

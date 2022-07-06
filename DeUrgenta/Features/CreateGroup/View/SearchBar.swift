@@ -8,8 +8,7 @@ struct SearchBar: View {
             HStack {
                 TextField(AppStrings.SearchBar.textFieldPlaceholder.localized(), text: $text)
                     .foregroundColor(.darkText)
-                    .padding(.top, 9)
-                    .padding(.bottom, 9)
+                    .padding(.vertical, 9)
                     .padding(.leading, 13)
             }.overlay(
                 HStack {

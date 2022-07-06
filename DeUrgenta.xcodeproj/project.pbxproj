@@ -133,16 +133,16 @@
 		62AC818A285B3DF100ACAF3E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */,
 				62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */,
-				62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */,
-				62F658FB286B291500539384 /* GroupView.swift */,
-				62AB8870286D8E8E00A7801C /* ContactsView.swift */,
-				62AB8875286DB05400A7801C /* ContactRow.swift */,
-				62AB887A286DC42500A7801C /* SearchBar.swift */,
-				6236290B2874237800B04E9A /* InvitedContactsView.swift */,
-				6236290D2874336600B04E9A /* InvitedContactRow.swift */,
 				62CC0A742875724800374984 /* AddMemberButtonView.swift */,
+				62AB8875286DB05400A7801C /* ContactRow.swift */,
+				62AB8870286D8E8E00A7801C /* ContactsView.swift */,
+				62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */,
+				62F658FB286B291500539384 /* GroupView.swift */,
+				6236290D2874336600B04E9A /* InvitedContactRow.swift */,
+				6236290B2874237800B04E9A /* InvitedContactsView.swift */,
+				62AB887A286DC42500A7801C /* SearchBar.swift */,
+				62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
