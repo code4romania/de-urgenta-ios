@@ -32,8 +32,8 @@
 "GroupView.addFriendsButton" = "Adaugă prieteni";
 "GroupView.alertTitle" = "Această aplicație necesită acces la Contacte pentru a continua";
 "GroupView.alertMessage" = "Doriți să deschideți setările și să acordați permisiunea?";
-"GroupView.alertPrimaryButton" = "Setari";
-"GroupView.alertCloseButton" = "Inchide";
+"GroupView.alertPrimaryButton" = "Setări";
+"GroupView.alertCloseButton" = "Închide";
 
 "ContactsView.inviteFriendsButton" = "Invită-ți prietenii";
 
