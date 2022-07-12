@@ -58,7 +58,6 @@ extension ApplicationCoordinator: AccountConfigCoordinatorDelegate {
     func accountConfigCoordinatorShouldPresentBackpack(_ sender: AccountConfigCoordinator) {
         let coordinator = EmergencyBackpackCoordinator(navigationController: navigationController)
         addChildCoordinator(coordinator)
-        // coordinator.delegate = self
         coordinator.start()
 
         removeChildCoordinator(sender)
