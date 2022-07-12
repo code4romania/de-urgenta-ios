@@ -95,4 +95,19 @@ enum AppStrings: String, Localizable {
         case invitationSentText = "InvitedContactsRow.invitationSentText"
         case removeContactText = "InvitedContactsRow.removeContactText"
     }
+
+    enum EmergencyBackpackView: String, Localizable {
+        case headerTitle = "EmergencyBackpackView.headerTitle"
+        case description = "EmergencyBackpackView.description"
+        case addBackpackButton = "EmergencyBackpackView.addBackpackButton"
+        case remindMeLaterButton = "EmergencyBackpackView.remindMeLaterButton"
+    }
+
+    enum MyBackpackView: String, Localizable {
+        case headerTitle = "MyBackpackView.headerTitle"
+        case firstParagraph = "MyBackpackView.firstParagraph"
+        case secondParagraph = "MyBackpackView.secondParagraph"
+        case addManagerButton = "MyBackpackView.addManagerButton"
+        case backpackitemsHeader = "MyBackpackView.backpackitemsHeader"
+    }
 }

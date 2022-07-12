@@ -13,16 +13,17 @@ struct MyBackpackView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("Rucsacul meu")
+                Text(AppStrings.MyBackpackView.headerTitle.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .frame(alignment: .leading)
                     .padding(.vertical, 10)
 
                 VStack {
-                    Text("Există o serie de itemuri pe care este recomandat să le ai în acest rucsac. Chiar dacă nu ai acum rucsacul, pune deoparte  resursele de mai jos până vei achiziționa unul. Este recomandat să ai un rucsac impermeabil sau dintr-un material cât mai rezistent.")
+                    Text(AppStrings.MyBackpackView.firstParagraph.localized())
                         .font(.custom("IBMPlexSans-Regular", size: 16))
                         .foregroundColor(.darkText)
 
-                    Text(" Rucsacul este responsabilitatea tuturor persoanelor care locuiesc în aceeași casă. Dacă locuiești cu încă cineva, invită-l în aplicație și asigurați-vă împreună că aveți mereu tot ce este necesar în rucsac.  ")
+                    Text(AppStrings.MyBackpackView.secondParagraph.localized())
                         .font(.custom("IBMPlexSans-Regular", size: 16))
                         .foregroundColor(.darkText)
                         .padding(.top, 15)
@@ -41,7 +42,7 @@ struct MyBackpackView: View {
                             Image(systemName: "plus.circle.fill")
                                 .foregroundColor(.accent)
 
-                            Text("Adauga un responsabil")
+                            Text(AppStrings.MyBackpackView.addManagerButton.localized())
                                 .font(.custom("IBMPlexSans-SemiBold", size: 20))
                                 .foregroundColor(.accent)
                         }
@@ -58,7 +59,7 @@ struct MyBackpackView: View {
                 }
                 .padding(.bottom, 20)
 
-                Text("Componentele rucsacului")
+                Text(AppStrings.MyBackpackView.backpackitemsHeader.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 20))
                     .padding(.vertical)
 

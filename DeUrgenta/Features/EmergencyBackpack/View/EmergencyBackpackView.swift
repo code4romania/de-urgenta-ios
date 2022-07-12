@@ -10,12 +10,12 @@ struct EmergencyBackpackView: View {
 
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Fă-ți rucsacul de urgență")
+            Text(AppStrings.EmergencyBackpackView.headerTitle.localized())
                 .font(.custom("IBMPlexSans-SemiBold", size: 23))
                 .padding(.top, 10)
 
             ScrollView {
-                Text("Rucsacul de urgență conține obiecte, alimente și alte lucruri utile care vă vor ajuta să supraviețuiți cel puțin 72 de ore într-o situație critică. În pașii următori vei afla ce trebuie să conțină acest rucsac, să te asiguri că ai minimul necesar adăugat în el și poți să alegi cine dintre persoanele cu care locuiești este responsabil de actualizarea sa. ")
+                Text(AppStrings.EmergencyBackpackView.description.localized())
                     .font(.custom("IBMPlexSans-Regular", size: 16))
                     .foregroundColor(.darkText)
                     .lineSpacing(10)
@@ -31,7 +31,7 @@ struct EmergencyBackpackView: View {
                         Image(systemName: "plus.circle.fill")
                             .foregroundColor(.gray)
 
-                        Text("Adauga un rucsac nou")
+                        Text(AppStrings.EmergencyBackpackView.addBackpackButton.localized())
                             .font(.custom("IBMPlexSans-SemiBold", size: 20))
                             .foregroundColor(.darkText)
                     }
@@ -55,7 +55,7 @@ struct EmergencyBackpackView: View {
                 Button(action: {
                     delegate.emergencyBackpackViewDidTapRemindMeLater(self)
                 }, label: {
-                    Text("Aminteste-mi mai tarziu")
+                    Text(AppStrings.EmergencyBackpackView.remindMeLaterButton.localized())
                         .foregroundColor(.gray)
                         .underline()
                 })

@@ -49,3 +49,14 @@
 
 "InvitedContactsRow.invitationSentText" = "(Invitație trimisă)";
 "InvitedContactsRow.removeContactText" = "Elimină din grup";
+
+"EmergencyBackpackView.headerTitle" = "Fă-ți rucsacul de urgență";
+"EmergencyBackpackView.description" = "Rucsacul de urgență conține obiecte, alimente și alte lucruri utile care vă vor ajuta să supraviețuiți cel puțin 72 de ore într-o situație critică. În pașii următori vei afla ce trebuie să conțină acest rucsac, să te asiguri că ai minimul necesar adăugat în el și poți să alegi cine dintre persoanele cu care locuiești este responsabil de actualizarea sa. ";
+"EmergencyBackpackView.addBackpackButton" = "Adaugă un rucsac nou";
+"EmergencyBackpackView.remindMeLaterButton" = "Amintește-mi mai târziu";
+
+"MyBackpackView.headerTitle" = "Rucsacul meu";
+"MyBackpackView.firstParagraph" = "Există o serie de itemuri pe care este recomandat să le ai în acest rucsac. Chiar dacă nu ai acum rucsacul, pune deoparte  resursele de mai jos până vei achiziționa unul. Este recomandat să ai un rucsac impermeabil sau dintr-un material cât mai rezistent.";
+"MyBackpackView.secondParagraph" = "Rucsacul este responsabilitatea tuturor persoanelor care locuiesc în aceeași casă. Dacă locuiești cu încă cineva, invită-l în aplicație și asigurați-vă împreună că aveți mereu tot ce este necesar în rucsac.";
+"MyBackpackView.addManagerButton" = "Adaugă un responsabil";
+"MyBackpackView.backpackitemsHeader" = "Componentele rucsacului";
