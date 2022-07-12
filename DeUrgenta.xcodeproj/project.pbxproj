@@ -12,7 +12,7 @@
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
 		62A2AC3A287C564700B00969 /* BackpackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackItemView.swift */; };
-		62A2AC3E287C621500B00969 /* BackpackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3D287C621500B00969 /* BackpackItem.swift */; };
+		62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3D287C621500B00969 /* CategoryItem.swift */; };
 		62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8870286D8E8E00A7801C /* ContactsView.swift */; };
 		62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8872286DAF4100A7801C /* ContactInfo.swift */; };
 		62AB8876286DB05400A7801C /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8875286DB05400A7801C /* ContactRow.swift */; };
@@ -55,7 +55,7 @@
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC39287C564700B00969 /* BackpackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemView.swift; sourceTree = "<group>"; };
-		62A2AC3D287C621500B00969 /* BackpackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItem.swift; sourceTree = "<group>"; };
+		62A2AC3D287C621500B00969 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		62AB8870286D8E8E00A7801C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		62AB8872286DAF4100A7801C /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
 		62AB8875286DB05400A7801C /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 		62A2AC3B287C61D800B00969 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				62A2AC3D287C621500B00969 /* BackpackItem.swift */,
+				62A2AC3D287C621500B00969 /* CategoryItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -175,10 +175,10 @@
 		62AF98BC2877060B00BCFA11 /* EmergencyBackpack */ = {
 			isa = PBXGroup;
 			children = (
-				62A2AC3B287C61D800B00969 /* Model */,
-				62A2AC3C287C61DE00B00969 /* ViewModel */,
 				62AF98BD287707C800BCFA11 /* Coordinator */,
+				62A2AC3B287C61D800B00969 /* Model */,
 				62AF98BE287707CC00BCFA11 /* View */,
+				62A2AC3C287C61DE00B00969 /* ViewModel */,
 			);
 			path = EmergencyBackpack;
 			sourceTree = "<group>";
@@ -194,9 +194,9 @@
 		62AF98BE287707CC00BCFA11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62A2AC39287C564700B00969 /* BackpackItemView.swift */,
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
-				62A2AC39287C564700B00969 /* BackpackItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -484,7 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
-				62A2AC3E287C621500B00969 /* BackpackItem.swift in Sources */,
+				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				62F658FC286B291500539384 /* GroupView.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,

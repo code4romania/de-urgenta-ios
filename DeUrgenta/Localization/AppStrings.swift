@@ -110,4 +110,13 @@ enum AppStrings: String, Localizable {
         case addManagerButton = "MyBackpackView.addManagerButton"
         case backpackitemsHeader = "MyBackpackView.backpackitemsHeader"
     }
+
+    enum CategoryItem: String, Localizable {
+        case foodTitle = "CategoryItem.foodTitle"
+        case hygieneItemsTitle = "CategoryItem.hygieneItemsTitle"
+        case firstAidKitTitle = "CategoryItem.firstAidKitTitle"
+        case docsTitle = "CategoryItem.docsTitle"
+        case survivalItemsTitle = "CategoryItem.survivalItemsTitle"
+        case mixedTitle = "CategoryItem.mixedTitle"
+    }
 }

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BackpackItemView: View {
-    var item: BackpackItem
+    var item: CategoryItem
 
     var body: some View {
         VStack {

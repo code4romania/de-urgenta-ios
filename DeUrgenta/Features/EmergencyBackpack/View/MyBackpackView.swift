@@ -2,12 +2,12 @@ import SwiftUI
 
 struct MyBackpackView: View {
     let items = [
-        BackpackItem(title: "Apa si alimente", icon: "icon-syrup"),
-        BackpackItem(title: "Articole de igiena", icon: "icon-cotton-swabs"),
-        BackpackItem(title: "Trusa de prim ajutor", icon: "icon-capsules"),
-        BackpackItem(title: "Documente", icon: "icon-prescription"),
-        BackpackItem(title: "Articole de supravietuire", icon: "icon-medical-mask"),
-        BackpackItem(title: "Diverse", icon: "icon-pharmacy"),
+        CategoryItem(title: AppStrings.CategoryItem.foodTitle.localized(), icon: "icon-syrup", type: .food),
+        CategoryItem(title: AppStrings.CategoryItem.hygieneItemsTitle.localized(), icon: "icon-cotton-swabs", type: .hygieneItems),
+        CategoryItem(title: AppStrings.CategoryItem.firstAidKitTitle.localized(), icon: "icon-capsules", type: .firstAidKit),
+        CategoryItem(title: AppStrings.CategoryItem.docsTitle.localized(), icon: "icon-prescription", type: .docs),
+        CategoryItem(title: AppStrings.CategoryItem.survivalItemsTitle.localized(), icon: "icon-medical-mask", type: .survivalItems),
+        CategoryItem(title: AppStrings.CategoryItem.mixedTitle.localized(), icon: "icon-pharmacy", type: .mixed),
     ]
 
     var body: some View {

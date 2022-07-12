@@ -60,3 +60,11 @@
 "MyBackpackView.secondParagraph" = "Rucsacul este responsabilitatea tuturor persoanelor care locuiesc în aceeași casă. Dacă locuiești cu încă cineva, invită-l în aplicație și asigurați-vă împreună că aveți mereu tot ce este necesar în rucsac.";
 "MyBackpackView.addManagerButton" = "Adaugă un responsabil";
 "MyBackpackView.backpackitemsHeader" = "Componentele rucsacului";
+
+"CategoryItem.foodTitle" = "Apă și alimente";
+"CategoryItem.hygieneItemsTitle" = "Articole de igienă";
+"CategoryItem.firstAidKitTitle" = "Trusa de prim ajutor";
+"CategoryItem.docsTitle" = "Documente";
+"CategoryItem.survivalItemsTitle" = "Articole de supraviețuire";
+"CategoryItem.mixedTitle" = "Diverse";
+
