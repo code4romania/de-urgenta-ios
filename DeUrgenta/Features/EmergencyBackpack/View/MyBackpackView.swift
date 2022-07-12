@@ -2,12 +2,12 @@ import SwiftUI
 
 struct MyBackpackView: View {
     let items = [
-        BackpackItem(title: "Apa si alimente"),
-        BackpackItem(title: "Articole de igiena"),
-        BackpackItem(title: "Trusa de prim ajutor"),
-        BackpackItem(title: "Documente"),
-        BackpackItem(title: "Articole de supravietuire"),
-        BackpackItem(title: "Diverse"),
+        BackpackItem(title: "Apa si alimente", icon: "icon-syrup"),
+        BackpackItem(title: "Articole de igiena", icon: "icon-cotton-swabs"),
+        BackpackItem(title: "Trusa de prim ajutor", icon: "icon-capsules"),
+        BackpackItem(title: "Documente", icon: "icon-prescription"),
+        BackpackItem(title: "Articole de supravietuire", icon: "icon-medical-mask"),
+        BackpackItem(title: "Diverse", icon: "icon-pharmacy"),
     ]
 
     var body: some View {
