@@ -11,13 +11,7 @@ struct BackpackItemView: View {
                 // TODO: Implement this action
             }, label: {
                 HStack {
-                    ZStack {
-                        Circle()
-                            .fill(Color.accent)
-                            .frame(width: 50, height: 50)
-
-                        Image(item.icon)
-                    }
+                    ItemIcon(iconName: item.icon)
 
                     Text(item.title)
                         .font(.custom("IBMPlexSans-SemiBold", size: 16))

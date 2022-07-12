@@ -16,8 +16,7 @@ struct EmergencyBackpackView: View {
 
             ScrollView {
                 Text(AppStrings.EmergencyBackpackView.description.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 16))
-                    .foregroundColor(.darkText)
+                    .modifier(PrimaryTextStyle())
                     .lineSpacing(10)
                     .padding(.vertical, 10)
 
