@@ -18,7 +18,7 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
 
 extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     func emergencyBackpackViewDidTapAddBackpack(_: EmergencyBackpackView) {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: MyBackpackView())
         navigationController.pushViewController(viewController, animated: true)
     }
 

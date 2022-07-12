@@ -16,6 +16,7 @@ struct EmergencyBackpackView: View {
 
             ScrollView {
                 Text("Rucsacul de urgență conține obiecte, alimente și alte lucruri utile care vă vor ajuta să supraviețuiți cel puțin 72 de ore într-o situație critică. În pașii următori vei afla ce trebuie să conțină acest rucsac, să te asiguri că ai minimul necesar adăugat în el și poți să alegi cine dintre persoanele cu care locuiești este responsabil de actualizarea sa. ")
+                    .font(.custom("IBMPlexSans-Regular", size: 16))
                     .foregroundColor(.darkText)
                     .lineSpacing(10)
                     .padding(.vertical, 10)
