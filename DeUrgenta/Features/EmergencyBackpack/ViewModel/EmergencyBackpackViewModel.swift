@@ -1,4 +1,5 @@
 import Foundation
+import SwiftUI
 
 class EmergencyBackpackViewModel: ObservableObject {
     let items = [
@@ -9,4 +10,22 @@ class EmergencyBackpackViewModel: ObservableObject {
         CategoryItem(title: AppStrings.CategoryItem.survivalItemsTitle.localized(), icon: "icon-medical-mask", type: .survivalItems),
         CategoryItem(title: AppStrings.CategoryItem.mixedTitle.localized(), icon: "icon-pharmacy", type: .mixed),
     ]
+
+    @ViewBuilder
+    func redirectDestination(withItem item: CategoryItem) -> some View {
+        switch item.type {
+        case .food:
+            FoodView()
+        case .hygieneItems:
+            EmptyView()
+        case .firstAidKit:
+            EmptyView()
+        case .docs:
+            EmptyView()
+        case .survivalItems:
+            EmptyView()
+        case .mixed:
+            EmptyView()
+        }
+    }
 }

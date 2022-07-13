@@ -6,6 +6,8 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
 
+    var viewModel: EmergencyBackpackViewModel = .init()
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
@@ -18,7 +20,7 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
 
 extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     func emergencyBackpackViewDidTapAddBackpack(_: EmergencyBackpackView) {
-        let viewController = UIHostingController(rootView: MyBackpackView(delegate: self))
+        let viewController = UIHostingController(rootView: MyBackpackView(viewModel: viewModel, delegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 
@@ -28,8 +30,9 @@ extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
 }
 
 extension EmergencyBackpackCoordinator: BackpackItemViewDelegate {
-    func backpackItemViewDidTapButton(from _: BackpackItemView, withItem _: CategoryItem) {
-        let viewController = UIHostingController(rootView: EmptyView())
+    func backpackItemViewDidTapButton(from _: BackpackItemView, withItem item: CategoryItem) {
+        let view = viewModel.redirectDestination(withItem: item)
+        let viewController = UIHostingController(rootView: view)
         navigationController.pushViewController(viewController, animated: true)
     }
 }

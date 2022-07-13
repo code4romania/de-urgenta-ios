@@ -25,6 +25,7 @@
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
+		62C708E7287EF5DA00E73D71 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C708E6287EF5DA00E73D71 /* FoodView.swift */; };
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
@@ -72,6 +73,7 @@
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
+		62C708E6287EF5DA00E73D71 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				62A2AC3F287DAAFF00B00969 /* ItemIcon.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
+				62C708E6287EF5DA00E73D71 /* FoodView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -503,6 +506,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C708E7287EF5DA00E73D71 /* FoodView.swift in Sources */,
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
 				62A2AC40287DAAFF00B00969 /* ItemIcon.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
