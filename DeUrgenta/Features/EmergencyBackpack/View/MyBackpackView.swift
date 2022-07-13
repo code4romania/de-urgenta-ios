@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct MyBackpackView: View {
-   @StateObject var viewModel = EmergencyBackpackViewModel()
+    @StateObject var viewModel = EmergencyBackpackViewModel()
 
     var body: some View {
         ScrollView {
