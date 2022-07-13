@@ -18,11 +18,18 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
 
 extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     func emergencyBackpackViewDidTapAddBackpack(_: EmergencyBackpackView) {
-        let viewController = UIHostingController(rootView: MyBackpackView())
+        let viewController = UIHostingController(rootView: MyBackpackView(delegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 
     func emergencyBackpackViewDidTapRemindMeLater(_: EmergencyBackpackView) {
         navigationController.popViewController(animated: true)
+    }
+}
+
+extension EmergencyBackpackCoordinator: BackpackItemViewDelegate {
+    func backpackItemViewDidTapButton(from _: BackpackItemView, withItem _: CategoryItem) {
+        let viewController = UIHostingController(rootView: EmptyView())
+        navigationController.pushViewController(viewController, animated: true)
     }
 }

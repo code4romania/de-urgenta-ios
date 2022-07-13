@@ -2,6 +2,7 @@ import SwiftUI
 
 struct MyBackpackView: View {
     @StateObject var viewModel = EmergencyBackpackViewModel()
+    var delegate: BackpackItemViewDelegate
 
     var body: some View {
         ScrollView {
@@ -57,7 +58,7 @@ struct MyBackpackView: View {
 
                 LazyVStack {
                     ForEach(viewModel.items, id: \.id) { item in
-                        BackpackItemView(item: item)
+                        BackpackItemView(item: item, delegate: delegate)
                     }
                 }
 
