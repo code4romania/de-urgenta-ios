@@ -2,8 +2,6 @@ import Foundation
 import SwiftUI
 
 class CategoryViewModel: ObservableObject {
-    // var currentItem: Item = .init(name: "", quantity: 1, expirationDate: .init())
-
     @Published var name: String = ""
     @Published var quantity: Int = 1
     @Published var expirationDate: Date = .init()
@@ -12,7 +10,7 @@ class CategoryViewModel: ObservableObject {
     @Published var currentItemsArray: [Item] = []
 
     @Published var hasItem: Bool = false
-    @Published var showSection: Bool = false
+    @Published var hideSection: Bool = false
 
     init(selectedCategory: CategoryItem? = nil) {
         self.selectedCategory = selectedCategory
@@ -26,8 +24,6 @@ class CategoryViewModel: ObservableObject {
         CategoryItem(title: AppStrings.CategoryItem.survivalItemsTitle.localized(), icon: "icon-medical-mask", type: .survivalItems),
         CategoryItem(title: AppStrings.CategoryItem.mixedTitle.localized(), icon: "icon-pharmacy", type: .mixed),
     ]
-
-    // let array: [CategoryItem] = [ CategoryItem(type: .food), items: []]
 
     func addItem() {
         if let selectedCategory = selectedCategory {
@@ -49,7 +45,6 @@ class CategoryViewModel: ObservableObject {
         guard let selectedCategory = selectedCategory else {
             return false
         }
-
         return !selectedCategory.itemsArray.isEmpty
     }
 }

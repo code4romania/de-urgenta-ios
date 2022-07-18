@@ -20,7 +20,7 @@ struct ItemView: View {
             }
 
             HStack {
-                Text("Expira la:   ")
+                Text("Expira la: ")
                     .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
 

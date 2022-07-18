@@ -6,8 +6,8 @@ struct ArrayView: View {
     var body: some View {
         Divider()
             .padding(.horizontal)
+
         ForEach(itemsArray, id: \.id) { item in
-            // Text("x" + String(item.quantity) + " " + item.name)
             ItemView(item: item)
         }
     }

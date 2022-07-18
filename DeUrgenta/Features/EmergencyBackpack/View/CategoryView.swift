@@ -15,41 +15,33 @@ struct CategoryView: View {
                 ArrayView(itemsArray: categoryViewModel.selectedCategory?.itemsArray ?? [])
                     .isHidden(!categoryViewModel.hasItem, remove: true)
 
-                if !categoryViewModel.hasItem {
-                    AddItemSection(categoryViewModel: categoryViewModel)
-                } else {
-                    AddItemSection(categoryViewModel: categoryViewModel)
-                        .isHidden(!categoryViewModel.showSection)
-                    // isHidden(hasItems || !showSection)
-                }
+                AddItemSection(categoryViewModel: categoryViewModel)
+                    .isHidden(categoryViewModel.hasItem && categoryViewModel.hideSection)
             }
 
             Spacer()
 
             VStack {
                 Button(action: {
-                    if categoryViewModel.hasItem, categoryViewModel.showSection == false {
-                        categoryViewModel.showSection = true
-                        return
-                    } else if categoryViewModel.showSection {
+                    if !categoryViewModel.hideSection {
                         categoryViewModel.addItem()
-                        categoryViewModel.showSection = false
-                    } else {
-                        categoryViewModel.addItem()
+                        categoryViewModel.hideSection = true
+                    } else if categoryViewModel.hideSection {
+                        categoryViewModel.hideSection = false
                     }
                 }, label: {
                     HStack {
                         Image(systemName: "plus")
 
-                        Text(categoryViewModel.showSection ? "Salveaza produs" : "Adauga produs")
+                        Text(categoryViewModel.hideSection ? "Adauga produs" : "Salveaza produs")
                             .font(.custom("IBMPlexSans-Bold", size: 16))
                     }
                     .frame(maxWidth: .infinity, maxHeight: 50)
-                    .background(Color.accent)
+                    .background(categoryViewModel.name.isEmpty && !categoryViewModel.hideSection ? Color.fieldBorder : Color.accent)
                     .foregroundColor(Color.secondary)
                     .cornerRadius(6)
-
                 })
+                .disabled(categoryViewModel.name.isEmpty && !categoryViewModel.hideSection)
             }
             .padding(.bottom, 30)
             .padding(.horizontal)
