@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 class CategoryViewModel: ObservableObject {
-    @State var showingAlert = false
+    @Published var showingAlert = false
     @Published var name: String = ""
     @Published var quantity: Int = 1
     @Published var expirationDate: Date = .init()
