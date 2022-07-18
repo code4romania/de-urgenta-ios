@@ -12,7 +12,7 @@ struct CategoryView: View {
                 .padding(.horizontal)
 
             ScrollView {
-                ArrayView(itemsArray: categoryViewModel.selectedCategory?.itemsArray ?? [])
+                ArrayView(categoryViewModel: categoryViewModel)
                     .isHidden(!categoryViewModel.hasItem, remove: true)
 
                 AddItemSection(categoryViewModel: categoryViewModel)

@@ -41,6 +41,12 @@ class CategoryViewModel: ObservableObject {
         }
     }
 
+    func removeItem(currentItem: Item) {
+        currentItemsArray.removeAll { item in
+            item.id == currentItem.id
+        }
+    }
+
     private func checkItems() -> Bool {
         guard let selectedCategory = selectedCategory else {
             return false

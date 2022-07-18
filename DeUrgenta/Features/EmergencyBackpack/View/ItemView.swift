@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ItemView: View {
+    @ObservedObject var categoryViewModel: CategoryViewModel
     var item: Item
 
     var body: some View {
@@ -15,8 +16,12 @@ struct ItemView: View {
 
                 Spacer()
 
-                Text("Sterge")
-                    .modifier(PrimaryTextStyle())
+                Button(action: {
+                    categoryViewModel.removeItem(currentItem: item)
+                }, label: {
+                    Text("Sterge")
+                        .modifier(PrimaryTextStyle())
+                })
             }
 
             HStack {
@@ -40,11 +45,5 @@ struct ItemView: View {
         let formatter4 = DateFormatter()
         formatter4.dateFormat = "d MMMM y"
         return formatter4.string(from: item.expirationDate)
-    }
-}
-
-struct ItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        ItemView(item: Item(name: "Seminte", quantity: 20, expirationDate: Date()))
     }
 }
