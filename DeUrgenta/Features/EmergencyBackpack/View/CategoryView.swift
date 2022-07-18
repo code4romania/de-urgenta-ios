@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CategoryView: View {
     @ObservedObject var categoryViewModel: CategoryViewModel
+    @State var showingAlert = false
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -23,17 +24,21 @@ struct CategoryView: View {
 
             VStack {
                 Button(action: {
-                    if !categoryViewModel.hideSection {
-                        categoryViewModel.addItem()
-                        categoryViewModel.hideSection = true
-                    } else if categoryViewModel.hideSection {
-                        categoryViewModel.hideSection = false
+                    if categoryViewModel.name.isEmpty, !categoryViewModel.hideSection {
+                        showingAlert = true
+                    } else {
+                        if !categoryViewModel.hideSection {
+                            categoryViewModel.addItem()
+                            categoryViewModel.hideSection = true
+                        } else if categoryViewModel.hideSection {
+                            categoryViewModel.hideSection = false
+                        }
                     }
                 }, label: {
                     HStack {
                         Image(systemName: "plus")
 
-                        Text(categoryViewModel.hideSection ? "Adauga produs" : "Salveaza produs")
+                        Text(categoryViewModel.hideSection ? AppStrings.CategoryView.addItemButton.localized() : AppStrings.CategoryView.saveItemButton.localized())
                             .font(.custom("IBMPlexSans-Bold", size: 16))
                     }
                     .frame(maxWidth: .infinity, maxHeight: 50)
@@ -41,10 +46,14 @@ struct CategoryView: View {
                     .foregroundColor(Color.secondary)
                     .cornerRadius(6)
                 })
-                .disabled(categoryViewModel.name.isEmpty && !categoryViewModel.hideSection)
             }
             .padding(.bottom, 30)
             .padding(.horizontal)
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text(AppStrings.CategoryView.alertTitle.localized()),
+                      message: Text(AppStrings.CategoryView.alertMessage.localized()),
+                      dismissButton: .default(Text(AppStrings.CategoryView.alertButton.localized())))
+            }
         }
     }
 }

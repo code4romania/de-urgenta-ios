@@ -6,21 +6,21 @@ struct AddItemSection: View {
     var body: some View {
         VStack {
             VStack(alignment: .leading) {
-                Text("Nume produs")
+                Text(AppStrings.AddItemSection.addNameLabel.localized())
                     .font(.custom("IBMPlexSans-Regular", size: 14))
 
-                TextField("Introdu nume produs", text: $categoryViewModel.name)
+                TextField(AppStrings.AddItemSection.addNamePlaceholder.localized(), text: $categoryViewModel.name)
                     .textFieldStyle(.roundedBorder)
                     .padding(.bottom, 20)
 
-                Text("Cantitate")
+                Text(AppStrings.AddItemSection.quantityLabel.localized())
                     .font(.custom("IBMPlexSans-Regular", size: 14))
 
-                TextField("1", value: $categoryViewModel.quantity, formatter: NumberFormatter())
+                TextField(AppStrings.AddItemSection.quantityPlaceholder.localized(), value: $categoryViewModel.quantity, formatter: NumberFormatter())
                     .textFieldStyle(.roundedBorder)
                     .padding(.bottom, 20)
 
-                Text("Expira la:")
+                Text(AppStrings.AddItemSection.expirationDateLabel.localized())
                     .font(.custom("IBMPlexSans-Regular", size: 14))
 
                 DatePicker(selection: $categoryViewModel.expirationDate, in: Date()..., displayedComponents: .date) {}

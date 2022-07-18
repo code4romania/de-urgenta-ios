@@ -19,13 +19,13 @@ struct ItemView: View {
                 Button(action: {
                     categoryViewModel.removeItem(currentItem: item)
                 }, label: {
-                    Text("Sterge")
+                    Text(AppStrings.ItemView.deleteButton.localized())
                         .modifier(PrimaryTextStyle())
                 })
             }
 
             HStack {
-                Text("Expira la: ")
+                Text(AppStrings.ItemView.expirationDateLabel.localized())
                     .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
 
