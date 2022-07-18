@@ -1,22 +1,22 @@
 import SwiftUI
 
-protocol BackpackItemViewDelegate {
-    func backpackItemViewDidTapButton(from view: BackpackItemView, withItem item: CategoryItem)
+protocol BackpackCategoryItemViewDelegate {
+    func backpackCategoryItemViewDidTapButton(from view: BackpackCategoryItemView, withItem item: CategoryItem)
 }
 
-struct BackpackItemView: View {
+struct BackpackCategoryItemView: View {
     var item: CategoryItem
-    var delegate: BackpackItemViewDelegate
+    var delegate: BackpackCategoryItemViewDelegate
 
     var body: some View {
         VStack {
             Divider()
 
             Button(action: {
-                delegate.backpackItemViewDidTapButton(from: self, withItem: item)
+                delegate.backpackCategoryItemViewDidTapButton(from: self, withItem: item)
             }, label: {
                 HStack {
-                    ItemIcon(iconName: item.icon)
+                    CategoryItemIcon(iconName: item.icon)
 
                     Text(item.title)
                         .font(.custom("IBMPlexSans-SemiBold", size: 16))

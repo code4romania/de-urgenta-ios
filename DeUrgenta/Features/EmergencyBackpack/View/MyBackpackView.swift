@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct MyBackpackView: View {
-    @ObservedObject var viewModel: EmergencyBackpackViewModel
-    var delegate: BackpackItemViewDelegate
+    @ObservedObject var categoryViewModel: CategoryViewModel
+    var delegate: BackpackCategoryItemViewDelegate
 
     var body: some View {
         ScrollView {
@@ -57,8 +57,8 @@ struct MyBackpackView: View {
                     .padding(.vertical)
 
                 LazyVStack {
-                    ForEach(viewModel.items, id: \.id) { item in
-                        BackpackItemView(item: item, delegate: delegate)
+                    ForEach(categoryViewModel.items, id: \.id) { item in
+                        BackpackCategoryItemView(item: item, delegate: delegate)
                     }
                 }
 

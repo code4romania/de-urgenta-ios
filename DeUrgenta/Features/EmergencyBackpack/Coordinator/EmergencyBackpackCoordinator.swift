@@ -6,7 +6,7 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
 
-    var viewModel: EmergencyBackpackViewModel = .init()
+    var categoryViewModel: CategoryViewModel = .init()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -20,7 +20,7 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
 
 extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     func emergencyBackpackViewDidTapAddBackpack(_: EmergencyBackpackView) {
-        let viewController = UIHostingController(rootView: MyBackpackView(viewModel: viewModel, delegate: self))
+        let viewController = UIHostingController(rootView: MyBackpackView(categoryViewModel: categoryViewModel, delegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 
@@ -29,10 +29,9 @@ extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     }
 }
 
-extension EmergencyBackpackCoordinator: BackpackItemViewDelegate {
-    func backpackItemViewDidTapButton(from _: BackpackItemView, withItem item: CategoryItem) {
-        let view = viewModel.redirectDestination(withItem: item)
-        let viewController = UIHostingController(rootView: view)
+extension EmergencyBackpackCoordinator: BackpackCategoryItemViewDelegate {
+    func backpackCategoryItemViewDidTapButton(from _: BackpackCategoryItemView, withItem item: CategoryItem) {
+        let viewController = UIHostingController(rootView: CategoryView(categoryViewModel: CategoryViewModel(selectedCategory: item)))
         navigationController.pushViewController(viewController, animated: true)
     }
 }
