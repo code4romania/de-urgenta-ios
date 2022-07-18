@@ -13,6 +13,7 @@
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
+		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
 		62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */; };
@@ -63,6 +64,7 @@
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
+		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackCategoryItemView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		628B59F2288578B100EB171B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				628B59F3288578FE00EB171B /* HideView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		62A2AC3B287C61D800B00969 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,13 +228,13 @@
 			isa = PBXGroup;
 			children = (
 				626A0DB2287ED6B80009530B /* AddItemSection.swift */,
-				62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */,
-				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
-				62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */,
-				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
-				62C708E6287EF5DA00E73D71 /* CategoryView.swift */,
 				620CDAE5288051E500E37BD9 /* ArrayView.swift */,
+				62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */,
+				62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */,
+				62C708E6287EF5DA00E73D71 /* CategoryView.swift */,
+				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				6246314F28815CFD003C2EB7 /* ItemView.swift */,
+				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 		BB8F3EC028423DF100278975 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				628B59F2288578B100EB171B /* Extensions */,
 				62A2AC41287DAE5500B00969 /* Modifiers */,
 				BB8F3EC128423E1100278975 /* Color+Extensions.swift */,
 			);
@@ -518,6 +529,7 @@
 				6246315028815CFD003C2EB7 /* ItemView.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
+				628B59F4288578FE00EB171B /* HideView.swift in Sources */,
 				62F658FC286B291500539384 /* GroupView.swift in Sources */,
 				62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,

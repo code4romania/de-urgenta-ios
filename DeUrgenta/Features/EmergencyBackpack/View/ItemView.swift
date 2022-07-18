@@ -29,7 +29,7 @@ struct ItemView: View {
                     .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
 
-                Text(expDate())
+                Text(categoryViewModel.expDate(date: item.expirationDate))
                     .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
 
@@ -39,11 +39,5 @@ struct ItemView: View {
             Divider()
         }
         .padding(.horizontal)
-    }
-
-    func expDate() -> String {
-        let formatter4 = DateFormatter()
-        formatter4.dateFormat = "d MMMM y"
-        return formatter4.string(from: item.expirationDate)
     }
 }

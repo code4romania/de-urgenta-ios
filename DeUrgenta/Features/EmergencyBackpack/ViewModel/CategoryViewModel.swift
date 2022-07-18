@@ -2,6 +2,7 @@ import Foundation
 import SwiftUI
 
 class CategoryViewModel: ObservableObject {
+    @State var showingAlert = false
     @Published var name: String = ""
     @Published var quantity: Int = 1
     @Published var expirationDate: Date = .init()
@@ -52,5 +53,24 @@ class CategoryViewModel: ObservableObject {
             return false
         }
         return !selectedCategory.itemsArray.isEmpty
+    }
+
+    func expDate(date: Date) -> String {
+        let formatter4 = DateFormatter()
+        formatter4.dateFormat = "d MMMM y"
+        return formatter4.string(from: date)
+    }
+
+    func addItemAndSectionControl() {
+        if name.isEmpty, !hideSection {
+            showingAlert = true
+        } else {
+            if !hideSection {
+                addItem()
+                hideSection = true
+            } else if hideSection {
+                hideSection = false
+            }
+        }
     }
 }

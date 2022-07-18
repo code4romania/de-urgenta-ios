@@ -8,8 +8,7 @@ struct ArrayView: View {
             .padding(.horizontal)
 
         ForEach(categoryViewModel.currentItemsArray.indices, id: \.self) { index in
-            let currentItem = categoryViewModel.currentItemsArray[index]
-            ItemView(categoryViewModel: categoryViewModel, item: currentItem)
+            ItemView(categoryViewModel: categoryViewModel, item: categoryViewModel.currentItemsArray[index])
         }
     }
 }

@@ -7,3 +7,11 @@ struct PrimaryTextStyle: ViewModifier {
             .foregroundColor(.darkText)
     }
 }
+
+struct SecondaryTextStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.custom("IBMPlexSans-Regular", size: 14))
+            .foregroundColor(.darkText)
+    }
+}

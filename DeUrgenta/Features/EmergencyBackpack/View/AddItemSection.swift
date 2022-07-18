@@ -7,21 +7,21 @@ struct AddItemSection: View {
         VStack {
             VStack(alignment: .leading) {
                 Text(AppStrings.AddItemSection.addNameLabel.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 14))
+                    .modifier(SecondaryTextStyle())
 
                 TextField(AppStrings.AddItemSection.addNamePlaceholder.localized(), text: $categoryViewModel.name)
                     .textFieldStyle(.roundedBorder)
                     .padding(.bottom, 20)
 
                 Text(AppStrings.AddItemSection.quantityLabel.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 14))
+                    .modifier(SecondaryTextStyle())
 
                 TextField(AppStrings.AddItemSection.quantityPlaceholder.localized(), value: $categoryViewModel.quantity, formatter: NumberFormatter())
                     .textFieldStyle(.roundedBorder)
                     .padding(.bottom, 20)
 
                 Text(AppStrings.AddItemSection.expirationDateLabel.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 14))
+                    .modifier(SecondaryTextStyle())
 
                 DatePicker(selection: $categoryViewModel.expirationDate, in: Date()..., displayedComponents: .date) {}
                     .datePickerStyle(.automatic)

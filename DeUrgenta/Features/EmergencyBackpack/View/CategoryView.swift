@@ -2,7 +2,6 @@ import SwiftUI
 
 struct CategoryView: View {
     @ObservedObject var categoryViewModel: CategoryViewModel
-    @State var showingAlert = false
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -24,16 +23,7 @@ struct CategoryView: View {
 
             VStack {
                 Button(action: {
-                    if categoryViewModel.name.isEmpty, !categoryViewModel.hideSection {
-                        showingAlert = true
-                    } else {
-                        if !categoryViewModel.hideSection {
-                            categoryViewModel.addItem()
-                            categoryViewModel.hideSection = true
-                        } else if categoryViewModel.hideSection {
-                            categoryViewModel.hideSection = false
-                        }
-                    }
+                    categoryViewModel.addItemAndSectionControl()
                 }, label: {
                     HStack {
                         Image(systemName: "plus")
@@ -49,27 +39,11 @@ struct CategoryView: View {
             }
             .padding(.bottom, 30)
             .padding(.horizontal)
-            .alert(isPresented: $showingAlert) {
+            .alert(isPresented: $categoryViewModel.showingAlert) {
                 Alert(title: Text(AppStrings.CategoryView.alertTitle.localized()),
                       message: Text(AppStrings.CategoryView.alertMessage.localized()),
                       dismissButton: .default(Text(AppStrings.CategoryView.alertButton.localized())))
             }
         }
-    }
-}
-
-extension View {
-    @ViewBuilder func isHidden(_ hidden: Bool, remove: Bool = false) -> some View {
-        if hidden {
-            if !remove {
-                self.hidden()
-            }
-        } else {
-            self
-        }
-    }
-
-    func hidden(_ shouldHide: Bool) -> some View {
-        opacity(shouldHide ? 0 : 1)
     }
 }
