@@ -29,7 +29,7 @@ struct ItemView: View {
                     .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
 
-                Text(categoryViewModel.expDate(date: item.expirationDate))
+                Text(categoryViewModel.getExpirationDate(date: item.expirationDate))
                     .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
 

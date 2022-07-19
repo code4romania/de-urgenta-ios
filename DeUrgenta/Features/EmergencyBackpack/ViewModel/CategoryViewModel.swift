@@ -27,18 +27,19 @@ class CategoryViewModel: ObservableObject {
     ]
 
     func addItem() {
-        if let selectedCategory = selectedCategory {
-            currentItemsArray.append(Item(name: name, quantity: quantity, expirationDate: expirationDate))
+        guard let selectedCategory = selectedCategory else {
+            return
+        }
+        currentItemsArray.append(Item(name: name, quantity: quantity, expirationDate: expirationDate))
 
-            self.selectedCategory = CategoryItem(id: selectedCategory.id,
-                                                 title: selectedCategory.title,
-                                                 icon: selectedCategory.icon,
-                                                 type: selectedCategory.type,
-                                                 itemsArray: currentItemsArray)
+        self.selectedCategory = CategoryItem(id: selectedCategory.id,
+                                             title: selectedCategory.title,
+                                             icon: selectedCategory.icon,
+                                             type: selectedCategory.type,
+                                             itemsArray: currentItemsArray)
 
-            if checkItems() {
-                hasItem = true
-            }
+        if checkItems() {
+            hasItem = true
         }
     }
 
@@ -55,7 +56,7 @@ class CategoryViewModel: ObservableObject {
         return !selectedCategory.itemsArray.isEmpty
     }
 
-    func expDate(date: Date) -> String {
+    func getExpirationDate(date: Date) -> String {
         let formatter4 = DateFormatter()
         formatter4.dateFormat = "d MMMM y"
         return formatter4.string(from: date)

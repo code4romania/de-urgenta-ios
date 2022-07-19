@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ArrayView: View {
+struct BackpackItemsArrayView: View {
     @ObservedObject var categoryViewModel: CategoryViewModel
 
     var body: some View {
