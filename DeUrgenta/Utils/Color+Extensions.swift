@@ -18,6 +18,10 @@ extension Color {
         Color("darkText")
     }
 
+    static var fieldBorder: Color {
+        Color("FieldBorder")
+    }
+
     var uiColor: UIColor {
         UIColor(self)
     }

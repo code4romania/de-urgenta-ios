@@ -96,6 +96,14 @@ enum AppStrings: String, Localizable {
         case removeContactText = "InvitedContactsRow.removeContactText"
     }
 
+    enum AddItemSection: String, Localizable {
+        case addNameLabel = "AddItemSection.addNameLabel"
+        case addNamePlaceholder = "AddItemSection.addNamePlaceholder"
+        case quantityLabel = "AddItemSection.quantityLabel"
+        case quantityPlaceholder = "AddItemSelection.quantityPlaceholder"
+        case expirationDateLabel = "AddItemSection.expirationDateLabel"
+    }
+
     enum EmergencyBackpackView: String, Localizable {
         case headerTitle = "EmergencyBackpackView.headerTitle"
         case description = "EmergencyBackpackView.description"
@@ -118,5 +126,18 @@ enum AppStrings: String, Localizable {
         case docsTitle = "CategoryItem.docsTitle"
         case survivalItemsTitle = "CategoryItem.survivalItemsTitle"
         case mixedTitle = "CategoryItem.mixedTitle"
+    }
+
+    enum CategoryView: String, Localizable {
+        case addItemButton = "CategoryView.addItemButton"
+        case saveItemButton = "CategoryView.saveItemButton"
+        case alertTitle = "CategoryView.alertTitle"
+        case alertMessage = "CategoryView.alertMessage"
+        case alertButton = "CategoryView.alertButton"
+    }
+
+    enum ItemView: String, Localizable {
+        case deleteButton = "ItemView.deleteButton"
+        case expirationDateLabel = "ItemView.expirationDateLabel"
     }
 }

@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */; };
+		620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */; };
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
+		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
+		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
+		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
-		62A2AC3A287C564700B00969 /* BackpackItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackItemView.swift */; };
+		62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */; };
 		62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3D287C621500B00969 /* CategoryItem.swift */; };
-		62A2AC40287DAAFF00B00969 /* ItemIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3F287DAAFF00B00969 /* ItemIcon.swift */; };
+		62A2AC40287DAAFF00B00969 /* CategoryItemIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */; };
 		62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC42287DAF7B00B00969 /* PrimaryTextStyle.swift */; };
-		62A2AC45287DB1BF00B00969 /* EmergencyBackpackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC44287DB1BF00B00969 /* EmergencyBackpackViewModel.swift */; };
 		62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8870286D8E8E00A7801C /* ContactsView.swift */; };
 		62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8872286DAF4100A7801C /* ContactInfo.swift */; };
 		62AB8876286DB05400A7801C /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8875286DB05400A7801C /* ContactRow.swift */; };
@@ -24,6 +28,7 @@
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
+		62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C708E6287EF5DA00E73D71 /* CategoryView.swift */; };
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
@@ -53,15 +58,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
+		620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemsArrayView.swift; sourceTree = "<group>"; };
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
+		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
+		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
-		62A2AC39287C564700B00969 /* BackpackItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemView.swift; sourceTree = "<group>"; };
+		62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackCategoryItemView.swift; sourceTree = "<group>"; };
 		62A2AC3D287C621500B00969 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
-		62A2AC3F287DAAFF00B00969 /* ItemIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemIcon.swift; sourceTree = "<group>"; };
+		62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemIcon.swift; sourceTree = "<group>"; };
 		62A2AC42287DAF7B00B00969 /* PrimaryTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextStyle.swift; sourceTree = "<group>"; };
-		62A2AC44287DB1BF00B00969 /* EmergencyBackpackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackViewModel.swift; sourceTree = "<group>"; };
 		62AB8870286D8E8E00A7801C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		62AB8872286DAF4100A7801C /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
 		62AB8875286DB05400A7801C /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
+		62C708E6287EF5DA00E73D71 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
@@ -111,6 +121,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		628B59F2288578B100EB171B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				628B59F3288578FE00EB171B /* HideView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		62A2AC3B287C61D800B00969 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +140,7 @@
 		62A2AC3C287C61DE00B00969 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				62A2AC44287DB1BF00B00969 /* EmergencyBackpackViewModel.swift */,
+				620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -209,9 +227,13 @@
 		62AF98BE287707CC00BCFA11 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				62A2AC39287C564700B00969 /* BackpackItemView.swift */,
+				626A0DB2287ED6B80009530B /* AddItemSection.swift */,
+				62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */,
+				620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */,
+				62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */,
+				62C708E6287EF5DA00E73D71 /* CategoryView.swift */,
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
-				62A2AC3F287DAAFF00B00969 /* ItemIcon.swift */,
+				6246314F28815CFD003C2EB7 /* ItemView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
 			);
 			path = View;
@@ -253,6 +275,7 @@
 		BB8F3EC028423DF100278975 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				628B59F2288578B100EB171B /* Extensions */,
 				62A2AC41287DAE5500B00969 /* Modifiers */,
 				BB8F3EC128423E1100278975 /* Color+Extensions.swift */,
 			);
@@ -500,16 +523,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */,
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
-				62A2AC40287DAAFF00B00969 /* ItemIcon.swift in Sources */,
+				62A2AC40287DAAFF00B00969 /* CategoryItemIcon.swift in Sources */,
+				6246315028815CFD003C2EB7 /* ItemView.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
+				628B59F4288578FE00EB171B /* HideView.swift in Sources */,
 				62F658FC286B291500539384 /* GroupView.swift in Sources */,
 				62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
 				62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */,
+				620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */,
 				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
-				62A2AC3A287C564700B00969 /* BackpackItemView.swift in Sources */,
+				62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */,
 				62AB8876286DB05400A7801C /* ContactRow.swift in Sources */,
 				62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
@@ -525,13 +552,14 @@
 				BB8F3ED62842599300278975 /* AccountConfigViewModel.swift in Sources */,
 				BB8F3ED4284258FA00278975 /* ConfigStep.swift in Sources */,
 				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
+				620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */,
 				629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */,
 				62AB887B286DC42500A7801C /* SearchBar.swift in Sources */,
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
-				62A2AC45287DB1BF00B00969 /* EmergencyBackpackViewModel.swift in Sources */,
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
+				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,
 			);
