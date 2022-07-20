@@ -6,16 +6,16 @@ struct AddNewManagerView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("Adaugă responsabil nou")
+                Text(AppStrings.AddNewManagerView.headerTitle.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 23))
                     .frame(alignment: .leading)
                     .padding(.vertical, 10)
 
                 VStack {
-                    Text("Această acțiune va crea un nou rucsac în profilul tau pentru a-l putea împărți cu alte persoane cu care locuiești. Poți invita noi responsabili fie dintre persoanele care sunt parte din grupul/grupurile tale sau o persoană complet nouă.")
+                    Text(AppStrings.AddNewManagerView.firstParagraph.localized())
                         .modifier(PrimaryTextStyle())
 
-                    Text("Pare că ai adăugat deja resurse în rucsac. Bifează mai jos dacă vrei să transferi resursele din rucsacul tău în noul rucsac pe care îl împarți cu alte persoane.")
+                    Text(AppStrings.AddNewManagerView.secondParagraph.localized())
                         .modifier(PrimaryTextStyle())
                         .padding(.top, 15)
                 }
@@ -23,13 +23,13 @@ struct AddNewManagerView: View {
                 .padding(.vertical, 10)
 
                 Toggle(isOn: $transferResourcesInNewBackpack, label: {
-                    Text("Transferă resurse în noul rucsac")
+                    Text(AppStrings.AddNewManagerView.toggleLabel.localized())
                         .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.black)
                 })
                 .padding(.vertical)
 
-                Text("Alege responsabil")
+                Text(AppStrings.AddNewManagerView.addManagerHeader.localized())
                     .font(.custom("IBMPlexSans-SemiBold", size: 20))
                     .foregroundColor(.darkText)
                     .padding(.vertical)
@@ -45,7 +45,7 @@ struct AddNewManagerView: View {
                             Image(systemName: "plus.circle.fill")
                                 .foregroundColor(.accent)
 
-                            Text(AppStrings.MyBackpackView.addManagerButton.localized())
+                            Text(AppStrings.AddNewManagerView.addManagerButton.localized())
                                 .font(.custom("IBMPlexSans-SemiBold", size: 20))
                                 .foregroundColor(.accent)
                         }
