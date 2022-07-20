@@ -49,6 +49,7 @@ struct MyBackpackView: View {
                         Spacer()
 
                         Image("chevron-right")
+                            .renderingMode(.template)
                             .foregroundColor(.accent)
                             .padding(.trailing, 10)
                     })
