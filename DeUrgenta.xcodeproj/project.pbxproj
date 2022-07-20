@@ -13,6 +13,7 @@
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
+		628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B495C2888154200B7B490 /* AddNewManagerView.swift */; };
 		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
@@ -64,6 +65,7 @@
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
+		628B495C2888154200B7B490 /* AddNewManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewManagerView.swift; sourceTree = "<group>"; };
 		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				6246314F28815CFD003C2EB7 /* ItemView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
+				628B495C2888154200B7B490 /* AddNewManagerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
 				62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */,
+				628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */,
 				620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */,
 				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
 				62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */,

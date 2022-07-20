@@ -1,8 +1,14 @@
 import SwiftUI
 
+protocol MyBackpackViewDelegate {
+    func myBackpackViewDidTapAddManager(_ view: MyBackpackView)
+}
+
 struct MyBackpackView: View {
     @ObservedObject var categoryViewModel: CategoryViewModel
+
     var delegate: BackpackCategoryItemViewDelegate
+    var myBackpackDelegate: MyBackpackViewDelegate
 
     var body: some View {
         ScrollView {
@@ -28,7 +34,7 @@ struct MyBackpackView: View {
                         .padding(.top, 10)
 
                     Button(action: {
-                        // TODO: Implement this action
+                        myBackpackDelegate.myBackpackViewDidTapAddManager(self)
                     }, label: {
                         HStack {
                             Image(systemName: "plus.circle.fill")
