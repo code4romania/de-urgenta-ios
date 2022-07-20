@@ -1,7 +1,15 @@
+import Contacts
 import SwiftUI
+
+protocol AddNewManagerViewDelegate {
+    func addNewManagerViewDidTapAddManager(_ view: AddNewManagerView)
+}
 
 struct AddNewManagerView: View {
     @State private var transferResourcesInNewBackpack = false
+    @State private var showingAlert = false
+
+    var delegate: AddNewManagerViewDelegate
 
     var body: some View {
         ScrollView {
@@ -39,7 +47,7 @@ struct AddNewManagerView: View {
                         .padding(.top, 10)
 
                     Button(action: {
-                        // TODO: Implement this action
+                        requestAccess()
                     }, label: {
                         HStack {
                             Image(systemName: "plus.circle.fill")
@@ -66,12 +74,26 @@ struct AddNewManagerView: View {
                 Spacer()
             }
             .padding(.horizontal)
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text(AppStrings.GroupView.alertTitle.localized()),
+                      message: Text(AppStrings.GroupView.alertMessage.localized()),
+                      primaryButton: .default(Text(AppStrings.GroupView.alertPrimaryButton.localized()), action: {
+                          UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+                      }),
+                      secondaryButton: .default(Text(AppStrings.GroupView.alertCloseButton.localized())))
+            }
         }
     }
-}
 
-struct AddNewManagerView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddNewManagerView()
+    func requestAccess() {
+        CNContactStore().requestAccess(for: .contacts) { access, _ in
+            if access {
+                DispatchQueue.main.async {
+                    delegate.addNewManagerViewDidTapAddManager(self)
+                }
+            } else {
+                showingAlert.toggle()
+            }
+        }
     }
 }
