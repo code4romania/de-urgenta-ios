@@ -90,3 +90,5 @@
 "AddNewManagerView.toggleLabel" = "Transferă resurse în noul rucsac";
 "AddNewManagerView.addManagerHeader" = "Alege responsabil";
 "AddNewManagerView.addManagerButton" = "Adaugă un responsabil";
+
+"BackpackContactsView.alertMessageText" = "pentru a fi responsabilul";

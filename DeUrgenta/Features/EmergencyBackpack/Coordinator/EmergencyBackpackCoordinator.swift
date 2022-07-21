@@ -40,7 +40,7 @@ extension EmergencyBackpackCoordinator: MFMessageComposeViewControllerDelegate {
         switch result {
         case .sent:
             if let currentContact = contactsViewModel.currentContact {
-                contactsViewModel.invitedContacts.append(currentContact)
+                contactsViewModel.invitedContactAsManager = currentContact
             }
         default:
             break
@@ -76,7 +76,7 @@ extension EmergencyBackpackCoordinator: BackpackCategoryItemViewDelegate {
 
 extension EmergencyBackpackCoordinator: AddNewManagerViewDelegate {
     func addNewManagerViewDidTapAddManager(_: AddNewManagerView) {
-        let viewController = UIHostingController(rootView: BackpackContactsView(viewModel: contactsViewModel, contactRowDelegate: self))
+        let viewController = UIHostingController(rootView: BackpackContactsView(viewModel: contactsViewModel, contactRowDelegate: self, contactsViewDelegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 }
@@ -84,5 +84,12 @@ extension EmergencyBackpackCoordinator: AddNewManagerViewDelegate {
 extension EmergencyBackpackCoordinator: BackpackContactRowDelegate {
     func backpackContactRowDidTapAddButton(from _: BackpackContactRow, withItem contact: ContactInfo) {
         presentMessageCompose(withItem: contact)
+    }
+}
+
+extension EmergencyBackpackCoordinator: BackpackContactsViewDelegate {
+    func backpackContactsViewDidTapContinueButton(_: BackpackContactsView) {
+        let viewControllers: [UIViewController] = navigationController.viewControllers as [UIViewController]
+        navigationController.popToViewController(viewControllers[viewControllers.count - 3], animated: true)
     }
 }

@@ -1,11 +1,15 @@
 import SwiftUI
 
+protocol BackpackContactsViewDelegate {
+    func backpackContactsViewDidTapContinueButton(_ view: BackpackContactsView)
+}
+
 struct BackpackContactsView: View {
     @ObservedObject var viewModel: ContactsViewModel
     @State var searchText: String = ""
 
-    // Need to be changed
     var contactRowDelegate: BackpackContactRowDelegate
+    var contactsViewDelegate: BackpackContactsViewDelegate
 
     var filtredContacts: [ContactInfo] {
         var contactsArrayCopy: [ContactInfo] = viewModel.contacts
@@ -38,10 +42,10 @@ struct BackpackContactsView: View {
 
                 VStack {
                     Button(action: {
-                        // TODO: Implement this action
+                        contactsViewDelegate.backpackContactsViewDidTapContinueButton(self)
                     }, label: {
                         HStack {
-                            Text(AppStrings.ContactsView.inviteFriendsButton.localized())
+                            Text("Continuă")
                                 .font(.custom("IBMPlexSans-Bold", size: 16))
                                 .foregroundColor(.secondary)
 

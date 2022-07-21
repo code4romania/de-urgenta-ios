@@ -32,12 +32,12 @@ struct BackpackContactRow: View {
                 Spacer()
 
                 Button(action: {
-                    if viewModel.invitedContacts.contains(where: { $0.id == contact.id }) {
-                        showingAlert = true
-                    } else {
+                    guard viewModel.invitedContactAsManager != nil else {
                         delegate.backpackContactRowDidTapAddButton(from: self, withItem: contact)
+                        return
                     }
 
+                    showingAlert = true
                 }, label: {
                     Text(AppStrings.ContactRow.buttonText.localized())
                         .foregroundColor(Color.accent)
@@ -54,7 +54,7 @@ struct BackpackContactRow: View {
             .frame(height: 50)
             .alert(isPresented: $showingAlert, content: {
                 Alert(title: Text(AppStrings.ContactRow.alertTitle.localized()),
-                      message: Text(AppStrings.ContactRow.alertMessage.localized() + contact.firstName + " " + contact.lastName),
+                      message: Text(AppStrings.ContactRow.alertMessage.localized() + viewModel.invitedContactAsManager!.firstName + " " + viewModel.invitedContactAsManager!.lastName + " " + AppStrings.BackpackContactsView.alertMessageText.localized()),
                       dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
             })
 

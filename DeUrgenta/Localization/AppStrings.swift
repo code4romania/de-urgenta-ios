@@ -149,4 +149,8 @@ enum AppStrings: String, Localizable {
         case addManagerHeader = "AddNewManagerView.addManagerHeader"
         case addManagerButton = "AddNewManagerView.addManagerButton"
     }
+
+    enum BackpackContactsView: String, Localizable {
+        case alertMessageText = "BackpackContactsView.alertMessageText"
+    }
 }
