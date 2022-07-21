@@ -140,4 +140,17 @@ enum AppStrings: String, Localizable {
         case deleteButton = "ItemView.deleteButton"
         case expirationDateLabel = "ItemView.expirationDateLabel"
     }
+
+    enum AddNewManagerView: String, Localizable {
+        case headerTitle = "AddNewManagerView.headerTitle"
+        case firstParagraph = "AddNewManagerView.firstParagraph"
+        case secondParagraph = "AddNewManagerView.secondParagraph"
+        case toggleLabel = "AddNewManagerView.toggleLabel"
+        case addManagerHeader = "AddNewManagerView.addManagerHeader"
+        case addManagerButton = "AddNewManagerView.addManagerButton"
+    }
+
+    enum BackpackContactsView: String, Localizable {
+        case alertMessageText = "BackpackContactsView.alertMessageText"
+    }
 }

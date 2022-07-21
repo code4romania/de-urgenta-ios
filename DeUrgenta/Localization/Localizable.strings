@@ -83,3 +83,12 @@
 "CategoryView.alertTitle" = "Atenție";
 "CategoryView.alertMessage" = "Numele produsului este obligatoriu";
 "CategoryView.alertButton" = "OK";
+
+"AddNewManagerView.headerTitle" = "Adaugă responsabil nou";
+"AddNewManagerView.firstParagraph" = "Această acțiune va crea un nou rucsac în profilul tău pentru a-l putea împărți cu alte persoane cu care locuiești. Poți invită noi responsabili fie dintre persoanele care sunt parte din grupul/grupurile tale sau o persoană complet nouă.";
+"AddNewManagerView.secondParagraph" = "Pare că ai adăugat deja resurse în rucsac. Bifează mai jos dacă vrei să transferi resursele din rucsacul tău în noul rucsac pe care îl împarți cu alte persoane.";
+"AddNewManagerView.toggleLabel" = "Transferă resurse în noul rucsac";
+"AddNewManagerView.addManagerHeader" = "Alege responsabil";
+"AddNewManagerView.addManagerButton" = "Adaugă un responsabil";
+
+"BackpackContactsView.alertMessageText" = "pentru a fi responsabilul";

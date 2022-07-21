@@ -12,8 +12,11 @@
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
+		6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256E7EB28883E16003C1175 /* BackpackContactsView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
+		628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B495C2888154200B7B490 /* AddNewManagerView.swift */; };
 		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
+		6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6296717928892B5F00C607A7 /* BackpackContactRow.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
 		62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */; };
@@ -28,6 +31,7 @@
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
+		62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B94FEA288820B700BDF009 /* ContactsViewModel.swift */; };
 		62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C708E6287EF5DA00E73D71 /* CategoryView.swift */; };
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
@@ -63,8 +67,11 @@
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		6256E7EB28883E16003C1175 /* BackpackContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactsView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
+		628B495C2888154200B7B490 /* AddNewManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewManagerView.swift; sourceTree = "<group>"; };
 		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
+		6296717928892B5F00C607A7 /* BackpackContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactRow.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackCategoryItemView.swift; sourceTree = "<group>"; };
@@ -79,6 +86,7 @@
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
+		62B94FEA288820B700BDF009 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		62C708E6287EF5DA00E73D71 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */,
+				62B94FEA288820B700BDF009 /* ContactsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -228,7 +237,10 @@
 			isa = PBXGroup;
 			children = (
 				626A0DB2287ED6B80009530B /* AddItemSection.swift */,
+				628B495C2888154200B7B490 /* AddNewManagerView.swift */,
 				62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */,
+				6296717928892B5F00C607A7 /* BackpackContactRow.swift */,
+				6256E7EB28883E16003C1175 /* BackpackContactsView.swift */,
 				620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */,
 				62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */,
 				62C708E6287EF5DA00E73D71 /* CategoryView.swift */,
@@ -534,6 +546,7 @@
 				62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
 				62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */,
+				628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */,
 				620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */,
 				BB8F3ECC2842529600278975 /* AccountConfigView.swift in Sources */,
 				62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */,
@@ -547,6 +560,7 @@
 				6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */,
 				BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */,
 				62AB8879286DB10100A7801C /* CreateGroupViewModel.swift in Sources */,
+				62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */,
 				62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
 				BB8F3ED62842599300278975 /* AccountConfigViewModel.swift in Sources */,
@@ -559,7 +573,9 @@
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
+				6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */,
 				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
+				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,
 			);

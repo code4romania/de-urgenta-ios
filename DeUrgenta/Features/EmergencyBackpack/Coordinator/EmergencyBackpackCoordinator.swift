@@ -1,4 +1,5 @@
 import Foundation
+import MessageUI
 import SwiftUI
 import UIKit
 
@@ -7,6 +8,7 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
 
     var categoryViewModel: CategoryViewModel = .init()
+    var contactsViewModel: ContactsViewModel = .init()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -16,11 +18,40 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
         let viewController = UIHostingController(rootView: EmergencyBackpackView(delegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
+
+    func presentMessageCompose(withItem contact: ContactInfo) {
+        guard MFMessageComposeViewController.canSendText() else {
+            return
+        }
+        contactsViewModel.currentContact = contact
+
+        let composeVC = MFMessageComposeViewController()
+        composeVC.messageComposeDelegate = self
+
+        composeVC.recipients = [contact.phoneNumber.stringValue]
+        composeVC.body = "Prietena ta Corina Dobre te invita sa te alaturi grupului ei de prieteni pregatiti! Descarcă DeUrgenta de la http://deurgenta.ro/invite/d9a84aed5c39bc"
+
+        navigationController.present(composeVC, animated: true)
+    }
+}
+
+extension EmergencyBackpackCoordinator: MFMessageComposeViewControllerDelegate {
+    func messageComposeViewController(_: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+        switch result {
+        case .sent:
+            if let currentContact = contactsViewModel.currentContact {
+                contactsViewModel.invitedContactAsManager = currentContact
+            }
+        default:
+            break
+        }
+        navigationController.dismiss(animated: true)
+    }
 }
 
 extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     func emergencyBackpackViewDidTapAddBackpack(_: EmergencyBackpackView) {
-        let viewController = UIHostingController(rootView: MyBackpackView(categoryViewModel: categoryViewModel, delegate: self))
+        let viewController = UIHostingController(rootView: MyBackpackView(categoryViewModel: categoryViewModel, delegate: self, myBackpackDelegate: self))
         navigationController.pushViewController(viewController, animated: true)
     }
 
@@ -29,9 +60,36 @@ extension EmergencyBackpackCoordinator: EmergencyBackpackViewDelegate {
     }
 }
 
+extension EmergencyBackpackCoordinator: MyBackpackViewDelegate {
+    func myBackpackViewDidTapAddManager(_: MyBackpackView) {
+        let viewController = UIHostingController(rootView: AddNewManagerView(delegate: self))
+        navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
 extension EmergencyBackpackCoordinator: BackpackCategoryItemViewDelegate {
     func backpackCategoryItemViewDidTapButton(from _: BackpackCategoryItemView, withItem item: CategoryItem) {
         let viewController = UIHostingController(rootView: CategoryView(categoryViewModel: CategoryViewModel(selectedCategory: item)))
         navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension EmergencyBackpackCoordinator: AddNewManagerViewDelegate {
+    func addNewManagerViewDidTapAddManager(_: AddNewManagerView) {
+        let viewController = UIHostingController(rootView: BackpackContactsView(viewModel: contactsViewModel, contactRowDelegate: self, contactsViewDelegate: self))
+        navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension EmergencyBackpackCoordinator: BackpackContactRowDelegate {
+    func backpackContactRowDidTapAddButton(from _: BackpackContactRow, withItem contact: ContactInfo) {
+        presentMessageCompose(withItem: contact)
+    }
+}
+
+extension EmergencyBackpackCoordinator: BackpackContactsViewDelegate {
+    func backpackContactsViewDidTapContinueButton(_: BackpackContactsView) {
+        let viewControllers: [UIViewController] = navigationController.viewControllers as [UIViewController]
+        navigationController.popToViewController(viewControllers[viewControllers.count - 3], animated: true)
     }
 }
