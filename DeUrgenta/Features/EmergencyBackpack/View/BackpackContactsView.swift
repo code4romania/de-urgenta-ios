@@ -27,37 +27,38 @@ struct BackpackContactsView: View {
                 .background(Color.accent)
 
             Spacer()
-        }
-        ZStack(alignment: .bottom) {
-            ScrollView {
-                ForEach(filtredContacts, id: \.id) { _ in
-                    // ContactRow(viewModel: viewModel, contact: contact, delegate: delegate)
-                }
-                .padding(.horizontal)
-            }
 
-            VStack {
-                Button(action: {
-                    // TODO: Implement this action
-                }, label: {
-                    HStack {
-                        Text(AppStrings.ContactsView.inviteFriendsButton.localized())
-                            .font(.custom("IBMPlexSans-Bold", size: 16))
-                            .foregroundColor(.secondary)
-
-                        Image(systemName: "arrow.right")
-                            .foregroundColor(.secondary)
+            ZStack(alignment: .bottom) {
+                ScrollView {
+                    ForEach(filtredContacts, id: \.id) { contact in
+                        BackpackContactRow(viewModel: viewModel, contact: contact)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: 50)
-                    .background(Color.accent)
-                    .cornerRadius(6)
-                })
+                    .padding(.horizontal)
+                }
+
+                VStack {
+                    Button(action: {
+                        // TODO: Implement this action
+                    }, label: {
+                        HStack {
+                            Text(AppStrings.ContactsView.inviteFriendsButton.localized())
+                                .font(.custom("IBMPlexSans-Bold", size: 16))
+                                .foregroundColor(.secondary)
+
+                            Image(systemName: "arrow.right")
+                                .foregroundColor(.secondary)
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: 50)
+                        .background(Color.accent)
+                        .cornerRadius(6)
+                    })
+                }
+                .frame(maxHeight: 50)
+                .padding(.horizontal)
+                .padding(.bottom, 30)
+            }.onAppear {
+                getContacts()
             }
-            .frame(maxHeight: 50)
-            .padding(.horizontal)
-            .padding(.bottom, 30)
-        }.onAppear {
-            getContacts()
         }
     }
 

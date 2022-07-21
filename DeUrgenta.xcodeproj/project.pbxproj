@@ -16,6 +16,7 @@
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
 		628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B495C2888154200B7B490 /* AddNewManagerView.swift */; };
 		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
+		6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6296717928892B5F00C607A7 /* BackpackContactRow.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
 		62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */; };
@@ -70,6 +71,7 @@
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
 		628B495C2888154200B7B490 /* AddNewManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewManagerView.swift; sourceTree = "<group>"; };
 		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
+		6296717928892B5F00C607A7 /* BackpackContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactRow.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackCategoryItemView.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				6246314F28815CFD003C2EB7 /* ItemView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
 				6256E7EB28883E16003C1175 /* BackpackContactsView.swift */,
+				6296717928892B5F00C607A7 /* BackpackContactRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
+				6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */,
 				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
 				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
