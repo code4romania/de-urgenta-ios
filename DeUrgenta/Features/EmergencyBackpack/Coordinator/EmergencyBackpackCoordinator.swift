@@ -76,7 +76,13 @@ extension EmergencyBackpackCoordinator: BackpackCategoryItemViewDelegate {
 
 extension EmergencyBackpackCoordinator: AddNewManagerViewDelegate {
     func addNewManagerViewDidTapAddManager(_: AddNewManagerView) {
-        let viewController = UIHostingController(rootView: BackpackContactsView(viewModel: contactsViewModel))
+        let viewController = UIHostingController(rootView: BackpackContactsView(viewModel: contactsViewModel, contactRowDelegate: self))
         navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension EmergencyBackpackCoordinator: BackpackContactRowDelegate {
+    func backpackContactRowDidTapAddButton(from _: BackpackContactRow, withItem contact: ContactInfo) {
+        presentMessageCompose(withItem: contact)
     }
 }

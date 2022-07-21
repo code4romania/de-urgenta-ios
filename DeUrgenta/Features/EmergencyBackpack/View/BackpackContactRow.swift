@@ -1,11 +1,15 @@
 import SwiftUI
 
+protocol BackpackContactRowDelegate {
+    func backpackContactRowDidTapAddButton(from view: BackpackContactRow, withItem contact: ContactInfo)
+}
+
 struct BackpackContactRow: View {
     @ObservedObject var viewModel: ContactsViewModel
     @State var showingAlert = false
 
     var contact: ContactInfo
-    // var delegate: ContactRowDelegate
+    var delegate: BackpackContactRowDelegate
 
     var body: some View {
         VStack {
@@ -31,7 +35,7 @@ struct BackpackContactRow: View {
                     if viewModel.invitedContacts.contains(where: { $0.id == contact.id }) {
                         showingAlert = true
                     } else {
-                        // delegate.contactRowDidTapAddButton(from: self, withItem: contact)
+                        delegate.backpackContactRowDidTapAddButton(from: self, withItem: contact)
                     }
 
                 }, label: {

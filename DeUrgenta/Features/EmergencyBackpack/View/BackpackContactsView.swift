@@ -5,7 +5,7 @@ struct BackpackContactsView: View {
     @State var searchText: String = ""
 
     // Need to be changed
-    // var delegate: ContactRowDelegate
+    var contactRowDelegate: BackpackContactRowDelegate
 
     var filtredContacts: [ContactInfo] {
         var contactsArrayCopy: [ContactInfo] = viewModel.contacts
@@ -31,7 +31,7 @@ struct BackpackContactsView: View {
             ZStack(alignment: .bottom) {
                 ScrollView {
                     ForEach(filtredContacts, id: \.id) { contact in
-                        BackpackContactRow(viewModel: viewModel, contact: contact)
+                        BackpackContactRow(viewModel: viewModel, contact: contact, delegate: contactRowDelegate)
                     }
                     .padding(.horizontal)
                 }
