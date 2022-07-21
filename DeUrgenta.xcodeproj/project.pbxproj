@@ -12,6 +12,7 @@
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
+		6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256E7EB28883E16003C1175 /* BackpackContactsView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
 		628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B495C2888154200B7B490 /* AddNewManagerView.swift */; };
 		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
@@ -65,6 +66,7 @@
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		6256E7EB28883E16003C1175 /* BackpackContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactsView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
 		628B495C2888154200B7B490 /* AddNewManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewManagerView.swift; sourceTree = "<group>"; };
 		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				6246314F28815CFD003C2EB7 /* ItemView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
+				6256E7EB28883E16003C1175 /* BackpackContactsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
 				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
+				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,
 			);

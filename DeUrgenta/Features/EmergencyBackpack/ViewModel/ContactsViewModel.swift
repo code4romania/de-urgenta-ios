@@ -3,6 +3,9 @@ import Foundation
 
 class ContactsViewModel: ObservableObject {
     @Published var contacts = [ContactInfo]()
+    @Published var invitedContacts: [ContactInfo] = []
+
+    var currentContact: ContactInfo?
 
     init() {}
 

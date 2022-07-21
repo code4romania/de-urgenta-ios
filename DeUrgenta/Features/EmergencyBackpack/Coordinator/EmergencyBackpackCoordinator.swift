@@ -8,7 +8,7 @@ final class EmergencyBackpackCoordinator: NSObject, Coordinator {
     var childCoordinators: [Coordinator] = []
 
     var categoryViewModel: CategoryViewModel = .init()
-    var contactsViewModel: CreateGroupViewModel = .init()
+    var contactsViewModel: ContactsViewModel = .init()
 
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
@@ -76,7 +76,7 @@ extension EmergencyBackpackCoordinator: BackpackCategoryItemViewDelegate {
 
 extension EmergencyBackpackCoordinator: AddNewManagerViewDelegate {
     func addNewManagerViewDidTapAddManager(_: AddNewManagerView) {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: BackpackContactsView(viewModel: contactsViewModel))
         navigationController.pushViewController(viewController, animated: true)
     }
 }
