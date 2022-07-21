@@ -239,14 +239,14 @@
 				626A0DB2287ED6B80009530B /* AddItemSection.swift */,
 				628B495C2888154200B7B490 /* AddNewManagerView.swift */,
 				62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */,
+				6296717928892B5F00C607A7 /* BackpackContactRow.swift */,
+				6256E7EB28883E16003C1175 /* BackpackContactsView.swift */,
 				620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */,
 				62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */,
 				62C708E6287EF5DA00E73D71 /* CategoryView.swift */,
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				6246314F28815CFD003C2EB7 /* ItemView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
-				6256E7EB28883E16003C1175 /* BackpackContactsView.swift */,
-				6296717928892B5F00C607A7 /* BackpackContactRow.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
