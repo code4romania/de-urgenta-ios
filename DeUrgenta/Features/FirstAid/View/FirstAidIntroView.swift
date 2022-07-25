@@ -3,7 +3,7 @@ import SwiftUI
 struct FirstAidIntroView: View {
     var body: some View {
         HStack {
-            Text("Învață să dai primul ajutor")
+            Text(AppStrings.FirstAidIntroView.headerTitle.localized())
                 .font(.custom("IBMPlexSans-SemiBold", size: 23))
                 .frame(alignment: .leading)
                 .padding(.vertical, 10)
@@ -15,14 +15,14 @@ struct FirstAidIntroView: View {
         VStack(alignment: .leading) {
             ScrollView {
                 VStack {
-                    Text("Este foarte important să poți să îi ajuți pe cei din jur într-o situație de urgență.")
+                    Text(AppStrings.FirstAidIntroView.firstParagraph.localized())
                         .modifier(PrimaryTextStyle())
 
-                    Text("Există două tipuri de cursuri de prim ajutor pe care le poți face. Primul se numește ”Prim ajutor calificat” și este un tip de curs pe care îl poți face doar la Inspectorajul Județean pentru Situații de Urgență. Al doilea tip este cel de prim-ajutor, pe care îl poți face la organizații precum Societatea Națională de Cruce Roșie sau alți furnizori de cursuri. Există de asemenea și cursuri de pregătire în caz de dezastre.")
+                    Text(AppStrings.FirstAidIntroView.secondParagraph.localized())
                         .modifier(PrimaryTextStyle())
                         .padding(.top, 15)
 
-                    Text("Certificările de prim ajutor trebuie reînnointe la intervale diferite de timp. De Urgență te ajută să alegi un curs potrivit pentru tine și te va anunța când certificarea ta expiră pentru a reînnoi cursul. ")
+                    Text(AppStrings.FirstAidIntroView.thirdParagraph.localized())
                         .modifier(PrimaryTextStyle())
                         .padding(.top, 15)
                 }
@@ -33,10 +33,10 @@ struct FirstAidIntroView: View {
             Spacer()
 
             Button(action: {
-                //TODO: Implement this action
+                // TODO: Implement this action
             }, label: {
                 HStack {
-                    Text("Vezi cursurile")
+                    Text(AppStrings.FirstAidIntroView.viewCoursesButton.localized())
                         .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
 

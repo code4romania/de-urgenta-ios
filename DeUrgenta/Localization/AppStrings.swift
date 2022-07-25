@@ -153,4 +153,12 @@ enum AppStrings: String, Localizable {
     enum BackpackContactsView: String, Localizable {
         case alertMessageText = "BackpackContactsView.alertMessageText"
     }
+
+    enum FirstAidIntroView: String, Localizable {
+        case headerTitle = "FirstAidIntroView.headerTitle"
+        case firstParagraph = "FirstAidIntroView.firstParagraph"
+        case secondParagraph = "FirstAidIntroView.secondParagraph"
+        case thirdParagraph = "FirstAidIntroView.thirdParagraph"
+        case viewCoursesButton = "FirstAidIntroView.viewCoursesButton"
+    }
 }
