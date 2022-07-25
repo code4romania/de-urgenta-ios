@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct FirstAidIntroView: View {
+    @StateObject var locationManager = LocationViewModel()
     var body: some View {
         HStack {
             Text(AppStrings.FirstAidIntroView.headerTitle.localized())
@@ -33,7 +34,7 @@ struct FirstAidIntroView: View {
             Spacer()
 
             Button(action: {
-                // TODO: Implement this action
+                locationManager.requestAuthorization()
             }, label: {
                 HStack {
                     Text(AppStrings.FirstAidIntroView.viewCoursesButton.localized())

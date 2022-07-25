@@ -11,6 +11,7 @@
 		620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */; };
 		622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */; };
 		622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE035288E8C86004362F7 /* FirstAidIntroView.swift */; };
+		6234309D288EA72A001632CE /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234309C288EA72A001632CE /* LocationViewModel.swift */; };
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
@@ -68,6 +69,7 @@
 		620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemsArrayView.swift; sourceTree = "<group>"; };
 		622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCoordinator.swift; sourceTree = "<group>"; };
 		622AE035288E8C86004362F7 /* FirstAidIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidIntroView.swift; sourceTree = "<group>"; };
+		6234309C288EA72A001632CE /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				622AE031288E8A38004362F7 /* Coordinator */,
 				622AE032288E8A3F004362F7 /* View */,
+				6234309B288EA71A001632CE /* ViewModel */,
 			);
 			path = FirstAid;
 			sourceTree = "<group>";
@@ -156,6 +159,14 @@
 				622AE035288E8C86004362F7 /* FirstAidIntroView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6234309B288EA71A001632CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6234309C288EA72A001632CE /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		628B59F2288578B100EB171B /* Extensions */ = {
@@ -582,6 +593,7 @@
 				62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */,
 				62AB8876286DB05400A7801C /* ContactRow.swift in Sources */,
 				62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */,
+				6234309D288EA72A001632CE /* LocationViewModel.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
@@ -743,6 +755,9 @@
 				INFOPLIST_FILE = DeUrgenta/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "De Urgență";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Display the contact list";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -773,6 +788,9 @@
 				INFOPLIST_FILE = DeUrgenta/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "De Urgență";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Display the contact list";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
