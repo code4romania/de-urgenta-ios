@@ -20,7 +20,7 @@ class AccountConfigViewModel: ObservableObject {
                             enabled: false),
 
                  ConfigStep(name: "Învață să dai primul ajutor",
-                            type: .backpack,
+                            type: .firstAid,
                             logo: "config.red-cross-icon",
                             enabled: false)]
     }

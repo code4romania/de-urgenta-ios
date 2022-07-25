@@ -63,7 +63,11 @@ extension ApplicationCoordinator: AccountConfigCoordinatorDelegate {
         removeChildCoordinator(sender)
     }
 
-    func accountConfigCoordinatorShouldPresentFirstAid(_: AccountConfigCoordinator) {
-        // TODO: Implement this method
+    func accountConfigCoordinatorShouldPresentFirstAid(_ sender: AccountConfigCoordinator) {
+        let coordinator = FirstAidCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
     }
 }
