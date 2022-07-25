@@ -5,7 +5,9 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus
 
     @Published var location: CLLocationCoordinate2D?
-    @Published var city: String?
+    @Published var currentCity: String?
+
+    let locations = ["Bucuresti", "Sibiu", "Brasov"]
 
     private let locationManager: CLLocationManager
 
@@ -20,14 +22,19 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
 
     func requestAuthorization() {
         locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
+        if locationManager.authorizationStatus == .authorizedAlways ||
+            locationManager.authorizationStatus == .authorizedWhenInUse {
+            locationManager.startUpdatingLocation()
+        } else {
+            currentCity = locations.first
+        }
     }
 
     func locationManager(_: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         location = locations.first?.coordinate
 
         lookUpCurrentLocation { response in
-            self.city = response?.locality
+            self.currentCity = response?.locality
         }
     }
 

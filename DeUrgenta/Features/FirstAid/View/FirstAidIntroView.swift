@@ -1,7 +1,13 @@
 import SwiftUI
 
+protocol FirstAidIntroViewDelegate {
+    func firstAidIntroViewDidTapButton(_ view: FirstAidIntroView)
+}
+
 struct FirstAidIntroView: View {
-    @StateObject var locationManager = LocationViewModel()
+    @ObservedObject var locationManager: LocationViewModel
+    var delegate: FirstAidIntroViewDelegate
+
     var body: some View {
         HStack {
             Text(AppStrings.FirstAidIntroView.headerTitle.localized())
@@ -35,6 +41,7 @@ struct FirstAidIntroView: View {
 
             Button(action: {
                 locationManager.requestAuthorization()
+                delegate.firstAidIntroViewDidTapButton(self)
             }, label: {
                 HStack {
                     Text(AppStrings.FirstAidIntroView.viewCoursesButton.localized())
