@@ -11,7 +11,7 @@ final class FirstAidCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: FirstAidIntroView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }
