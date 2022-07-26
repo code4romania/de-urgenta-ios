@@ -4,16 +4,33 @@ import Foundation
 class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus
 
-    @Published var location: CLLocationCoordinate2D?
-    @Published var currentCity: String?
+    var location: CLLocationCoordinate2D?
+    var currentCity: String?
+    
+    static var uniqueKey: String {
+        UUID().uuidString
+    }
 
-    let locations = ["Bucuresti", "Sibiu", "Brasov"]
+    let locations: [DropdownOption] = [
+        DropdownOption(key: uniqueKey, value: "Bucuresti"),
+        DropdownOption(key: uniqueKey, value: "Sibiu"),
+        DropdownOption(key: uniqueKey, value: "Brasov"),
+    ]
+
+    let courses: [DropdownOption] = [
+        DropdownOption(key: uniqueKey, value: "First Aid"),
+        DropdownOption(key: uniqueKey, value: "Qualified first aid"),
+        DropdownOption(key: uniqueKey, value: "Disaster preparedness"),
+    ]
+
+    var currentCourse: String
 
     private let locationManager: CLLocationManager
 
     override init() {
         locationManager = CLLocationManager()
         authorizationStatus = locationManager.authorizationStatus
+        currentCourse = courses.first!.value
 
         super.init()
         locationManager.delegate = self
@@ -26,7 +43,7 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
             locationManager.authorizationStatus == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
         } else {
-            currentCity = locations.first
+            currentCity = locations.first!.value
         }
     }
 
