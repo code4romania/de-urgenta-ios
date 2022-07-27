@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */; };
 		620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */; };
+		622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */; };
+		622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE035288E8C86004362F7 /* FirstAidIntroView.swift */; };
+		622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622DE7D2288EC383000657B1 /* SelectCourseAndCityView.swift */; };
+		622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622DE7D4288ED020000657B1 /* Dropdown.swift */; };
+		6234309D288EA72A001632CE /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234309C288EA72A001632CE /* LocationViewModel.swift */; };
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
@@ -32,6 +37,7 @@
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
 		62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B94FEA288820B700BDF009 /* ContactsViewModel.swift */; };
+		62C5397A28914EA9001003AD /* DropdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5397928914EA9001003AD /* DropdownType.swift */; };
 		62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C708E6287EF5DA00E73D71 /* CategoryView.swift */; };
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
@@ -64,6 +70,11 @@
 /* Begin PBXFileReference section */
 		620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemsArrayView.swift; sourceTree = "<group>"; };
+		622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCoordinator.swift; sourceTree = "<group>"; };
+		622AE035288E8C86004362F7 /* FirstAidIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidIntroView.swift; sourceTree = "<group>"; };
+		622DE7D2288EC383000657B1 /* SelectCourseAndCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCourseAndCityView.swift; sourceTree = "<group>"; };
+		622DE7D4288ED020000657B1 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
+		6234309C288EA72A001632CE /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
@@ -87,6 +98,7 @@
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
 		62B94FEA288820B700BDF009 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		62C5397928914EA9001003AD /* DropdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownType.swift; sourceTree = "<group>"; };
 		62C708E6287EF5DA00E73D71 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
@@ -129,6 +141,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		622AE030288E8A26004362F7 /* FirstAid */ = {
+			isa = PBXGroup;
+			children = (
+				622AE031288E8A38004362F7 /* Coordinator */,
+				62C5397828914E9C001003AD /* Model */,
+				622AE032288E8A3F004362F7 /* View */,
+				6234309B288EA71A001632CE /* ViewModel */,
+			);
+			path = FirstAid;
+			sourceTree = "<group>";
+		};
+		622AE031288E8A38004362F7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		622AE032288E8A3F004362F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				622DE7D4288ED020000657B1 /* Dropdown.swift */,
+				622AE035288E8C86004362F7 /* FirstAidIntroView.swift */,
+				622DE7D2288EC383000657B1 /* SelectCourseAndCityView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6234309B288EA71A001632CE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6234309C288EA72A001632CE /* LocationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		628B59F2288578B100EB171B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -249,6 +298,14 @@
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		62C5397828914E9C001003AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62C5397928914EA9001003AD /* DropdownType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BB8F3EB82842292300278975 /* Splash */ = {
@@ -390,8 +447,9 @@
 			isa = PBXGroup;
 			children = (
 				BB8F3ECA2842525E00278975 /* AccountConfig */,
-				62AF98BC2877060B00BCFA11 /* EmergencyBackpack */,
 				62AC8188285B3DDF00ACAF3E /* CreateGroup */,
+				62AF98BC2877060B00BCFA11 /* EmergencyBackpack */,
+				622AE030288E8A26004362F7 /* FirstAid */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
 				BB8F3EB82842292300278975 /* Splash */,
 			);
@@ -552,8 +610,12 @@
 				62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */,
 				62AB8876286DB05400A7801C /* ContactRow.swift in Sources */,
 				62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */,
+				6234309D288EA72A001632CE /* LocationViewModel.swift in Sources */,
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
+				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
+				622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */,
+				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,
 				62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */,
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
 				6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */,
@@ -573,8 +635,10 @@
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
+				622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */,
 				6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */,
 				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
+				62C5397A28914EA9001003AD /* DropdownType.swift in Sources */,
 				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,
@@ -711,6 +775,9 @@
 				INFOPLIST_FILE = DeUrgenta/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "De Urgență";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Display the contact list";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -741,6 +808,9 @@
 				INFOPLIST_FILE = DeUrgenta/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "De Urgență";
 				INFOPLIST_KEY_NSContactsUsageDescription = "Display the contact list";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Locația dvs. este folosită pentru a vă afișa poziția pe hartă.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
