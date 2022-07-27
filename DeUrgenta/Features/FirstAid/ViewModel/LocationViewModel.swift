@@ -5,32 +5,29 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus
 
     var location: CLLocationCoordinate2D?
-    var currentCity: String?
-    
+    @Published var currentCity: String = ""
+
     static var uniqueKey: String {
         UUID().uuidString
     }
 
-    let locations: [DropdownOption] = [
+    var locations: [DropdownOption] = [
         DropdownOption(key: uniqueKey, value: "Bucuresti"),
-        DropdownOption(key: uniqueKey, value: "Sibiu"),
         DropdownOption(key: uniqueKey, value: "Brasov"),
+        DropdownOption(key: uniqueKey, value: "Cluj"),
     ]
 
     let courses: [DropdownOption] = [
-        DropdownOption(key: uniqueKey, value: "First Aid"),
-        DropdownOption(key: uniqueKey, value: "Qualified first aid"),
-        DropdownOption(key: uniqueKey, value: "Disaster preparedness"),
+        DropdownOption(key: uniqueKey, value: "Prim ajutor"),
+        DropdownOption(key: uniqueKey, value: "Prim ajutor calificat"),
+        DropdownOption(key: uniqueKey, value: "Pregătire în caz de dezastre"),
     ]
-
-    var currentCourse: String
 
     private let locationManager: CLLocationManager
 
     override init() {
         locationManager = CLLocationManager()
         authorizationStatus = locationManager.authorizationStatus
-        currentCourse = courses.first!.value
 
         super.init()
         locationManager.delegate = self
@@ -42,8 +39,6 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         if locationManager.authorizationStatus == .authorizedAlways ||
             locationManager.authorizationStatus == .authorizedWhenInUse {
             locationManager.startUpdatingLocation()
-        } else {
-            currentCity = locations.first!.value
         }
     }
 
@@ -51,12 +46,21 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         location = locations.first?.coordinate
 
         lookUpCurrentLocation { response in
-            self.currentCity = response?.locality
+            self.currentCity = response?.locality ?? ""
         }
+
+        if currentCity != "", !self.locations.contains(where: { $0.value == currentCity }) {
+            self.locations.append(DropdownOption(key: UUID().uuidString, value: currentCity))
+        }
+
+        locationManager.stopUpdatingLocation()
     }
 
-    func lookUpCurrentLocation(completionHandler: @escaping (CLPlacemark?)
-        -> Void) {
+    func locationManager(_: CLLocationManager, didChangeAuthorization _: CLAuthorizationStatus) {
+        locationManager.startUpdatingLocation()
+    }
+
+    func lookUpCurrentLocation(completionHandler: @escaping (CLPlacemark?) -> Void) {
         if let lastLocation = locationManager.location {
             let geocoder = CLGeocoder()
 

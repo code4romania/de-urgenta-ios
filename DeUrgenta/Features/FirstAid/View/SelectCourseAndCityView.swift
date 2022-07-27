@@ -19,6 +19,8 @@ struct SelectCourseAndCityView: View {
                 .modifier(SecondaryTextStyle())
 
             DropdownSelector(
+                locationManager: locationManager,
+                type: .course,
                 options: locationManager.courses,
                 imageIcon: "book.fill",
                 onOptionSelected: { option in
@@ -32,6 +34,8 @@ struct SelectCourseAndCityView: View {
                 .padding(.top, 15)
 
             DropdownSelector(
+                locationManager: locationManager,
+                type: .location,
                 options: locationManager.locations,
                 imageIcon: "map.fill",
                 onOptionSelected: { option in

@@ -37,6 +37,7 @@
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
 		62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B94FEA288820B700BDF009 /* ContactsViewModel.swift */; };
+		62C5397A28914EA9001003AD /* DropdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5397928914EA9001003AD /* DropdownType.swift */; };
 		62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C708E6287EF5DA00E73D71 /* CategoryView.swift */; };
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
@@ -97,6 +98,7 @@
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
 		62B94FEA288820B700BDF009 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
+		62C5397928914EA9001003AD /* DropdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownType.swift; sourceTree = "<group>"; };
 		62C708E6287EF5DA00E73D71 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				622AE031288E8A38004362F7 /* Coordinator */,
+				62C5397828914E9C001003AD /* Model */,
 				622AE032288E8A3F004362F7 /* View */,
 				6234309B288EA71A001632CE /* ViewModel */,
 			);
@@ -160,9 +163,9 @@
 		622AE032288E8A3F004362F7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				622DE7D4288ED020000657B1 /* Dropdown.swift */,
 				622AE035288E8C86004362F7 /* FirstAidIntroView.swift */,
 				622DE7D2288EC383000657B1 /* SelectCourseAndCityView.swift */,
-				622DE7D4288ED020000657B1 /* Dropdown.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +298,14 @@
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		62C5397828914E9C001003AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62C5397928914EA9001003AD /* DropdownType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BB8F3EB82842292300278975 /* Splash */ = {
@@ -627,6 +638,7 @@
 				622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */,
 				6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */,
 				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
+				62C5397A28914EA9001003AD /* DropdownType.swift in Sources */,
 				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,

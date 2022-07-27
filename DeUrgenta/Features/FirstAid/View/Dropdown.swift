@@ -61,12 +61,12 @@ struct Dropdown: View {
 }
 
 struct DropdownSelector: View {
+    @ObservedObject var locationManager: LocationViewModel
     @State private var shouldShowDropdown = false
     @State private var selectedOption: DropdownOption? = nil
 
-    var currentSelectionIfPermission: String?
+    var type: DropdownType
     var options: [DropdownOption]
-
     var imageIcon: String
     var onOptionSelected: ((_ option: DropdownOption) -> Void)?
     private let buttonHeight: CGFloat = 45
@@ -114,5 +114,10 @@ struct DropdownSelector: View {
         .background(
             RoundedRectangle(cornerRadius: 5).fill(Color.white)
         )
+        .onReceive(locationManager.$currentCity, perform: { newValue in
+            if type == .location, !newValue.isEmpty {
+                self.selectedOption = DropdownOption(key: UUID().uuidString, value: newValue)
+            }
+        })
     }
 }
