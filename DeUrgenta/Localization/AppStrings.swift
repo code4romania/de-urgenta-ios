@@ -161,4 +161,11 @@ enum AppStrings: String, Localizable {
         case thirdParagraph = "FirstAidIntroView.thirdParagraph"
         case viewCoursesButton = "FirstAidIntroView.viewCoursesButton"
     }
+
+    enum SelectCourseAndCityView: String, Localizable {
+        case headerTitle = "SelectCourseAndCityView.headerTitle"
+        case firstSelectorheader = "SelectCourseAndCityView.firstSelectorheader"
+        case secondSelectorheader = "SelectCourseAndCityView.secondSelectorheader"
+        case viewCoursesButton = "SelectCourseAndCityView.viewCoursesButton"
+    }
 }

@@ -98,3 +98,8 @@
 "FirstAidIntroView.secondParagraph" = "Există două tipuri de cursuri de prim ajutor pe care le poți face. Primul se numește ”Prim ajutor calificat” și este un tip de curs pe care îl poți face doar la Inspectorajul Județean pentru Situații de Urgență. Al doilea tip este cel de prim-ajutor, pe care îl poți face la organizații precum Societatea Națională de Cruce Roșie sau alți furnizori de cursuri. Există de asemenea și cursuri de pregătire în caz de dezastre.";
 "FirstAidIntroView.thirdParagraph" = "Certificările de prim ajutor trebuie reînnointe la intervale diferite de timp. De Urgență te ajută să alegi un curs potrivit pentru tine și te va anunța când certificarea ta expiră pentru a reînnoi cursul.";
 "FirstAidIntroView.viewCoursesButton" = "Vezi cursurile";
+
+"SelectCourseAndCityView.headerTitle" = "Învață să dai primul ajutor";
+"SelectCourseAndCityView.firstSelectorheader" = "Selectează tipul de curs";
+"SelectCourseAndCityView.secondSelectorheader" = "Selectează orașul";
+"SelectCourseAndCityView.viewCoursesButton" = "Vezi cursurile";

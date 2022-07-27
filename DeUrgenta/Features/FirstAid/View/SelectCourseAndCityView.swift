@@ -5,7 +5,7 @@ struct SelectCourseAndCityView: View {
 
     var body: some View {
         HStack {
-            Text(AppStrings.FirstAidIntroView.headerTitle.localized())
+            Text(AppStrings.SelectCourseAndCityView.headerTitle.localized())
                 .font(.custom("IBMPlexSans-SemiBold", size: 23))
                 .frame(alignment: .leading)
                 .padding(.vertical, 10)
@@ -15,7 +15,7 @@ struct SelectCourseAndCityView: View {
         }
 
         VStack(alignment: .leading) {
-            Text("Selectează tipul de curs")
+            Text(AppStrings.SelectCourseAndCityView.firstSelectorheader.localized())
                 .modifier(SecondaryTextStyle())
 
             DropdownSelector(
@@ -29,7 +29,7 @@ struct SelectCourseAndCityView: View {
             )
             .zIndex(1)
 
-            Text("Selectează orașul")
+            Text(AppStrings.SelectCourseAndCityView.secondSelectorheader.localized())
                 .modifier(SecondaryTextStyle())
                 .padding(.top, 15)
 
@@ -49,7 +49,7 @@ struct SelectCourseAndCityView: View {
                 // TODO: Implement this action
             }, label: {
                 HStack {
-                    Text(AppStrings.FirstAidIntroView.viewCoursesButton.localized())
+                    Text(AppStrings.SelectCourseAndCityView.viewCoursesButton.localized())
                         .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
 
