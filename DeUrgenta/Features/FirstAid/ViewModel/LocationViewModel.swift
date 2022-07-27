@@ -3,9 +3,10 @@ import Foundation
 
 class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     @Published var authorizationStatus: CLAuthorizationStatus
-
-    var location: CLLocationCoordinate2D?
     @Published var currentCity: String = ""
+
+    private var location: CLLocationCoordinate2D?
+    private let locationManager: CLLocationManager
 
     static var uniqueKey: String {
         UUID().uuidString
@@ -22,8 +23,6 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
         DropdownOption(key: uniqueKey, value: "Prim ajutor calificat"),
         DropdownOption(key: uniqueKey, value: "Pregătire în caz de dezastre"),
     ]
-
-    private let locationManager: CLLocationManager
 
     override init() {
         locationManager = CLLocationManager()
