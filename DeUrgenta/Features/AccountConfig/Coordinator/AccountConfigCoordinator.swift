@@ -7,6 +7,7 @@ protocol AccountConfigCoordinatorDelegate: AnyObject {
     func accountConfigCoordinatorShouldPresentGroup(_ coordinator: AccountConfigCoordinator)
     func accountConfigCoordinatorShouldPresentBackpack(_ coordinator: AccountConfigCoordinator)
     func accountConfigCoordinatorShouldPresentFirstAid(_ coordintaor: AccountConfigCoordinator)
+    func accountCongigCoordinatorShouldPresentMenu(_ coordinator: AccountConfigCoordinator)
 }
 
 final class AccountConfigCoordinator: NSObject, Coordinator {
@@ -27,6 +28,10 @@ final class AccountConfigCoordinator: NSObject, Coordinator {
 }
 
 extension AccountConfigCoordinator: AccountConfigViewDelegate {
+    func accountConfigViewDidTapMenuButton(_: AccountConfigView) {
+        delegate?.accountCongigCoordinatorShouldPresentMenu(self)
+    }
+
     func accountConfigViewShouldRedirect(from _: AccountConfigView, withItem item: ConfigStep) {
         switch item.type {
         case .adress:

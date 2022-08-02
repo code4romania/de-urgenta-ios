@@ -2,6 +2,7 @@ import SwiftUI
 
 protocol AccountConfigViewDelegate {
     func accountConfigViewShouldRedirect(from view: AccountConfigView, withItem item: ConfigStep)
+    func accountConfigViewDidTapMenuButton(_ view: AccountConfigView)
 }
 
 struct AccountConfigView: View {
@@ -14,7 +15,7 @@ struct AccountConfigView: View {
                 Spacer()
 
                 Button(action: {
-                    // TODO: Implement this action
+                    delegate.accountConfigViewDidTapMenuButton(self)
                 }, label: {
                     Image("config.menu-icon")
                         .frame(width: 21, height: 16)

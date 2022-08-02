@@ -43,6 +43,14 @@ extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
 }
 
 extension ApplicationCoordinator: AccountConfigCoordinatorDelegate {
+    func accountCongigCoordinatorShouldPresentMenu(_ sender: AccountConfigCoordinator) {
+        let coordinator = MenuCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
+    }
+
     func accountConfigCoordinatorShouldPresentAdress(_: AccountConfigCoordinator) {
         // TODO: Implement this method
     }
