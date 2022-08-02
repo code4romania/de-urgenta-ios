@@ -15,7 +15,7 @@ struct MenuView: View {
                 }
                 .padding()
 
-                ForEach(viewModel.options, id: \.self) { option in
+                ForEach(viewModel.options, id: \.id) { option in
                     VStack {
                         Button(action: {
                             // TODO: Implement this action
@@ -45,7 +45,7 @@ struct MenuView: View {
                         // TODO: Implement this action
                     }, label: {
                         HStack {
-                            Text("Doneaza")
+                            Text("Donează")
                                 .font(.custom("IBMPlexSans-Bold", size: 16))
                                 .foregroundColor(.secondary)
                                 .padding(.vertical)

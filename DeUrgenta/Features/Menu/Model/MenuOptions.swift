@@ -11,7 +11,8 @@ enum OptionType {
     case signout
 }
 
-struct MenuOption: Hashable {
+struct MenuOption: Identifiable {
+    var id: UUID = .init()
     var name: String
     var type: OptionType
 }
