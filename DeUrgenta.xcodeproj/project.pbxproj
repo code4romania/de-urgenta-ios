@@ -44,6 +44,8 @@
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
 		62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */; };
 		62ECEB78289953F300E0B82E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB77289953F300E0B82E /* MenuView.swift */; };
+		62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */; };
+		62ECEB7E289955D700E0B82E /* MenuOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7D289955D700E0B82E /* MenuOptions.swift */; };
 		62F658FC286B291500539384 /* GroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62F658FB286B291500539384 /* GroupView.swift */; };
 		BB8F3EB6284228FF00278975 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */; };
 		BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */; };
@@ -107,6 +109,8 @@
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
 		62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		62ECEB77289953F300E0B82E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		62ECEB7D289955D700E0B82E /* MenuOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOptions.swift; sourceTree = "<group>"; };
 		62F658FB286B291500539384 /* GroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupView.swift; sourceTree = "<group>"; };
 		BB8F3EB5284228FF00278975 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		BB8F3EBB28423C0F00278975 /* LandingPageCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageCoordinator.swift; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 		62ECEB7228994E2000E0B82E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
+				62ECEB7C289955CD00E0B82E /* Model */,
+				62ECEB792899558700E0B82E /* ViewModel */,
 				62ECEB7428994E3700E0B82E /* View */,
 				62ECEB7328994E2800E0B82E /* Coordinator */,
 			);
@@ -335,6 +341,22 @@
 				62ECEB77289953F300E0B82E /* MenuView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		62ECEB792899558700E0B82E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62ECEB7C289955CD00E0B82E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62ECEB7D289955D700E0B82E /* MenuOptions.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		BB8F3EB82842292300278975 /* Splash */ = {
@@ -646,6 +668,7 @@
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
 				622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */,
+				62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */,
 				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,
 				62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */,
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
@@ -663,6 +686,7 @@
 				629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */,
 				62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */,
 				62AB887B286DC42500A7801C /* SearchBar.swift in Sources */,
+				62ECEB7E289955D700E0B82E /* MenuOptions.swift in Sources */,
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
