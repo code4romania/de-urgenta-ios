@@ -11,6 +11,18 @@ struct AccountConfigView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
+                Spacer()
+
+                Button(action: {
+                    // TODO: Implement this action
+                }, label: {
+                    Image("config.menu-icon")
+                        .frame(width: 21, height: 16)
+                        .foregroundColor(.accent)
+                })
+            }
+
+            HStack {
                 Image("logo")
                     .resizable()
                     .frame(width: 100, height: 100)
