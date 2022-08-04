@@ -31,10 +31,10 @@ final class MenuCoordinator: Coordinator {
 }
 
 extension MenuCoordinator: MenuViewDelegate {
-    func menuViewDidTapDonateButton(_ view: MenuView) {
+    func menuViewDidTapDonateButton(_: MenuView) {
         // TODO: Implement this method
     }
-    
+
     func menuViewShouldRedirect(from _: MenuView, withItem item: MenuOption) {
         switch item.type {
         case .adress:
