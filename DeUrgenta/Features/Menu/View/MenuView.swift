@@ -1,7 +1,12 @@
 import SwiftUI
 
+protocol MenuViewDelegate {
+    func menuViewShouldRedirect(from view: MenuView, withItem item: MenuOption)
+}
+
 struct MenuView: View {
     @ObservedObject var viewModel: MenuViewModel
+    var delegate: MenuViewDelegate
 
     var body: some View {
         VStack(spacing: 0) {
@@ -18,7 +23,7 @@ struct MenuView: View {
                 ForEach(viewModel.options, id: \.id) { option in
                     VStack {
                         Button(action: {
-                            // TODO: Implement this action
+                            delegate.menuViewShouldRedirect(from: self, withItem: option)
                         }, label: {
                             VStack(alignment: .leading) {
                                 Text(option.name)
