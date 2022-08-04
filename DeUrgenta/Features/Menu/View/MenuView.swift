@@ -40,7 +40,7 @@ struct MenuView: View {
                 Spacer()
 
                 VStack(alignment: .leading) {
-                    Text("Soluție proiectată, dezvoltată și administrată de")
+                    Text(AppStrings.MenuView.headerIconLabel.localized())
                         .font(.custom("IBMPlexSans-Regular", size: 14))
                         .foregroundColor(Color.gray)
 
@@ -50,7 +50,7 @@ struct MenuView: View {
                         // TODO: Implement this action
                     }, label: {
                         HStack {
-                            Text("Donează")
+                            Text(AppStrings.MenuView.donateButtonText.localized())
                                 .font(.custom("IBMPlexSans-Bold", size: 16))
                                 .foregroundColor(.secondary)
                                 .padding(.vertical)

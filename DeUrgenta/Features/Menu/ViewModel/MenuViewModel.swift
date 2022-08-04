@@ -2,13 +2,13 @@ import Foundation
 
 class MenuViewModel: ObservableObject {
     let options = [
-        MenuOption(name: "Adrese și trasee", type: .adress),
-        MenuOption(name: "Grupuri de urgență", type: .grups),
-        MenuOption(name: "Rucsacul de urgență", type: .backpack),
-        MenuOption(name: "Cursuri și informații utile", type: .courses),
-        MenuOption(name: "Profilul meu", type: .myaccount),
-        MenuOption(name: "Setări", type: .settings),
-        MenuOption(name: "Despre aplicație", type: .about),
-        MenuOption(name: "Delogare", type: .signout),
+        MenuOption(name: AppStrings.MenuView.addressLabel.localized(), type: .adress),
+        MenuOption(name: AppStrings.MenuView.groupsLabel.localized(), type: .grups),
+        MenuOption(name: AppStrings.MenuView.backpackLabel.localized(), type: .backpack),
+        MenuOption(name: AppStrings.MenuView.coursedLabel.localized(), type: .courses),
+        MenuOption(name: AppStrings.MenuView.myaccountLabel.localized(), type: .myaccount),
+        MenuOption(name: AppStrings.MenuView.settingsLabel.localized(), type: .settings),
+        MenuOption(name: AppStrings.MenuView.aboutLabel.localized(), type: .about),
+        MenuOption(name: AppStrings.MenuView.donateButtonText.localized(), type: .signout),
     ]
 }
