@@ -2,6 +2,7 @@ import SwiftUI
 
 protocol MenuViewDelegate {
     func menuViewShouldRedirect(from view: MenuView, withItem item: MenuOption)
+    func menuViewDidTapDonateButton(_ view: MenuView)
 }
 
 struct MenuView: View {
@@ -47,7 +48,7 @@ struct MenuView: View {
                     Image("code4romania-icon")
 
                     Button(action: {
-                        // TODO: Implement this action
+                        delegate.menuViewDidTapDonateButton(self)
                     }, label: {
                         HStack {
                             Text(AppStrings.MenuView.donateButtonText.localized())
