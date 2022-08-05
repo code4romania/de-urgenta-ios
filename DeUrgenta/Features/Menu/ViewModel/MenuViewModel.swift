@@ -1,6 +1,6 @@
 import Foundation
 
-class MenuViewModel: ObservableObject {
+final class MenuViewModel {
     let options = [
         MenuOption(name: AppStrings.MenuView.addressLabel.localized(), type: .adress),
         MenuOption(name: AppStrings.MenuView.groupsLabel.localized(), type: .grups),

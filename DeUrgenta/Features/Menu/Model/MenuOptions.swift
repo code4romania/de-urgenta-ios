@@ -1,6 +1,6 @@
 import Foundation
 
-enum OptionType {
+enum MenuOptionType {
     case adress
     case grups
     case backpack
@@ -11,8 +11,7 @@ enum OptionType {
     case signout
 }
 
-struct MenuOption: Identifiable {
-    var id: UUID = .init()
+struct MenuOption: Hashable {
     var name: String
-    var type: OptionType
+    var type: MenuOptionType
 }

@@ -319,10 +319,10 @@
 		62ECEB7228994E2000E0B82E /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				62ECEB7C289955CD00E0B82E /* Model */,
-				62ECEB792899558700E0B82E /* ViewModel */,
-				62ECEB7428994E3700E0B82E /* View */,
 				62ECEB7328994E2800E0B82E /* Coordinator */,
+				62ECEB7C289955CD00E0B82E /* Model */,
+				62ECEB7428994E3700E0B82E /* View */,
+				62ECEB792899558700E0B82E /* ViewModel */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -497,12 +497,12 @@
 		DE45A1A728420AD200056448 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				62ECEB7228994E2000E0B82E /* Menu */,
 				BB8F3ECA2842525E00278975 /* AccountConfig */,
 				62AC8188285B3DDF00ACAF3E /* CreateGroup */,
 				62AF98BC2877060B00BCFA11 /* EmergencyBackpack */,
 				622AE030288E8A26004362F7 /* FirstAid */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
+				62ECEB7228994E2000E0B82E /* Menu */,
 				BB8F3EB82842292300278975 /* Splash */,
 			);
 			path = Features;
