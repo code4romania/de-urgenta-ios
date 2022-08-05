@@ -15,16 +15,16 @@ struct AddNewManagerView: View {
         ScrollView {
             VStack(alignment: .leading) {
                 Text(AppStrings.AddNewManagerView.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
                     .frame(alignment: .leading)
                     .padding(.vertical, 10)
 
                 VStack {
                     Text(AppStrings.AddNewManagerView.firstParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
 
                     Text(AppStrings.AddNewManagerView.secondParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
                         .padding(.top, 15)
                 }
                 .lineSpacing(10)
@@ -32,14 +32,14 @@ struct AddNewManagerView: View {
 
                 Toggle(isOn: $transferResourcesInNewBackpack, label: {
                     Text(AppStrings.AddNewManagerView.toggleLabel.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.black)
+                        .customFont(.IBMPlexSansBold, size: 16)
                 })
                 .padding(.vertical)
 
                 Text(AppStrings.AddNewManagerView.addManagerHeader.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
                     .foregroundColor(.darkText)
+                    .customFont(.IBMPlexSansSemiBold, size: 20)
                     .padding(.vertical)
 
                 VStack {
@@ -54,8 +54,8 @@ struct AddNewManagerView: View {
                                 .foregroundColor(.accent)
 
                             Text(AppStrings.AddNewManagerView.addManagerButton.localized())
-                                .font(.custom("IBMPlexSans-SemiBold", size: 20))
                                 .foregroundColor(.accent)
+                                .customFont(.IBMPlexSansSemiBold, size: 20)
                         }
                         .padding(.vertical)
 

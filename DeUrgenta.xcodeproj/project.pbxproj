@@ -20,14 +20,12 @@
 		6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256E7EB28883E16003C1175 /* BackpackContactsView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
 		628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B495C2888154200B7B490 /* AddNewManagerView.swift */; };
-		628B59F4288578FE00EB171B /* HideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B59F3288578FE00EB171B /* HideView.swift */; };
 		6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6296717928892B5F00C607A7 /* BackpackContactRow.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
 		62A2AC3A287C564700B00969 /* BackpackCategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */; };
 		62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3D287C621500B00969 /* CategoryItem.swift */; };
 		62A2AC40287DAAFF00B00969 /* CategoryItemIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */; };
-		62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC42287DAF7B00B00969 /* PrimaryTextStyle.swift */; };
 		62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8870286D8E8E00A7801C /* ContactsView.swift */; };
 		62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8872286DAF4100A7801C /* ContactInfo.swift */; };
 		62AB8876286DB05400A7801C /* ContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AB8875286DB05400A7801C /* ContactRow.swift */; };
@@ -38,6 +36,8 @@
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
 		62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B94FEA288820B700BDF009 /* ContactsViewModel.swift */; };
 		62C5397A28914EA9001003AD /* DropdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5397928914EA9001003AD /* DropdownType.swift */; };
+		62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C6911E289D3B9D005FF6F8 /* FontManager.swift */; };
+		62C69121289D3DA9005FF6F8 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C69120289D3DA9005FF6F8 /* View+Extensions.swift */; };
 		62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C708E6287EF5DA00E73D71 /* CategoryView.swift */; };
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
@@ -85,14 +85,12 @@
 		6256E7EB28883E16003C1175 /* BackpackContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactsView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
 		628B495C2888154200B7B490 /* AddNewManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewManagerView.swift; sourceTree = "<group>"; };
-		628B59F3288578FE00EB171B /* HideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideView.swift; sourceTree = "<group>"; };
 		6296717928892B5F00C607A7 /* BackpackContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactRow.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC39287C564700B00969 /* BackpackCategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackCategoryItemView.swift; sourceTree = "<group>"; };
 		62A2AC3D287C621500B00969 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 		62A2AC3F287DAAFF00B00969 /* CategoryItemIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemIcon.swift; sourceTree = "<group>"; };
-		62A2AC42287DAF7B00B00969 /* PrimaryTextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextStyle.swift; sourceTree = "<group>"; };
 		62AB8870286D8E8E00A7801C /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		62AB8872286DAF4100A7801C /* ContactInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfo.swift; sourceTree = "<group>"; };
 		62AB8875286DB05400A7801C /* ContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRow.swift; sourceTree = "<group>"; };
@@ -103,6 +101,8 @@
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
 		62B94FEA288820B700BDF009 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		62C5397928914EA9001003AD /* DropdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownType.swift; sourceTree = "<group>"; };
+		62C6911E289D3B9D005FF6F8 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		62C69120289D3DA9005FF6F8 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		62C708E6287EF5DA00E73D71 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
@@ -189,7 +189,8 @@
 		628B59F2288578B100EB171B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				628B59F3288578FE00EB171B /* HideView.swift */,
+				62C6911E289D3B9D005FF6F8 /* FontManager.swift */,
+				62C69120289D3DA9005FF6F8 /* View+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -209,14 +210,6 @@
 				62B94FEA288820B700BDF009 /* ContactsViewModel.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		62A2AC41287DAE5500B00969 /* Modifiers */ = {
-			isa = PBXGroup;
-			children = (
-				62A2AC42287DAF7B00B00969 /* PrimaryTextStyle.swift */,
-			);
-			path = Modifiers;
 			sourceTree = "<group>";
 		};
 		62AB8874286DAF9E00A7801C /* Model */ = {
@@ -396,7 +389,6 @@
 			isa = PBXGroup;
 			children = (
 				628B59F2288578B100EB171B /* Extensions */,
-				62A2AC41287DAE5500B00969 /* Modifiers */,
 				BB8F3EC128423E1100278975 /* Color+Extensions.swift */,
 			);
 			path = Utils;
@@ -651,10 +643,9 @@
 				6246315028815CFD003C2EB7 /* ItemView.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
-				628B59F4288578FE00EB171B /* HideView.swift in Sources */,
+				62C69121289D3DA9005FF6F8 /* View+Extensions.swift in Sources */,
 				62ECEB78289953F300E0B82E /* MenuView.swift in Sources */,
 				62F658FC286B291500539384 /* GroupView.swift in Sources */,
-				62A2AC43287DAF7B00B00969 /* PrimaryTextStyle.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
 				62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */,
 				628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */,
@@ -667,6 +658,7 @@
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
+				62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */,
 				622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */,
 				62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */,
 				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,

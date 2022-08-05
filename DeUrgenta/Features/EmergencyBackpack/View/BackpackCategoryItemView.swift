@@ -19,8 +19,7 @@ struct BackpackCategoryItemView: View {
                     CategoryItemIcon(iconName: item.icon)
 
                     Text(item.title)
-                        .font(.custom("IBMPlexSans-SemiBold", size: 16))
-                        .foregroundColor(.darkText)
+                        .customFont(.IBMPlexSansSemiBold, size: 16)
 
                     Spacer()
 

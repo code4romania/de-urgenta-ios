@@ -26,8 +26,8 @@ struct MenuView: View {
 
                 VStack(alignment: .leading) {
                     Text(AppStrings.MenuView.headerIconLabel.localized())
-                        .font(.custom("IBMPlexSans-Regular", size: 14))
                         .foregroundColor(Color.gray)
+                        .customFont(size: 14)
 
                     Image("code4romania-icon")
 
@@ -59,8 +59,7 @@ struct MenuOptionItem: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(option.name)
-                .font(.custom("IBMPlexSans-Bold", size: 16))
-                .foregroundColor(.darkText)
+                .customFont(.IBMPlexSansBold, size: 16)
                 .padding()
 
             Divider()
@@ -78,8 +77,8 @@ struct DonateButton: View {
         }, label: {
             HStack {
                 Text(AppStrings.MenuView.donateButtonText.localized())
-                    .font(.custom("IBMPlexSans-Bold", size: 16))
                     .foregroundColor(.secondary)
+                    .customFont(.IBMPlexSansBold, size: 16)
                     .padding(.vertical)
             }
             .frame(maxWidth: .infinity, maxHeight: 50)

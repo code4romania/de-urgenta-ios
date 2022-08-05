@@ -13,7 +13,7 @@ struct AddGroupNameView: View {
         VStack {
             HStack {
                 Text(AppStrings.AddGroupName.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.top, 10)
 
                 Spacer()
@@ -22,8 +22,7 @@ struct AddGroupNameView: View {
 
             VStack(alignment: .leading) {
                 Text(AppStrings.AddGroupName.textFieldTitle.localized())
-                    .foregroundColor(Color.darkText)
-                    .font(.custom("IBMPlexSans-Regular", size: 14))
+                    .customFont(size: 14)
 
                 TextField(AppStrings.AddGroupName.textFieldPlaceholder.localized(), text: $groupName)
                     .textFieldStyle(.roundedBorder)
@@ -43,8 +42,8 @@ struct AddGroupNameView: View {
                 }, label: {
                     HStack {
                         Text(AppStrings.AddGroupName.continueButton.localized())
-                            .font(.custom("IBMPlexSans-Bold", size: 16))
                             .foregroundColor(.secondary)
+                            .customFont(.IBMPlexSansBold, size: 16)
 
                         Image(systemName: "arrow.right")
                             .foregroundColor(.secondary)

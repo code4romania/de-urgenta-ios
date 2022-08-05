@@ -46,8 +46,8 @@ struct ContactsView: View {
                     }, label: {
                         HStack {
                             Text(AppStrings.ContactsView.inviteFriendsButton.localized())
-                                .font(.custom("IBMPlexSans-Bold", size: 16))
                                 .foregroundColor(.secondary)
+                                .customFont(.IBMPlexSansBold, size: 16)
 
                             Image(systemName: "arrow.right")
                                 .foregroundColor(.secondary)

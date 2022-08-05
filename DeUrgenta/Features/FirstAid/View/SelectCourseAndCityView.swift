@@ -6,7 +6,7 @@ struct SelectCourseAndCityView: View {
     var body: some View {
         HStack {
             Text(AppStrings.SelectCourseAndCityView.headerTitle.localized())
-                .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                .customFont(.IBMPlexSansSemiBold, size: 23)
                 .frame(alignment: .leading)
                 .padding(.vertical, 10)
                 .padding(.horizontal)
@@ -16,7 +16,7 @@ struct SelectCourseAndCityView: View {
 
         VStack(alignment: .leading) {
             Text(AppStrings.SelectCourseAndCityView.firstSelectorheader.localized())
-                .modifier(SecondaryTextStyle())
+                .customFont(size: 14)
 
             DropdownSelector(
                 locationManager: locationManager,
@@ -30,7 +30,7 @@ struct SelectCourseAndCityView: View {
             .zIndex(1)
 
             Text(AppStrings.SelectCourseAndCityView.secondSelectorheader.localized())
-                .modifier(SecondaryTextStyle())
+                .customFont(size: 14)
                 .padding(.top, 15)
 
             DropdownSelector(
@@ -50,8 +50,8 @@ struct SelectCourseAndCityView: View {
             }, label: {
                 HStack {
                     Text(AppStrings.SelectCourseAndCityView.viewCoursesButton.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
+                        .customFont(.IBMPlexSansBold, size: 16)
 
                     Image(systemName: "arrow.right")
                         .foregroundColor(.secondary)

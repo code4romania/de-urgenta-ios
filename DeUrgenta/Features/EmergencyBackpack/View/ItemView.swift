@@ -11,8 +11,7 @@ struct ItemView: View {
                     .foregroundColor(.gray)
 
                 Text(item.name)
-                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
-                    .foregroundColor(.darkText)
+                    .customFont(.IBMPlexSansSemiBold, size: 20)
 
                 Spacer()
 
@@ -20,18 +19,18 @@ struct ItemView: View {
                     categoryViewModel.removeItem(currentItem: item)
                 }, label: {
                     Text(AppStrings.ItemView.deleteButton.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
                 })
             }
 
             HStack {
                 Text(AppStrings.ItemView.expirationDateLabel.localized())
-                    .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
+                    .customFont(size: 14)
 
                 Text(categoryViewModel.getExpirationDate(date: item.expirationDate))
-                    .font(.custom("IBMPlexSans-Regular", size: 14))
                     .foregroundColor(.gray)
+                    .customFont(size: 14)
 
                 Spacer()
             }

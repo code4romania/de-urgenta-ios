@@ -6,7 +6,7 @@ struct CategoryView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(categoryViewModel.selectedCategory?.title ?? "")
-                .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                .customFont(.IBMPlexSansSemiBold, size: 23)
                 .frame(alignment: .leading)
                 .padding(.vertical, 10)
                 .padding(.horizontal)
@@ -27,13 +27,14 @@ struct CategoryView: View {
                 }, label: {
                     HStack {
                         Image(systemName: "plus")
+                            .foregroundColor(Color.secondary)
 
                         Text(categoryViewModel.hideSection ? AppStrings.CategoryView.addItemButton.localized() : AppStrings.CategoryView.saveItemButton.localized())
-                            .font(.custom("IBMPlexSans-Bold", size: 16))
+                            .foregroundColor(Color.secondary)
+                            .customFont(.IBMPlexSansBold, size: 16)
                     }
                     .frame(maxWidth: .infinity, maxHeight: 50)
                     .background(categoryViewModel.name.isEmpty && !categoryViewModel.hideSection ? Color.fieldBorder : Color.accent)
-                    .foregroundColor(Color.secondary)
                     .cornerRadius(6)
                 })
             }

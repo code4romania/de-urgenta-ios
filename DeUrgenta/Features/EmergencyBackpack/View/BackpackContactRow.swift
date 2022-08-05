@@ -20,12 +20,11 @@ struct BackpackContactRow: View {
 
                 VStack(alignment: .leading) {
                     Text("\(contact.firstName) \(contact.lastName)")
-                        .font(.custom("IBMPlexSans-Regular", size: 15))
-                        .foregroundColor(.darkText)
+                        .customFont(size: 15)
 
                     Text("\(contact.phoneNumber.stringValue)")
-                        .font(.custom("IBMPlexSans-Regular", size: 15))
                         .foregroundColor(.gray)
+                        .customFont(size: 15)
                 }
                 .lineSpacing(2)
 

@@ -33,7 +33,7 @@ struct AccountConfigView: View {
 
             Text(AppStrings.AccountConfig.headerTitle.localized())
                 .foregroundColor(.darkText)
-                .font(.custom("IBMPlexSans-Bold", size: 36))
+                .customFont(.IBMPlexSansBold, size: 36)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .multilineTextAlignment(.leading)
                 .padding(.vertical, 30)

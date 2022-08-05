@@ -46,8 +46,8 @@ struct BackpackContactsView: View {
                     }, label: {
                         HStack {
                             Text("Continuă")
-                                .font(.custom("IBMPlexSans-Bold", size: 16))
                                 .foregroundColor(.secondary)
+                                .customFont(.IBMPlexSansBold, size: 16)
 
                             Image(systemName: "arrow.right")
                                 .foregroundColor(.secondary)

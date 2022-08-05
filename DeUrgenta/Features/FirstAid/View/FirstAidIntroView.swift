@@ -11,7 +11,7 @@ struct FirstAidIntroView: View {
     var body: some View {
         HStack {
             Text(AppStrings.FirstAidIntroView.headerTitle.localized())
-                .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                .customFont(.IBMPlexSansSemiBold, size: 23)
                 .frame(alignment: .leading)
                 .padding(.vertical, 10)
                 .padding(.horizontal)
@@ -23,14 +23,14 @@ struct FirstAidIntroView: View {
             ScrollView {
                 VStack {
                     Text(AppStrings.FirstAidIntroView.firstParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
 
                     Text(AppStrings.FirstAidIntroView.secondParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
                         .padding(.top, 15)
 
                     Text(AppStrings.FirstAidIntroView.thirdParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
                         .padding(.top, 15)
                 }
                 .lineSpacing(10)
@@ -45,8 +45,8 @@ struct FirstAidIntroView: View {
             }, label: {
                 HStack {
                     Text(AppStrings.FirstAidIntroView.viewCoursesButton.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
+                        .customFont(.IBMPlexSansBold, size: 16)
 
                     Image(systemName: "arrow.right")
                         .foregroundColor(.secondary)

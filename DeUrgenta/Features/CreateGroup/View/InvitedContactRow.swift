@@ -14,11 +14,10 @@ struct InvitedContactRow: View {
                 VStack(alignment: .leading) {
                     HStack(spacing: 2) {
                         Text("\(contact.firstName) \(contact.lastName)")
-                            .font(.custom("IBMPlexSans-Regular", size: 16))
-                            .foregroundColor(.darkText)
+                            .customFont(size: 16)
 
                         Text(AppStrings.InvitedContactsRow.invitationSentText.localized())
-                            .font(.custom("IBMPlexSans-Regular", size: 16))
+                            .customFont(size: 16)
                             .foregroundColor(.gray)
                     }
 
@@ -32,8 +31,7 @@ struct InvitedContactRow: View {
                                 .foregroundColor(.accent)
 
                             Text(AppStrings.InvitedContactsRow.removeContactText.localized())
-                                .font(.custom("IBMPlexSans-Regular", size: 16))
-                                .foregroundColor(.darkText)
+                                .customFont(size: 16)
                         }
                     })
                 }

@@ -12,7 +12,7 @@ struct CreateGroupView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(AppStrings.CreateGroup.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.leading, 20)
                     .padding(.top, 10)
 
@@ -22,12 +22,12 @@ struct CreateGroupView: View {
             VStack {
                 ScrollView(showsIndicators: false) {
                     Text(AppStrings.CreateGroup.firstParagraph.localized())
-                        .font(.custom("IBMPlexSans-Regular", size: 16))
+                        .customFont(size: 16)
                         .foregroundColor(.darkText)
 
                     Text(AppStrings.CreateGroup.secondParagraph.localized())
                         .padding(.top, 15)
-                        .font(.custom("IBMPlexSans-Regular", size: 16))
+                        .customFont(size: 16)
                         .foregroundColor(.darkText)
                 }
             }
@@ -51,8 +51,8 @@ struct CreateGroupView: View {
                 }, label: {
                     HStack {
                         Text(AppStrings.CreateGroup.addGroup.localized())
-                            .font(.custom("IBMPlexSans-Bold", size: 16))
                             .foregroundColor(.secondary)
+                            .customFont(.IBMPlexSansBold, size: 16)
 
                         Image(systemName: "arrow.right")
                             .foregroundColor(.secondary)
