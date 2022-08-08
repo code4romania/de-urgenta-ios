@@ -10,7 +10,7 @@ protocol MenuCoordinatorDelegate: AnyObject {
     func menuCoordinatorShouldPresentMyAccount(_ coordinator: MenuCoordinator)
     func menuCoordinatorShouldPresentSettings(_ coordinator: MenuCoordinator)
     func menuCoordinatorShouldPresentAbout(_ coordinator: MenuCoordinator)
-    func menuCoordinatorShouldPresentSignout(_ coordinator: MenuCoordinator)
+    func menuCoordinatorShouldPresentSignOut(_ coordinator: MenuCoordinator)
 }
 
 final class MenuCoordinator: Coordinator {
@@ -52,7 +52,7 @@ extension MenuCoordinator: MenuViewDelegate {
         case .about:
             delegate?.menuCoordinatorShouldPresentAbout(self)
         case .signout:
-            delegate?.menuCoordinatorShouldPresentSignout(self)
+            delegate?.menuCoordinatorShouldPresentSignOut(self)
         }
     }
 }

@@ -9,8 +9,6 @@ enum IBMPlexSansFonts: String {
 }
 
 struct CustomFont: ViewModifier {
-    @Environment(\.sizeCategory) var sizeCategory
-
     var name: IBMPlexSansFonts
     var size: CGFloat
 

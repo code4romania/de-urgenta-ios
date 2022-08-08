@@ -122,7 +122,7 @@ extension ApplicationCoordinator: MenuCoordinatorDelegate {
         // TODO: Implement this method
     }
 
-    func menuCoordinatorShouldPresentSignout(_: MenuCoordinator) {
+    func menuCoordinatorShouldPresentSignOut(_: MenuCoordinator) {
         // TODO: Implement this method
     }
 }
