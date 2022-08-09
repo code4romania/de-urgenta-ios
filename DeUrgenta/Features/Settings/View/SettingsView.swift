@@ -1,7 +1,12 @@
 import SwiftUI
 
+protocol SettingsViewDelegate {
+    func settingsViewShouldRedirect(from view: SettingsView, withItem item: SettingsOption)
+}
+
 struct SettingsView: View {
     var viewModel: SettingsViewModel
+    var delegate: SettingsViewDelegate
 
     var body: some View {
         ScrollView {
@@ -14,7 +19,7 @@ struct SettingsView: View {
 
                 ForEach(viewModel.settingsOptions, id: \.self) { option in
                     Button(action: {
-                        // TODO: Implement this action
+                        delegate.settingsViewShouldRedirect(from: self, withItem: option)
                     }, label: {
                         VStack(alignment: .leading) {
                             Text(option.name)
