@@ -17,8 +17,8 @@ struct AddMemberButtonView: View {
                 .padding(.horizontal)
 
                 Text(AppStrings.InvitedContactsView.addGroupMemberButton.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 18))
                     .foregroundColor(.accent)
+                    .customFont(.IBMPlexSansSemiBold, size: 18)
 
                 Spacer()
             }

@@ -14,7 +14,7 @@ struct InvitedContactsView: View {
         VStack {
             HStack {
                 Text(AppStrings.GroupView.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
                     .foregroundColor(.darkText)
                     .padding(.top, 10)
 
@@ -27,7 +27,7 @@ struct InvitedContactsView: View {
                     .foregroundColor(.accent)
 
                 Text("Avengers32 (5/30)")
-                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
+                    .customFont(.IBMPlexSansSemiBold, size: 20)
                     .foregroundColor(.darkText)
 
                 Spacer()
@@ -54,8 +54,8 @@ struct InvitedContactsView: View {
             }, label: {
                 HStack {
                     Text(AppStrings.InvitedContactsView.continueButton.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
+                        .customFont(.IBMPlexSansBold, size: 16)
 
                     Image(systemName: "arrow.right")
                         .foregroundColor(.secondary)

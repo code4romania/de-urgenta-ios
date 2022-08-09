@@ -21,11 +21,11 @@ struct ContactRow: View {
 
                 VStack(alignment: .leading) {
                     Text("\(contact.firstName) \(contact.lastName)")
-                        .font(.custom("IBMPlexSans-Regular", size: 15))
+                        .customFont(size: 15)
                         .foregroundColor(.darkText)
 
                     Text("\(contact.phoneNumber.stringValue)")
-                        .font(.custom("IBMPlexSans-Regular", size: 15))
+                        .customFont(size: 15)
                         .foregroundColor(.gray)
                 }
                 .lineSpacing(2)

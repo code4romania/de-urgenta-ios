@@ -43,6 +43,15 @@ extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
 }
 
 extension ApplicationCoordinator: AccountConfigCoordinatorDelegate {
+    func accountConfigCoordinatorShouldPresentMenu(_ sender: AccountConfigCoordinator) {
+        let coordinator = MenuCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.delegate = self
+        coordinator.start()
+
+        removeChildCoordinator(sender)
+    }
+
     func accountConfigCoordinatorShouldPresentAdress(_: AccountConfigCoordinator) {
         // TODO: Implement this method
     }
@@ -69,5 +78,51 @@ extension ApplicationCoordinator: AccountConfigCoordinatorDelegate {
         coordinator.start()
 
         removeChildCoordinator(sender)
+    }
+}
+
+extension ApplicationCoordinator: MenuCoordinatorDelegate {
+    func menuCoordinatorShouldPresentAdress(_: MenuCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func menuCoordinatorShouldPresentGroups(_ sender: MenuCoordinator) {
+        let coordinator = CreateGroupCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
+    }
+
+    func menuCoordinatorShouldPresentBackpack(_ sender: MenuCoordinator) {
+        let coordinator = EmergencyBackpackCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
+    }
+
+    func menuCoordinatorShouldPresentCourses(_ sender: MenuCoordinator) {
+        let coordinator = FirstAidCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
+    }
+
+    func menuCoordinatorShouldPresentMyAccount(_: MenuCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func menuCoordinatorShouldPresentSettings(_: MenuCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func menuCoordinatorShouldPresentAbout(_: MenuCoordinator) {
+        // TODO: Implement this method
+    }
+
+    func menuCoordinatorShouldPresentSignOut(_: MenuCoordinator) {
+        // TODO: Implement this method
     }
 }

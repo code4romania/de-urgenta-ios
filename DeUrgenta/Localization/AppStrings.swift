@@ -168,4 +168,17 @@ enum AppStrings: String, Localizable {
         case secondSelectorheader = "SelectCourseAndCityView.secondSelectorheader"
         case viewCoursesButton = "SelectCourseAndCityView.viewCoursesButton"
     }
+
+    enum MenuView: String, Localizable {
+        case addressLabel = "MenuView.adresslabel"
+        case groupsLabel = "MenuView.groupsLabel"
+        case backpackLabel = "MenuView.backpackLabel"
+        case coursedLabel = "MenuView.coursedLabel"
+        case myaccountLabel = "MenuView.myaccountLabel"
+        case settingsLabel = "MenuView.settingsLabel"
+        case aboutLabel = "MenuView.aboutLabel"
+        case signoutLabel = "MenuView.signoutLabel"
+        case headerIconLabel = "MenuView.headerIconLabel"
+        case donateButtonText = "MenuView.donateButtonText"
+    }
 }

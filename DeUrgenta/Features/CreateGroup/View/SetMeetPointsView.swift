@@ -12,7 +12,7 @@ struct SetMeetPointsView: View {
         VStack(alignment: .leading) {
             HStack {
                 Text(AppStrings.SetMeetPoints.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.top, 10)
 
                 Spacer()
@@ -20,20 +20,20 @@ struct SetMeetPointsView: View {
             .padding(.bottom, 20)
 
             Text(AppStrings.SetMeetPoints.description.localized())
-                .font(.custom("IBMPlexSans-Regular", size: 16))
+                .customFont(size: 16)
                 .foregroundColor(.darkText)
                 .lineSpacing(10)
 
             Toggle(isOn: $showMeetPoints, label: {
                 Text(AppStrings.SetMeetPoints.toggleLabel.localized())
-                    .font(.custom("IBMPlexSans-Bold", size: 16))
+                    .customFont(.IBMPlexSansBold, size: 16)
                     .foregroundColor(.black)
             })
             .padding(.vertical)
 
             HStack {
                 Text(AppStrings.SetMeetPoints.meetPointsHeader.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
 
                 Spacer()
             }
@@ -49,7 +49,8 @@ struct SetMeetPointsView: View {
                     Image(systemName: "plus.circle.fill")
 
                     Text(AppStrings.SetMeetPoints.newMeetPointLablel.localized())
-                        .font(.custom("IBMPlexSans-Regular", size: 18))
+                        .foregroundColor(.accent)
+                        .customFont(size: 18)
                         .padding(.leading, 10)
                         .padding(.trailing, 15)
 
@@ -68,8 +69,8 @@ struct SetMeetPointsView: View {
             }, label: {
                 HStack {
                     Text(AppStrings.SetMeetPoints.inviteFriendsButton.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.secondary)
+                        .customFont(.IBMPlexSansBold, size: 16)
 
                     Image(systemName: "arrow.right")
                         .foregroundColor(.secondary)

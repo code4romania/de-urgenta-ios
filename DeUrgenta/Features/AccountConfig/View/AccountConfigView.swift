@@ -2,6 +2,7 @@ import SwiftUI
 
 protocol AccountConfigViewDelegate {
     func accountConfigViewShouldRedirect(from view: AccountConfigView, withItem item: ConfigStep)
+    func accountConfigViewDidTapMenuButton(_ view: AccountConfigView)
 }
 
 struct AccountConfigView: View {
@@ -10,6 +11,18 @@ struct AccountConfigView: View {
 
     var body: some View {
         VStack(spacing: 0) {
+            HStack {
+                Spacer()
+
+                Button(action: {
+                    delegate.accountConfigViewDidTapMenuButton(self)
+                }, label: {
+                    Image("config.menu-icon")
+                        .frame(width: 21, height: 16)
+                        .foregroundColor(.accent)
+                })
+            }
+
             HStack {
                 Image("logo")
                     .resizable()
@@ -20,7 +33,7 @@ struct AccountConfigView: View {
 
             Text(AppStrings.AccountConfig.headerTitle.localized())
                 .foregroundColor(.darkText)
-                .font(.custom("IBMPlexSans-Bold", size: 36))
+                .customFont(.IBMPlexSansBold, size: 36)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .multilineTextAlignment(.leading)
                 .padding(.vertical, 30)

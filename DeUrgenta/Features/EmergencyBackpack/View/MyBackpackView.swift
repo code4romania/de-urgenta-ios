@@ -14,16 +14,16 @@ struct MyBackpackView: View {
         ScrollView {
             VStack(alignment: .leading) {
                 Text(AppStrings.MyBackpackView.headerTitle.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                    .customFont(.IBMPlexSansSemiBold, size: 23)
                     .frame(alignment: .leading)
                     .padding(.vertical, 10)
 
                 VStack {
                     Text(AppStrings.MyBackpackView.firstParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
 
                     Text(AppStrings.MyBackpackView.secondParagraph.localized())
-                        .modifier(PrimaryTextStyle())
+                        .customFont(size: 16)
                         .padding(.top, 15)
                 }
                 .lineSpacing(10)
@@ -41,8 +41,8 @@ struct MyBackpackView: View {
                                 .foregroundColor(.accent)
 
                             Text(AppStrings.MyBackpackView.addManagerButton.localized())
-                                .font(.custom("IBMPlexSans-SemiBold", size: 20))
                                 .foregroundColor(.accent)
+                                .customFont(.IBMPlexSansSemiBold, size: 20)
                         }
                         .padding(.vertical)
 
@@ -59,8 +59,7 @@ struct MyBackpackView: View {
                 .padding(.bottom, 20)
 
                 Text(AppStrings.MyBackpackView.backpackitemsHeader.localized())
-                    .font(.custom("IBMPlexSans-SemiBold", size: 20))
-                    .foregroundColor(.darkText)
+                    .customFont(.IBMPlexSansSemiBold, size: 20)
                     .padding(.vertical)
 
                 LazyVStack {

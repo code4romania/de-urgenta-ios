@@ -25,8 +25,8 @@ struct DropdownRow: View {
                     .foregroundColor(.darkText)
 
                 Text(self.option.value)
-                    .modifier(SecondaryTextStyle())
                     .foregroundColor(Color.black)
+                    .customFont(size: 14)
                 Spacer()
             }
         }
@@ -80,8 +80,8 @@ struct DropdownSelector: View {
                     .foregroundColor(.darkText)
 
                 Text(selectedOption == nil ? options.first!.value : selectedOption!.value)
-                    .modifier(PrimaryTextStyle())
                     .foregroundColor(Color.black)
+                    .customFont(size: 16)
 
                 Spacer()
 

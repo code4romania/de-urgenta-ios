@@ -11,12 +11,12 @@ struct EmergencyBackpackView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(AppStrings.EmergencyBackpackView.headerTitle.localized())
-                .font(.custom("IBMPlexSans-SemiBold", size: 23))
+                .customFont(.IBMPlexSansSemiBold, size: 23)
                 .padding(.top, 10)
 
             ScrollView {
                 Text(AppStrings.EmergencyBackpackView.description.localized())
-                    .modifier(PrimaryTextStyle())
+                    .customFont(size: 16)
                     .lineSpacing(10)
                     .padding(.vertical, 10)
 
@@ -31,8 +31,7 @@ struct EmergencyBackpackView: View {
                             .foregroundColor(.gray)
 
                         Text(AppStrings.EmergencyBackpackView.addBackpackButton.localized())
-                            .font(.custom("IBMPlexSans-SemiBold", size: 20))
-                            .foregroundColor(.darkText)
+                            .customFont(.IBMPlexSansSemiBold, size: 20)
                     }
                     .padding(.vertical)
 

@@ -23,7 +23,8 @@ struct LandingPageView: View {
                     }, label: {
                         HStack {
                             Text(AppStrings.LandingPage.viewRoutes.localized())
-                                .font(.custom("IBMPlexSans-SemiBold", size: 14))
+                                .foregroundColor(.accent)
+                                .customFont(.IBMPlexSansSemiBold, size: 14)
 
                             Image("config.map-icon")
                                 .resizable()
@@ -47,7 +48,7 @@ struct LandingPageView: View {
 
                 Text(AppStrings.LandingPage.tagLine.localized())
                     .foregroundColor(.lightText)
-                    .font(.custom("IBMPlexSans-Bold", size: 36))
+                    .customFont(.IBMPlexSansBold, size: 36)
                     .multilineTextAlignment(.center)
                     .padding(.top, 43)
 
@@ -57,8 +58,8 @@ struct LandingPageView: View {
                     delegate.landingPageViewDidTapSignUp(self)
                 }, label: {
                     Text(AppStrings.LandingPage.createAccount.localized())
-                        .font(.custom("IBMPlexSans-Bold", size: 16))
                         .foregroundColor(.accent)
+                        .customFont(.IBMPlexSansBold, size: 16)
                         .padding()
                         .frame(maxWidth: .infinity)
                         .background(Color.secondary)
@@ -68,7 +69,7 @@ struct LandingPageView: View {
                 Button(AppStrings.LandingPage.authenticate.localized()) {
                     delegate.landingPageViewDidTapSignIn(self)
                 }.foregroundColor(.lightText)
-                    .font(.custom("IBMPlexSans-Bold", size: 16))
+                    .customFont(.IBMPlexSansBold, size: 16)
                     .padding(.bottom, 20)
 
             }.padding(.horizontal, 20)

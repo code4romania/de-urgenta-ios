@@ -103,3 +103,15 @@
 "SelectCourseAndCityView.firstSelectorheader" = "Selectează tipul de curs";
 "SelectCourseAndCityView.secondSelectorheader" = "Selectează orașul";
 "SelectCourseAndCityView.viewCoursesButton" = "Vezi cursurile";
+
+"MenuView.adresslabel" = "Adrese și trasee";
+"MenuView.groupsLabel" = "Grupuri de urgență";
+"MenuView.backpackLabel" = "Rucsacul de urgență";
+"MenuView.coursedLabel" = "Cursuri și informații utile";
+"MenuView.myaccountLabel" = "Profilul meu";
+"MenuView.settingsLabel" = "Setări";
+"MenuView.aboutLabel" = "Despre aplicație";
+"MenuView.signoutLabel" = "Delogare";
+"MenuView.headerIconLabel" = "Soluție proiectată, dezvoltată și administrată de";
+"MenuView.donateButtonText" = "Donează";
+ 
