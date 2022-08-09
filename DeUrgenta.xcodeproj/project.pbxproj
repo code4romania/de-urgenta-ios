@@ -34,6 +34,10 @@
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
+		62AFE57328A2988B006700F4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57228A2988B006700F4 /* SettingsView.swift */; };
+		62AFE57528A298E0006700F4 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57428A298E0006700F4 /* SettingsCoordinator.swift */; };
+		62AFE57728A299FB006700F4 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57628A299FB006700F4 /* SettingsOption.swift */; };
+		62AFE57928A29AEC006700F4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57828A29AEC006700F4 /* SettingsViewModel.swift */; };
 		62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B94FEA288820B700BDF009 /* ContactsViewModel.swift */; };
 		62C5397A28914EA9001003AD /* DropdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5397928914EA9001003AD /* DropdownType.swift */; };
 		62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C6911E289D3B9D005FF6F8 /* FontManager.swift */; };
@@ -99,6 +103,10 @@
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
+		62AFE57228A2988B006700F4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		62AFE57428A298E0006700F4 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		62AFE57628A299FB006700F4 /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
+		62AFE57828A29AEC006700F4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		62B94FEA288820B700BDF009 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		62C5397928914EA9001003AD /* DropdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownType.swift; sourceTree = "<group>"; };
 		62C6911E289D3B9D005FF6F8 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
@@ -301,6 +309,49 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		62AFE56D28A297DA006700F4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57128A29875006700F4 /* Coordinator */,
+				62AFE56F28A29858006700F4 /* Model */,
+				62AFE56E28A29848006700F4 /* View */,
+				62AFE57028A2985E006700F4 /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		62AFE56E28A29848006700F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57228A2988B006700F4 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62AFE56F28A29858006700F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57628A299FB006700F4 /* SettingsOption.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62AFE57028A2985E006700F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57828A29AEC006700F4 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62AFE57128A29875006700F4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57428A298E0006700F4 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		62C5397828914E9C001003AD /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +546,7 @@
 				622AE030288E8A26004362F7 /* FirstAid */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
 				62ECEB7228994E2000E0B82E /* Menu */,
+				62AFE56D28A297DA006700F4 /* Settings */,
 				BB8F3EB82842292300278975 /* Splash */,
 			);
 			path = Features;
@@ -642,6 +694,7 @@
 				62A2AC40287DAAFF00B00969 /* CategoryItemIcon.swift in Sources */,
 				6246315028815CFD003C2EB7 /* ItemView.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
+				62AFE57928A29AEC006700F4 /* SettingsViewModel.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				62C69121289D3DA9005FF6F8 /* View+Extensions.swift in Sources */,
 				62ECEB78289953F300E0B82E /* MenuView.swift in Sources */,
@@ -658,6 +711,7 @@
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
+				62AFE57328A2988B006700F4 /* SettingsView.swift in Sources */,
 				62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */,
 				622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */,
 				62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */,
@@ -666,12 +720,14 @@
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
 				6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */,
 				6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */,
+				62AFE57528A298E0006700F4 /* SettingsCoordinator.swift in Sources */,
 				BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */,
 				62AB8879286DB10100A7801C /* CreateGroupViewModel.swift in Sources */,
 				62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */,
 				62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
 				BB8F3ED62842599300278975 /* AccountConfigViewModel.swift in Sources */,
+				62AFE57728A299FB006700F4 /* SettingsOption.swift in Sources */,
 				BB8F3ED4284258FA00278975 /* ConfigStep.swift in Sources */,
 				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
 				620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */,
