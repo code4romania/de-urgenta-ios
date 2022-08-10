@@ -23,7 +23,7 @@ extension SettingsCoordinator: SettingsViewDelegate {
         case .changePassword:
             break
         case .terms:
-            let viewController = UIHostingController(rootView: EmptyView())
+            let viewController = UIHostingController(rootView: TermsView())
             navigationController.pushViewController(viewController, animated: true)
         case .problemReport:
             break
