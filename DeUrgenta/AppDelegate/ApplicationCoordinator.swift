@@ -123,7 +123,8 @@ extension ApplicationCoordinator: MenuCoordinatorDelegate {
     }
 
     func menuCoordinatorShouldPresentAbout(_: MenuCoordinator) {
-        // TODO: Implement this method
+        let viewController = UIHostingController(rootView: AboutView())
+        navigationController.pushViewController(viewController, animated: true)
     }
 
     func menuCoordinatorShouldPresentSignOut(_: MenuCoordinator) {
