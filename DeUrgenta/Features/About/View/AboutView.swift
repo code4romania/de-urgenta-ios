@@ -12,23 +12,7 @@ struct AboutView: View {
                     .customFont(size: 16)
                     .lineSpacing(10)
 
-                HStack {
-                    Spacer()
-
-                    ZStack {
-                        Text(AppStrings.AboutView.logoText.localized())
-                            .foregroundColor(.white)
-                            .customFont(.IBMPlexSansSemiBold, size: 24)
-                            .zIndex(1)
-
-                        Image("spinner-large")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 200, height: 200)
-                    }
-
-                    Spacer()
-                }
+                SpinnerView()
 
                 Text("Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien.")
                     .customFont(size: 16)
@@ -50,36 +34,12 @@ struct AboutView: View {
                             .scaledToFit()
                             .frame(width: 165, height: 60)
 
-                        HStack {
-                            Image("facebook-icon")
-                                .frame(width: 24, height: 24)
-                                .padding()
-
-                            Image("instagram-icon")
-                                .frame(width: 24, height: 24)
-                                .padding()
-
-                            Image("link-icon")
-                                .frame(width: 24, height: 24)
-                                .padding()
-
-                            Image("github-icon")
-                                .frame(width: 24, height: 24)
-                                .padding()
-                        }
+                        SocialMediaIconsView()
 
                         Button(action: {
                             // TODO: Implement this action
                         }, label: {
-                            HStack {
-                                Text(AppStrings.AboutView.donateButtonText.localized())
-                                    .foregroundColor(.secondary)
-                                    .customFont(.IBMPlexSansBold, size: 16)
-                                    .padding(.vertical)
-                            }
-                            .frame(maxWidth: 200, maxHeight: 50)
-                            .background(Color.green)
-                            .cornerRadius(6)
+                            DonateButtonUI()
                         })
                         .padding(.bottom, 20)
                     }
@@ -89,5 +49,63 @@ struct AboutView: View {
             }
             .padding(.horizontal)
         }
+    }
+}
+
+struct SpinnerView: View {
+    var body: some View {
+        HStack {
+            Spacer()
+            
+            ZStack {
+                Text(AppStrings.AboutView.logoText.localized())
+                    .foregroundColor(.white)
+                    .customFont(.IBMPlexSansSemiBold, size: 24)
+                    .zIndex(1)
+                
+                Image("spinner-large")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 200, height: 200)
+            }
+            
+            Spacer()
+        }
+    }
+}
+
+struct SocialMediaIconsView: View {
+    var body: some View {
+        HStack {
+            Image("facebook-icon")
+                .frame(width: 24, height: 24)
+                .padding()
+            
+            Image("instagram-icon")
+                .frame(width: 24, height: 24)
+                .padding()
+            
+            Image("link-icon")
+                .frame(width: 24, height: 24)
+                .padding()
+            
+            Image("github-icon")
+                .frame(width: 24, height: 24)
+                .padding()
+        }
+    }
+}
+
+struct DonateButtonUI: View {
+    var body: some View {
+        HStack {
+            Text(AppStrings.AboutView.donateButtonText.localized())
+                .foregroundColor(.secondary)
+                .customFont(.IBMPlexSansBold, size: 16)
+                .padding(.vertical)
+        }
+        .frame(maxWidth: 200, maxHeight: 50)
+        .background(Color.green)
+        .cornerRadius(6)
     }
 }
