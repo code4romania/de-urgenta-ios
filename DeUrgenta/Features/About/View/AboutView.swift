@@ -39,7 +39,7 @@ struct AboutView: View {
                         Button(action: {
                             // TODO: Implement this action
                         }, label: {
-                            DonateButtonUI()
+                            DonateButtonView()
                         })
                         .padding(.bottom, 20)
                     }
@@ -96,7 +96,7 @@ struct SocialMediaIconsView: View {
     }
 }
 
-struct DonateButtonUI: View {
+struct DonateButtonView: View {
     var body: some View {
         HStack {
             Text(AppStrings.AboutView.donateButtonText.localized())
