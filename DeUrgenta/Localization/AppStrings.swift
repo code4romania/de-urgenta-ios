@@ -187,6 +187,14 @@ enum AppStrings: String, Localizable {
         case headerTitle = "TermsView.headerTitle"
     }
 
+    enum SettingsView: String, Localizable {
+        case headerTitle = "SettingsView.headerTitle"
+        case changePasswordText = "SettingsView.changePasswordText"
+        case termsText = "SettingsView.termsText"
+        case problemReportText = "SettingsView.problemReportText"
+        case deleteAccount = "SettingsView.deleteAccountText"
+    }
+
     enum AboutView: String, Localizable {
         case headerTitle = "AboutView.headerTitle"
         case logoText = "AboutView.logoText"

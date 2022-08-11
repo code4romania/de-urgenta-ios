@@ -11,7 +11,7 @@ struct SettingsView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("Setări")
+                Text(AppStrings.SettingsView.headerTitle.localized())
                     .customFont(.IBMPlexSansSemiBold, size: 23)
                     .frame(alignment: .leading)
                     .padding(.vertical, 10)

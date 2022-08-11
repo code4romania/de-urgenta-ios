@@ -122,3 +122,9 @@
 "AboutView.logoText" = "DE URGENȚĂ";
 "AboutView.headerIconText" = "Soluție proiectată, dezvoltată și administrată de";
 "AboutView.donateButtonText" = "Donează";
+
+"SettingsView.headerTitle" = "Setări";
+"SettingsView.changePasswordText" = "Schimbă parola";
+"SettingsView.termsText" = "Termeni și condiții";
+"SettingsView.problemReportText" = "Raportează o problemă";
+"SettingsView.deleteAccountText" = "Șterge contul";

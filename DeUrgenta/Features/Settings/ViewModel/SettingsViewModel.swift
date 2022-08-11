@@ -2,9 +2,9 @@ import Foundation
 
 final class SettingsViewModel {
     let settingsOptions = [
-        SettingsOption(name: "Schimbă parola", settingsType: .changePassword),
-        SettingsOption(name: "Termeni și condiții", settingsType: .terms),
-        SettingsOption(name: "Raportează o problemă", settingsType: .problemReport),
-        SettingsOption(name: "Șterge contul", settingsType: .deleteAccount),
+        SettingsOption(name: AppStrings.SettingsView.changePasswordText.localized(), settingsType: .changePassword),
+        SettingsOption(name: AppStrings.SettingsView.termsText.localized(), settingsType: .terms),
+        SettingsOption(name: AppStrings.SettingsView.problemReportText.localized(), settingsType: .problemReport),
+        SettingsOption(name: AppStrings.SettingsView.deleteAccount.localized(), settingsType: .deleteAccount),
     ]
 }
