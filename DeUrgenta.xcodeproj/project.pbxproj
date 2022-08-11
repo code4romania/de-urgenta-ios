@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6206C41828A3CD04004A54A7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C41728A3CD04004A54A7 /* AboutView.swift */; };
 		620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */; };
 		620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */; };
 		622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */; };
@@ -16,6 +17,9 @@
 		6234309D288EA72A001632CE /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234309C288EA72A001632CE /* LocationViewModel.swift */; };
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
+		624208DF28A50A6D006B9C70 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624208DE28A50A6D006B9C70 /* SpinnerView.swift */; };
+		624208E128A50A9F006B9C70 /* SocialMediaIconsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624208E028A50A9F006B9C70 /* SocialMediaIconsView.swift */; };
+		624208E328A50B06006B9C70 /* DonateButttonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624208E228A50B06006B9C70 /* DonateButttonView.swift */; };
 		6246315028815CFD003C2EB7 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6246314F28815CFD003C2EB7 /* ItemView.swift */; };
 		6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256E7EB28883E16003C1175 /* BackpackContactsView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
@@ -34,6 +38,11 @@
 		62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */; };
 		62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */; };
 		62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */; };
+		62AFE57328A2988B006700F4 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57228A2988B006700F4 /* SettingsView.swift */; };
+		62AFE57528A298E0006700F4 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57428A298E0006700F4 /* SettingsCoordinator.swift */; };
+		62AFE57728A299FB006700F4 /* SettingsOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57628A299FB006700F4 /* SettingsOption.swift */; };
+		62AFE57928A29AEC006700F4 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57828A29AEC006700F4 /* SettingsViewModel.swift */; };
+		62AFE57D28A2A23C006700F4 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AFE57C28A2A23C006700F4 /* TermsView.swift */; };
 		62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B94FEA288820B700BDF009 /* ContactsViewModel.swift */; };
 		62C5397A28914EA9001003AD /* DropdownType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C5397928914EA9001003AD /* DropdownType.swift */; };
 		62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C6911E289D3B9D005FF6F8 /* FontManager.swift */; };
@@ -72,6 +81,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6206C41728A3CD04004A54A7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemsArrayView.swift; sourceTree = "<group>"; };
 		622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCoordinator.swift; sourceTree = "<group>"; };
@@ -81,6 +91,9 @@
 		6234309C288EA72A001632CE /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
+		624208DE28A50A6D006B9C70 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
+		624208E028A50A9F006B9C70 /* SocialMediaIconsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaIconsView.swift; sourceTree = "<group>"; };
+		624208E228A50B06006B9C70 /* DonateButttonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonateButttonView.swift; sourceTree = "<group>"; };
 		6246314F28815CFD003C2EB7 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		6256E7EB28883E16003C1175 /* BackpackContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactsView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
@@ -99,6 +112,11 @@
 		62AC818B285B3E0A00ACAF3E /* CreateGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupView.swift; sourceTree = "<group>"; };
 		62AC818D285B3E1F00ACAF3E /* CreateGroupCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupCoordinator.swift; sourceTree = "<group>"; };
 		62AF98BF2877083400BCFA11 /* EmergencyBackpackCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackCoordinator.swift; sourceTree = "<group>"; };
+		62AFE57228A2988B006700F4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		62AFE57428A298E0006700F4 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		62AFE57628A299FB006700F4 /* SettingsOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOption.swift; sourceTree = "<group>"; };
+		62AFE57828A29AEC006700F4 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		62AFE57C28A2A23C006700F4 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
 		62B94FEA288820B700BDF009 /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
 		62C5397928914EA9001003AD /* DropdownType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownType.swift; sourceTree = "<group>"; };
 		62C6911E289D3B9D005FF6F8 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
@@ -149,6 +167,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6206C41528A3CCEE004A54A7 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				6206C41628A3CCFA004A54A7 /* View */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		6206C41628A3CCFA004A54A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6206C41728A3CD04004A54A7 /* AboutView.swift */,
+				624208DE28A50A6D006B9C70 /* SpinnerView.swift */,
+				624208E028A50A9F006B9C70 /* SocialMediaIconsView.swift */,
+				624208E228A50B06006B9C70 /* DonateButttonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		622AE030288E8A26004362F7 /* FirstAid */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +334,65 @@
 				629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */,
 				6246314F28815CFD003C2EB7 /* ItemView.swift */,
 				62A2AC37287C39CD00B00969 /* MyBackpackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62AFE56D28A297DA006700F4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57128A29875006700F4 /* Coordinator */,
+				62AFE56F28A29858006700F4 /* Model */,
+				62AFE56E28A29848006700F4 /* View */,
+				62AFE57028A2985E006700F4 /* ViewModel */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		62AFE56E28A29848006700F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57228A2988B006700F4 /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62AFE56F28A29858006700F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57628A299FB006700F4 /* SettingsOption.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		62AFE57028A2985E006700F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57828A29AEC006700F4 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		62AFE57128A29875006700F4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57428A298E0006700F4 /* SettingsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		62AFE57A28A2A222006700F4 /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57B28A2A22E006700F4 /* View */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		62AFE57B28A2A22E006700F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62AFE57C28A2A23C006700F4 /* TermsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -489,13 +585,16 @@
 		DE45A1A728420AD200056448 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				6206C41528A3CCEE004A54A7 /* About */,
 				BB8F3ECA2842525E00278975 /* AccountConfig */,
 				62AC8188285B3DDF00ACAF3E /* CreateGroup */,
 				62AF98BC2877060B00BCFA11 /* EmergencyBackpack */,
 				622AE030288E8A26004362F7 /* FirstAid */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
 				62ECEB7228994E2000E0B82E /* Menu */,
+				62AFE56D28A297DA006700F4 /* Settings */,
 				BB8F3EB82842292300278975 /* Splash */,
+				62AFE57A28A2A222006700F4 /* Terms */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -637,11 +736,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62AFE57D28A2A23C006700F4 /* TermsView.swift in Sources */,
 				62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */,
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
 				62A2AC40287DAAFF00B00969 /* CategoryItemIcon.swift in Sources */,
 				6246315028815CFD003C2EB7 /* ItemView.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
+				62AFE57928A29AEC006700F4 /* SettingsViewModel.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				62C69121289D3DA9005FF6F8 /* View+Extensions.swift in Sources */,
 				62ECEB78289953F300E0B82E /* MenuView.swift in Sources */,
@@ -658,25 +759,32 @@
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
+				62AFE57328A2988B006700F4 /* SettingsView.swift in Sources */,
 				62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */,
 				622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */,
 				62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */,
+				624208E128A50A9F006B9C70 /* SocialMediaIconsView.swift in Sources */,
+				624208E328A50B06006B9C70 /* DonateButttonView.swift in Sources */,
 				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,
 				62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */,
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
 				6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */,
+				6206C41828A3CD04004A54A7 /* AboutView.swift in Sources */,
 				6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */,
+				62AFE57528A298E0006700F4 /* SettingsCoordinator.swift in Sources */,
 				BB8F3EC228423E1100278975 /* Color+Extensions.swift in Sources */,
 				62AB8879286DB10100A7801C /* CreateGroupViewModel.swift in Sources */,
 				62B94FEB288820B700BDF009 /* ContactsViewModel.swift in Sources */,
 				62AC818E285B3E1F00ACAF3E /* CreateGroupCoordinator.swift in Sources */,
 				DE45A19928420AA900056448 /* AppDelegate.swift in Sources */,
 				BB8F3ED62842599300278975 /* AccountConfigViewModel.swift in Sources */,
+				62AFE57728A299FB006700F4 /* SettingsOption.swift in Sources */,
 				BB8F3ED4284258FA00278975 /* ConfigStep.swift in Sources */,
 				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
 				620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */,
 				629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */,
 				62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */,
+				624208DF28A50A6D006B9C70 /* SpinnerView.swift in Sources */,
 				62AB887B286DC42500A7801C /* SearchBar.swift in Sources */,
 				62ECEB7E289955D700E0B82E /* MenuOptions.swift in Sources */,
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,

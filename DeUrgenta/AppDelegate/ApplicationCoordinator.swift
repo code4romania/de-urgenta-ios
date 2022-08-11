@@ -114,12 +114,17 @@ extension ApplicationCoordinator: MenuCoordinatorDelegate {
         // TODO: Implement this method
     }
 
-    func menuCoordinatorShouldPresentSettings(_: MenuCoordinator) {
-        // TODO: Implement this method
+    func menuCoordinatorShouldPresentSettings(_ sender: MenuCoordinator) {
+        let coordinator = SettingsCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
+
+        removeChildCoordinator(sender)
     }
 
     func menuCoordinatorShouldPresentAbout(_: MenuCoordinator) {
-        // TODO: Implement this method
+        let viewController = UIHostingController(rootView: AboutView())
+        navigationController.pushViewController(viewController, animated: true)
     }
 
     func menuCoordinatorShouldPresentSignOut(_: MenuCoordinator) {

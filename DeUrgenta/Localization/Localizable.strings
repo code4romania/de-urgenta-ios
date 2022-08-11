@@ -104,6 +104,9 @@
 "SelectCourseAndCityView.secondSelectorheader" = "Selectează orașul";
 "SelectCourseAndCityView.viewCoursesButton" = "Vezi cursurile";
 
+"TermsView.headerText" = "LEGAL";
+"TermsView.headerTitle" = "Termeni și condiții";
+
 "MenuView.adresslabel" = "Adrese și trasee";
 "MenuView.groupsLabel" = "Grupuri de urgență";
 "MenuView.backpackLabel" = "Rucsacul de urgență";
@@ -114,4 +117,14 @@
 "MenuView.signoutLabel" = "Delogare";
 "MenuView.headerIconLabel" = "Soluție proiectată, dezvoltată și administrată de";
 "MenuView.donateButtonText" = "Donează";
- 
+
+"AboutView.headerTitle" = "Despre aplicație";
+"AboutView.logoText" = "DE URGENȚĂ";
+"AboutView.headerIconText" = "Soluție proiectată, dezvoltată și administrată de";
+"AboutView.donateButtonText" = "Donează";
+
+"SettingsView.headerTitle" = "Setări";
+"SettingsView.changePasswordText" = "Schimbă parola";
+"SettingsView.termsText" = "Termeni și condiții";
+"SettingsView.problemReportText" = "Raportează o problemă";
+"SettingsView.deleteAccountText" = "Șterge contul";
