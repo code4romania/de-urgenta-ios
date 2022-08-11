@@ -4,7 +4,7 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 15) {
-                Text("Despre aplicație")
+                Text(AppStrings.AboutView.headerTitle.localized())
                     .customFont(.IBMPlexSansBold, size: 30)
                     .padding(.bottom, 15)
 
@@ -16,7 +16,7 @@ struct AboutView: View {
                     Spacer()
 
                     ZStack {
-                        Text("DE URGENȚĂ")
+                        Text(AppStrings.AboutView.logoText.localized())
                             .foregroundColor(.white)
                             .customFont(.IBMPlexSansSemiBold, size: 24)
                             .zIndex(1)
@@ -41,7 +41,7 @@ struct AboutView: View {
                     Spacer()
 
                     VStack {
-                        Text("Soluție proiectată, dezvoltată și administrată de")
+                        Text(AppStrings.AboutView.headerIconText.localized())
                             .customFont(size: 14)
                             .padding(.bottom, 10)
 
@@ -72,7 +72,7 @@ struct AboutView: View {
                             // TODO: Implement this action
                         }, label: {
                             HStack {
-                                Text(AppStrings.MenuView.donateButtonText.localized())
+                                Text(AppStrings.AboutView.donateButtonText.localized())
                                     .foregroundColor(.secondary)
                                     .customFont(.IBMPlexSansBold, size: 16)
                                     .padding(.vertical)

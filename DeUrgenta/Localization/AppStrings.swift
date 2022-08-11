@@ -181,4 +181,16 @@ enum AppStrings: String, Localizable {
         case headerIconLabel = "MenuView.headerIconLabel"
         case donateButtonText = "MenuView.donateButtonText"
     }
+
+    enum TermsView: String, Localizable {
+        case headerText = "TermsView.headerText"
+        case headerTitle = "TermsView.headerTitle"
+    }
+
+    enum AboutView: String, Localizable {
+        case headerTitle = "AboutView.headerTitle"
+        case logoText = "AboutView.logoText"
+        case headerIconText = "AboutView.headerIconText"
+        case donateButtonText = "AboutView.donateButtonText"
+    }
 }

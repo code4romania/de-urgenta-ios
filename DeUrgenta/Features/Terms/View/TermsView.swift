@@ -4,11 +4,11 @@ struct TermsView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("LEGAL")
+                Text(AppStrings.TermsView.headerText.localized())
                     .foregroundColor(.accent)
                     .customFont(.IBMPlexSansMedium, size: 16)
 
-                Text("Termeni și condiții")
+                Text(AppStrings.TermsView.headerTitle.localized())
                     .customFont(.IBMPlexSansSemiBold, size: 30)
                     .padding(.bottom, 15)
 
