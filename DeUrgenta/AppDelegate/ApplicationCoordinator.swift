@@ -34,7 +34,9 @@ extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
     }
 
     func landingPageCoordinatorShouldPresentSignIn(_: LandingPageCoordinator) {
-        // TODO: Implement this method
+        let coordinator = SingInCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
     }
 
     func landingPageCoordinatorShouldPresentSignUp(_: LandingPageCoordinator) {
