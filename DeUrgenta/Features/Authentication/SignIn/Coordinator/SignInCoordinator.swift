@@ -11,7 +11,7 @@ final class SingInCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = UIHostingController(rootView: Text("Not implemented yet"))
+        let viewController = UIHostingController(rootView: SignInView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }

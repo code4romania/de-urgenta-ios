@@ -51,6 +51,9 @@
 		62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CC0A742875724800374984 /* AddMemberButtonView.swift */; };
 		62CE851628C21828009875A3 /* SignInCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE851528C21828009875A3 /* SignInCoordinator.swift */; };
 		62CE851A28C2218D009875A3 /* InputFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CE851928C2218D009875A3 /* InputFieldView.swift */; };
+		62D37C4828C62E3A0003C41D /* SignInFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4728C62E3A0003C41D /* SignInFormView.swift */; };
+		62D37C4A28C630690003C41D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4928C630690003C41D /* SignInViewModel.swift */; };
+		62D37C4C28C636D00003C41D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4B28C636D00003C41D /* SignInView.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
 		62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */; };
@@ -127,6 +130,9 @@
 		62CC0A742875724800374984 /* AddMemberButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemberButtonView.swift; sourceTree = "<group>"; };
 		62CE851528C21828009875A3 /* SignInCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCoordinator.swift; sourceTree = "<group>"; };
 		62CE851928C2218D009875A3 /* InputFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputFieldView.swift; sourceTree = "<group>"; };
+		62D37C4728C62E3A0003C41D /* SignInFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFormView.swift; sourceTree = "<group>"; };
+		62D37C4928C630690003C41D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		62D37C4B28C636D00003C41D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
 		62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
@@ -438,6 +444,8 @@
 		62CE851328C217F5009875A3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				62D37C4728C62E3A0003C41D /* SignInFormView.swift */,
+				62D37C4B28C636D00003C41D /* SignInView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -445,6 +453,7 @@
 		62CE851428C217FB009875A3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				62D37C4928C630690003C41D /* SignInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -798,8 +807,10 @@
 				6246315028815CFD003C2EB7 /* ItemView.swift in Sources */,
 				62A2AC3E287C621500B00969 /* CategoryItem.swift in Sources */,
 				62AFE57928A29AEC006700F4 /* SettingsViewModel.swift in Sources */,
+				62D37C4A28C630690003C41D /* SignInViewModel.swift in Sources */,
 				DEEA05F82842163600140ADB /* ApplicationCoordinator.swift in Sources */,
 				62C69121289D3DA9005FF6F8 /* View+Extensions.swift in Sources */,
+				62D37C4828C62E3A0003C41D /* SignInFormView.swift in Sources */,
 				62ECEB78289953F300E0B82E /* MenuView.swift in Sources */,
 				62F658FC286B291500539384 /* GroupView.swift in Sources */,
 				62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */,
@@ -837,6 +848,7 @@
 				BB8F3ED4284258FA00278975 /* ConfigStep.swift in Sources */,
 				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
 				620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */,
+				62D37C4C28C636D00003C41D /* SignInView.swift in Sources */,
 				629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */,
 				62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */,
 				624208DF28A50A6D006B9C70 /* SpinnerView.swift in Sources */,
