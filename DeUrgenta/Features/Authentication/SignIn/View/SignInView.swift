@@ -11,6 +11,9 @@ struct SignInView: View {
 
             SignInFormView(viewModel: viewModel)
 
+            CustomDividerView(label: "sau")
+                .padding(.vertical, 40)
+
             Spacer()
         }
         .padding()
