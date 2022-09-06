@@ -1,7 +1,13 @@
 import SwiftUI
 
+protocol SignInFormViewDelegate {
+    func signInFormViewDidTapSignIn(_ view: SignInFormView)
+    func signInFormViewDidTapForgotPassword(_ view: SignInFormView)
+}
+
 struct SignInFormView: View {
     @ObservedObject var viewModel: SignInViewModel
+    var delegate: SignInFormViewDelegate
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
@@ -14,7 +20,7 @@ struct SignInFormView: View {
                            showError: $viewModel.showPasswordError)
 
             Button(action: {
-                // TODO: Implement this action
+                self.delegate.signInFormViewDidTapForgotPassword(self)
             }, label: {
                 VStack {
                     Text("Ti-ai uitat parola?")
@@ -25,7 +31,13 @@ struct SignInFormView: View {
 
             VStack {
                 Button(action: {
-                    // TODO: Implement sign in action
+                    guard viewModel.isValidEmail(),
+                          viewModel.isValidPassword()
+                    else {
+                        return
+                    }
+
+                    self.delegate.signInFormViewDidTapSignIn(self)
                 }, label: {
                     HStack {
                         Text("Intra in contul tau")

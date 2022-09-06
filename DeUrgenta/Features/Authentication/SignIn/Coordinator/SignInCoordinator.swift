@@ -11,7 +11,17 @@ final class SingInCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = UIHostingController(rootView: SignInView())
+        let viewController = UIHostingController(rootView: SignInView(delegate: self))
         navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension SingInCoordinator: SignInViewDelegate {
+    func signInViewDidTapSignIn(_: SignInView) {
+        // TODO: Implement this action
+    }
+
+    func signInViewDidTapForgotPassword(_: SignInView) {
+        // TODO: Implement this action
     }
 }
