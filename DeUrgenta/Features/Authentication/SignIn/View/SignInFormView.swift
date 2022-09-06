@@ -4,12 +4,12 @@ struct SignInFormView: View {
     @ObservedObject var viewModel: SignInViewModel
 
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 24) {
             InputFieldView(label: "Email",
                            fieldData: $viewModel.email,
                            showError: $viewModel.showEmailError)
 
-            InputFieldView(label: "Password",
+            InputFieldView(label: "Parola",
                            fieldData: $viewModel.password,
                            showError: $viewModel.showPasswordError)
 
@@ -32,7 +32,7 @@ struct SignInFormView: View {
                             .foregroundColor(.secondary)
                             .customFont(.IBMPlexSansBold, size: 16)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: 50)
+                    .frame(maxWidth: .infinity, minHeight: 50, maxHeight: 50)
                     .background(Color.accent)
                     .cornerRadius(6)
                 })
