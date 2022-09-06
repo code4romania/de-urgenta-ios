@@ -16,6 +16,7 @@
 		622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622DE7D4288ED020000657B1 /* Dropdown.swift */; };
 		622EAE6728C73A4F0072F393 /* CustomDividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622EAE6628C73A4F0072F393 /* CustomDividerView.swift */; };
 		622EAE6928C7418B0072F393 /* ProvidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622EAE6828C7418B0072F393 /* ProvidersView.swift */; };
+		622EAE6B28C75CAB0072F393 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622EAE6A28C75CAB0072F393 /* Validator.swift */; };
 		6234309D288EA72A001632CE /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6234309C288EA72A001632CE /* LocationViewModel.swift */; };
 		6236290C2874237800B04E9A /* InvitedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290B2874237800B04E9A /* InvitedContactsView.swift */; };
 		6236290E2874336600B04E9A /* InvitedContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6236290D2874336600B04E9A /* InvitedContactRow.swift */; };
@@ -97,6 +98,7 @@
 		622DE7D4288ED020000657B1 /* Dropdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
 		622EAE6628C73A4F0072F393 /* CustomDividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDividerView.swift; sourceTree = "<group>"; };
 		622EAE6828C7418B0072F393 /* ProvidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvidersView.swift; sourceTree = "<group>"; };
+		622EAE6A28C75CAB0072F393 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		6234309C288EA72A001632CE /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		6236290B2874237800B04E9A /* InvitedContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactsView.swift; sourceTree = "<group>"; };
 		6236290D2874336600B04E9A /* InvitedContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvitedContactRow.swift; sourceTree = "<group>"; };
@@ -560,6 +562,7 @@
 			children = (
 				628B59F2288578B100EB171B /* Extensions */,
 				BB8F3EC128423E1100278975 /* Color+Extensions.swift */,
+				622EAE6A28C75CAB0072F393 /* Validator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -845,6 +848,7 @@
 				62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */,
 				622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */,
 				62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */,
+				622EAE6B28C75CAB0072F393 /* Validator.swift in Sources */,
 				624208E128A50A9F006B9C70 /* SocialMediaIconsView.swift in Sources */,
 				624208E328A50B06006B9C70 /* DonateButttonView.swift in Sources */,
 				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,
