@@ -9,7 +9,7 @@ struct ProvidersView: View {
             }, label: {
                 HStack {
                     Image("apple-icon")
-                    Text("Autentifica-te cu Apple")
+                    Text(AppStrings.Authentication.Providers.appleLabel.localized())
                         .foregroundColor(.white)
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
@@ -23,7 +23,7 @@ struct ProvidersView: View {
             }, label: {
                 HStack {
                     Image("google-icon")
-                    Text("Autentifica-te cu Google")
+                    Text(AppStrings.Authentication.Providers.googleLabel.localized())
                         .foregroundColor(.white)
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
@@ -37,7 +37,7 @@ struct ProvidersView: View {
             }, label: {
                 HStack {
                     Image("facebook-auth-icon")
-                    Text("Autentifica-te cu Facebook")
+                    Text(AppStrings.Authentication.Providers.facebookLabel.localized())
                         .foregroundColor(.white)
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }

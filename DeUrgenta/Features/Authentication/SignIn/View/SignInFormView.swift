@@ -11,11 +11,11 @@ struct SignInFormView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
-            InputFieldView(label: "Email",
+            InputFieldView(label: AppStrings.Authentication.Email.inputLabel.localized(),
                            fieldData: $viewModel.email,
                            showError: $viewModel.showEmailError)
 
-            InputFieldView(label: "Parola",
+            InputFieldView(label: AppStrings.Authentication.Password.inputLabel.localized(),
                            fieldData: $viewModel.password,
                            showError: $viewModel.showPasswordError)
 
@@ -23,7 +23,7 @@ struct SignInFormView: View {
                 self.delegate.signInFormViewDidTapForgotPassword(self)
             }, label: {
                 VStack {
-                    Text("Ti-ai uitat parola?")
+                    Text(AppStrings.Authentication.signInForgotPasswordLabel.localized())
                         .foregroundColor(.accent)
                         .customFont(size: 14)
                 }
@@ -40,7 +40,7 @@ struct SignInFormView: View {
                     self.delegate.signInFormViewDidTapSignIn(self)
                 }, label: {
                     HStack {
-                        Text("Intra in contul tau")
+                        Text(AppStrings.Authentication.signInButtonTitle.localized())
                             .foregroundColor(.secondary)
                             .customFont(.IBMPlexSansBold, size: 16)
                     }
