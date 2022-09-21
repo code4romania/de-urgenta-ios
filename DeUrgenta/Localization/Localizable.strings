@@ -139,3 +139,7 @@
 "Authentication.Providers.appleLabel" = "Autentifică-te cu Apple";
 "Authentication.Providers.googleLabel" = "Autentifică-te cu Google";
 "Authentication.Providers.facebookLabel" = "Autentifică-te cu Facebook";
+"Authenticaation.Error.emptyEmail" = "Te rugăm să introduci adresa de e-mail";
+"Authenticaation.Error.emptyPassword" = "Te rugăm să introduci parola";
+"Authenticaation.Error.invalidEmail" = "Emailul introdus este invalid";
+"Authenticaation.Error.invalidPassword" = "Parola introdusă este invalidă";

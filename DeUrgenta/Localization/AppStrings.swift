@@ -222,5 +222,12 @@ enum AppStrings: String, Localizable {
             case googleLabel = "Authentication.Providers.googleLabel"
             case facebookLabel = "Authentication.Providers.facebookLabel"
         }
+
+        enum Error: String, Localizable {
+            case emptyEmail = "Authenticaation.Error.emptyEmail"
+            case emptyPassword = "Authenticaation.Error.emptyPassword"
+            case invalidEmail = "Authenticaation.Error.invalidEmail"
+            case invalidPassword = "Authenticaation.Error.invalidPassword"
+        }
     }
 }

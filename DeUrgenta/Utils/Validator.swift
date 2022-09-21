@@ -5,12 +5,22 @@ enum ValidationType {
     case password
 }
 
+enum ValidationError {
+    case empty
+    case invalid
+}
+
 class Validator {
     static let shared = Validator()
 
     private init() {}
 
-    func isValidData(data: String, type: ValidationType) -> Bool {
+    func isValidData(data: String, type: ValidationType, completion: @escaping (ValidationError?) -> Void) {
+        guard !data.isEmpty else {
+            completion(.empty)
+            return
+        }
+
         var regExPattern = ""
 
         switch type {
@@ -22,7 +32,9 @@ class Validator {
         }
 
         let predicate = NSPredicate(format: "SELF MATCHES %@", regExPattern)
-        return predicate.evaluate(with: data)
+//        return predicate.evaluate(with: data)
+        let isValid = predicate.evaluate(with: data)
+        isValid ? completion(nil) : completion(.invalid)
     }
 
     func isSameData(first: String, second: String) -> Bool {

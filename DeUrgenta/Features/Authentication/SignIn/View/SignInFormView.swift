@@ -12,10 +12,15 @@ struct SignInFormView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             InputFieldView(label: AppStrings.Authentication.Email.inputLabel.localized(),
+                           errorMessage: viewModel.errorMessaageEmail,
+                           iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.email,
                            showError: $viewModel.showEmailError)
 
             InputFieldView(label: AppStrings.Authentication.Password.inputLabel.localized(),
+                           isSecureField: true,
+                           errorMessage: viewModel.errorMessaagePassword,
+                           iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.password,
                            showError: $viewModel.showPasswordError)
 
@@ -31,8 +36,11 @@ struct SignInFormView: View {
 
             VStack {
                 Button(action: {
-                    guard viewModel.isValidEmail(),
-                          viewModel.isValidPassword()
+                    let isValidEmail = viewModel.isValidEmail()
+                    let isValidPassword = viewModel.isValidPassword()
+
+                    guard isValidEmail,
+                          isValidPassword
                     else {
                         return
                     }
@@ -49,6 +57,12 @@ struct SignInFormView: View {
                     .cornerRadius(6)
                 })
             }
+        }
+        .onChange(of: viewModel.email) { _ in
+            self.viewModel.showEmailError = false
+        }
+        .onChange(of: viewModel.password) { _ in
+            self.viewModel.showPasswordError = false
         }
     }
 }
