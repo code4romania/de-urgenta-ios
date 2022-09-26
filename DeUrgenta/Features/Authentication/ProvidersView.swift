@@ -1,7 +1,6 @@
 import SwiftUI
 
 struct ProvidersView: View {
-    // TODO: Implement providers buttons and actions.
     var body: some View {
         VStack(spacing: 24) {
             Button(action: {
@@ -28,7 +27,7 @@ struct ProvidersView: View {
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
                 .frame(maxWidth: .infinity, maxHeight: 38)
-                .background(Color.lightBlue)
+                .background(Color.buttonLightBlue)
                 .cornerRadius(6)
             })
 
@@ -42,7 +41,7 @@ struct ProvidersView: View {
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
                 .frame(maxWidth: .infinity, maxHeight: 38)
-                .background(Color.blue)
+                .background(Color.buttonBlue)
                 .cornerRadius(6)
             })
         }

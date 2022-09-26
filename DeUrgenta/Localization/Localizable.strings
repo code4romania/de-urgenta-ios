@@ -131,11 +131,11 @@
 "SettingsView.deleteAccountText" = "Șterge contul";
 
 "Authentication.signInHeaderTitle" = "Autentifică-te";
-"Authentication.signInForgotPasswordLabel" = "Ti-ai uitat parola?";
-"Authentication.signInButtonTitle" = "Intră in contul tău";
+"Authentication.signInForgotPasswordLabel" = "Ți-ai uitat parola?";
+"Authentication.signInButtonTitle" = "Intră în contul tău";
 "Authentication.Email.inputLabel" = "Email";
 "Authentication.Password.inputLabel" = "Parola";
-"Authentication.Password.invalidMessage" = "Parola ta trebuie să aiba minimi 8 caractere.";
+"Authentication.Password.invalidMessage" = "Parola ta trebuie să aibă minimi 8 caractere.";
 "Authentication.Providers.appleLabel" = "Autentifică-te cu Apple";
 "Authentication.Providers.googleLabel" = "Autentifică-te cu Google";
 "Authentication.Providers.facebookLabel" = "Autentifică-te cu Facebook";

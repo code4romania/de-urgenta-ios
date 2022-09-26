@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 import UIKit
 
-final class SingInCoordinator: Coordinator {
+final class SignInCoordinator: Coordinator {
     var navigationController: UINavigationController
     var childCoordinators: [Coordinator] = []
 
@@ -16,7 +16,7 @@ final class SingInCoordinator: Coordinator {
     }
 }
 
-extension SingInCoordinator: SignInViewDelegate {
+extension SignInCoordinator: SignInViewDelegate {
     func signInViewDidTapSignIn(_: SignInView) {
         // TODO: Implement this action
     }

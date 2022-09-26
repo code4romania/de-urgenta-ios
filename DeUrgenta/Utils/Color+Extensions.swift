@@ -22,12 +22,12 @@ extension Color {
         Color("FieldBorder")
     }
 
-    static var blue: Color {
-        Color("blue")
+    static var buttonBlue: Color {
+        Color("buttonBlue")
     }
 
-    static var lightBlue: Color {
-        Color("light-blue")
+    static var buttonLightBlue: Color {
+        Color("buttonLightBlue")
     }
 
     var uiColor: UIColor {

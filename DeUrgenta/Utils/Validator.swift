@@ -32,7 +32,7 @@ class Validator {
         }
 
         let predicate = NSPredicate(format: "SELF MATCHES %@", regExPattern)
-//        return predicate.evaluate(with: data)
+
         let isValid = predicate.evaluate(with: data)
         isValid ? completion(nil) : completion(.invalid)
     }
