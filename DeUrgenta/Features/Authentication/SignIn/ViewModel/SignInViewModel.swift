@@ -11,42 +11,34 @@ class SignInViewModel: ObservableObject {
     private let validator = Validator.shared
 
     func isValidEmail() -> Bool {
-        showEmailError = false
-
-        validator.isValidData(data: email, type: .email) { error in
-            guard let error = error else {
-                return
-            }
-            self.showEmailError = true
-
-            switch error {
-            case .empty:
-                self.errorMessaageEmail = AppStrings.Authentication.Error.emptyEmail.localized()
-            case .invalid:
-                self.errorMessaageEmail = AppStrings.Authentication.Error.invalidEmail.localized()
-            }
+        do {
+            return try validator.isValidData(data: email, type: .email)
+        } catch ValidationError.empty {
+            showEmailError = true
+            errorMessaageEmail = AppStrings.Authentication.Error.emptyEmail.localized()
+            return false
+        } catch ValidationError.invalid {
+            showEmailError = true
+            errorMessaageEmail = AppStrings.Authentication.Error.invalidEmail.localized()
+            return false
+        } catch {
+            return false
         }
-
-        return !showEmailError
     }
 
     func isValidPassword() -> Bool {
-        showPasswordError = false
-
-        validator.isValidData(data: password, type: .password) { error in
-            guard let error = error else {
-                return
-            }
-            self.showPasswordError = true
-
-            switch error {
-            case .empty:
-                self.errorMessaagePassword = AppStrings.Authentication.Error.emptyPassword.localized()
-            case .invalid:
-                self.errorMessaagePassword = AppStrings.Authentication.Error.invalidPassword.localized()
-            }
+        do {
+            return try validator.isValidData(data: password, type: .password)
+        } catch ValidationError.empty {
+            showPasswordError = true
+            errorMessaagePassword = AppStrings.Authentication.Error.emptyPassword.localized()
+            return false
+        } catch ValidationError.invalid {
+            showPasswordError = true
+            errorMessaagePassword = AppStrings.Authentication.Error.invalidPassword.localized()
+            return false
+        } catch {
+            return false
         }
-
-        return !showPasswordError
     }
 }

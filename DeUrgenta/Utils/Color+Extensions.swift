@@ -23,11 +23,11 @@ extension Color {
     }
 
     static var buttonBlue: Color {
-        Color("buttonBlue")
+        Color("ButtonBlue")
     }
 
     static var buttonLightBlue: Color {
-        Color("buttonLightBlue")
+        Color("ButtonLightBlue")
     }
 
     var uiColor: UIColor {

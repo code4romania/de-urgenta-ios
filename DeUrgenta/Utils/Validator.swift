@@ -5,7 +5,7 @@ enum ValidationType {
     case password
 }
 
-enum ValidationError {
+enum ValidationError: Error {
     case empty
     case invalid
 }
@@ -15,10 +15,9 @@ class Validator {
 
     private init() {}
 
-    func isValidData(data: String, type: ValidationType, completion: @escaping (ValidationError?) -> Void) {
+    func isValidData(data: String, type: ValidationType) throws -> Bool {
         guard !data.isEmpty else {
-            completion(.empty)
-            return
+            throw ValidationError.empty
         }
 
         var regExPattern = ""
@@ -34,7 +33,11 @@ class Validator {
         let predicate = NSPredicate(format: "SELF MATCHES %@", regExPattern)
 
         let isValid = predicate.evaluate(with: data)
-        isValid ? completion(nil) : completion(.invalid)
+        guard isValid else {
+            throw ValidationError.invalid
+        }
+
+        return true
     }
 
     func isSameData(first: String, second: String) -> Bool {
