@@ -23,6 +23,7 @@ extension String {
 enum AppStrings: String, Localizable {
     case dummy = ""
     case cancel
+    case dividerLabel
 
     enum LandingPage: String, Localizable {
         case tagLine = "LandingPage.tagLine"
@@ -200,5 +201,33 @@ enum AppStrings: String, Localizable {
         case logoText = "AboutView.logoText"
         case headerIconText = "AboutView.headerIconText"
         case donateButtonText = "AboutView.donateButtonText"
+    }
+
+    enum Authentication: String, Localizable {
+        case signInHeaderTitle = "Authentication.signInHeaderTitle"
+        case signInForgotPasswordLabel = "Authentication.signInForgotPasswordLabel"
+        case signInButtonTitle = "Authentication.signInButtonTitle"
+
+        enum Email: String, Localizable {
+            case inputLabel = "Authentication.Email.inputLabel"
+        }
+
+        enum Password: String, Localizable {
+            case inputLabel = "Authentication.Password.inputLabel"
+            case invalidMessage = "Authentication.Password.invalidMessage"
+        }
+
+        enum Providers: String, Localizable {
+            case appleLabel = "Authentication.Providers.appleLabel"
+            case googleLabel = "Authentication.Providers.googleLabel"
+            case facebookLabel = "Authentication.Providers.facebookLabel"
+        }
+
+        enum Error: String, Localizable {
+            case emptyEmail = "Authenticaation.Error.emptyEmail"
+            case emptyPassword = "Authenticaation.Error.emptyPassword"
+            case invalidEmail = "Authenticaation.Error.invalidEmail"
+            case invalidPassword = "Authenticaation.Error.invalidPassword"
+        }
     }
 }
