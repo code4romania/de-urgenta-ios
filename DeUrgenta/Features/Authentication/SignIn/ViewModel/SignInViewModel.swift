@@ -16,14 +16,13 @@ class SignInViewModel: ObservableObject {
         } catch ValidationError.empty {
             showEmailError = true
             errorMessaageEmail = AppStrings.Authentication.Error.emptyEmail.localized()
-            return false
         } catch ValidationError.invalid {
             showEmailError = true
             errorMessaageEmail = AppStrings.Authentication.Error.invalidEmail.localized()
-            return false
         } catch {
             return false
         }
+        return false
     }
 
     func isValidPassword() -> Bool {
@@ -32,13 +31,12 @@ class SignInViewModel: ObservableObject {
         } catch ValidationError.empty {
             showPasswordError = true
             errorMessaagePassword = AppStrings.Authentication.Error.emptyPassword.localized()
-            return false
         } catch ValidationError.invalid {
             showPasswordError = true
             errorMessaagePassword = AppStrings.Authentication.Error.invalidPassword.localized()
-            return false
         } catch {
             return false
         }
+        return false
     }
 }
