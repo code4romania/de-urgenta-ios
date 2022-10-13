@@ -10,6 +10,7 @@
 		6206C41828A3CD04004A54A7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6206C41728A3CD04004A54A7 /* AboutView.swift */; };
 		620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */; };
 		620CDAE6288051E500E37BD9 /* BackpackItemsArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */; };
+		6211B46E28F81B4F0054AEDF /* ResetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6211B46D28F81B4F0054AEDF /* ResetPasswordViewModel.swift */; };
 		622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */; };
 		622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622AE035288E8C86004362F7 /* FirstAidIntroView.swift */; };
 		622DE7D3288EC383000657B1 /* SelectCourseAndCityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622DE7D2288EC383000657B1 /* SelectCourseAndCityView.swift */; };
@@ -27,6 +28,7 @@
 		6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6256E7EB28883E16003C1175 /* BackpackContactsView.swift */; };
 		626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626A0DB2287ED6B80009530B /* AddItemSection.swift */; };
 		628B495D2888154200B7B490 /* AddNewManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628B495C2888154200B7B490 /* AddNewManagerView.swift */; };
+		6290E3E328F5A30800F166D8 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6290E3E228F5A30800F166D8 /* ResetPasswordView.swift */; };
 		6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6296717928892B5F00C607A7 /* BackpackContactRow.swift */; };
 		629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */; };
 		62A2AC38287C39CD00B00969 /* MyBackpackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A2AC37287C39CD00B00969 /* MyBackpackView.swift */; };
@@ -92,6 +94,7 @@
 		6206C41728A3CD04004A54A7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		620CDAE328800C7300E37BD9 /* CategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewModel.swift; sourceTree = "<group>"; };
 		620CDAE5288051E500E37BD9 /* BackpackItemsArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackItemsArrayView.swift; sourceTree = "<group>"; };
+		6211B46D28F81B4F0054AEDF /* ResetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewModel.swift; sourceTree = "<group>"; };
 		622AE033288E8A89004362F7 /* FirstAidCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidCoordinator.swift; sourceTree = "<group>"; };
 		622AE035288E8C86004362F7 /* FirstAidIntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidIntroView.swift; sourceTree = "<group>"; };
 		622DE7D2288EC383000657B1 /* SelectCourseAndCityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCourseAndCityView.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		6256E7EB28883E16003C1175 /* BackpackContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactsView.swift; sourceTree = "<group>"; };
 		626A0DB2287ED6B80009530B /* AddItemSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemSection.swift; sourceTree = "<group>"; };
 		628B495C2888154200B7B490 /* AddNewManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewManagerView.swift; sourceTree = "<group>"; };
+		6290E3E228F5A30800F166D8 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		6296717928892B5F00C607A7 /* BackpackContactRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackpackContactRow.swift; sourceTree = "<group>"; };
 		629B927D287C0F1D003648D4 /* EmergencyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyBackpackView.swift; sourceTree = "<group>"; };
 		62A2AC37287C39CD00B00969 /* MyBackpackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBackpackView.swift; sourceTree = "<group>"; };
@@ -254,6 +258,31 @@
 				62C69120289D3DA9005FF6F8 /* View+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6290E3DC28F5A26700F166D8 /* ResetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				6290E3DD28F5A29D00F166D8 /* View */,
+				6290E3DE28F5A2A600F166D8 /* ViewModel */,
+			);
+			path = ResetPassword;
+			sourceTree = "<group>";
+		};
+		6290E3DD28F5A29D00F166D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6290E3E228F5A30800F166D8 /* ResetPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6290E3DE28F5A2A600F166D8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6211B46D28F81B4F0054AEDF /* ResetPasswordViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		62A2AC3B287C61D800B00969 /* Model */ = {
@@ -662,14 +691,15 @@
 		DE45A1A728420AD200056448 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				62CE851028C217C6009875A3 /* Authentication */,
 				6206C41528A3CCEE004A54A7 /* About */,
 				BB8F3ECA2842525E00278975 /* AccountConfig */,
+				62CE851028C217C6009875A3 /* Authentication */,
 				62AC8188285B3DDF00ACAF3E /* CreateGroup */,
 				62AF98BC2877060B00BCFA11 /* EmergencyBackpack */,
 				622AE030288E8A26004362F7 /* FirstAid */,
 				BB8F3EB928423C0F00278975 /* LandingPage */,
 				62ECEB7228994E2000E0B82E /* Menu */,
+				6290E3DC28F5A26700F166D8 /* ResetPassword */,
 				62AFE56D28A297DA006700F4 /* Settings */,
 				BB8F3EB82842292300278975 /* Splash */,
 				62AFE57A28A2A222006700F4 /* Terms */,
@@ -877,9 +907,11 @@
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
 				62AB8873286DAF4100A7801C /* ContactInfo.swift in Sources */,
+				6290E3E328F5A30800F166D8 /* ResetPasswordView.swift in Sources */,
 				DEEA05FA284217F100140ADB /* SceneDelegate.swift in Sources */,
 				622AE034288E8A89004362F7 /* FirstAidCoordinator.swift in Sources */,
 				6296717A28892B5F00C607A7 /* BackpackContactRow.swift in Sources */,
+				6211B46E28F81B4F0054AEDF /* ResetPasswordViewModel.swift in Sources */,
 				626A0DB3287ED6B80009530B /* AddItemSection.swift in Sources */,
 				62C5397A28914EA9001003AD /* DropdownType.swift in Sources */,
 				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,

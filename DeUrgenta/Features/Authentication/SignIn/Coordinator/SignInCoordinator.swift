@@ -22,6 +22,7 @@ extension SignInCoordinator: SignInViewDelegate {
     }
 
     func signInViewDidTapForgotPassword(_: SignInView) {
-        // TODO: Implement this action
+        let viewController = UIHostingController(rootView: ResetPasswordView())
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
