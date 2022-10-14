@@ -1,7 +1,12 @@
 import SwiftUI
 
+protocol ResetPasswordViewDelegate {
+    func resetPasswordViewDidTapReset(_ view: ResetPasswordView, for email: String)
+}
+
 struct ResetPasswordView: View {
     @StateObject var viewModel = ResetPasswordViewModel()
+    var delegate: ResetPasswordViewDelegate?
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -14,7 +19,11 @@ struct ResetPasswordView: View {
             }
 
             VStack(alignment: .leading) {
-                InputFieldView(label: "Email", fieldData: $viewModel.email, showError: $viewModel.showEmailError)
+                InputFieldView(label: "Email",
+                               errorMessage: viewModel.errorMessaageEmail,
+                               iconName: "exclamationmark.circle.fill",
+                               fieldData: $viewModel.email,
+                               showError: $viewModel.showEmailError)
             }
 
             Spacer()
@@ -24,7 +33,7 @@ struct ResetPasswordView: View {
                     guard viewModel.isValidEmail() else {
                         return
                     }
-                    // self.delegate.signInFormViewDidTapSignIn(self)
+                    self.delegate?.resetPasswordViewDidTapReset(self, for: viewModel.email)
                 }, label: {
                     HStack {
                         Text("Reseteaza-ti parola")
@@ -37,12 +46,9 @@ struct ResetPasswordView: View {
                 })
             }
         }
-        .padding(.horizontal)
-    }
-}
-
-struct ResetPasswordView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResetPasswordView()
+        .padding()
+        .onChange(of: viewModel.email) { _ in
+            self.viewModel.showEmailError = false
+        }
     }
 }

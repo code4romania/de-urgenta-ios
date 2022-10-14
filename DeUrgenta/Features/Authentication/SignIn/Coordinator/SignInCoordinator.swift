@@ -16,13 +16,18 @@ final class SignInCoordinator: Coordinator {
     }
 }
 
-extension SignInCoordinator: SignInViewDelegate {
+extension SignInCoordinator: SignInViewDelegate, ResetPasswordViewDelegate {
     func signInViewDidTapSignIn(_: SignInView) {
         // TODO: Implement this action
     }
 
     func signInViewDidTapForgotPassword(_: SignInView) {
-        let viewController = UIHostingController(rootView: ResetPasswordView())
+        let viewController = UIHostingController(rootView: ResetPasswordView(delegate: self))
         navigationController.pushViewController(viewController, animated: true)
+    }
+
+    func resetPasswordViewDidTapReset(_: ResetPasswordView, for _: String) {
+        // TODO: Implement this action
+        print("I m here")
     }
 }
