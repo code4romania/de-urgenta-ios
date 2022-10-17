@@ -27,7 +27,7 @@ extension SignInCoordinator: SignInViewDelegate, ResetPasswordViewDelegate {
     }
 
     func resetPasswordViewDidTapReset(_: ResetPasswordView, for _: String) {
-        // TODO: Implement this action
-        print("I m here")
+        let viewController = UIHostingController(rootView: InsertNewPasswordView())
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
