@@ -6,7 +6,7 @@ protocol SignInViewDelegate {
 }
 
 struct SignInView: View {
-    @StateObject var viewModel = SignInViewModel()
+    @ObservedObject var viewModel: SignInViewModel
     var delegate: SignInViewDelegate
 
     var body: some View {
@@ -25,6 +25,10 @@ struct SignInView: View {
             Spacer()
         }
         .padding()
+        .modifier(Popup(isPresented: $viewModel.isPresented,
+                        alignment: .top,
+                        direction: .top,
+                        popupContent: { SnackBar() }))
     }
 }
 

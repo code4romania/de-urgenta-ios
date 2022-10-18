@@ -1,7 +1,12 @@
 import SwiftUI
 
+protocol InsertNewPasswordViewDelegate {
+    func insertNewPasswordViewDidTapSave(_ view: InsertNewPasswordView)
+}
+
 struct InsertNewPasswordView: View {
     @StateObject var viewModel = ResetPasswordViewModel()
+    var delegate: InsertNewPasswordViewDelegate
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -32,10 +37,10 @@ struct InsertNewPasswordView: View {
 
             VStack {
                 Button(action: {
-                    // TODO: Implement this code
                     guard viewModel.checkNewPassword() else {
                         return
                     }
+                    delegate.insertNewPasswordViewDidTapSave(self)
                 }, label: {
                     HStack {
                         Text("Salveaza parola")
