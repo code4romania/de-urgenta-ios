@@ -28,16 +28,16 @@ struct InsertNewPasswordView: View {
 
             InputFieldView(label: "Confirma parola noua",
                            isSecureField: true,
-                           errorMessage: viewModel.errorMessaagePassword,
+                           errorMessage: viewModel.errorMessaageConfirmationPassword,
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.confirmationPassword,
-                           showError: $viewModel.showPasswordError)
+                           showError: $viewModel.showConfirmationPasswordError)
 
             Spacer()
 
             VStack {
                 Button(action: {
-                    guard viewModel.checkNewPassword() else {
+                    guard viewModel.checkPasswordLength(), viewModel.checkConfirmationPasswordLength(), viewModel.checkPasswords() else {
                         return
                     }
                     delegate.insertNewPasswordViewDidTapSave(self)
@@ -58,6 +58,7 @@ struct InsertNewPasswordView: View {
             self.viewModel.showPasswordError = false
         }
         .onChange(of: viewModel.confirmationPassword) { _ in
+            self.viewModel.showConfirmationPasswordError = false
             self.viewModel.showPasswordError = false
         }
     }
