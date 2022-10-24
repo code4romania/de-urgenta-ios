@@ -25,6 +25,7 @@ struct SignInView: View {
             Spacer()
         }
         .padding()
+        .navigationBarHidden(false)
     }
 }
 
