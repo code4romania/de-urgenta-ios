@@ -63,5 +63,6 @@ struct EmergencyBackpackView: View {
             .padding(.bottom, 45)
         }
         .padding(.horizontal)
+        .navigationBarHidden(false)
     }
 }

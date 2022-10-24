@@ -66,5 +66,6 @@ struct CreateGroupView: View {
             .padding(.bottom, 30)
             .padding(.horizontal)
         }
+        .navigationBarHidden(false)
     }
 }
