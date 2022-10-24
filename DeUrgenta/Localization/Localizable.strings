@@ -139,7 +139,15 @@
 "Authentication.Providers.appleLabel" = "Autentifică-te cu Apple";
 "Authentication.Providers.googleLabel" = "Autentifică-te cu Google";
 "Authentication.Providers.facebookLabel" = "Autentifică-te cu Facebook";
-"Authenticaation.Error.emptyEmail" = "Te rugăm să introduci adresa de e-mail";
-"Authenticaation.Error.emptyPassword" = "Te rugăm să introduci parola";
-"Authenticaation.Error.invalidEmail" = "Emailul introdus este invalid";
-"Authenticaation.Error.invalidPassword" = "Parola introdusă este invalidă";
+"Authentication.Error.emptyEmail" = "Te rugăm să introduci adresa de e-mail";
+"Authentication.Error.emptyPassword" = "Te rugăm să introduci parola";
+"Authentication.Error.invalidEmail" = "Emailul introdus este invalid";
+"Authentication.Error.invalidPassword" = "Parola introdusă este invalidă";
+"Authentication.Error.shortPassword" = "Parola ta trebuie să aibă minim 8 caractere.";
+"Authentication.Error.notMatchingPassword" = "Parolele introduse nu corespund.";
+
+"ForgotPassword.resetButtonTitle" = "Resetează-ți parola";
+"ForgotPassword.insertNewPasswordTitle" = "Schimbă-ți parola";
+"ForgotPassword.newPasswordLabel" = "Parola nouă";
+"ForgotPassword.confirmationPasswordLabel" = "Confirmă parola nouă";
+"ForgotPassword.saveButtonTitle" = "Salvează parola";

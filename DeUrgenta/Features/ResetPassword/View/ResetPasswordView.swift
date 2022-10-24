@@ -19,7 +19,7 @@ struct ResetPasswordView: View {
             }
 
             VStack(alignment: .leading) {
-                InputFieldView(label: "Email",
+                InputFieldView(label: AppStrings.Authentication.Email.inputLabel.localized(),
                                errorMessage: viewModel.errorMessaageEmail,
                                iconName: "exclamationmark.circle.fill",
                                fieldData: $viewModel.email,
@@ -36,7 +36,7 @@ struct ResetPasswordView: View {
                     self.delegate?.resetPasswordViewDidTapReset(self, for: viewModel.email)
                 }, label: {
                     HStack {
-                        Text("Reseteaza-ti parola")
+                        Text(AppStrings.ForgotPassword.resetButtonTitle.localized())
                             .foregroundColor(.secondary)
                             .customFont(.IBMPlexSansBold, size: 16)
                     }

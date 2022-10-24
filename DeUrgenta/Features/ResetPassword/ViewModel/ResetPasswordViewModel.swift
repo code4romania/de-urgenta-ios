@@ -49,8 +49,8 @@ final class ResetPasswordViewModel: ObservableObject {
         if password != confirmationPassword {
             showPasswordError = true
             showConfirmationPasswordError = true
-            errorMessaagePassword = "Parolele introduse nu corespund."
-            errorMessaageConfirmationPassword = "Parolele introduse nu corespund."
+            errorMessaagePassword = AppStrings.Authentication.Error.notMatchingPassword.localized()
+            errorMessaageConfirmationPassword = AppStrings.Authentication.Error.notMatchingPassword.localized()
         }
         return password == confirmationPassword
     }
@@ -58,7 +58,7 @@ final class ResetPasswordViewModel: ObservableObject {
     func checkPasswordLength() -> Bool {
         if password.count <= 8 {
             showPasswordError = true
-            errorMessaagePassword = "Parola ta trebuie sa aiba minim 8 caractere."
+            errorMessaagePassword = AppStrings.Authentication.Error.shortPassword.localized()
             return false
         }
         return true
@@ -67,7 +67,7 @@ final class ResetPasswordViewModel: ObservableObject {
     func checkConfirmationPasswordLength() -> Bool {
         if confirmationPassword.count <= 8 {
             showConfirmationPasswordError = true
-            errorMessaageConfirmationPassword = "Parola ta trebuie sa aiba minim 8 caractere."
+            errorMessaageConfirmationPassword = AppStrings.Authentication.Error.shortPassword.localized()
             return false
         }
         return true

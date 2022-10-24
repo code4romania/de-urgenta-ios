@@ -224,10 +224,20 @@ enum AppStrings: String, Localizable {
         }
 
         enum Error: String, Localizable {
-            case emptyEmail = "Authenticaation.Error.emptyEmail"
-            case emptyPassword = "Authenticaation.Error.emptyPassword"
-            case invalidEmail = "Authenticaation.Error.invalidEmail"
-            case invalidPassword = "Authenticaation.Error.invalidPassword"
+            case emptyEmail = "Authentication.Error.emptyEmail"
+            case emptyPassword = "Authentication.Error.emptyPassword"
+            case invalidEmail = "Authentication.Error.invalidEmail"
+            case invalidPassword = "Authentication.Error.invalidPassword"
+            case shortPassword = "Authentication.Error.shortPassword"
+            case notMatchingPassword = "Authentication.Error.notMatchingPassword"
         }
+    }
+
+    enum ForgotPassword: String, Localizable {
+        case resetButtonTitle = "ForgotPassword.resetButtonTitle"
+        case insertNewPasswordTitle = "ForgotPassword.insertNewPasswordTitle"
+        case newPasswordLabel = "ForgotPassword.newPasswordLabel"
+        case confirmationPasswordLabel = "ForgotPassword.confirmationPasswordLabel"
+        case saveButtonTitle = "ForgotPassword.saveButtonTitle"
     }
 }

@@ -11,14 +11,14 @@ struct InsertNewPasswordView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Text("Schimba-ti parola")
+                Text(AppStrings.ForgotPassword.insertNewPasswordTitle.localized())
                     .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.bottom)
 
                 Spacer()
             }
 
-            InputFieldView(label: "Parola noua",
+            InputFieldView(label: AppStrings.ForgotPassword.newPasswordLabel.localized(),
                            isSecureField: true,
                            errorMessage: viewModel.errorMessaagePassword,
                            iconName: "exclamationmark.circle.fill",
@@ -26,7 +26,7 @@ struct InsertNewPasswordView: View {
                            showError: $viewModel.showPasswordError)
                 .padding(.bottom)
 
-            InputFieldView(label: "Confirma parola noua",
+            InputFieldView(label: AppStrings.ForgotPassword.confirmationPasswordLabel.localized(),
                            isSecureField: true,
                            errorMessage: viewModel.errorMessaageConfirmationPassword,
                            iconName: "exclamationmark.circle.fill",
@@ -43,7 +43,7 @@ struct InsertNewPasswordView: View {
                     delegate.insertNewPasswordViewDidTapSave(self)
                 }, label: {
                     HStack {
-                        Text("Salveaza parola")
+                        Text(AppStrings.ForgotPassword.saveButtonTitle.localized())
                             .foregroundColor(.secondary)
                             .customFont(.IBMPlexSansBold, size: 16)
                     }
