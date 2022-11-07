@@ -240,4 +240,9 @@ enum AppStrings: String, Localizable {
         case confirmationPasswordLabel = "ForgotPassword.confirmationPasswordLabel"
         case saveButtonTitle = "ForgotPassword.saveButtonTitle"
     }
+
+    enum SnackBar: String, Localizable {
+        case headerTitle = "SnackBar.headerTitle"
+        case textInfo = "SnackBar.textInfo"
+    }
 }

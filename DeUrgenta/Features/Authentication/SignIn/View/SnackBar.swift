@@ -9,12 +9,12 @@ struct SnackBar: View {
                     Image(systemName: "checkmark.circle")
                         .foregroundColor(.green)
 
-                    Text("Parola ta a fost schimbata")
+                    Text(AppStrings.SnackBar.headerTitle.localized())
                         .customFont(.IBMPlexSansMedium, size: 14)
                 }
                 .padding(.bottom, 5)
 
-                Text("Autentifica-te cu noua parola mai jos.")
+                Text(AppStrings.SnackBar.textInfo.localized())
                     .foregroundColor(.gray)
                     .customFont(size: 14)
             }

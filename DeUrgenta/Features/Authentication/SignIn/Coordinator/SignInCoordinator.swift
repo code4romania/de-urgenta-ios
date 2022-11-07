@@ -34,8 +34,11 @@ extension SignInCoordinator: SignInViewDelegate, ResetPasswordViewDelegate, Inse
     }
 
     func insertNewPasswordViewDidTapSave(_: InsertNewPasswordView) {
-        let viewControllers: [UIViewController] = navigationController.viewControllers as [UIViewController]
-        navigationController.popToViewController(viewControllers[viewControllers.count - 3], animated: true)
+        navigationController.viewControllers.forEach { controller in
+            if controller.isKind(of: UIHostingController<SignInView>.self) {
+                self.navigationController.popToViewController(controller, animated: true)
+            }
+        }
 
         signInViewModel.isPresented = true
     }
