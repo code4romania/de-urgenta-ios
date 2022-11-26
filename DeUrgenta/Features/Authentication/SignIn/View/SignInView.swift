@@ -25,6 +25,7 @@ struct SignInView: View {
             Spacer()
         }
         .padding()
+        .navigationBarHidden(false)
         .modifier(Popup(isPresented: $viewModel.isPresented,
                         alignment: .top,
                         direction: .top,
