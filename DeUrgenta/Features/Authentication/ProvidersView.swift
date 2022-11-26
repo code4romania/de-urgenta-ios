@@ -12,7 +12,7 @@ struct ProvidersView: View {
                         .foregroundColor(.white)
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 38)
+                .frame(maxWidth: .infinity, minHeight: 38, maxHeight: 38)
                 .background(Color.black)
                 .cornerRadius(6)
             })
@@ -26,7 +26,7 @@ struct ProvidersView: View {
                         .foregroundColor(.white)
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 38)
+                .frame(maxWidth: .infinity, minHeight: 38, maxHeight: 38)
                 .background(Color.buttonLightBlue)
                 .cornerRadius(6)
             })
@@ -40,7 +40,7 @@ struct ProvidersView: View {
                         .foregroundColor(.white)
                         .customFont(.IBMPlexSansSemiBold, size: 14)
                 }
-                .frame(maxWidth: .infinity, maxHeight: 38)
+                .frame(maxWidth: .infinity, minHeight: 38, maxHeight: 38)
                 .background(Color.buttonBlue)
                 .cornerRadius(6)
             })
