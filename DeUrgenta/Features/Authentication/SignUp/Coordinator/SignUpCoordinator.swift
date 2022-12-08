@@ -11,7 +11,7 @@ final class SignUpCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = UIHostingController(rootView: EmptyView())
+        let viewController = UIHostingController(rootView: SignUpView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }

@@ -63,6 +63,9 @@
 		62D37C4A28C630690003C41D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4928C630690003C41D /* SignInViewModel.swift */; };
 		62D37C4C28C636D00003C41D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4B28C636D00003C41D /* SignInView.swift */; };
 		62D65A2E2941C96100D44ECF /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A2D2941C96100D44ECF /* SignUpCoordinator.swift */; };
+		62D65A332941CC0100D44ECF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A322941CC0100D44ECF /* SignUpView.swift */; };
+		62D65A352941CD4B00D44ECF /* SignUpFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A342941CD4B00D44ECF /* SignUpFormView.swift */; };
+		62D65A382941CE2F00D44ECF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
 		62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */; };
@@ -151,6 +154,9 @@
 		62D37C4928C630690003C41D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		62D37C4B28C636D00003C41D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		62D65A2D2941C96100D44ECF /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		62D65A322941CC0100D44ECF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		62D65A342941CD4B00D44ECF /* SignUpFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormView.swift; sourceTree = "<group>"; };
+		62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
 		62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
@@ -524,6 +530,8 @@
 		62D65A292941C92200D44ECF /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				62D65A362941CDDF00D44ECF /* ViewModel */,
+				62D65A2F2941CBC400D44ECF /* View */,
 				62D65A2A2941C93A00D44ECF /* Coordinator */,
 			);
 			path = SignUp;
@@ -535,6 +543,23 @@
 				62D65A2D2941C96100D44ECF /* SignUpCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		62D65A2F2941CBC400D44ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62D65A322941CC0100D44ECF /* SignUpView.swift */,
+				62D65A342941CD4B00D44ECF /* SignUpFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62D65A362941CDDF00D44ECF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		62ECEB7228994E2000E0B82E /* Menu */ = {
@@ -904,6 +929,7 @@
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				6211B47228F98BFD0054AEDF /* InsertNewPasswordView.swift in Sources */,
+				62D65A352941CD4B00D44ECF /* SignUpFormView.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
 				62AFE57328A2988B006700F4 /* SettingsView.swift in Sources */,
 				62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */,
@@ -912,6 +938,7 @@
 				622EAE6B28C75CAB0072F393 /* Validator.swift in Sources */,
 				624208E128A50A9F006B9C70 /* SocialMediaIconsView.swift in Sources */,
 				624208E328A50B06006B9C70 /* DonateButttonView.swift in Sources */,
+				62D65A332941CC0100D44ECF /* SignUpView.swift in Sources */,
 				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,
 				62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */,
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
@@ -948,6 +975,7 @@
 				62C5397A28914EA9001003AD /* DropdownType.swift in Sources */,
 				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
+				62D65A382941CE2F00D44ECF /* SignUpViewModel.swift in Sources */,
 				62CE851A28C2218D009875A3 /* InputFieldView.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,
 			);
