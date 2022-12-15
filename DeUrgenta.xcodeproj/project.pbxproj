@@ -68,6 +68,7 @@
 		62D65A382941CE2F00D44ECF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
+		62DB41A8294B09B1009443F1 /* CustomCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */; };
 		62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */; };
 		62ECEB78289953F300E0B82E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB77289953F300E0B82E /* MenuView.swift */; };
 		62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */; };
@@ -159,6 +160,7 @@
 		62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
+		62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckboxView.swift; sourceTree = "<group>"; };
 		62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		62ECEB77289953F300E0B82E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -550,6 +552,7 @@
 			children = (
 				62D65A322941CC0100D44ECF /* SignUpView.swift */,
 				62D65A342941CD4B00D44ECF /* SignUpFormView.swift */,
+				62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -899,6 +902,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DB41A8294B09B1009443F1 /* CustomCheckboxView.swift in Sources */,
 				62AFE57D28A2A23C006700F4 /* TermsView.swift in Sources */,
 				62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */,
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,

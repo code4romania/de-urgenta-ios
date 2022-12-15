@@ -3,6 +3,7 @@ import SwiftUI
 
 struct SignUpFormView: View {
     @StateObject var viewModel = SignUpViewModel()
+    @State var isChecked = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
@@ -31,6 +32,8 @@ struct SignUpFormView: View {
                            fieldData: $viewModel.password,
                            showError: $viewModel.showPasswordError)
 
+            CustomCheckboxView(isChecked: $isChecked)
+
             VStack {
                 Button(action: {
                     // TODO: Implement this action
@@ -49,11 +52,5 @@ struct SignUpFormView: View {
                 })
             }
         }
-    }
-}
-
-struct SignUpFormView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpFormView()
     }
 }
