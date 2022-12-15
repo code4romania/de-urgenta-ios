@@ -255,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				622EAE6628C73A4F0072F393 /* CustomDividerView.swift */,
+				62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -552,7 +553,6 @@
 			children = (
 				62D65A322941CC0100D44ECF /* SignUpView.swift */,
 				62D65A342941CD4B00D44ECF /* SignUpFormView.swift */,
-				62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

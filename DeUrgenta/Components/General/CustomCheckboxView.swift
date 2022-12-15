@@ -20,7 +20,7 @@ struct CustomCheckboxView: View {
                 Spacer()
             }
 
-            Text("Sunt de acord cu termenii si conditiile acestei aplicatii De Urgenta.") //neee to be localized
+            Text("Sunt de acord cu termenii si conditiile acestei aplicatii De Urgenta.") // neee to be localized
                 .foregroundColor(.darkText)
                 .customFont(size: 16)
         }

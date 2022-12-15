@@ -4,7 +4,7 @@ struct SignUpView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("Creaza-ti contul")
+                Text("Creaza-ti contul") // localization
                     .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.bottom, 10)
 

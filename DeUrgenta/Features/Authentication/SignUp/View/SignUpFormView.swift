@@ -4,6 +4,7 @@ import SwiftUI
 struct SignUpFormView: View {
     @StateObject var viewModel = SignUpViewModel()
     @State var isChecked = false
+    @State var showAlert = false
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
@@ -13,7 +14,7 @@ struct SignUpFormView: View {
                            fieldData: $viewModel.firstnama,
                            showError: $viewModel.showEmailError) // need to be changed
 
-            InputFieldView(label: "Nume",
+            InputFieldView(label: "Nume", // localization
                            errorMessage: "",
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.lastname,
@@ -36,6 +37,10 @@ struct SignUpFormView: View {
 
             VStack {
                 Button(action: {
+                    guard isChecked else {
+                        showAlert = true
+                        return
+                    }
                     // TODO: Implement this action
                 }, label: {
                     HStack {
@@ -52,5 +57,10 @@ struct SignUpFormView: View {
                 })
             }
         }
+        .alert(isPresented: $showAlert, content: {
+            Alert(title: Text("Atenție"),
+                  message: Text("Trebuie să acceptați termenii și condițiile pentru a putea utiliza această aplicație."),
+                  dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
+        })
     }
 }
