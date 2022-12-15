@@ -133,6 +133,10 @@
 "Authentication.signInHeaderTitle" = "Autentifică-te";
 "Authentication.signInForgotPasswordLabel" = "Ți-ai uitat parola?";
 "Authentication.signInButtonTitle" = "Intră în contul tău";
+"Authentication.signUpHeaderTitle" = "Crează-ți contul";
+"Authentication.signUpButtonTitle" = "Mai departe";
+"Authentication.FirstName.inputLabel" = "Prenume";
+"Authentication.LastName.inputLabel" = "Nume";
 "Authentication.Email.inputLabel" = "Email";
 "Authentication.Password.inputLabel" = "Parola";
 "Authentication.Password.invalidMessage" = "Parola ta trebuie să aibă minimi 8 caractere.";
@@ -145,6 +149,11 @@
 "Authentication.Error.invalidPassword" = "Parola introdusă este invalidă";
 "Authentication.Error.shortPassword" = "Parola ta trebuie să aibă minim 8 caractere.";
 "Authentication.Error.notMatchingPassword" = "Parolele introduse nu corespund.";
+"Authentication.Error.emptyFirstName" = "Te rugăm să introduci prenumele.";
+"Authentication.Error.emptyLastName" = "Te rugăm să introduci numele.";
+"Authentication.Alert.headerTitle" = "Atenție";
+"Authentication.Alert.description" = "Trebuie să acceptați termenii și condițiile pentru a putea utiliza această aplicație.";
+
 
 "ForgotPassword.resetButtonTitle" = "Resetează-ți parola";
 "ForgotPassword.insertNewPasswordTitle" = "Schimbă-ți parola";
@@ -154,4 +163,9 @@
 
 "SnackBar.headerTitle" = "Parola ta a fost schimbată";
 "SnackBar.textInfo" = "Autentifică-te cu nouă parolă mai jos.";
+
+"CustomCheckbox.description" = "Sunt de acord cu termenii și condițiile acestei aplicații De Urgență.";
+
+"ValidationAccount.headerTitle" = "Validează-ți contul";
+"ValidationAccount.description" = "Un e-mail a fost trimis către adresa pe care ți-ai făcut contul, te rugăm să apeși linkul pentru validarea contului.";
 

@@ -10,7 +10,7 @@ struct SignUpView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                Text("Creaza-ti contul") // localization
+                Text(AppStrings.Authentication.signUpHeaderTItle.localized())
                     .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.bottom, 10)
 

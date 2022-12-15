@@ -14,13 +14,13 @@ struct SignUpFormView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
-            InputFieldView(label: "Prenume", // localization
+            InputFieldView(label: AppStrings.Authentication.FirstName.inputLabel.localized(),
                            errorMessage: viewModel.errorMessageFirstName,
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.firstname,
                            showError: $viewModel.showFirstNameError)
 
-            InputFieldView(label: "Nume", // localization
+            InputFieldView(label: AppStrings.Authentication.LastName.inputLabel.localized(),
                            errorMessage: viewModel.errorMessageLastName,
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.lastname,
@@ -61,7 +61,7 @@ struct SignUpFormView: View {
 
                 }, label: {
                     HStack {
-                        Text("Mai departe")
+                        Text(AppStrings.Authentication.signUpButtonTitle.localized())
                             .foregroundColor(.secondary)
                             .customFont(.IBMPlexSansBold, size: 16)
 
@@ -75,8 +75,8 @@ struct SignUpFormView: View {
             }
         }
         .alert(isPresented: $showAlert, content: {
-            Alert(title: Text("Atenție"),
-                  message: Text("Trebuie să acceptați termenii și condițiile pentru a putea utiliza această aplicație."),
+            Alert(title: Text(AppStrings.Authentication.Alert.headerTitle.localized()),
+                  message: Text(AppStrings.Authentication.Alert.description.localized()),
                   dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
         })
         .onChange(of: viewModel.firstname) { _ in

@@ -5,18 +5,17 @@ struct ValidationAccountView: View {
         VStack {
             HStack {
                 Image("icon-envelope-large")
-
                 Spacer()
             }
             .padding(.horizontal)
             .padding(.top, 100)
 
-            Text("Valideaza-ti contul")
+            Text(AppStrings.ValidationAccount.headerTitle.localized())
                 .foregroundColor(.darkText)
                 .customFont(.IBMPlexSansBold, size: 36)
                 .padding(.vertical)
 
-            Text("Un e-mail a fost trimis catre adresa pe care ti-ai facut contul bla bla te rugam sa apesi linkul pt validarea contului etc.")
+            Text(AppStrings.ValidationAccount.description.localized())
                 .foregroundColor(.darkText)
                 .customFont(size: 16)
                 .lineSpacing(5)

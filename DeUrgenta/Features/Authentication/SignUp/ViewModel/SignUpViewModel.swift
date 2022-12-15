@@ -11,8 +11,8 @@ final class SignUpViewModel: ObservableObject {
     @Published var showEmailError: Bool = false
     @Published var showPasswordError: Bool = false
 
-    @Published var errorMessageFirstName: String = "Te rugam sa introduci prenumele."
-    @Published var errorMessageLastName: String = "Te rugam sa introduci numele."
+    @Published var errorMessageFirstName: String = AppStrings.Authentication.Error.emptyFirstName.localized()
+    @Published var errorMessageLastName: String = AppStrings.Authentication.Error.emptyLastName.localized()
     @Published var showFirstNameError: Bool = false
     @Published var showLastNameError: Bool = false
 
