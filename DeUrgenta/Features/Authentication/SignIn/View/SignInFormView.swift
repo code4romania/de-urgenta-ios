@@ -12,14 +12,14 @@ struct SignInFormView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             InputFieldView(label: AppStrings.Authentication.Email.inputLabel.localized(),
-                           errorMessage: viewModel.errorMessaageEmail,
+                           errorMessage: viewModel.errorMessageEmail,
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.email,
                            showError: $viewModel.showEmailError)
 
             InputFieldView(label: AppStrings.Authentication.Password.inputLabel.localized(),
                            isSecureField: true,
-                           errorMessage: viewModel.errorMessaagePassword,
+                           errorMessage: viewModel.errorMessagePassword,
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.password,
                            showError: $viewModel.showPasswordError)

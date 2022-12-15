@@ -9,16 +9,16 @@ struct SignUpFormView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
             InputFieldView(label: "Prenume", // localization
-                           errorMessage: "",
+                           errorMessage: viewModel.errorMessageFirstName,
                            iconName: "exclamationmark.circle.fill",
-                           fieldData: $viewModel.firstnama,
-                           showError: $viewModel.showEmailError) // need to be changed
+                           fieldData: $viewModel.firstname,
+                           showError: $viewModel.showFirstNameError)
 
             InputFieldView(label: "Nume", // localization
-                           errorMessage: "",
+                           errorMessage: viewModel.errorMessageLastName,
                            iconName: "exclamationmark.circle.fill",
                            fieldData: $viewModel.lastname,
-                           showError: $viewModel.showEmailError) // need to be changed
+                           showError: $viewModel.showLastNameError)
 
             InputFieldView(label: AppStrings.Authentication.Email.inputLabel.localized(),
                            errorMessage: viewModel.errorMessageEmail,
@@ -37,10 +37,20 @@ struct SignUpFormView: View {
 
             VStack {
                 Button(action: {
+                    let isValidFirstName = viewModel.isValidFirstName()
+                    let isValidLastName = viewModel.isValidLastName()
+                    let isValidEmail = viewModel.isValidEmail()
+                    let isValidPassword = viewModel.isValidPassword()
+
+                    guard isValidFirstName, isValidLastName, isValidEmail, isValidPassword else {
+                        return
+                    }
+
                     guard isChecked else {
                         showAlert = true
                         return
                     }
+
                     // TODO: Implement this action
                 }, label: {
                     HStack {
@@ -62,5 +72,17 @@ struct SignUpFormView: View {
                   message: Text("Trebuie să acceptați termenii și condițiile pentru a putea utiliza această aplicație."),
                   dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
         })
+        .onChange(of: viewModel.firstname) { _ in
+            self.viewModel.showFirstNameError = false
+        }
+        .onChange(of: viewModel.lastname) { _ in
+            self.viewModel.showLastNameError = false
+        }
+        .onChange(of: viewModel.email) { _ in
+            self.viewModel.showEmailError = false
+        }
+        .onChange(of: viewModel.password) { _ in
+            self.viewModel.showPasswordError = false
+        }
     }
 }

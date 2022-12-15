@@ -3,8 +3,8 @@ import Foundation
 class SignInViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
-    @Published var errorMessaageEmail: String = ""
-    @Published var errorMessaagePassword: String = ""
+    @Published var errorMessageEmail: String = ""
+    @Published var errorMessagePassword: String = ""
     @Published var showEmailError: Bool = false
     @Published var showPasswordError: Bool = false
     @Published var isPresented: Bool = false
@@ -16,10 +16,10 @@ class SignInViewModel: ObservableObject {
             return try validator.isValidData(data: email, type: .email)
         } catch ValidationError.empty {
             showEmailError = true
-            errorMessaageEmail = AppStrings.Authentication.Error.emptyEmail.localized()
+            errorMessageEmail = AppStrings.Authentication.Error.emptyEmail.localized()
         } catch ValidationError.invalid {
             showEmailError = true
-            errorMessaageEmail = AppStrings.Authentication.Error.invalidEmail.localized()
+            errorMessageEmail = AppStrings.Authentication.Error.invalidEmail.localized()
         } catch {
             return false
         }
@@ -31,10 +31,10 @@ class SignInViewModel: ObservableObject {
             return try validator.isValidData(data: password, type: .password)
         } catch ValidationError.empty {
             showPasswordError = true
-            errorMessaagePassword = AppStrings.Authentication.Error.emptyPassword.localized()
+            errorMessagePassword = AppStrings.Authentication.Error.emptyPassword.localized()
         } catch ValidationError.invalid {
             showPasswordError = true
-            errorMessaagePassword = AppStrings.Authentication.Error.invalidPassword.localized()
+            errorMessagePassword = AppStrings.Authentication.Error.invalidPassword.localized()
         } catch {
             return false
         }
