@@ -1,6 +1,12 @@
 import SwiftUI
 
+protocol SignUpViewDelegate {
+    func signUpViewDidTapSignUp(_ view: SignUpView)
+}
+
 struct SignUpView: View {
+    var delegate: SignUpViewDelegate
+
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -8,7 +14,7 @@ struct SignUpView: View {
                     .customFont(.IBMPlexSansSemiBold, size: 23)
                     .padding(.bottom, 10)
 
-                SignUpFormView()
+                SignUpFormView(delegate: self)
 
                 Spacer()
 
@@ -23,8 +29,8 @@ struct SignUpView: View {
     }
 }
 
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
+extension SignUpView: SignUpFormViewDelegate {
+    func signUpFormViewDidTapSignUp(_: SignUpFormView) {
+        delegate.signUpViewDidTapSignUp(self)
     }
 }

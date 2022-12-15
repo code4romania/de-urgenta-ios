@@ -11,7 +11,14 @@ final class SignUpCoordinator: Coordinator {
     }
 
     func start() {
-        let viewController = UIHostingController(rootView: SignUpView())
+        let viewController = UIHostingController(rootView: SignUpView(delegate: self))
+        navigationController.pushViewController(viewController, animated: true)
+    }
+}
+
+extension SignUpCoordinator: SignUpViewDelegate {
+    func signUpViewDidTapSignUp(_: SignUpView) {
+        let viewController = UIHostingController(rootView: ValidationAccountView())
         navigationController.pushViewController(viewController, animated: true)
     }
 }

@@ -1,10 +1,16 @@
 
 import SwiftUI
 
+protocol SignUpFormViewDelegate {
+    func signUpFormViewDidTapSignUp(_ view: SignUpFormView)
+}
+
 struct SignUpFormView: View {
     @StateObject var viewModel = SignUpViewModel()
     @State var isChecked = false
     @State var showAlert = false
+
+    var delegate: SignUpFormViewDelegate
 
     var body: some View {
         VStack(alignment: .leading, spacing: 24) {
@@ -51,7 +57,8 @@ struct SignUpFormView: View {
                         return
                     }
 
-                    // TODO: Implement this action
+                    delegate.signUpFormViewDidTapSignUp(self)
+
                 }, label: {
                     HStack {
                         Text("Mai departe")
