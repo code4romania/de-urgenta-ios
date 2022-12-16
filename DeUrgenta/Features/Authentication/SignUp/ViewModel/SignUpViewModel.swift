@@ -1,15 +1,40 @@
 import Foundation
 
-class SignInViewModel: ObservableObject {
+final class SignUpViewModel: ObservableObject {
+    @Published var firstName: String = ""
+    @Published var lastName: String = ""
     @Published var email: String = ""
     @Published var password: String = ""
+
     @Published var errorMessageEmail: String = ""
     @Published var errorMessagePassword: String = ""
     @Published var showEmailError: Bool = false
     @Published var showPasswordError: Bool = false
-    @Published var isPresented: Bool = false
+
+    @Published var errorMessageFirstName: String = AppStrings.Authentication.Error.emptyFirstName.localized()
+    @Published var errorMessageLastName: String = AppStrings.Authentication.Error.emptyLastName.localized()
+    @Published var showFirstNameError: Bool = false
+    @Published var showLastNameError: Bool = false
+
+    @Published var areTermsAndConditionsAccepted: Bool = false
 
     private let validator = Validator.shared
+
+    func isValidFirstName() -> Bool {
+        if firstName.isEmpty {
+            showFirstNameError = true
+            return false
+        }
+        return true
+    }
+
+    func isValidLastName() -> Bool {
+        if lastName.isEmpty {
+            showLastNameError = true
+            return false
+        }
+        return true
+    }
 
     func isValidEmail() -> Bool {
         do {

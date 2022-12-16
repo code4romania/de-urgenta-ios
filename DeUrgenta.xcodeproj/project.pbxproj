@@ -62,8 +62,14 @@
 		62D37C4828C62E3A0003C41D /* SignInFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4728C62E3A0003C41D /* SignInFormView.swift */; };
 		62D37C4A28C630690003C41D /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4928C630690003C41D /* SignInViewModel.swift */; };
 		62D37C4C28C636D00003C41D /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D37C4B28C636D00003C41D /* SignInView.swift */; };
+		62D65A2E2941C96100D44ECF /* SignUpCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A2D2941C96100D44ECF /* SignUpCoordinator.swift */; };
+		62D65A332941CC0100D44ECF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A322941CC0100D44ECF /* SignUpView.swift */; };
+		62D65A352941CD4B00D44ECF /* SignUpFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A342941CD4B00D44ECF /* SignUpFormView.swift */; };
+		62D65A382941CE2F00D44ECF /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */; };
 		62D6B75C286AEF2400F7A9B9 /* AddGroupNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */; };
 		62D6B761286B182400F7A9B9 /* SetMeetPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */; };
+		62DB41A8294B09B1009443F1 /* CustomCheckboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */; };
+		62DB41AB294B1B94009443F1 /* ValidationAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DB41AA294B1B94009443F1 /* ValidationAccountView.swift */; };
 		62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */; };
 		62ECEB78289953F300E0B82E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB77289953F300E0B82E /* MenuView.swift */; };
 		62ECEB7B2899559A00E0B82E /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */; };
@@ -149,8 +155,14 @@
 		62D37C4728C62E3A0003C41D /* SignInFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInFormView.swift; sourceTree = "<group>"; };
 		62D37C4928C630690003C41D /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
 		62D37C4B28C636D00003C41D /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		62D65A2D2941C96100D44ECF /* SignUpCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCoordinator.swift; sourceTree = "<group>"; };
+		62D65A322941CC0100D44ECF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		62D65A342941CD4B00D44ECF /* SignUpFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpFormView.swift; sourceTree = "<group>"; };
+		62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		62D6B75B286AEF2400F7A9B9 /* AddGroupNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupNameView.swift; sourceTree = "<group>"; };
 		62D6B760286B182400F7A9B9 /* SetMeetPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetMeetPointsView.swift; sourceTree = "<group>"; };
+		62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckboxView.swift; sourceTree = "<group>"; };
+		62DB41AA294B1B94009443F1 /* ValidationAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAccountView.swift; sourceTree = "<group>"; };
 		62ECEB7528994E6600E0B82E /* MenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCoordinator.swift; sourceTree = "<group>"; };
 		62ECEB77289953F300E0B82E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		62ECEB7A2899559A00E0B82E /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
@@ -245,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				622EAE6628C73A4F0072F393 /* CustomDividerView.swift */,
+				62DB41A7294B09B1009443F1 /* CustomCheckboxView.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -469,6 +482,7 @@
 			isa = PBXGroup;
 			children = (
 				62CE851128C217CE009875A3 /* SignIn */,
+				62D65A292941C92200D44ECF /* SignUp */,
 				622EAE6828C7418B0072F393 /* ProvidersView.swift */,
 			);
 			path = Authentication;
@@ -516,6 +530,42 @@
 				62CE851928C2218D009875A3 /* InputFieldView.swift */,
 			);
 			path = Form;
+			sourceTree = "<group>";
+		};
+		62D65A292941C92200D44ECF /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				62D65A362941CDDF00D44ECF /* ViewModel */,
+				62D65A2F2941CBC400D44ECF /* View */,
+				62D65A2A2941C93A00D44ECF /* Coordinator */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		62D65A2A2941C93A00D44ECF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				62D65A2D2941C96100D44ECF /* SignUpCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		62D65A2F2941CBC400D44ECF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				62D65A322941CC0100D44ECF /* SignUpView.swift */,
+				62D65A342941CD4B00D44ECF /* SignUpFormView.swift */,
+				62DB41AA294B1B94009443F1 /* ValidationAccountView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62D65A362941CDDF00D44ECF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				62D65A372941CE2F00D44ECF /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		62ECEB7228994E2000E0B82E /* Menu */ = {
@@ -855,6 +905,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DB41A8294B09B1009443F1 /* CustomCheckboxView.swift in Sources */,
 				62AFE57D28A2A23C006700F4 /* TermsView.swift in Sources */,
 				62C708E7287EF5DA00E73D71 /* CategoryView.swift in Sources */,
 				BB8F3EC62842408500278975 /* AppStrings.swift in Sources */,
@@ -885,6 +936,7 @@
 				DEEA05F6284215C100140ADB /* Coordinator.swift in Sources */,
 				62AF98C02877083400BCFA11 /* EmergencyBackpackCoordinator.swift in Sources */,
 				6211B47228F98BFD0054AEDF /* InsertNewPasswordView.swift in Sources */,
+				62D65A352941CD4B00D44ECF /* SignUpFormView.swift in Sources */,
 				622AE036288E8C86004362F7 /* FirstAidIntroView.swift in Sources */,
 				62AFE57328A2988B006700F4 /* SettingsView.swift in Sources */,
 				62C6911F289D3B9D005FF6F8 /* FontManager.swift in Sources */,
@@ -893,6 +945,7 @@
 				622EAE6B28C75CAB0072F393 /* Validator.swift in Sources */,
 				624208E128A50A9F006B9C70 /* SocialMediaIconsView.swift in Sources */,
 				624208E328A50B06006B9C70 /* DonateButttonView.swift in Sources */,
+				62D65A332941CC0100D44ECF /* SignUpView.swift in Sources */,
 				622DE7D5288ED020000657B1 /* Dropdown.swift in Sources */,
 				62CC0A752875724800374984 /* AddMemberButtonView.swift in Sources */,
 				62AC818C285B3E0A00ACAF3E /* CreateGroupView.swift in Sources */,
@@ -911,10 +964,12 @@
 				BB8F3ED02842577A00278975 /* AccountConfigCoordinator.swift in Sources */,
 				620CDAE428800C7300E37BD9 /* CategoryViewModel.swift in Sources */,
 				62D37C4C28C636D00003C41D /* SignInView.swift in Sources */,
+				62D65A2E2941C96100D44ECF /* SignUpCoordinator.swift in Sources */,
 				629B927E287C0F1D003648D4 /* EmergencyBackpackView.swift in Sources */,
 				62ECEB7628994E6600E0B82E /* MenuCoordinator.swift in Sources */,
 				624208DF28A50A6D006B9C70 /* SpinnerView.swift in Sources */,
 				62AB887B286DC42500A7801C /* SearchBar.swift in Sources */,
+				62DB41AB294B1B94009443F1 /* ValidationAccountView.swift in Sources */,
 				62ECEB7E289955D700E0B82E /* MenuOptions.swift in Sources */,
 				BB8F3EBF28423C0F00278975 /* LandingPageView.swift in Sources */,
 				62AB8871286D8E8E00A7801C /* ContactsView.swift in Sources */,
@@ -928,6 +983,7 @@
 				62C5397A28914EA9001003AD /* DropdownType.swift in Sources */,
 				6256E7EC28883E16003C1175 /* BackpackContactsView.swift in Sources */,
 				BB8F3EBE28423C0F00278975 /* LandingPageCoordinator.swift in Sources */,
+				62D65A382941CE2F00D44ECF /* SignUpViewModel.swift in Sources */,
 				62CE851A28C2218D009875A3 /* InputFieldView.swift in Sources */,
 				BB8F3ED828425EA900278975 /* ConfigStepView.swift in Sources */,
 			);

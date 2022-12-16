@@ -207,6 +207,16 @@ enum AppStrings: String, Localizable {
         case signInHeaderTitle = "Authentication.signInHeaderTitle"
         case signInForgotPasswordLabel = "Authentication.signInForgotPasswordLabel"
         case signInButtonTitle = "Authentication.signInButtonTitle"
+        case signUpHeaderTitle = "Authentication.signUpHeaderTitle"
+        case signUpButtonTitle = "Authentication.signUpButtonTitle"
+
+        enum FirstName: String, Localizable {
+            case inputLabel = "Authentication.FirstName.inputLabel"
+        }
+
+        enum LastName: String, Localizable {
+            case inputLabel = "Authentication.LastName.inputLabel"
+        }
 
         enum Email: String, Localizable {
             case inputLabel = "Authentication.Email.inputLabel"
@@ -230,6 +240,13 @@ enum AppStrings: String, Localizable {
             case invalidPassword = "Authentication.Error.invalidPassword"
             case shortPassword = "Authentication.Error.shortPassword"
             case notMatchingPassword = "Authentication.Error.notMatchingPassword"
+            case emptyFirstName = "Authentication.Error.emptyFirstName"
+            case emptyLastName = "Authentication.Error.emptyLastName"
+        }
+
+        enum Alert: String, Localizable {
+            case headerTitle = "Authentication.Alert.headerTitle"
+            case description = "Authentication.Alert.description"
         }
     }
 
@@ -244,5 +261,14 @@ enum AppStrings: String, Localizable {
     enum SnackBar: String, Localizable {
         case headerTitle = "SnackBar.headerTitle"
         case textInfo = "SnackBar.textInfo"
+    }
+
+    enum CustomCheckbox: String, Localizable {
+        case description = "CustomCheckbox.description"
+    }
+
+    enum ValidationAccount: String, Localizable {
+        case headerTitle = "ValidationAccount.headerTitle"
+        case description = "ValidationAccount.description"
     }
 }

@@ -40,7 +40,9 @@ extension ApplicationCoordinator: LandingPageCoordinatorDelegate {
     }
 
     func landingPageCoordinatorShouldPresentSignUp(_: LandingPageCoordinator) {
-        // TODO: Implement this method
+        let coordinator = SignUpCoordinator(navigationController: navigationController)
+        addChildCoordinator(coordinator)
+        coordinator.start()
     }
 }
 
