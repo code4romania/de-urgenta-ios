@@ -154,7 +154,6 @@
 "Authentication.Alert.headerTitle" = "Atenție";
 "Authentication.Alert.description" = "Trebuie să acceptați termenii și condițiile pentru a putea utiliza această aplicație.";
 
-
 "ForgotPassword.resetButtonTitle" = "Resetează-ți parola";
 "ForgotPassword.insertNewPasswordTitle" = "Schimbă-ți parola";
 "ForgotPassword.newPasswordLabel" = "Parola nouă";

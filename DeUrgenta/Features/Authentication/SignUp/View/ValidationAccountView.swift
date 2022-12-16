@@ -26,9 +26,3 @@ struct ValidationAccountView: View {
         .padding()
     }
 }
-
-struct ValidationAccountView_Previews: PreviewProvider {
-    static var previews: some View {
-        ValidationAccountView()
-    }
-}

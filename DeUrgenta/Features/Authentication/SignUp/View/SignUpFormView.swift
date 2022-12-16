@@ -17,13 +17,13 @@ struct SignUpFormView: View {
             InputFieldView(label: AppStrings.Authentication.FirstName.inputLabel.localized(),
                            errorMessage: viewModel.errorMessageFirstName,
                            iconName: "exclamationmark.circle.fill",
-                           fieldData: $viewModel.firstname,
+                           fieldData: $viewModel.firstName,
                            showError: $viewModel.showFirstNameError)
 
             InputFieldView(label: AppStrings.Authentication.LastName.inputLabel.localized(),
                            errorMessage: viewModel.errorMessageLastName,
                            iconName: "exclamationmark.circle.fill",
-                           fieldData: $viewModel.lastname,
+                           fieldData: $viewModel.lastName,
                            showError: $viewModel.showLastNameError)
 
             InputFieldView(label: AppStrings.Authentication.Email.inputLabel.localized(),
@@ -79,10 +79,10 @@ struct SignUpFormView: View {
                   message: Text(AppStrings.Authentication.Alert.description.localized()),
                   dismissButton: .default(Text(AppStrings.ContactRow.alertDismissButton.localized())))
         })
-        .onChange(of: viewModel.firstname) { _ in
+        .onChange(of: viewModel.firstName) { _ in
             self.viewModel.showFirstNameError = false
         }
-        .onChange(of: viewModel.lastname) { _ in
+        .onChange(of: viewModel.lastName) { _ in
             self.viewModel.showLastNameError = false
         }
         .onChange(of: viewModel.email) { _ in

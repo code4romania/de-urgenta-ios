@@ -7,11 +7,7 @@ struct CustomCheckboxView: View {
         HStack {
             VStack {
                 Button(action: {
-                    if isChecked {
-                        isChecked = false
-                    } else {
-                        isChecked = true
-                    }
+                    isChecked = !isChecked
                 }, label: {
                     Image(systemName: isChecked ? "checkmark.square.fill" : "square")
                         .foregroundColor(Color.red)

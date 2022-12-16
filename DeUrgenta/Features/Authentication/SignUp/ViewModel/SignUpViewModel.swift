@@ -1,8 +1,8 @@
 import Foundation
 
 final class SignUpViewModel: ObservableObject {
-    @Published var firstname: String = ""
-    @Published var lastname: String = ""
+    @Published var firstName: String = ""
+    @Published var lastName: String = ""
     @Published var email: String = ""
     @Published var password: String = ""
 
@@ -21,7 +21,7 @@ final class SignUpViewModel: ObservableObject {
     private let validator = Validator.shared
 
     func isValidFirstName() -> Bool {
-        if firstname.isEmpty {
+        if firstName.isEmpty {
             showFirstNameError = true
             return false
         }
@@ -29,7 +29,7 @@ final class SignUpViewModel: ObservableObject {
     }
 
     func isValidLastName() -> Bool {
-        if lastname.isEmpty {
+        if lastName.isEmpty {
             showLastNameError = true
             return false
         }

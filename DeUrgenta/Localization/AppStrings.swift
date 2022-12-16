@@ -207,7 +207,7 @@ enum AppStrings: String, Localizable {
         case signInHeaderTitle = "Authentication.signInHeaderTitle"
         case signInForgotPasswordLabel = "Authentication.signInForgotPasswordLabel"
         case signInButtonTitle = "Authentication.signInButtonTitle"
-        case signUpHeaderTItle = "Authentication.signUpHeaderTitle"
+        case signUpHeaderTitle = "Authentication.signUpHeaderTitle"
         case signUpButtonTitle = "Authentication.signUpButtonTitle"
 
         enum FirstName: String, Localizable {
