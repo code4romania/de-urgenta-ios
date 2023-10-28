@@ -1,0 +1,1555 @@
+{
+  "sourceLanguage" : "ro",
+  "strings" : {
+    "" : {
+
+    },
+    "(Admin) Corina Dobre" : {
+
+    },
+    "%@" : {
+
+    },
+    "%@ %@" : {
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$@"
+          }
+        }
+      }
+    },
+    "AboutView.donateButtonText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donează"
+          }
+        }
+      }
+    },
+    "AboutView.headerIconText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soluție proiectată, dezvoltată și administrată de"
+          }
+        }
+      }
+    },
+    "AboutView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Despre aplicație"
+          }
+        }
+      }
+    },
+    "AboutView.logoText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DE URGENȚĂ"
+          }
+        }
+      }
+    },
+    "AccountConfig.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurează‑ți contul"
+          }
+        }
+      }
+    },
+    "AddGroupName.alertDismissButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "AddGroupName.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denumirea grupului este obligatorie."
+          }
+        }
+      }
+    },
+    "AddGroupName.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Important"
+          }
+        }
+      }
+    },
+    "AddGroupName.continueButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuă"
+          }
+        }
+      }
+    },
+    "AddGroupName.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creează-ți grupul de prieteni"
+          }
+        }
+      }
+    },
+    "AddGroupName.textFieldPlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fii creativ..."
+          }
+        }
+      }
+    },
+    "AddGroupName.textFieldTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Denumirea grupului"
+          }
+        }
+      }
+    },
+    "AddItemSection.addNameLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nume produs"
+          }
+        }
+      }
+    },
+    "AddItemSection.addNamePlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Introdu nume produs"
+          }
+        }
+      }
+    },
+    "AddItemSection.expirationDateLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expiră la:"
+          }
+        }
+      }
+    },
+    "AddItemSection.quantityLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cantitate"
+          }
+        }
+      }
+    },
+    "AddItemSection.quantityPlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1"
+          }
+        }
+      }
+    },
+    "AddNewManagerView.addManagerButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă un responsabil"
+          }
+        }
+      }
+    },
+    "AddNewManagerView.addManagerHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alege responsabil"
+          }
+        }
+      }
+    },
+    "AddNewManagerView.firstParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Această acțiune va crea un nou rucsac în profilul tău pentru a-l putea împărți cu alte persoane cu care locuiești. Poți invită noi responsabili fie dintre persoanele care sunt parte din grupul/grupurile tale sau o persoană complet nouă."
+          }
+        }
+      }
+    },
+    "AddNewManagerView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă responsabil nou"
+          }
+        }
+      }
+    },
+    "AddNewManagerView.secondParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pare că ai adăugat deja resurse în rucsac. Bifează mai jos dacă vrei să transferi resursele din rucsacul tău în noul rucsac pe care îl împarți cu alte persoane."
+          }
+        }
+      }
+    },
+    "AddNewManagerView.toggleLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Transferă resurse în noul rucsac"
+          }
+        }
+      }
+    },
+    "Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque id at vitae feugiat egestas ac. Diam nulla orci at in viverra scelerisque eget. Eleifend egestas fringilla sapien." : {
+
+    },
+    "Authentication.Alert.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trebuie să acceptați termenii și condițiile pentru a putea utiliza această aplicație."
+          }
+        }
+      }
+    },
+    "Authentication.Alert.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atenție"
+          }
+        }
+      }
+    },
+    "Authentication.Email.inputLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email"
+          }
+        }
+      }
+    },
+    "Authentication.Error.emptyEmail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rugăm să introduci adresa de e-mail"
+          }
+        }
+      }
+    },
+    "Authentication.Error.emptyFirstName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rugăm să introduci prenumele."
+          }
+        }
+      }
+    },
+    "Authentication.Error.emptyLastName" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rugăm să introduci numele."
+          }
+        }
+      }
+    },
+    "Authentication.Error.emptyPassword" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Te rugăm să introduci parola"
+          }
+        }
+      }
+    },
+    "Authentication.Error.invalidEmail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emailul introdus este invalid"
+          }
+        }
+      }
+    },
+    "Authentication.Error.invalidPassword" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola introdusă este invalidă"
+          }
+        }
+      }
+    },
+    "Authentication.Error.notMatchingPassword" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parolele introduse nu corespund."
+          }
+        }
+      }
+    },
+    "Authentication.Error.shortPassword" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola ta trebuie să aibă minim 8 caractere."
+          }
+        }
+      }
+    },
+    "Authentication.FirstName.inputLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenume"
+          }
+        }
+      }
+    },
+    "Authentication.LastName.inputLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nume"
+          }
+        }
+      }
+    },
+    "Authentication.Password.inputLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola"
+          }
+        }
+      }
+    },
+    "Authentication.Password.invalidMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola ta trebuie să aibă minimi 8 caractere."
+          }
+        }
+      }
+    },
+    "Authentication.Providers.appleLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentifică-te cu Apple"
+          }
+        }
+      }
+    },
+    "Authentication.Providers.facebookLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentifică-te cu Facebook"
+          }
+        }
+      }
+    },
+    "Authentication.Providers.googleLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentifică-te cu Google"
+          }
+        }
+      }
+    },
+    "Authentication.signInButtonTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Intră în contul tău"
+          }
+        }
+      }
+    },
+    "Authentication.signInForgotPasswordLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ți-ai uitat parola?"
+          }
+        }
+      }
+    },
+    "Authentication.signInHeaderTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentifică-te"
+          }
+        }
+      }
+    },
+    "Authentication.signUpButtonTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mai departe"
+          }
+        }
+      }
+    },
+    "Authentication.signUpHeaderTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crează-ți contul"
+          }
+        }
+      }
+    },
+    "Avengers32 (5/30)" : {
+
+    },
+    "BackpackContactsView.alertMessageText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pentru a fi responsabilul"
+          }
+        }
+      }
+    },
+    "cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RENUNȚĂ"
+          }
+        }
+      }
+    },
+    "CategoryItem.docsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Documente"
+          }
+        }
+      }
+    },
+    "CategoryItem.firstAidKitTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trusa de prim ajutor"
+          }
+        }
+      }
+    },
+    "CategoryItem.foodTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apă și alimente"
+          }
+        }
+      }
+    },
+    "CategoryItem.hygieneItemsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Articole de igienă"
+          }
+        }
+      }
+    },
+    "CategoryItem.mixedTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diverse"
+          }
+        }
+      }
+    },
+    "CategoryItem.survivalItemsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Articole de supraviețuire"
+          }
+        }
+      }
+    },
+    "CategoryView.addItemButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă produs"
+          }
+        }
+      }
+    },
+    "CategoryView.alertButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "CategoryView.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numele produsului este obligatoriu"
+          }
+        }
+      }
+    },
+    "CategoryView.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atenție"
+          }
+        }
+      }
+    },
+    "CategoryView.saveItemButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvează produs"
+          }
+        }
+      }
+    },
+    "ContactRow.alertDismissButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "ContactRow.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ați trimis deja o invitație către "
+          }
+        }
+      }
+    },
+    "ContactRow.buttonText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă"
+          }
+        }
+      }
+    },
+    "ContactsView.inviteFriendsButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invită-ți prietenii"
+          }
+        }
+      }
+    },
+    "ConteactRow.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atenție"
+          }
+        }
+      }
+    },
+    "Continuă" : {
+
+    },
+    "CreateGroup.addGroup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crează un grup nou"
+          }
+        }
+      }
+    },
+    "CreateGroup.firstParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "În eventualitatea unui cutremur este important să ai un protocol împreună cu cei apropiați prin care vă puteți regăsi cu ușurință. Creează un grup de prieteni, de familie sau de colegi de la birou sau școală pentru a vă seta puncte de întâlnire în caz de cutremur."
+          }
+        }
+      }
+    },
+    "CreateGroup.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creează-ți un grup"
+          }
+        }
+      }
+    },
+    "CreateGroup.noGroup" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nu vreau să creez un grup acum"
+          }
+        }
+      }
+    },
+    "CreateGroup.secondParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiar dacă nu vei avea acces la internet în acele momente, poți folosi în continuare aplicație pentru a vedea care sunt punctele de întâlnire și pentru a identifica traseele pentru a ajunge acolo. De asemenea, poți vedea, cu permisiunea lor, traseele și adresele uzuale ale membrilor grupului tău și îi poți căuta dacă aceștia nu vin la punctul de întâlnire."
+          }
+        }
+      }
+    },
+    "CustomCheckbox.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunt de acord cu termenii și condițiile acestei aplicații De Urgență."
+          }
+        }
+      }
+    },
+    "dividerLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sau"
+          }
+        }
+      }
+    },
+    "EmergencyBackpackView.addBackpackButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă un rucsac nou"
+          }
+        }
+      }
+    },
+    "EmergencyBackpackView.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rucsacul de urgență conține obiecte, alimente și alte lucruri utile care vă vor ajuta să supraviețuiți cel puțin 72 de ore într-o situație critică. În pașii următori vei afla ce trebuie să conțină acest rucsac, să te asiguri că ai minimul necesar adăugat în el și poți să alegi cine dintre persoanele cu care locuiești este responsabil de actualizarea sa. "
+          }
+        }
+      }
+    },
+    "EmergencyBackpackView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fă-ți rucsacul de urgență"
+          }
+        }
+      }
+    },
+    "EmergencyBackpackView.remindMeLaterButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amintește-mi mai târziu"
+          }
+        }
+      }
+    },
+    "Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id. Id dolor praesent donec est. Odio penatibus risus viverra tellus varius sit neque erat velit. Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus enim. Mattis mauris semper sed amet vitae sed turpis id." : {
+
+    },
+    "FirstAidIntroView.firstParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este foarte important să poți să îi ajuți pe cei din jur într-o situație de urgență."
+          }
+        }
+      }
+    },
+    "FirstAidIntroView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Învață să dai primul ajutor"
+          }
+        }
+      }
+    },
+    "FirstAidIntroView.secondParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Există două tipuri de cursuri de prim ajutor pe care le poți face. Primul se numește ”Prim ajutor calificat” și este un tip de curs pe care îl poți face doar la Inspectorajul Județean pentru Situații de Urgență. Al doilea tip este cel de prim-ajutor, pe care îl poți face la organizații precum Societatea Națională de Cruce Roșie sau alți furnizori de cursuri. Există de asemenea și cursuri de pregătire în caz de dezastre."
+          }
+        }
+      }
+    },
+    "FirstAidIntroView.thirdParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Certificările de prim ajutor trebuie reînnointe la intervale diferite de timp. De Urgență te ajută să alegi un curs potrivit pentru tine și te va anunța când certificarea ta expiră pentru a reînnoi cursul."
+          }
+        }
+      }
+    },
+    "FirstAidIntroView.viewCoursesButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vezi cursurile"
+          }
+        }
+      }
+    },
+    "ForgotPassword.confirmationPasswordLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Confirmă parola nouă"
+          }
+        }
+      }
+    },
+    "ForgotPassword.insertNewPasswordTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schimbă-ți parola"
+          }
+        }
+      }
+    },
+    "ForgotPassword.newPasswordLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola nouă"
+          }
+        }
+      }
+    },
+    "ForgotPassword.resetButtonTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resetează-ți parola"
+          }
+        }
+      }
+    },
+    "ForgotPassword.saveButtonTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvează parola"
+          }
+        }
+      }
+    },
+    "GroupView.addFriendsButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă prieteni"
+          }
+        }
+      }
+    },
+    "GroupView.alertCloseButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Închide"
+          }
+        }
+      }
+    },
+    "GroupView.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Doriți să deschideți setările și să acordați permisiunea?"
+          }
+        }
+      }
+    },
+    "GroupView.alertPrimaryButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setări"
+          }
+        }
+      }
+    },
+    "GroupView.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Această aplicație necesită acces la Contacte pentru a continua"
+          }
+        }
+      }
+    },
+    "GroupView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Creează-ți grupul de prieteni"
+          }
+        }
+      }
+    },
+    "InvitedContactsRow.invitationSentText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(Invitație trimisă)"
+          }
+        }
+      }
+    },
+    "InvitedContactsRow.removeContactText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elimină din grup"
+          }
+        }
+      }
+    },
+    "InvitedContactsView.addGroupMemberButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă membru nou în grup"
+          }
+        }
+      }
+    },
+    "InvitedContactsView.continueButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Continuă"
+          }
+        }
+      }
+    },
+    "ItemView.deleteButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Șterge"
+          }
+        }
+      }
+    },
+    "ItemView.expirationDateLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Expiră la: "
+          }
+        }
+      }
+    },
+    "LandingPage.authenticate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentifică-te"
+          }
+        }
+      }
+    },
+    "LandingPage.createAccount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Înscrie-te acum"
+          }
+        }
+      }
+    },
+    "LandingPage.tagLine" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tu ți-ai făcut planul în caz de urgență?"
+          }
+        }
+      }
+    },
+    "LandingPage.viewRoutes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vezi trasee"
+          }
+        }
+      }
+    },
+    "MenuView.aboutLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Despre aplicație"
+          }
+        }
+      }
+    },
+    "MenuView.adresslabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adrese și trasee"
+          }
+        }
+      }
+    },
+    "MenuView.backpackLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rucsacul de urgență"
+          }
+        }
+      }
+    },
+    "MenuView.coursedLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cursuri și informații utile"
+          }
+        }
+      }
+    },
+    "MenuView.donateButtonText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donează"
+          }
+        }
+      }
+    },
+    "MenuView.groupsLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Grupuri de urgență"
+          }
+        }
+      }
+    },
+    "MenuView.headerIconLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Soluție proiectată, dezvoltată și administrată de"
+          }
+        }
+      }
+    },
+    "MenuView.myaccountLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profilul meu"
+          }
+        }
+      }
+    },
+    "MenuView.settingsLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setări"
+          }
+        }
+      }
+    },
+    "MenuView.signoutLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delogare"
+          }
+        }
+      }
+    },
+    "MyBackpackView.addManagerButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă un responsabil"
+          }
+        }
+      }
+    },
+    "MyBackpackView.backpackitemsHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Componentele rucsacului"
+          }
+        }
+      }
+    },
+    "MyBackpackView.firstParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Există o serie de itemuri pe care este recomandat să le ai în acest rucsac. Chiar dacă nu ai acum rucsacul, pune deoparte  resursele de mai jos până vei achiziționa unul. Este recomandat să ai un rucsac impermeabil sau dintr-un material cât mai rezistent."
+          }
+        }
+      }
+    },
+    "MyBackpackView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rucsacul meu"
+          }
+        }
+      }
+    },
+    "MyBackpackView.secondParagraph" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rucsacul este responsabilitatea tuturor persoanelor care locuiesc în aceeași casă. Dacă locuiești cu încă cineva, invită-l în aplicație și asigurați-vă împreună că aveți mereu tot ce este necesar în rucsac."
+          }
+        }
+      }
+    },
+    "SearchBar.textFieldPlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caută un prieten"
+          }
+        }
+      }
+    },
+    "SelectCourseAndCityView.firstSelectorheader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectează tipul de curs"
+          }
+        }
+      }
+    },
+    "SelectCourseAndCityView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Învață să dai primul ajutor"
+          }
+        }
+      }
+    },
+    "SelectCourseAndCityView.secondSelectorheader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selectează orașul"
+          }
+        }
+      }
+    },
+    "SelectCourseAndCityView.viewCoursesButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vezi cursurile"
+          }
+        }
+      }
+    },
+    "SetMeetPoints.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ai deja puncte de întâlnire setate, vrei să le faci vizibile și să le asociezi cu noul grup sau preferi să setezi alte puncte special pentru grupul pe care îl creezi acum?"
+          }
+        }
+      }
+    },
+    "SetMeetPoints.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setează punctele de întâlnire"
+          }
+        }
+      }
+    },
+    "SetMeetPoints.inviteFriendsButton" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invită prieteni"
+          }
+        }
+      }
+    },
+    "SetMeetPoints.meetPointsHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setează puncte noi"
+          }
+        }
+      }
+    },
+    "SetMeetPoints.newMeetPointLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adaugă un punct de întâlnire"
+          }
+        }
+      }
+    },
+    "SetMeetPoints.toggleLabel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fă punctele de întâlnire vizibile"
+          }
+        }
+      }
+    },
+    "SettingsView.changePasswordText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schimbă parola"
+          }
+        }
+      }
+    },
+    "SettingsView.deleteAccountText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Șterge contul"
+          }
+        }
+      }
+    },
+    "SettingsView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setări"
+          }
+        }
+      }
+    },
+    "SettingsView.problemReportText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Raportează o problemă"
+          }
+        }
+      }
+    },
+    "SettingsView.termsText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termeni și condiții"
+          }
+        }
+      }
+    },
+    "SnackBar.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola ta a fost schimbată"
+          }
+        }
+      }
+    },
+    "SnackBar.textInfo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Autentifică-te cu nouă parolă mai jos."
+          }
+        }
+      }
+    },
+    "TermsView.headerText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "LEGAL"
+          }
+        }
+      }
+    },
+    "TermsView.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termeni și condiții"
+          }
+        }
+      }
+    },
+    "ValidationAccount.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un e-mail a fost trimis către adresa pe care ți-ai făcut contul, te rugăm să apeși linkul pentru validarea contului."
+          }
+        }
+      }
+    },
+    "ValidationAccount.headerTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Validează-ți contul"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
